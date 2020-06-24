@@ -1,0 +1,22 @@
+<Project>
+  <!-- Properties common to all production projects under this directory. -->
+
+  <!-- Version information -->
+  <PropertyGroup>
+    <Version>1.0.0-alpha00</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- TODO: Reinstate when the CloudEvents SDK is signed
+    <AssemblyOriginatorKeyFile>../GoogleApis.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    -->
+    <Deterministic>true</Deterministic>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Nullable>Enable</Nullable>
+    <OutputType>Library</OutputType>
+    <IsPackable>True</IsPackable>
+  </PropertyGroup>
+</Project>
