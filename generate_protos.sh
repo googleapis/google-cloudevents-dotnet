@@ -44,7 +44,12 @@ chmod +x $PROTOC
 
 echo "Generating"
 
+# First delete any previously-generated files
+rm -f $(find src/Google.Events.Protobuf -name '*.g.cs')
+
 # Explanation of flags:
+# --csharp_out=...
+#   We're generating C#
 # --csharp_opt=base_namespace=Google.Events.Protobuf
 #   Controls how directories are generated (C#-specific)
 # --csharp_opt=file_extension=.g.cs
@@ -55,15 +60,16 @@ echo "Generating"
 #   Make the common API-related protos available (e.g. google.type.Date)
 # -I tmp/google-cloud-events/proto
 #   Make the CloudEvent protos themselves available (these are the ones we generate)
-# $(find tmp/google-cloudevents/proto -name *.proto)
-#   Specifies the protos we want to generate
+# $(find tmp/google-cloudevents/proto -name data.proto)
+#   Specifies the protos we want to generate - just the event data messages
 
-$PROTOC --csharp_out=src/Google.Events.Protobuf \
+$PROTOC \
+  --csharp_out=src/Google.Events.Protobuf \
   --csharp_opt=base_namespace=Google.Events.Protobuf \
   --csharp_opt=file_extension=.g.cs \
   -I tmp/protobuf/include \
   -I tmp/google-cloudevents/third_party/googleapis \
   -I tmp/google-cloudevents/proto \
-  $(find tmp/google-cloudevents/proto -name *.proto)
+  $(find tmp/google-cloudevents/proto -name data.proto)
 
 echo "Done"
