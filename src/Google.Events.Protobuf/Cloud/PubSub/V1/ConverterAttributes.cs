@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // TODO: Generate this file!
-// This file contains partial classes for all event and event data messages, to apply
+// This file contains partial classes for all event data messages, to apply
 // the converter attributes to them.
 
 namespace Google.Events.Protobuf.Cloud.PubSub.V1
