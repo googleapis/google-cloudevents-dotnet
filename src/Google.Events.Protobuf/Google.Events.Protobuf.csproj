@@ -6,6 +6,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>Latest</LangVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageTags>google;cloud;events;cloudevents;protobuf</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
