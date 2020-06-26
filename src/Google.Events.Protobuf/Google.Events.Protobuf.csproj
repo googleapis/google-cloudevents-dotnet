@@ -7,6 +7,8 @@
     <LangVersion>Latest</LangVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageTags>google;cloud;events;cloudevents;protobuf</PackageTags>
+    <Title>Google Events data types (protobuf)</Title>
+    <Description>This package contains the data for the CloudEvents used within Google, generated and serialized using Protocol Buffers</Description>
   </PropertyGroup>
 
   <ItemGroup>

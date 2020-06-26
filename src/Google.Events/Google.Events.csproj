@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\ProductionProperties.xml" />
 
   <PropertyGroup>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Title>Google Cloud Functions Framework</Title>
-    <Description>Google Cloud Functions Framework</Description>
+    <Title>Google Events serialization support</Title>
+    <Description>Google Events serialization support</Description>
     <PackageTags>google;cloud;events;cloudevents</PackageTags>
   </PropertyGroup>
 
