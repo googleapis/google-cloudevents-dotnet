@@ -6,9 +6,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>Google Cloud Functions Framework</Title>
     <Description>Google Cloud Functions Framework</Description>
-
     <PackageTags>google;cloud;events;cloudevents</PackageTags>
-    <Version>1.0.0-alpha00</Version>
   </PropertyGroup>
 
   <ItemGroup>
