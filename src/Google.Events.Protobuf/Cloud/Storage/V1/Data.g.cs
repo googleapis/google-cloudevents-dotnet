@@ -26,34 +26,33 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
           string.Concat(
             "Cilnb29nbGUvZXZlbnRzL2Nsb3VkL3N0b3JhZ2UvdjEvZGF0YS5wcm90bxIe",
             "Z29vZ2xlLmV2ZW50cy5jbG91ZC5zdG9yYWdlLnYxGh9nb29nbGUvcHJvdG9i",
-            "dWYvdGltZXN0YW1wLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMu",
-            "cHJvdG8inwgKEVN0b3JhZ2VPYmplY3REYXRhEhgKEGNvbnRlbnRfZW5jb2Rp",
-            "bmcYASABKAkSGwoTY29udGVudF9kaXNwb3NpdGlvbhgCIAEoCRIVCg1jYWNo",
-            "ZV9jb250cm9sGAMgASgJEhgKEGNvbnRlbnRfbGFuZ3VhZ2UYBSABKAkSFgoO",
-            "bWV0YWdlbmVyYXRpb24YBiABKAMSMAoMdGltZV9kZWxldGVkGAcgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIUCgxjb250ZW50X3R5cGUYCCAB",
-            "KAkSDAoEc2l6ZRgJIAEoAxIwCgx0aW1lX2NyZWF0ZWQYCiABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuVGltZXN0YW1wEg4KBmNyYzMyYxgLIAEoCRIXCg9jb21w",
-            "b25lbnRfY291bnQYDCABKAUSEAoIbWQ1X2hhc2gYDSABKAkSDAoEZXRhZxgO",
-            "IAEoCRIrCgd1cGRhdGVkGA8gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
-            "dGFtcBIVCg1zdG9yYWdlX2NsYXNzGBAgASgJEhQKDGttc19rZXlfbmFtZRgR",
-            "IAEoCRI+Chp0aW1lX3N0b3JhZ2VfY2xhc3NfdXBkYXRlZBgSIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASFgoOdGVtcG9yYXJ5X2hvbGQYEyAB",
-            "KAgSPQoZcmV0ZW50aW9uX2V4cGlyYXRpb25fdGltZRgUIAEoCzIaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5UaW1lc3RhbXASUQoIbWV0YWRhdGEYFSADKAsyPy5nb29n",
-            "bGUuZXZlbnRzLmNsb3VkLnN0b3JhZ2UudjEuU3RvcmFnZU9iamVjdERhdGEu",
-            "TWV0YWRhdGFFbnRyeRI0ChBldmVudF9iYXNlZF9ob2xkGB0gASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLkJvb2xWYWx1ZRIMCgRuYW1lGBcgASgJEgoKAmlkGBgg",
-            "ASgJEg4KBmJ1Y2tldBgZIAEoCRISCgpnZW5lcmF0aW9uGBogASgDEmEKE2N1",
-            "c3RvbWVyX2VuY3J5cHRpb24YHCABKAsyRC5nb29nbGUuZXZlbnRzLmNsb3Vk",
-            "LnN0b3JhZ2UudjEuU3RvcmFnZU9iamVjdERhdGEuQ3VzdG9tZXJFbmNyeXB0",
-            "aW9uEhIKCm1lZGlhX2xpbmsYZCABKAkSEQoJc2VsZl9saW5rGGUgASgJGkYK",
-            "EkN1c3RvbWVyRW5jcnlwdGlvbhIcChRlbmNyeXB0aW9uX2FsZ29yaXRobRgB",
-            "IAEoCRISCgprZXlfc2hhMjU2GAIgASgJGi8KDU1ldGFkYXRhRW50cnkSCwoD",
-            "a2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIqqgInR29vZ2xlLkV2ZW50",
-            "cy5Qcm90b2J1Zi5DbG91ZC5TdG9yYWdlLlYxYgZwcm90bzM="));
+            "dWYvdGltZXN0YW1wLnByb3RvIoMIChFTdG9yYWdlT2JqZWN0RGF0YRIYChBj",
+            "b250ZW50X2VuY29kaW5nGAEgASgJEhsKE2NvbnRlbnRfZGlzcG9zaXRpb24Y",
+            "AiABKAkSFQoNY2FjaGVfY29udHJvbBgDIAEoCRIYChBjb250ZW50X2xhbmd1",
+            "YWdlGAUgASgJEhYKDm1ldGFnZW5lcmF0aW9uGAYgASgDEjAKDHRpbWVfZGVs",
+            "ZXRlZBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASFAoMY29u",
+            "dGVudF90eXBlGAggASgJEgwKBHNpemUYCSABKAMSMAoMdGltZV9jcmVhdGVk",
+            "GAogASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIOCgZjcmMzMmMY",
+            "CyABKAkSFwoPY29tcG9uZW50X2NvdW50GAwgASgFEhAKCG1kNV9oYXNoGA0g",
+            "ASgJEgwKBGV0YWcYDiABKAkSKwoHdXBkYXRlZBgPIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXASFQoNc3RvcmFnZV9jbGFzcxgQIAEoCRIUCgxr",
+            "bXNfa2V5X25hbWUYESABKAkSPgoadGltZV9zdG9yYWdlX2NsYXNzX3VwZGF0",
+            "ZWQYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhYKDnRlbXBv",
+            "cmFyeV9ob2xkGBMgASgIEj0KGXJldGVudGlvbl9leHBpcmF0aW9uX3RpbWUY",
+            "FCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wElEKCG1ldGFkYXRh",
+            "GBUgAygLMj8uZ29vZ2xlLmV2ZW50cy5jbG91ZC5zdG9yYWdlLnYxLlN0b3Jh",
+            "Z2VPYmplY3REYXRhLk1ldGFkYXRhRW50cnkSGAoQZXZlbnRfYmFzZWRfaG9s",
+            "ZBgdIAEoCBIMCgRuYW1lGBcgASgJEgoKAmlkGBggASgJEg4KBmJ1Y2tldBgZ",
+            "IAEoCRISCgpnZW5lcmF0aW9uGBogASgDEmEKE2N1c3RvbWVyX2VuY3J5cHRp",
+            "b24YHCABKAsyRC5nb29nbGUuZXZlbnRzLmNsb3VkLnN0b3JhZ2UudjEuU3Rv",
+            "cmFnZU9iamVjdERhdGEuQ3VzdG9tZXJFbmNyeXB0aW9uEhIKCm1lZGlhX2xp",
+            "bmsYZCABKAkSEQoJc2VsZl9saW5rGGUgASgJGkYKEkN1c3RvbWVyRW5jcnlw",
+            "dGlvbhIcChRlbmNyeXB0aW9uX2FsZ29yaXRobRgBIAEoCRISCgprZXlfc2hh",
+            "MjU2GAIgASgJGi8KDU1ldGFkYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZh",
+            "bHVlGAIgASgJOgI4AUIqqgInR29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5DbG91",
+            "ZC5TdG9yYWdlLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData), global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Parser, new[]{ "ContentEncoding", "ContentDisposition", "CacheControl", "ContentLanguage", "Metageneration", "TimeDeleted", "ContentType", "Size", "TimeCreated", "Crc32C", "ComponentCount", "Md5Hash", "Etag", "Updated", "StorageClass", "KmsKeyName", "TimeStorageClassUpdated", "TemporaryHold", "RetentionExpirationTime", "Metadata", "EventBasedHold", "Name", "Id", "Bucket", "Generation", "CustomerEncryption", "MediaLink", "SelfLink" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption), global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption.Parser, new[]{ "EncryptionAlgorithm", "KeySha256" }, null, null, null, null),
             null, })
@@ -111,7 +110,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       temporaryHold_ = other.temporaryHold_;
       retentionExpirationTime_ = other.retentionExpirationTime_ != null ? other.retentionExpirationTime_.Clone() : null;
       metadata_ = other.metadata_.Clone();
-      EventBasedHold = other.EventBasedHold;
+      eventBasedHold_ = other.eventBasedHold_;
       name_ = other.name_;
       id_ = other.id_;
       bucket_ = other.bucket_;
@@ -433,19 +432,17 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
     /// <summary>Field number for the "event_based_hold" field.</summary>
     public const int EventBasedHoldFieldNumber = 29;
-    private static readonly pb::FieldCodec<bool?> _single_eventBasedHold_codec = pb::FieldCodec.ForStructWrapper<bool>(234);
-    private bool? eventBasedHold_;
+    private bool eventBasedHold_;
     /// <summary>
     /// Whether an object is under event-based hold.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool? EventBasedHold {
+    public bool EventBasedHold {
       get { return eventBasedHold_; }
       set {
         eventBasedHold_ = value;
       }
     }
-
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 23;
@@ -615,7 +612,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       if (TemporaryHold != false) hash ^= TemporaryHold.GetHashCode();
       if (retentionExpirationTime_ != null) hash ^= RetentionExpirationTime.GetHashCode();
       hash ^= Metadata.GetHashCode();
-      if (eventBasedHold_ != null) hash ^= EventBasedHold.GetHashCode();
+      if (EventBasedHold != false) hash ^= EventBasedHold.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (Bucket.Length != 0) hash ^= Bucket.GetHashCode();
@@ -733,8 +730,9 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         output.WriteRawTag(226, 1);
         output.WriteMessage(CustomerEncryption);
       }
-      if (eventBasedHold_ != null) {
-        _single_eventBasedHold_codec.WriteTagAndValue(output, EventBasedHold);
+      if (EventBasedHold != false) {
+        output.WriteRawTag(232, 1);
+        output.WriteBool(EventBasedHold);
       }
       if (MediaLink.Length != 0) {
         output.WriteRawTag(162, 6);
@@ -810,8 +808,8 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(RetentionExpirationTime);
       }
       size += metadata_.CalculateSize(_map_metadata_codec);
-      if (eventBasedHold_ != null) {
-        size += _single_eventBasedHold_codec.CalculateSizeWithTag(EventBasedHold);
+      if (EventBasedHold != false) {
+        size += 2 + 1;
       }
       if (Name.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Name);
@@ -918,10 +916,8 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         RetentionExpirationTime.MergeFrom(other.RetentionExpirationTime);
       }
       metadata_.Add(other.metadata_);
-      if (other.eventBasedHold_ != null) {
-        if (eventBasedHold_ == null || other.EventBasedHold != false) {
-          EventBasedHold = other.EventBasedHold;
-        }
+      if (other.EventBasedHold != false) {
+        EventBasedHold = other.EventBasedHold;
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
@@ -1076,11 +1072,8 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
             input.ReadMessage(CustomerEncryption);
             break;
           }
-          case 234: {
-            bool? value = _single_eventBasedHold_codec.Read(input);
-            if (eventBasedHold_ == null || value != false) {
-              EventBasedHold = value;
-            }
+          case 232: {
+            EventBasedHold = input.ReadBool();
             break;
           }
           case 802: {
