@@ -18,6 +18,6 @@
 
 namespace Google.Events.Protobuf.Cloud.PubSub.V1
 {
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<PubsubMessage>))]
-    public partial class PubsubMessage { }
+    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<MessagePublishedData>))]
+    public partial class MessagePublishedData { }
 }
