@@ -9,7 +9,7 @@ Google. The following packages are provided:
 
 - [Google.Events](https://www.nuget.org/packages/Google.Events)
 - [Google.Events.Protobuf](https://www.nuget.org/packages/Google.Events.Protobuf)
-- [Google.Events.SystemTextJson](https://www.nuget.org/packages/Google.SystemTextJson)
+- [Google.Events.SystemTextJson](https://www.nuget.org/packages/Google.Events.SystemTextJson)
 
 The `Google.Events` package is very small and has no dependencies.
 Its purpose is to expose attributes such as
@@ -51,5 +51,5 @@ StorageObjectData data = CloudEventConverters.ConvertCloudEventData<StorageData>
 
 ## Development
 
-See [BUILDING.md](BUILDING) for more information about developing
+See [BUILDING](BUILDING.md) for more information about developing
 the code within this repository.

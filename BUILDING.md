@@ -11,7 +11,7 @@ When the [google-cloudevents
 repo](https://github.com/googleapis/google-cloudevents) is updated,
 the C# classes need to be regenerated. Run
 [`generate-protos.sh`](generate-protos.sh) from the root directory to
-do this; the proto-based classes in [src/Google.Events.Protobuf]() will be
+do this; the proto-based classes in [src/Google.Events.Protobuf](src/Google.Events.Protobuf) will be
 regenerated.
 
 If event data types or properties have been added, the tests for
