@@ -32,11 +32,6 @@ namespace Google.Events.SystemTextJson.Cloud.Storage.V1
         internal const string DeleteEventType = "com.google.cloud.storage.delete.v0";
         internal const string ArchiveEventType = "com.google.cloud.storage.archive.v0";
         internal const string MetadataUpdateEventType = "com.google.cloud.storage.metadataUpdate.v0";
-        /// <summary>
-        /// The kind of item this is. For objects, this is always storage#object.	
-        /// </summary>
-        [JsonPropertyName("kind")]
-        public string? Kind { get; set; }
 
         /// <summary>
         /// The ID of the object, including the bucket name, object name, and generation number.
