@@ -74,6 +74,18 @@ namespace Google.Events.Tests
 
         [SkippableTheory]
         [MemberData(nameof(AllProtobufTypes))]
+        public void ProtobufTypesHaveJsonProperties(BclType protobufType)
+        {
+            var jsonType = GetJsonType(protobufType);
+            Skip.If(jsonType is null); // Already reported in ProtobufTypeHasJsonType
+            var protoProperties = protobufType.GetProperties(BindingFlags.Public | BindingFlags.Instance).Select(p => p.Name);
+            var jsonProperties = jsonType.GetProperties(BindingFlags.Public | BindingFlags.Instance).Select(p => p.Name);
+            var missingProperties = jsonProperties.Except(protoProperties);
+            Assert.Empty(missingProperties);
+        }
+
+        [SkippableTheory]
+        [MemberData(nameof(AllProtobufTypes))]
         public void DataConverterAttributesAppliedConsistently(BclType protobufType)
         {
             var jsonType = GetJsonType(protobufType);
