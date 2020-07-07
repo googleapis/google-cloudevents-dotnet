@@ -18,21 +18,13 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-// TODO: Generate this file.
-
 namespace Google.Events.SystemTextJson.Cloud.Storage.V1
 {
     /// <summary>
     /// The CloudEvent representation of a storage message as translated from a GCF event.
     /// </summary>
-    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<StorageObjectData>))]
-    public sealed class StorageObjectData
+    public sealed partial class StorageObjectData
     {
-        internal const string FinalizeEventType = "com.google.cloud.storage.object.finalize.v0";
-        internal const string DeleteEventType = "com.google.cloud.storage.delete.v0";
-        internal const string ArchiveEventType = "com.google.cloud.storage.archive.v0";
-        internal const string MetadataUpdateEventType = "com.google.cloud.storage.metadataUpdate.v0";
-
         /// <summary>
         /// The ID of the object, including the bucket name, object name, and generation number.
         /// </summary>

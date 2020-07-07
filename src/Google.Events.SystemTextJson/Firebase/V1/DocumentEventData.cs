@@ -21,8 +21,7 @@ namespace Google.Events.SystemTextJson.Firebase.V1
     /// <summary>
     /// The CloudEvent representation of Firebase Database event as translated from a GCF event.
     /// </summary>
-    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<DocumentEventData>))]
-    public sealed class DocumentEventData
+    public sealed partial class DocumentEventData
     {
         /// <summary>
         /// The data before the event took place.

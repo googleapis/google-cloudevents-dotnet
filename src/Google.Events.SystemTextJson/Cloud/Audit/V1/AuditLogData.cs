@@ -24,8 +24,7 @@ namespace Google.Events.SystemTextJson.Cloud.Audit.V1
     /// <summary>
     /// Audit log event data.
     /// </summary>
-    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<AuditLogData>))]
-    public sealed class AuditLogData
+    public sealed partial class AuditLogData
     {
         /// <summary>
         /// The name of the API service performing the operation. For example,
@@ -119,7 +118,7 @@ namespace Google.Events.SystemTextJson.Cloud.Audit.V1
     /// <summary>
     /// Authentication information for the operation.
     /// </summary>
-    public class AuthenticationInfo
+    public sealed partial class AuthenticationInfo
     {
         /// <summary>
         /// The email address of the authenticated user making the request.
@@ -129,9 +128,9 @@ namespace Google.Events.SystemTextJson.Cloud.Audit.V1
     }
 
     /// <summary>
-    /// 
+    /// Authorization information about the event.
     /// </summary>
-    public class AuthorizationInfo
+    public sealed partial class AuthorizationInfo
     {
         /// <summary>
         /// The resource being accessed, as a REST-style string. For example:
@@ -157,7 +156,7 @@ namespace Google.Events.SystemTextJson.Cloud.Audit.V1
     /// <summary>
     /// Metadata about the request.
     /// </summary>
-    public class RequestMetadata
+    public sealed partial class RequestMetadata
     {
         /// <summary>
         /// The IP address of the caller.
