@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Events.Tools.CodeGenerator", "Google.Events.Tools.CodeGenerator\Google.Events.Tools.CodeGenerator.csproj", "{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Debug|x64.Build.0 = Debug|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Debug|x86.Build.0 = Debug|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Release|x64.ActiveCfg = Release|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Release|x64.Build.0 = Release|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Release|x86.ActiveCfg = Release|Any CPU
+		{C1A3E2A0-4906-4566-B4C7-678A1EFB428E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5875FF3-634A-406E-9F00-9708663B4767}
+	EndGlobalSection
+EndGlobal
