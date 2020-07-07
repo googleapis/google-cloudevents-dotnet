@@ -19,8 +19,8 @@ namespace Google.Events.SystemTextJson.Cloud.Scheduler.V1
     /// <summary>
     /// Scheduler event data.
     /// </summary>
-    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<SchedulerData>))]
-    public class SchedulerData
+    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<SchedulerJobData>))]
+    public class SchedulerJobData
     {
         /// <summary>
         /// The custom data the user specified when creating the scheduler source.

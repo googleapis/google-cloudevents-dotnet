@@ -18,6 +18,6 @@
 
 namespace Google.Events.Protobuf.Cloud.Scheduler.V1
 {
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<SchedulerData>))]
-    public partial class SchedulerData { }
+    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<SchedulerJobData>))]
+    public partial class SchedulerJobData { }
 }
