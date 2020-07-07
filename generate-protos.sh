@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to generate the Protobuf classes from google/google-cloudevents
+# Script to generate the Protobuf classes from googleapis/google-cloudevents
 set -e
 
 echo "~ START"
@@ -31,7 +31,7 @@ echo "- Cloning github.com/googleapis/google-cloudevents into tmp"
 # it a submodule. We clone quietly, and only with a depth of 1
 # as we don't need history.
 rm -rf tmp
-mkdir -p tmp
+mkdir tmp
 git clone https://github.com/googleapis/google-cloudevents tmp/google-cloudevents -q --depth 1
 
 # We download a specific version rather than using package managers
@@ -42,7 +42,7 @@ cd tmp
 curl -sSL \
   https://github.com/protocolbuffers/protobuf/releases/download/v$PROTOBUF_VERSION/protoc-$PROTOBUF_VERSION-$PROTOBUF_PLATFORM.zip \
   --output protobuf.zip
-(mkdir -p protobuf && cd protobuf && unzip -q ../protobuf.zip)
+(mkdir protobuf && cd protobuf && unzip -q ../protobuf.zip)
 cd ..
 chmod +x $PROTOC
 

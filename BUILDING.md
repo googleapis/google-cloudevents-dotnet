@@ -7,7 +7,7 @@ Prerequisites:
 To build the packages, run:
 
 ```sh
-sh build.sh
+./build.sh
 ```
 
 This will build the C# code and run tests.
@@ -18,14 +18,13 @@ When the [google-cloudevents repo](https://github.com/googleapis/google-cloudeve
 the C# classes need to be regenerated:
 
 ```sh
-sh generate-protos.sh
+./generate-protos.sh
 ```
 
-This will regenerate teh proto-based classes in [src/Google.Events.Protobuf/](src/Google.Events.Protobuf).
+This will regenerate the proto-based classes in [src/Google.Events.Protobuf/](src/Google.Events.Protobuf).
 
 ---
 
 If event data types or properties have been added,
 the tests for other serialization frameworks will fail.
-
 The tests should currently be fixed by manually adding the corresponding types and properties.
