@@ -28,11 +28,11 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
             "EiBnb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52MRocZ29vZ2xlL3By",
             "b3RvYnVmL3N0cnVjdC5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFt",
             "cC5wcm90bxoYZ29vZ2xlL3R5cGUvbGF0bG5nLnByb3RvItsCChFEb2N1bWVu",
-            "dEV2ZW50RGF0YRI9CglvbGRfdmFsdWUYASABKAsyKi5nb29nbGUuZXZlbnRz",
-            "LmNsb3VkLmZpcmVzdG9yZS52MS5Eb2N1bWVudBJDCgt1cGRhdGVfbWFzaxgC",
-            "IAEoCzIuLmdvb2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3JlLnYxLkRvY3Vt",
-            "ZW50TWFzaxI5CgV2YWx1ZRgDIAEoCzIqLmdvb2dsZS5ldmVudHMuY2xvdWQu",
-            "ZmlyZXN0b3JlLnYxLkRvY3VtZW50ElUKCXdpbGRjYXJkcxgEIAMoCzJCLmdv",
+            "dEV2ZW50RGF0YRI5CgV2YWx1ZRgBIAEoCzIqLmdvb2dsZS5ldmVudHMuY2xv",
+            "dWQuZmlyZXN0b3JlLnYxLkRvY3VtZW50Ej0KCW9sZF92YWx1ZRgCIAEoCzIq",
+            "Lmdvb2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3JlLnYxLkRvY3VtZW50EkMK",
+            "C3VwZGF0ZV9tYXNrGAMgASgLMi4uZ29vZ2xlLmV2ZW50cy5jbG91ZC5maXJl",
+            "c3RvcmUudjEuRG9jdW1lbnRNYXNrElUKCXdpbGRjYXJkcxgEIAMoCzJCLmdv",
             "b2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3JlLnYxLkRvY3VtZW50RXZlbnRE",
             "YXRhLldpbGRjYXJkc0VudHJ5GjAKDldpbGRjYXJkc0VudHJ5EgsKA2tleRgB",
             "IAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiIwoMRG9jdW1lbnRNYXNrEhMKC2Zp",
@@ -63,7 +63,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Type.LatlngReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData), global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData.Parser, new[]{ "OldValue", "UpdateMask", "Value", "Wildcards" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData), global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData.Parser, new[]{ "Value", "OldValue", "UpdateMask", "Wildcards" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask), global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask.Parser, new[]{ "FieldPaths" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.Document), global::Google.Events.Protobuf.Cloud.Firestore.V1.Document.Parser, new[]{ "Name", "Fields", "CreateTime", "UpdateTime" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.Value), global::Google.Events.Protobuf.Cloud.Firestore.V1.Value.Parser, new[]{ "NullValue", "BooleanValue", "IntegerValue", "DoubleValue", "TimestampValue", "StringValue", "BytesValue", "ReferenceValue", "GeoPointValue", "ArrayValue", "MapValue" }, new[]{ "ValueType" }, null, null, null),
@@ -103,9 +103,9 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DocumentEventData(DocumentEventData other) : this() {
+      value_ = other.value_ != null ? other.value_.Clone() : null;
       oldValue_ = other.oldValue_ != null ? other.oldValue_.Clone() : null;
       updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
-      value_ = other.value_ != null ? other.value_.Clone() : null;
       wildcards_ = other.wildcards_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -115,8 +115,23 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       return new DocumentEventData(this);
     }
 
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 1;
+    private global::Google.Events.Protobuf.Cloud.Firestore.V1.Document value_;
+    /// <summary>
+    /// A Document object containing a post-operation document snapshot.
+    /// This is not populated for delete events. (TODO: check this!)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Events.Protobuf.Cloud.Firestore.V1.Document Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
     /// <summary>Field number for the "old_value" field.</summary>
-    public const int OldValueFieldNumber = 1;
+    public const int OldValueFieldNumber = 2;
     private global::Google.Events.Protobuf.Cloud.Firestore.V1.Document oldValue_;
     /// <summary>
     /// A Document object containing a pre-operation document snapshot.
@@ -131,7 +146,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     /// <summary>Field number for the "update_mask" field.</summary>
-    public const int UpdateMaskFieldNumber = 2;
+    public const int UpdateMaskFieldNumber = 3;
     private global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask updateMask_;
     /// <summary>
     /// A DocumentMask object that lists changed fields.
@@ -142,21 +157,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       get { return updateMask_; }
       set {
         updateMask_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "value" field.</summary>
-    public const int ValueFieldNumber = 3;
-    private global::Google.Events.Protobuf.Cloud.Firestore.V1.Document value_;
-    /// <summary>
-    /// A Document object containing a post-operation document snapshot.
-    /// This is not populated for delete events. (TODO: check this!)
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Events.Protobuf.Cloud.Firestore.V1.Document Value {
-      get { return value_; }
-      set {
-        value_ = value;
       }
     }
 
@@ -192,9 +192,9 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(Value, other.Value)) return false;
       if (!object.Equals(OldValue, other.OldValue)) return false;
       if (!object.Equals(UpdateMask, other.UpdateMask)) return false;
-      if (!object.Equals(Value, other.Value)) return false;
       if (!Wildcards.Equals(other.Wildcards)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -202,9 +202,9 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (value_ != null) hash ^= Value.GetHashCode();
       if (oldValue_ != null) hash ^= OldValue.GetHashCode();
       if (updateMask_ != null) hash ^= UpdateMask.GetHashCode();
-      if (value_ != null) hash ^= Value.GetHashCode();
       hash ^= Wildcards.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -219,17 +219,17 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (oldValue_ != null) {
+      if (value_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(Value);
+      }
+      if (oldValue_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(OldValue);
       }
       if (updateMask_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(UpdateMask);
-      }
-      if (value_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(Value);
+        output.WriteMessage(UpdateMask);
       }
       wildcards_.WriteTo(output, _map_wildcards_codec);
       if (_unknownFields != null) {
@@ -240,14 +240,14 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (value_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Value);
+      }
       if (oldValue_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(OldValue);
       }
       if (updateMask_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateMask);
-      }
-      if (value_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Value);
       }
       size += wildcards_.CalculateSize(_map_wildcards_codec);
       if (_unknownFields != null) {
@@ -261,6 +261,12 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       if (other == null) {
         return;
       }
+      if (other.value_ != null) {
+        if (value_ == null) {
+          Value = new global::Google.Events.Protobuf.Cloud.Firestore.V1.Document();
+        }
+        Value.MergeFrom(other.Value);
+      }
       if (other.oldValue_ != null) {
         if (oldValue_ == null) {
           OldValue = new global::Google.Events.Protobuf.Cloud.Firestore.V1.Document();
@@ -272,12 +278,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
           UpdateMask = new global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask();
         }
         UpdateMask.MergeFrom(other.UpdateMask);
-      }
-      if (other.value_ != null) {
-        if (value_ == null) {
-          Value = new global::Google.Events.Protobuf.Cloud.Firestore.V1.Document();
-        }
-        Value.MergeFrom(other.Value);
       }
       wildcards_.Add(other.wildcards_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -292,24 +292,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            if (value_ == null) {
+              Value = new global::Google.Events.Protobuf.Cloud.Firestore.V1.Document();
+            }
+            input.ReadMessage(Value);
+            break;
+          }
+          case 18: {
             if (oldValue_ == null) {
               OldValue = new global::Google.Events.Protobuf.Cloud.Firestore.V1.Document();
             }
             input.ReadMessage(OldValue);
             break;
           }
-          case 18: {
+          case 26: {
             if (updateMask_ == null) {
               UpdateMask = new global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask();
             }
             input.ReadMessage(UpdateMask);
-            break;
-          }
-          case 26: {
-            if (value_ == null) {
-              Value = new global::Google.Events.Protobuf.Cloud.Firestore.V1.Document();
-            }
-            input.ReadMessage(Value);
             break;
           }
           case 34: {

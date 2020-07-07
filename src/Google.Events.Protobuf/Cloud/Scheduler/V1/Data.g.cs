@@ -25,13 +25,13 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citnb29nbGUvZXZlbnRzL2Nsb3VkL3NjaGVkdWxlci92MS9kYXRhLnByb3Rv",
-            "EiBnb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52MSIkCg1TY2hlZHVs",
-            "ZXJEYXRhEhMKC2N1c3RvbV9kYXRhGAEgASgMQiyqAilHb29nbGUuRXZlbnRz",
-            "LlByb3RvYnVmLkNsb3VkLlNjaGVkdWxlci5WMWIGcHJvdG8z"));
+            "EiBnb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52MSInChBTY2hlZHVs",
+            "ZXJKb2JEYXRhEhMKC2N1c3RvbV9kYXRhGAEgASgMQiyqAilHb29nbGUuRXZl",
+            "bnRzLlByb3RvYnVmLkNsb3VkLlNjaGVkdWxlci5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerData), global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerData.Parser, new[]{ "CustomData" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerJobData), global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerJobData.Parser, new[]{ "CustomData" }, null, null, null, null)
           }));
     }
     #endregion
@@ -39,13 +39,13 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
   }
   #region Messages
   /// <summary>
-  /// Scheduler event data.
+  /// Scheduler job data.
   /// </summary>
-  public sealed partial class SchedulerData : pb::IMessage<SchedulerData> {
-    private static readonly pb::MessageParser<SchedulerData> _parser = new pb::MessageParser<SchedulerData>(() => new SchedulerData());
+  public sealed partial class SchedulerJobData : pb::IMessage<SchedulerJobData> {
+    private static readonly pb::MessageParser<SchedulerJobData> _parser = new pb::MessageParser<SchedulerJobData>(() => new SchedulerJobData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SchedulerData> Parser { get { return _parser; } }
+    public static pb::MessageParser<SchedulerJobData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -58,21 +58,21 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SchedulerData() {
+    public SchedulerJobData() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SchedulerData(SchedulerData other) : this() {
+    public SchedulerJobData(SchedulerJobData other) : this() {
       customData_ = other.customData_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SchedulerData Clone() {
-      return new SchedulerData(this);
+    public SchedulerJobData Clone() {
+      return new SchedulerJobData(this);
     }
 
     /// <summary>Field number for the "custom_data" field.</summary>
@@ -91,11 +91,11 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as SchedulerData);
+      return Equals(other as SchedulerJobData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SchedulerData other) {
+    public bool Equals(SchedulerJobData other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -145,7 +145,7 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SchedulerData other) {
+    public void MergeFrom(SchedulerJobData other) {
       if (other == null) {
         return;
       }
