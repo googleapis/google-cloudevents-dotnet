@@ -18,10 +18,13 @@ When the [google-cloudevents repo](https://github.com/googleapis/google-cloudeve
 the C# classes need to be regenerated:
 
 ```sh
-./generate-protos.sh
+./generate-code.sh
 ```
 
-This will regenerate the proto-based classes in [src/Google.Events.Protobuf/](src/Google.Events.Protobuf).
+This will regenerate the proto-based classes in
+[src/Google.Events.Protobuf/](src/Google.Events.Protobuf),
+as well as generating converter attributes and CloudEvent type
+constants.
 
 ---
 

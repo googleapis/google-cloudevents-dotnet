@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 # Script to generate code from https://github.com/googleapis/google-cloudevents:
 # - Classes from Protobuf messages (as per the regular C# generator)
 # - Attributes to specify CloudEvent converters
@@ -10,10 +8,14 @@ set -e
 # Note that the attributes and CloudEvent type constants are generated for
 # all supported serialization formats.
 
+set -e
+
+echo "~ START"
 PROTOBUF_VERSION=3.12.3
 
 # protoc is a native application, so we need to download different zip files
 # and use different binaries depending on the OS.
+echo "- Determining OS type"
 case "$OSTYPE" in
   linux*)
     PROTOBUF_PLATFORM=linux-x64_64
@@ -32,7 +34,7 @@ case "$OSTYPE" in
     exit 1
 esac
 
-echo "Cloning google-cloudevents"
+echo "- Cloning github.com/googleapis/google-cloudevents into tmp"
 # For the moment, just clone google-cloudevents. Later we might make
 # it a submodule. We clone quietly, and only with a depth of 1
 # as we don't need history.
@@ -43,7 +45,7 @@ git clone https://github.com/googleapis/google-cloudevents tmp/google-cloudevent
 # We download a specific version rather than using package managers
 # for portability and being able to rely on the version being available
 # as soon as it's released on GitHub.
-echo "Downloading protobuf tools"
+echo "- Downloading protobuf tools"
 cd tmp
 curl -sSL \
   https://github.com/protocolbuffers/protobuf/releases/download/v$PROTOBUF_VERSION/protoc-$PROTOBUF_VERSION-$PROTOBUF_PLATFORM.zip \
@@ -51,6 +53,8 @@ curl -sSL \
 (mkdir protobuf && cd protobuf && unzip -q ../protobuf.zip)
 cd ..
 chmod +x $PROTOC
+
+echo "- Generating src/Google.Events.Protobuf"
 
 # First delete any previously-generated files
 rm -f $(find src/Google.Events.Protobuf -name '*.g.cs')
@@ -73,7 +77,7 @@ rm -f $(find src/Google.Events.Protobuf -name '*.g.cs')
 # $(find tmp/google-cloudevents/proto -name data.proto)
 #   Specifies the protos we want to generate - just the event data messages
 
-echo "Generating C# from protobuf messages"
+echo "- Generating C# from protobuf messages"
 $PROTOC \
   --csharp_out=src/Google.Events.Protobuf \
   --csharp_opt=base_namespace=Google.Events.Protobuf \
@@ -86,7 +90,7 @@ $PROTOC \
 # Create a protobuf descriptor set, which we can use to extract the CloudEvent
 # types from annotations.
 
-echo "Compiling protobuf descriptor set"
+echo "- Compiling protobuf descriptor set"
 $PROTOC \
   --descriptor_set_out=tmp/protos.pb \
   -I tmp/protobuf/include \
@@ -96,7 +100,9 @@ $PROTOC \
 
 # Run code generation from the descriptor set
 
-echo "Generating additional code from descriptor set"
+echo "- Generating additional code from descriptor set"
 dotnet run -p tools/Google.Events.Tools.CodeGenerator -- tmp/protos.pb src
 
-echo "Done"
+echo "- Removing tmp/"
+rm -rf tmp
+echo "~ DONE ✓"
