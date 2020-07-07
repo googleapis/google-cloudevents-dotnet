@@ -1,14 +1,18 @@
 #!/bin/bash
-
+# Script to generate the Protobuf classes from google/google-cloudevents
 set -e
 
-# Script to generate the Protobuf classes from google-cloudevents
-
+echo "~ START"
 PROTOBUF_VERSION=3.12.3
 
 # protoc is a native application, so we need to download different zip files
 # and use different binaries depending on the OS.
+echo "- Determining OS type"
 case "$OSTYPE" in
+  darwin*)
+    PROTOBUF_PLATFORM=osx-x86_64
+    PROTOC=tmp/protobuf/bin/protoc
+    ;;
   linux*)
     PROTOBUF_PLATFORM=linux-x64_64
     PROTOC=tmp/protobuf/bin/protoc
@@ -22,27 +26,27 @@ case "$OSTYPE" in
     exit 1
 esac
 
-echo "Cloning google-cloudevents"
+echo "- Cloning github.com/googleapis/google-cloudevents into tmp"
 # For the moment, just clone google-cloudevents. Later we might make
 # it a submodule. We clone quietly, and only with a depth of 1
 # as we don't need history.
 rm -rf tmp
-mkdir tmp
+mkdir -p tmp
 git clone https://github.com/googleapis/google-cloudevents tmp/google-cloudevents -q --depth 1
 
 # We download a specific version rather than using package managers
 # for portability and being able to rely on the version being available
 # as soon as it's released on GitHub.
-echo "Downloading protobuf tools"
+echo "- Downloading protobuf tools"
 cd tmp
 curl -sSL \
   https://github.com/protocolbuffers/protobuf/releases/download/v$PROTOBUF_VERSION/protoc-$PROTOBUF_VERSION-$PROTOBUF_PLATFORM.zip \
   --output protobuf.zip
-(mkdir protobuf && cd protobuf && unzip -q ../protobuf.zip)
+(mkdir -p protobuf && cd protobuf && unzip -q ../protobuf.zip)
 cd ..
 chmod +x $PROTOC
 
-echo "Generating"
+echo "- Generating src/"
 
 # First delete any previously-generated files
 rm -f $(find src/Google.Events.Protobuf -name '*.g.cs')
@@ -72,4 +76,6 @@ $PROTOC \
   -I tmp/google-cloudevents/proto \
   $(find tmp/google-cloudevents/proto -name data.proto)
 
-echo "Done"
+echo "- Removing tmp/"
+rm -rf tmp
+echo "~ DONE ✓"
