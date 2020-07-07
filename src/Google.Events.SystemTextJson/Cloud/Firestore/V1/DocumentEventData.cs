@@ -28,8 +28,7 @@ namespace Google.Events.SystemTextJson.Cloud.Firestore.V1
     /// <summary>
     /// The CloudEvent representation of a Firestore event as translated from a GCF event.
     /// </summary>
-    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<DocumentEventData>))]
-    public sealed class DocumentEventData
+    public sealed partial class DocumentEventData
     {
         /// <summary>
         /// A <see cref="Document"/> containing a post-operation document snapshot.
@@ -62,7 +61,7 @@ namespace Google.Events.SystemTextJson.Cloud.Firestore.V1
     /// <summary>
     /// A Firestore document.
     /// </summary>
-    public sealed class Document
+    public sealed partial class Document
     {
         /// <summary>
         /// The resource name of the document.
@@ -93,7 +92,7 @@ namespace Google.Events.SystemTextJson.Cloud.Firestore.V1
     /// <summary>
     /// A document mask used to list changed fields within a document.
     /// </summary>
-    public sealed class DocumentMask
+    public sealed partial class DocumentMask
     {
         /// <summary>
         /// The set of field paths that were updated in the document.
