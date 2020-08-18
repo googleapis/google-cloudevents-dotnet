@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Events.SystemTextJso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Events.SystemTextJson.Tests", "Google.Events.SystemTextJson.Tests\Google.Events.SystemTextJson.Tests.csproj", "{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Events.ValidateSchema", "Google.Events.ValidateSchema\Google.Events.ValidateSchema.csproj", "{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|x64.Build.0 = Release|Any CPU
 		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|x86.ActiveCfg = Release|Any CPU
 		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|x86.Build.0 = Release|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|x64.Build.0 = Debug|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|x86.Build.0 = Debug|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Release|x64.ActiveCfg = Release|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Release|x64.Build.0 = Release|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Release|x86.ActiveCfg = Release|Any CPU
+		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
