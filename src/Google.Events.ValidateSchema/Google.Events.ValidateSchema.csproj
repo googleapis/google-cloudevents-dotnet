@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.12.2" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <Compile Include="../../tmp/ValidationSource/**" />
+  </ItemGroup>
+
+</Project>
