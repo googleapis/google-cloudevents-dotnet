@@ -21,7 +21,7 @@ then
   exit 1
 fi
 
-GOOGLE_CLOUDEVENTS=$1
+GOOGLE_CLOUDEVENTS=$(realpath $1)
 
 set -e
 
