@@ -18,7 +18,7 @@ PROTOBUF_VERSION=3.12.3
 echo "- Determining OS type"
 case "$OSTYPE" in
   linux*)
-    PROTOBUF_PLATFORM=linux-x64_64
+    PROTOBUF_PLATFORM=linux-x86_64
     PROTOC=tmp/protobuf/bin/protoc
     ;;
   win* | msys* | cygwin*)
