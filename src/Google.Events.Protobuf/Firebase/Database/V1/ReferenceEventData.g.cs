@@ -12,22 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace Google.Events.SystemTextJson.Firebase.V1
+namespace Google.Events.Protobuf.Firebase.Database.V1
 {    
-    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<DocumentEventData>))]
-    public partial class DocumentEventData
+    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<ReferenceEventData>))]
+    public partial class ReferenceEventData
     {
         /// <summary>CloudEvent type for the 'created' event.</summary>
-        public const string CreatedCloudEventType = "google.firebase.database.document.v1.created";
+        public const string CreatedCloudEventType = "google.firebase.database.ref.v1.created";
 
         /// <summary>CloudEvent type for the 'updated' event.</summary>
-        public const string UpdatedCloudEventType = "google.firebase.database.document.v1.updated";
+        public const string UpdatedCloudEventType = "google.firebase.database.ref.v1.updated";
 
         /// <summary>CloudEvent type for the 'deleted' event.</summary>
-        public const string DeletedCloudEventType = "google.firebase.database.document.v1.deleted";
+        public const string DeletedCloudEventType = "google.firebase.database.ref.v1.deleted";
 
         /// <summary>CloudEvent type for the 'written' event.</summary>
-        public const string WrittenCloudEventType = "google.firebase.database.document.v1.written";
+        public const string WrittenCloudEventType = "google.firebase.database.ref.v1.written";
 
     }
 }

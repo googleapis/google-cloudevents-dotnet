@@ -16,12 +16,12 @@ using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Google.Events.SystemTextJson.Firebase.V1
+namespace Google.Events.SystemTextJson.Firebase.Database.V1
 {
     /// <summary>
     /// The CloudEvent representation of Firebase Database event as translated from a GCF event.
     /// </summary>
-    public sealed partial class DocumentEventData
+    public sealed partial class ReferenceEventData
     {
         /// <summary>
         /// The data before the event took place.
@@ -34,13 +34,5 @@ namespace Google.Events.SystemTextJson.Firebase.V1
         /// </summary>
         [JsonPropertyName("delta")]
         public JsonElement? Delta { get; set; }
-
-        /// <summary>
-        /// The wildcards matched within the trigger resource name. For example, with a trigger resource name
-        /// ending in "refs/players/{player}/levels/{level}", matching a document with a resource name ending in
-        /// "refs/players/player1/levels/level1", the mapping would be from "player" to "player1" and "level" to "level1".
-        /// </summary>
-        [JsonPropertyName("wildcards")]
-        public IDictionary<string, string> Wildcards { get; set; } = new Dictionary<string, string>();
     }
 }

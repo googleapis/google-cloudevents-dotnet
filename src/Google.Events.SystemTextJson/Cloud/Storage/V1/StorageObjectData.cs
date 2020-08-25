@@ -38,6 +38,12 @@ namespace Google.Events.SystemTextJson.Cloud.Storage.V1
         public string? SelfLink { get; set; }
 
         /// <summary>
+        /// The kind of item this is. For objects, this is always "storage#object".
+        /// </summary>
+        [JsonPropertyName("kind")]
+        public string? Kind { get; set; }
+
+        /// <summary>
         /// The name of the object.
         /// </summary>
         [JsonPropertyName("name")]

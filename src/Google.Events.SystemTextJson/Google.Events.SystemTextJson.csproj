@@ -9,7 +9,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageTags>google;cloud;events;cloudevents;json</PackageTags>
     <Title>Google Events data types (System.Text.Json)</Title>
-    <Description>This package contains the data for the CloudEvents used within Google, serialized using the System>Text.Json package</Description>
+    <Description>This package contains the data for the CloudEvents used within Google, serialized using the System&gt;Text.Json package</Description>
   </PropertyGroup>
 
   <ItemGroup>

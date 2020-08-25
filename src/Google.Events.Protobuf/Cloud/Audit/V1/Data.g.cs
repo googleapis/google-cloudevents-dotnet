@@ -25,49 +25,150 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cidnb29nbGUvZXZlbnRzL2Nsb3VkL2F1ZGl0L3YxL2RhdGEucHJvdG8SHGdv",
-            "b2dsZS5ldmVudHMuY2xvdWQuYXVkaXQudjEaHGdvb2dsZS9wcm90b2J1Zi9z",
-            "dHJ1Y3QucHJvdG8aF2dvb2dsZS9ycGMvc3RhdHVzLnByb3RvIvkDCgxBdWRp",
-            "dExvZ0RhdGESFAoMc2VydmljZV9uYW1lGAcgASgJEhMKC21ldGhvZF9uYW1l",
-            "GAggASgJEhUKDXJlc291cmNlX25hbWUYCyABKAkSGgoSbnVtX3Jlc3BvbnNl",
-            "X2l0ZW1zGAwgASgDEiIKBnN0YXR1cxgCIAEoCzISLmdvb2dsZS5ycGMuU3Rh",
-            "dHVzEk0KE2F1dGhlbnRpY2F0aW9uX2luZm8YAyABKAsyMC5nb29nbGUuZXZl",
-            "bnRzLmNsb3VkLmF1ZGl0LnYxLkF1dGhlbnRpY2F0aW9uSW5mbxJLChJhdXRo",
-            "b3JpemF0aW9uX2luZm8YCSADKAsyLy5nb29nbGUuZXZlbnRzLmNsb3VkLmF1",
-            "ZGl0LnYxLkF1dGhvcml6YXRpb25JbmZvEkcKEHJlcXVlc3RfbWV0YWRhdGEY",
-            "BCABKAsyLS5nb29nbGUuZXZlbnRzLmNsb3VkLmF1ZGl0LnYxLlJlcXVlc3RN",
-            "ZXRhZGF0YRIoCgdyZXF1ZXN0GBAgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cnVjdBIpCghyZXNwb25zZRgRIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1",
-            "Y3QSLQoMc2VydmljZV9kYXRhGA8gASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cnVjdCItChJBdXRoZW50aWNhdGlvbkluZm8SFwoPcHJpbmNpcGFsX2VtYWls",
-            "GAEgASgJIkoKEUF1dGhvcml6YXRpb25JbmZvEhAKCHJlc291cmNlGAEgASgJ",
-            "EhIKCnBlcm1pc3Npb24YAiABKAkSDwoHZ3JhbnRlZBgDIAEoCCJICg9SZXF1",
-            "ZXN0TWV0YWRhdGESEQoJY2FsbGVyX2lwGAEgASgJEiIKGmNhbGxlcl9zdXBw",
-            "bGllZF91c2VyX2FnZW50GAIgASgJQiiqAiVHb29nbGUuRXZlbnRzLlByb3Rv",
-            "YnVmLkNsb3VkLkF1ZGl0LlYxYgZwcm90bzM="));
+            "b2dsZS5ldmVudHMuY2xvdWQuYXVkaXQudjEaI2dvb2dsZS9hcGkvbW9uaXRv",
+            "cmVkX3Jlc291cmNlLnByb3RvGhxnb29nbGUvcHJvdG9idWYvc3RydWN0LnBy",
+            "b3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvGipnb29nbGUv",
+            "cnBjL2NvbnRleHQvYXR0cmlidXRlX2NvbnRleHQucHJvdG8aF2dvb2dsZS9y",
+            "cGMvc3RhdHVzLnByb3RvIqEECgxMb2dFbnRyeURhdGESEAoIbG9nX25hbWUY",
+            "DCABKAkSLwoIcmVzb3VyY2UYCCABKAsyHS5nb29nbGUuYXBpLk1vbml0b3Jl",
+            "ZFJlc291cmNlEj0KDXByb3RvX3BheWxvYWQYAiABKAsyJi5nb29nbGUuZXZl",
+            "bnRzLmNsb3VkLmF1ZGl0LnYxLkF1ZGl0TG9nEhEKCWluc2VydF9pZBgEIAEo",
+            "CRJGCgZsYWJlbHMYCyADKAsyNi5nb29nbGUuZXZlbnRzLmNsb3VkLmF1ZGl0",
+            "LnYxLkxvZ0VudHJ5RGF0YS5MYWJlbHNFbnRyeRJCCglvcGVyYXRpb24YDyAB",
+            "KAsyLy5nb29nbGUuZXZlbnRzLmNsb3VkLmF1ZGl0LnYxLkxvZ0VudHJ5T3Bl",
+            "cmF0aW9uEi0KCXRpbWVzdGFtcBgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
+            "aW1lc3RhbXASNQoRcmVjZWl2ZV90aW1lc3RhbXAYGCABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEjsKCHNldmVyaXR5GAogASgOMikuZ29vZ2xl",
+            "LmV2ZW50cy5jbG91ZC5hdWRpdC52MS5Mb2dTZXZlcml0eRINCgV0cmFjZRgW",
+            "IAEoCRIPCgdzcGFuX2lkGBsgASgJGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgB",
+            "IAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiTgoRTG9nRW50cnlPcGVyYXRpb24S",
+            "CgoCaWQYASABKAkSEAoIcHJvZHVjZXIYAiABKAkSDQoFZmlyc3QYAyABKAgS",
+            "DAoEbGFzdBgEIAEoCCKlBQoIQXVkaXRMb2cSFAoMc2VydmljZV9uYW1lGAcg",
+            "ASgJEhMKC21ldGhvZF9uYW1lGAggASgJEhUKDXJlc291cmNlX25hbWUYCyAB",
+            "KAkSSQoRcmVzb3VyY2VfbG9jYXRpb24YFCABKAsyLi5nb29nbGUuZXZlbnRz",
+            "LmNsb3VkLmF1ZGl0LnYxLlJlc291cmNlTG9jYXRpb24SOAoXcmVzb3VyY2Vf",
+            "b3JpZ2luYWxfc3RhdGUYEyABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0",
+            "EhoKEm51bV9yZXNwb25zZV9pdGVtcxgMIAEoAxIiCgZzdGF0dXMYAiABKAsy",
+            "Ei5nb29nbGUucnBjLlN0YXR1cxJNChNhdXRoZW50aWNhdGlvbl9pbmZvGAMg",
+            "ASgLMjAuZ29vZ2xlLmV2ZW50cy5jbG91ZC5hdWRpdC52MS5BdXRoZW50aWNh",
+            "dGlvbkluZm8SSwoSYXV0aG9yaXphdGlvbl9pbmZvGAkgAygLMi8uZ29vZ2xl",
+            "LmV2ZW50cy5jbG91ZC5hdWRpdC52MS5BdXRob3JpemF0aW9uSW5mbxJHChBy",
+            "ZXF1ZXN0X21ldGFkYXRhGAQgASgLMi0uZ29vZ2xlLmV2ZW50cy5jbG91ZC5h",
+            "dWRpdC52MS5SZXF1ZXN0TWV0YWRhdGESKAoHcmVxdWVzdBgQIAEoCzIXLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJ1Y3QSKQoIcmVzcG9uc2UYESABKAsyFy5nb29n",
+            "bGUucHJvdG9idWYuU3RydWN0EikKCG1ldGFkYXRhGBIgASgLMhcuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cnVjdBItCgxzZXJ2aWNlX2RhdGEYDyABKAsyFy5nb29n",
+            "bGUucHJvdG9idWYuU3RydWN0IqMCChJBdXRoZW50aWNhdGlvbkluZm8SFwoP",
+            "cHJpbmNpcGFsX2VtYWlsGAEgASgJEhoKEmF1dGhvcml0eV9zZWxlY3RvchgC",
+            "IAEoCRI2ChV0aGlyZF9wYXJ0eV9wcmluY2lwYWwYBCABKAsyFy5nb29nbGUu",
+            "cHJvdG9idWYuU3RydWN0EiAKGHNlcnZpY2VfYWNjb3VudF9rZXlfbmFtZRgF",
+            "IAEoCRJjCh9zZXJ2aWNlX2FjY291bnRfZGVsZWdhdGlvbl9pbmZvGAYgAygL",
+            "MjouZ29vZ2xlLmV2ZW50cy5jbG91ZC5hdWRpdC52MS5TZXJ2aWNlQWNjb3Vu",
+            "dERlbGVnYXRpb25JbmZvEhkKEXByaW5jaXBhbF9zdWJqZWN0GAggASgJIpYB",
+            "ChFBdXRob3JpemF0aW9uSW5mbxIQCghyZXNvdXJjZRgBIAEoCRISCgpwZXJt",
+            "aXNzaW9uGAIgASgJEg8KB2dyYW50ZWQYAyABKAgSSgoTcmVzb3VyY2VfYXR0",
+            "cmlidXRlcxgFIAEoCzItLmdvb2dsZS5ycGMuY29udGV4dC5BdHRyaWJ1dGVD",
+            "b250ZXh0LlJlc291cmNlIvUBCg9SZXF1ZXN0TWV0YWRhdGESEQoJY2FsbGVy",
+            "X2lwGAEgASgJEiIKGmNhbGxlcl9zdXBwbGllZF91c2VyX2FnZW50GAIgASgJ",
+            "EhYKDmNhbGxlcl9uZXR3b3JrGAMgASgJEkgKEnJlcXVlc3RfYXR0cmlidXRl",
+            "cxgHIAEoCzIsLmdvb2dsZS5ycGMuY29udGV4dC5BdHRyaWJ1dGVDb250ZXh0",
+            "LlJlcXVlc3QSSQoWZGVzdGluYXRpb25fYXR0cmlidXRlcxgIIAEoCzIpLmdv",
+            "b2dsZS5ycGMuY29udGV4dC5BdHRyaWJ1dGVDb250ZXh0LlBlZXIiSQoQUmVz",
+            "b3VyY2VMb2NhdGlvbhIZChFjdXJyZW50X2xvY2F0aW9ucxgBIAMoCRIaChJv",
+            "cmlnaW5hbF9sb2NhdGlvbnMYAiADKAkivAMKHFNlcnZpY2VBY2NvdW50RGVs",
+            "ZWdhdGlvbkluZm8SbwoVZmlyc3RfcGFydHlfcHJpbmNpcGFsGAEgASgLMk4u",
+            "Z29vZ2xlLmV2ZW50cy5jbG91ZC5hdWRpdC52MS5TZXJ2aWNlQWNjb3VudERl",
+            "bGVnYXRpb25JbmZvLkZpcnN0UGFydHlQcmluY2lwYWxIABJvChV0aGlyZF9w",
+            "YXJ0eV9wcmluY2lwYWwYAiABKAsyTi5nb29nbGUuZXZlbnRzLmNsb3VkLmF1",
+            "ZGl0LnYxLlNlcnZpY2VBY2NvdW50RGVsZWdhdGlvbkluZm8uVGhpcmRQYXJ0",
+            "eVByaW5jaXBhbEgAGmEKE0ZpcnN0UGFydHlQcmluY2lwYWwSFwoPcHJpbmNp",
+            "cGFsX2VtYWlsGAEgASgJEjEKEHNlcnZpY2VfbWV0YWRhdGEYAiABKAsyFy5n",
+            "b29nbGUucHJvdG9idWYuU3RydWN0GkoKE1RoaXJkUGFydHlQcmluY2lwYWwS",
+            "MwoSdGhpcmRfcGFydHlfY2xhaW1zGAEgASgLMhcuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cnVjdEILCglBdXRob3JpdHkqggEKC0xvZ1NldmVyaXR5EgsKB0RFRkFV",
+            "TFQQABIJCgVERUJVRxBkEgkKBElORk8QyAESCwoGTk9USUNFEKwCEgwKB1dB",
+            "Uk5JTkcQkAMSCgoFRVJST1IQ9AMSDQoIQ1JJVElDQUwQ2AQSCgoFQUxFUlQQ",
+            "vAUSDgoJRU1FUkdFTkNZEKAGQiiqAiVHb29nbGUuRXZlbnRzLlByb3RvYnVm",
+            "LkNsb3VkLkF1ZGl0LlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLogData), global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLogData.Parser, new[]{ "ServiceName", "MethodName", "ResourceName", "NumResponseItems", "Status", "AuthenticationInfo", "AuthorizationInfo", "RequestMetadata", "Request", "Response", "ServiceData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.AuthenticationInfo), global::Google.Events.Protobuf.Cloud.Audit.V1.AuthenticationInfo.Parser, new[]{ "PrincipalEmail" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.AuthorizationInfo), global::Google.Events.Protobuf.Cloud.Audit.V1.AuthorizationInfo.Parser, new[]{ "Resource", "Permission", "Granted" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.RequestMetadata), global::Google.Events.Protobuf.Cloud.Audit.V1.RequestMetadata.Parser, new[]{ "CallerIp", "CallerSuppliedUserAgent" }, null, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Api.MonitoredResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Rpc.Context.AttributeContextReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryData), global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryData.Parser, new[]{ "LogName", "Resource", "ProtoPayload", "InsertId", "Labels", "Operation", "Timestamp", "ReceiveTimestamp", "Severity", "Trace", "SpanId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation), global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation.Parser, new[]{ "Id", "Producer", "First", "Last" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog), global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog.Parser, new[]{ "ServiceName", "MethodName", "ResourceName", "ResourceLocation", "ResourceOriginalState", "NumResponseItems", "Status", "AuthenticationInfo", "AuthorizationInfo", "RequestMetadata", "Request", "Response", "Metadata", "ServiceData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.AuthenticationInfo), global::Google.Events.Protobuf.Cloud.Audit.V1.AuthenticationInfo.Parser, new[]{ "PrincipalEmail", "AuthoritySelector", "ThirdPartyPrincipal", "ServiceAccountKeyName", "ServiceAccountDelegationInfo", "PrincipalSubject" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.AuthorizationInfo), global::Google.Events.Protobuf.Cloud.Audit.V1.AuthorizationInfo.Parser, new[]{ "Resource", "Permission", "Granted", "ResourceAttributes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.RequestMetadata), global::Google.Events.Protobuf.Cloud.Audit.V1.RequestMetadata.Parser, new[]{ "CallerIp", "CallerSuppliedUserAgent", "CallerNetwork", "RequestAttributes", "DestinationAttributes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.ResourceLocation), global::Google.Events.Protobuf.Cloud.Audit.V1.ResourceLocation.Parser, new[]{ "CurrentLocations", "OriginalLocations" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo), global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Parser, new[]{ "FirstPartyPrincipal", "ThirdPartyPrincipal" }, new[]{ "Authority" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal), global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal.Parser, new[]{ "PrincipalEmail", "ServiceMetadata" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal), global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal.Parser, new[]{ "ThirdPartyClaims" }, null, null, null, null)})
           }));
     }
     #endregion
 
   }
+  #region Enums
+  /// <summary>
+  /// The severity of the event described in a log entry, expressed as one of the
+  /// standard severity levels listed below.  For your reference, the levels are
+  /// assigned the listed numeric values. The effect of using numeric values other
+  /// than those listed is undefined.
+  /// Copied from https://github.com/googleapis/googleapis/blob/master/google/logging/type/log_severity.proto
+  /// </summary>
+  public enum LogSeverity {
+    /// <summary>
+    /// (0) The log entry has no assigned severity level.
+    /// </summary>
+    [pbr::OriginalName("DEFAULT")] Default = 0,
+    /// <summary>
+    /// (100) Debug or trace information.
+    /// </summary>
+    [pbr::OriginalName("DEBUG")] Debug = 100,
+    /// <summary>
+    /// (200) Routine information, such as ongoing status or performance.
+    /// </summary>
+    [pbr::OriginalName("INFO")] Info = 200,
+    /// <summary>
+    /// (300) Normal but significant events, such as start up, shut down, or
+    /// a configuration change.
+    /// </summary>
+    [pbr::OriginalName("NOTICE")] Notice = 300,
+    /// <summary>
+    /// (400) Warning events might cause problems.
+    /// </summary>
+    [pbr::OriginalName("WARNING")] Warning = 400,
+    /// <summary>
+    /// (500) Error events are likely to cause problems.
+    /// </summary>
+    [pbr::OriginalName("ERROR")] Error = 500,
+    /// <summary>
+    /// (600) Critical events cause more severe problems or outages.
+    /// </summary>
+    [pbr::OriginalName("CRITICAL")] Critical = 600,
+    /// <summary>
+    /// (700) A person must take an action immediately.
+    /// </summary>
+    [pbr::OriginalName("ALERT")] Alert = 700,
+    /// <summary>
+    /// (800) One or more systems are unusable.
+    /// </summary>
+    [pbr::OriginalName("EMERGENCY")] Emergency = 800,
+  }
+
+  #endregion
+
   #region Messages
   /// <summary>
-  /// Common audit log format for Google Cloud Platform API operations.
-  /// Copied from
-  /// https://github.com/googleapis/googleapis/blob/master/google/cloud/audit/audit_log.proto,
-  /// but changing service_data from Any to Struct.
+  /// Generic log entry, used as a wrapper for Cloud Audit Logs in events.
+  /// This is copied from
+  /// https://github.com/googleapis/googleapis/blob/master/google/logging/v2/log_entry.proto
+  /// and adapted appropriately.
   /// </summary>
-  public sealed partial class AuditLogData : pb::IMessage<AuditLogData> {
-    private static readonly pb::MessageParser<AuditLogData> _parser = new pb::MessageParser<AuditLogData>(() => new AuditLogData());
+  public sealed partial class LogEntryData : pb::IMessage<LogEntryData> {
+    private static readonly pb::MessageParser<LogEntryData> _parser = new pb::MessageParser<LogEntryData>(() => new LogEntryData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AuditLogData> Parser { get { return _parser; } }
+    public static pb::MessageParser<LogEntryData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -80,17 +181,733 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AuditLogData() {
+    public LogEntryData() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AuditLogData(AuditLogData other) : this() {
+    public LogEntryData(LogEntryData other) : this() {
+      logName_ = other.logName_;
+      resource_ = other.resource_ != null ? other.resource_.Clone() : null;
+      protoPayload_ = other.protoPayload_ != null ? other.protoPayload_.Clone() : null;
+      insertId_ = other.insertId_;
+      labels_ = other.labels_.Clone();
+      operation_ = other.operation_ != null ? other.operation_.Clone() : null;
+      timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
+      receiveTimestamp_ = other.receiveTimestamp_ != null ? other.receiveTimestamp_.Clone() : null;
+      severity_ = other.severity_;
+      trace_ = other.trace_;
+      spanId_ = other.spanId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogEntryData Clone() {
+      return new LogEntryData(this);
+    }
+
+    /// <summary>Field number for the "log_name" field.</summary>
+    public const int LogNameFieldNumber = 12;
+    private string logName_ = "";
+    /// <summary>
+    /// The resource name of the log to which this log entry belongs.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LogName {
+      get { return logName_; }
+      set {
+        logName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "resource" field.</summary>
+    public const int ResourceFieldNumber = 8;
+    private global::Google.Api.MonitoredResource resource_;
+    /// <summary>
+    /// The monitored resource that produced this log entry.
+    ///
+    /// Example: a log entry that reports a database error would be associated with
+    /// the monitored resource designating the particular database that reported
+    /// the error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Api.MonitoredResource Resource {
+      get { return resource_; }
+      set {
+        resource_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "proto_payload" field.</summary>
+    public const int ProtoPayloadFieldNumber = 2;
+    private global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog protoPayload_;
+    /// <summary>
+    /// The log entry payload, which is always an AuditLog for Cloud Audit Log events.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog ProtoPayload {
+      get { return protoPayload_; }
+      set {
+        protoPayload_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "insert_id" field.</summary>
+    public const int InsertIdFieldNumber = 4;
+    private string insertId_ = "";
+    /// <summary>
+    /// A unique identifier for the log entry. 
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string InsertId {
+      get { return insertId_; }
+      set {
+        insertId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "labels" field.</summary>
+    public const int LabelsFieldNumber = 11;
+    private static readonly pbc::MapField<string, string>.Codec _map_labels_codec
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 90);
+    private readonly pbc::MapField<string, string> labels_ = new pbc::MapField<string, string>();
+    /// <summary>
+    /// A set of user-defined (key, value) data that provides additional
+    /// information about the log entry.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, string> Labels {
+      get { return labels_; }
+    }
+
+    /// <summary>Field number for the "operation" field.</summary>
+    public const int OperationFieldNumber = 15;
+    private global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation operation_;
+    /// <summary>
+    /// Information about an operation associated with the log entry, if applicable.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation Operation {
+      get { return operation_; }
+      set {
+        operation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 9;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    /// <summary>
+    /// The time the event described by the log entry occurred.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
+      get { return timestamp_; }
+      set {
+        timestamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "receive_timestamp" field.</summary>
+    public const int ReceiveTimestampFieldNumber = 24;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp receiveTimestamp_;
+    /// <summary>
+    /// The time the log entry was received by Logging.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ReceiveTimestamp {
+      get { return receiveTimestamp_; }
+      set {
+        receiveTimestamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "severity" field.</summary>
+    public const int SeverityFieldNumber = 10;
+    private global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity severity_ = global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity.Default;
+    /// <summary>
+    /// The severity of the log entry.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity Severity {
+      get { return severity_; }
+      set {
+        severity_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "trace" field.</summary>
+    public const int TraceFieldNumber = 22;
+    private string trace_ = "";
+    /// <summary>
+    /// Resource name of the trace associated with the log entry, if any. If it
+    /// contains a relative resource name, the name is assumed to be relative to
+    /// `//tracing.googleapis.com`. Example:
+    /// `projects/my-projectid/traces/06796866738c859f2f19b7cfb3214824`
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Trace {
+      get { return trace_; }
+      set {
+        trace_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "span_id" field.</summary>
+    public const int SpanIdFieldNumber = 27;
+    private string spanId_ = "";
+    /// <summary>
+    /// The span ID within the trace associated with the log entry, if any.
+    ///
+    /// For Trace spans, this is the same format that the Trace API v2 uses: a
+    /// 16-character hexadecimal encoding of an 8-byte array, such as
+    /// `000000000000004a`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SpanId {
+      get { return spanId_; }
+      set {
+        spanId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LogEntryData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LogEntryData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (LogName != other.LogName) return false;
+      if (!object.Equals(Resource, other.Resource)) return false;
+      if (!object.Equals(ProtoPayload, other.ProtoPayload)) return false;
+      if (InsertId != other.InsertId) return false;
+      if (!Labels.Equals(other.Labels)) return false;
+      if (!object.Equals(Operation, other.Operation)) return false;
+      if (!object.Equals(Timestamp, other.Timestamp)) return false;
+      if (!object.Equals(ReceiveTimestamp, other.ReceiveTimestamp)) return false;
+      if (Severity != other.Severity) return false;
+      if (Trace != other.Trace) return false;
+      if (SpanId != other.SpanId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (LogName.Length != 0) hash ^= LogName.GetHashCode();
+      if (resource_ != null) hash ^= Resource.GetHashCode();
+      if (protoPayload_ != null) hash ^= ProtoPayload.GetHashCode();
+      if (InsertId.Length != 0) hash ^= InsertId.GetHashCode();
+      hash ^= Labels.GetHashCode();
+      if (operation_ != null) hash ^= Operation.GetHashCode();
+      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
+      if (receiveTimestamp_ != null) hash ^= ReceiveTimestamp.GetHashCode();
+      if (Severity != global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity.Default) hash ^= Severity.GetHashCode();
+      if (Trace.Length != 0) hash ^= Trace.GetHashCode();
+      if (SpanId.Length != 0) hash ^= SpanId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (protoPayload_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ProtoPayload);
+      }
+      if (InsertId.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InsertId);
+      }
+      if (resource_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Resource);
+      }
+      if (timestamp_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Timestamp);
+      }
+      if (Severity != global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity.Default) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) Severity);
+      }
+      labels_.WriteTo(output, _map_labels_codec);
+      if (LogName.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(LogName);
+      }
+      if (operation_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(Operation);
+      }
+      if (Trace.Length != 0) {
+        output.WriteRawTag(178, 1);
+        output.WriteString(Trace);
+      }
+      if (receiveTimestamp_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(ReceiveTimestamp);
+      }
+      if (SpanId.Length != 0) {
+        output.WriteRawTag(218, 1);
+        output.WriteString(SpanId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (LogName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LogName);
+      }
+      if (resource_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Resource);
+      }
+      if (protoPayload_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProtoPayload);
+      }
+      if (InsertId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InsertId);
+      }
+      size += labels_.CalculateSize(_map_labels_codec);
+      if (operation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Operation);
+      }
+      if (timestamp_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
+      }
+      if (receiveTimestamp_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ReceiveTimestamp);
+      }
+      if (Severity != global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity.Default) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Severity);
+      }
+      if (Trace.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Trace);
+      }
+      if (SpanId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(SpanId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LogEntryData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.LogName.Length != 0) {
+        LogName = other.LogName;
+      }
+      if (other.resource_ != null) {
+        if (resource_ == null) {
+          Resource = new global::Google.Api.MonitoredResource();
+        }
+        Resource.MergeFrom(other.Resource);
+      }
+      if (other.protoPayload_ != null) {
+        if (protoPayload_ == null) {
+          ProtoPayload = new global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog();
+        }
+        ProtoPayload.MergeFrom(other.ProtoPayload);
+      }
+      if (other.InsertId.Length != 0) {
+        InsertId = other.InsertId;
+      }
+      labels_.Add(other.labels_);
+      if (other.operation_ != null) {
+        if (operation_ == null) {
+          Operation = new global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation();
+        }
+        Operation.MergeFrom(other.Operation);
+      }
+      if (other.timestamp_ != null) {
+        if (timestamp_ == null) {
+          Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Timestamp.MergeFrom(other.Timestamp);
+      }
+      if (other.receiveTimestamp_ != null) {
+        if (receiveTimestamp_ == null) {
+          ReceiveTimestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ReceiveTimestamp.MergeFrom(other.ReceiveTimestamp);
+      }
+      if (other.Severity != global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity.Default) {
+        Severity = other.Severity;
+      }
+      if (other.Trace.Length != 0) {
+        Trace = other.Trace;
+      }
+      if (other.SpanId.Length != 0) {
+        SpanId = other.SpanId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 18: {
+            if (protoPayload_ == null) {
+              ProtoPayload = new global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog();
+            }
+            input.ReadMessage(ProtoPayload);
+            break;
+          }
+          case 34: {
+            InsertId = input.ReadString();
+            break;
+          }
+          case 66: {
+            if (resource_ == null) {
+              Resource = new global::Google.Api.MonitoredResource();
+            }
+            input.ReadMessage(Resource);
+            break;
+          }
+          case 74: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 80: {
+            Severity = (global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            labels_.AddEntriesFrom(input, _map_labels_codec);
+            break;
+          }
+          case 98: {
+            LogName = input.ReadString();
+            break;
+          }
+          case 122: {
+            if (operation_ == null) {
+              Operation = new global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation();
+            }
+            input.ReadMessage(Operation);
+            break;
+          }
+          case 178: {
+            Trace = input.ReadString();
+            break;
+          }
+          case 194: {
+            if (receiveTimestamp_ == null) {
+              ReceiveTimestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ReceiveTimestamp);
+            break;
+          }
+          case 218: {
+            SpanId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Additional information about a potentially long-running operation with which
+  /// a log entry is associated.
+  /// </summary>
+  public sealed partial class LogEntryOperation : pb::IMessage<LogEntryOperation> {
+    private static readonly pb::MessageParser<LogEntryOperation> _parser = new pb::MessageParser<LogEntryOperation>(() => new LogEntryOperation());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LogEntryOperation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogEntryOperation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogEntryOperation(LogEntryOperation other) : this() {
+      id_ = other.id_;
+      producer_ = other.producer_;
+      first_ = other.first_;
+      last_ = other.last_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogEntryOperation Clone() {
+      return new LogEntryOperation(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    /// <summary>
+    /// An arbitrary operation identifier. Log entries with the same
+    /// identifier are assumed to be part of the same operation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "producer" field.</summary>
+    public const int ProducerFieldNumber = 2;
+    private string producer_ = "";
+    /// <summary>
+    /// An arbitrary producer identifier. The combination of `id` and
+    /// `producer` must be globally unique. Examples for `producer`:
+    /// `"MyDivision.MyBigCompany.com"`, `"github.com/MyProject/MyApplication"`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Producer {
+      get { return producer_; }
+      set {
+        producer_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "first" field.</summary>
+    public const int FirstFieldNumber = 3;
+    private bool first_;
+    /// <summary>
+    /// True if this is the first log entry in the operation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool First {
+      get { return first_; }
+      set {
+        first_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "last" field.</summary>
+    public const int LastFieldNumber = 4;
+    private bool last_;
+    /// <summary>
+    /// True if this is the last log entry in the operation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Last {
+      get { return last_; }
+      set {
+        last_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LogEntryOperation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LogEntryOperation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Producer != other.Producer) return false;
+      if (First != other.First) return false;
+      if (Last != other.Last) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Producer.Length != 0) hash ^= Producer.GetHashCode();
+      if (First != false) hash ^= First.GetHashCode();
+      if (Last != false) hash ^= Last.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Producer.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Producer);
+      }
+      if (First != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(First);
+      }
+      if (Last != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(Last);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Producer.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Producer);
+      }
+      if (First != false) {
+        size += 1 + 1;
+      }
+      if (Last != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LogEntryOperation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Producer.Length != 0) {
+        Producer = other.Producer;
+      }
+      if (other.First != false) {
+        First = other.First;
+      }
+      if (other.Last != false) {
+        Last = other.Last;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            Producer = input.ReadString();
+            break;
+          }
+          case 24: {
+            First = input.ReadBool();
+            break;
+          }
+          case 32: {
+            Last = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Common audit log format for Google Cloud Platform API operations.
+  /// Copied from
+  /// https://github.com/googleapis/googleapis/blob/master/google/cloud/audit/audit_log.proto,
+  /// but changing service_data from Any to Struct.
+  /// </summary>
+  public sealed partial class AuditLog : pb::IMessage<AuditLog> {
+    private static readonly pb::MessageParser<AuditLog> _parser = new pb::MessageParser<AuditLog>(() => new AuditLog());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AuditLog> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AuditLog() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AuditLog(AuditLog other) : this() {
       serviceName_ = other.serviceName_;
       methodName_ = other.methodName_;
       resourceName_ = other.resourceName_;
+      resourceLocation_ = other.resourceLocation_ != null ? other.resourceLocation_.Clone() : null;
+      resourceOriginalState_ = other.resourceOriginalState_ != null ? other.resourceOriginalState_.Clone() : null;
       numResponseItems_ = other.numResponseItems_;
       status_ = other.status_ != null ? other.status_.Clone() : null;
       authenticationInfo_ = other.authenticationInfo_ != null ? other.authenticationInfo_.Clone() : null;
@@ -98,13 +915,14 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       requestMetadata_ = other.requestMetadata_ != null ? other.requestMetadata_.Clone() : null;
       request_ = other.request_ != null ? other.request_.Clone() : null;
       response_ = other.response_ != null ? other.response_.Clone() : null;
+      metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
       serviceData_ = other.serviceData_ != null ? other.serviceData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AuditLogData Clone() {
-      return new AuditLogData(this);
+    public AuditLog Clone() {
+      return new AuditLog(this);
     }
 
     /// <summary>Field number for the "service_name" field.</summary>
@@ -157,6 +975,40 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       get { return resourceName_; }
       set {
         resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "resource_location" field.</summary>
+    public const int ResourceLocationFieldNumber = 20;
+    private global::Google.Events.Protobuf.Cloud.Audit.V1.ResourceLocation resourceLocation_;
+    /// <summary>
+    /// The resource location information.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Events.Protobuf.Cloud.Audit.V1.ResourceLocation ResourceLocation {
+      get { return resourceLocation_; }
+      set {
+        resourceLocation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "resource_original_state" field.</summary>
+    public const int ResourceOriginalStateFieldNumber = 19;
+    private global::Google.Protobuf.WellKnownTypes.Struct resourceOriginalState_;
+    /// <summary>
+    /// The resource's original state before mutation. Present only for
+    /// operations which have successfully modified the targeted resource(s).
+    /// In general, this field should contain all changed fields, except those
+    /// that are already been included in `request`, `response`, `metadata` or
+    /// `service_data` fields.
+    /// When the JSON object represented here has a proto equivalent,
+    /// the proto name will be indicated in the `@type` property.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Struct ResourceOriginalState {
+      get { return resourceOriginalState_; }
+      set {
+        resourceOriginalState_ = value;
       }
     }
 
@@ -270,10 +1122,26 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
     }
 
+    /// <summary>Field number for the "metadata" field.</summary>
+    public const int MetadataFieldNumber = 18;
+    private global::Google.Protobuf.WellKnownTypes.Struct metadata_;
+    /// <summary>
+    /// Other service-specific data about the request, response, and other
+    /// information associated with the current audited event.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Struct Metadata {
+      get { return metadata_; }
+      set {
+        metadata_ = value;
+      }
+    }
+
     /// <summary>Field number for the "service_data" field.</summary>
     public const int ServiceDataFieldNumber = 15;
     private global::Google.Protobuf.WellKnownTypes.Struct serviceData_;
     /// <summary>
+    /// Deprecated, use `metadata` field instead.
     /// Other service-specific data about the request, response, and other
     /// activities.
     /// When the JSON object represented here has a proto equivalent, the proto
@@ -289,11 +1157,11 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as AuditLogData);
+      return Equals(other as AuditLog);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AuditLogData other) {
+    public bool Equals(AuditLog other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -303,6 +1171,8 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (ServiceName != other.ServiceName) return false;
       if (MethodName != other.MethodName) return false;
       if (ResourceName != other.ResourceName) return false;
+      if (!object.Equals(ResourceLocation, other.ResourceLocation)) return false;
+      if (!object.Equals(ResourceOriginalState, other.ResourceOriginalState)) return false;
       if (NumResponseItems != other.NumResponseItems) return false;
       if (!object.Equals(Status, other.Status)) return false;
       if (!object.Equals(AuthenticationInfo, other.AuthenticationInfo)) return false;
@@ -310,6 +1180,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (!object.Equals(RequestMetadata, other.RequestMetadata)) return false;
       if (!object.Equals(Request, other.Request)) return false;
       if (!object.Equals(Response, other.Response)) return false;
+      if (!object.Equals(Metadata, other.Metadata)) return false;
       if (!object.Equals(ServiceData, other.ServiceData)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -320,6 +1191,8 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (ServiceName.Length != 0) hash ^= ServiceName.GetHashCode();
       if (MethodName.Length != 0) hash ^= MethodName.GetHashCode();
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+      if (resourceLocation_ != null) hash ^= ResourceLocation.GetHashCode();
+      if (resourceOriginalState_ != null) hash ^= ResourceOriginalState.GetHashCode();
       if (NumResponseItems != 0L) hash ^= NumResponseItems.GetHashCode();
       if (status_ != null) hash ^= Status.GetHashCode();
       if (authenticationInfo_ != null) hash ^= AuthenticationInfo.GetHashCode();
@@ -327,6 +1200,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (requestMetadata_ != null) hash ^= RequestMetadata.GetHashCode();
       if (request_ != null) hash ^= Request.GetHashCode();
       if (response_ != null) hash ^= Response.GetHashCode();
+      if (metadata_ != null) hash ^= Metadata.GetHashCode();
       if (serviceData_ != null) hash ^= ServiceData.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -382,6 +1256,18 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         output.WriteRawTag(138, 1);
         output.WriteMessage(Response);
       }
+      if (metadata_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(Metadata);
+      }
+      if (resourceOriginalState_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(ResourceOriginalState);
+      }
+      if (resourceLocation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(ResourceLocation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -398,6 +1284,12 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+      }
+      if (resourceLocation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ResourceLocation);
+      }
+      if (resourceOriginalState_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ResourceOriginalState);
       }
       if (NumResponseItems != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(NumResponseItems);
@@ -418,6 +1310,9 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (response_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Response);
       }
+      if (metadata_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
+      }
       if (serviceData_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ServiceData);
       }
@@ -428,7 +1323,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AuditLogData other) {
+    public void MergeFrom(AuditLog other) {
       if (other == null) {
         return;
       }
@@ -440,6 +1335,18 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
+      }
+      if (other.resourceLocation_ != null) {
+        if (resourceLocation_ == null) {
+          ResourceLocation = new global::Google.Events.Protobuf.Cloud.Audit.V1.ResourceLocation();
+        }
+        ResourceLocation.MergeFrom(other.ResourceLocation);
+      }
+      if (other.resourceOriginalState_ != null) {
+        if (resourceOriginalState_ == null) {
+          ResourceOriginalState = new global::Google.Protobuf.WellKnownTypes.Struct();
+        }
+        ResourceOriginalState.MergeFrom(other.ResourceOriginalState);
       }
       if (other.NumResponseItems != 0L) {
         NumResponseItems = other.NumResponseItems;
@@ -474,6 +1381,12 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
           Response = new global::Google.Protobuf.WellKnownTypes.Struct();
         }
         Response.MergeFrom(other.Response);
+      }
+      if (other.metadata_ != null) {
+        if (metadata_ == null) {
+          Metadata = new global::Google.Protobuf.WellKnownTypes.Struct();
+        }
+        Metadata.MergeFrom(other.Metadata);
       }
       if (other.serviceData_ != null) {
         if (serviceData_ == null) {
@@ -554,6 +1467,27 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
             input.ReadMessage(Response);
             break;
           }
+          case 146: {
+            if (metadata_ == null) {
+              Metadata = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(Metadata);
+            break;
+          }
+          case 154: {
+            if (resourceOriginalState_ == null) {
+              ResourceOriginalState = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(ResourceOriginalState);
+            break;
+          }
+          case 162: {
+            if (resourceLocation_ == null) {
+              ResourceLocation = new global::Google.Events.Protobuf.Cloud.Audit.V1.ResourceLocation();
+            }
+            input.ReadMessage(ResourceLocation);
+            break;
+          }
         }
       }
     }
@@ -571,7 +1505,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -589,6 +1523,11 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AuthenticationInfo(AuthenticationInfo other) : this() {
       principalEmail_ = other.principalEmail_;
+      authoritySelector_ = other.authoritySelector_;
+      thirdPartyPrincipal_ = other.thirdPartyPrincipal_ != null ? other.thirdPartyPrincipal_.Clone() : null;
+      serviceAccountKeyName_ = other.serviceAccountKeyName_;
+      serviceAccountDelegationInfo_ = other.serviceAccountDelegationInfo_.Clone();
+      principalSubject_ = other.principalSubject_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -601,13 +1540,98 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     public const int PrincipalEmailFieldNumber = 1;
     private string principalEmail_ = "";
     /// <summary>
-    /// The email address of the authenticated user making the request.
+    /// The email address of the authenticated user (or service account on behalf
+    /// of third party principal) making the request. For privacy reasons, the
+    /// principal email address is redacted for all read-only operations that fail
+    /// with a "permission denied" error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PrincipalEmail {
       get { return principalEmail_; }
       set {
         principalEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "authority_selector" field.</summary>
+    public const int AuthoritySelectorFieldNumber = 2;
+    private string authoritySelector_ = "";
+    /// <summary>
+    /// The authority selector specified by the requestor, if any.
+    /// It is not guaranteed that the principal was allowed to use this authority.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AuthoritySelector {
+      get { return authoritySelector_; }
+      set {
+        authoritySelector_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "third_party_principal" field.</summary>
+    public const int ThirdPartyPrincipalFieldNumber = 4;
+    private global::Google.Protobuf.WellKnownTypes.Struct thirdPartyPrincipal_;
+    /// <summary>
+    /// The third party identification (if any) of the authenticated user making
+    /// the request.
+    /// When the JSON object represented here has a proto equivalent, the proto
+    /// name will be indicated in the `@type` property.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Struct ThirdPartyPrincipal {
+      get { return thirdPartyPrincipal_; }
+      set {
+        thirdPartyPrincipal_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "service_account_key_name" field.</summary>
+    public const int ServiceAccountKeyNameFieldNumber = 5;
+    private string serviceAccountKeyName_ = "";
+    /// <summary>
+    /// The name of the service account key used to create or exchange
+    /// credentials for authenticating the service account making the request.
+    /// This is a scheme-less URI full resource name. For example:
+    ///
+    /// "//iam.googleapis.com/projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}/keys/{key}"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ServiceAccountKeyName {
+      get { return serviceAccountKeyName_; }
+      set {
+        serviceAccountKeyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "service_account_delegation_info" field.</summary>
+    public const int ServiceAccountDelegationInfoFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo> _repeated_serviceAccountDelegationInfo_codec
+        = pb::FieldCodec.ForMessage(50, global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo> serviceAccountDelegationInfo_ = new pbc::RepeatedField<global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo>();
+    /// <summary>
+    /// Identity delegation history of an authenticated service account that makes
+    /// the request. It contains information on the real authorities that try to
+    /// access GCP resources by delegating on a service account. When multiple
+    /// authorities present, they are guaranteed to be sorted based on the original
+    /// ordering of the identity delegation events.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo> ServiceAccountDelegationInfo {
+      get { return serviceAccountDelegationInfo_; }
+    }
+
+    /// <summary>Field number for the "principal_subject" field.</summary>
+    public const int PrincipalSubjectFieldNumber = 8;
+    private string principalSubject_ = "";
+    /// <summary>
+    /// String representation of identity of requesting party.
+    /// Populated for both first and third party identities.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PrincipalSubject {
+      get { return principalSubject_; }
+      set {
+        principalSubject_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -625,6 +1649,11 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         return true;
       }
       if (PrincipalEmail != other.PrincipalEmail) return false;
+      if (AuthoritySelector != other.AuthoritySelector) return false;
+      if (!object.Equals(ThirdPartyPrincipal, other.ThirdPartyPrincipal)) return false;
+      if (ServiceAccountKeyName != other.ServiceAccountKeyName) return false;
+      if(!serviceAccountDelegationInfo_.Equals(other.serviceAccountDelegationInfo_)) return false;
+      if (PrincipalSubject != other.PrincipalSubject) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -632,6 +1661,11 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (PrincipalEmail.Length != 0) hash ^= PrincipalEmail.GetHashCode();
+      if (AuthoritySelector.Length != 0) hash ^= AuthoritySelector.GetHashCode();
+      if (thirdPartyPrincipal_ != null) hash ^= ThirdPartyPrincipal.GetHashCode();
+      if (ServiceAccountKeyName.Length != 0) hash ^= ServiceAccountKeyName.GetHashCode();
+      hash ^= serviceAccountDelegationInfo_.GetHashCode();
+      if (PrincipalSubject.Length != 0) hash ^= PrincipalSubject.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -649,6 +1683,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         output.WriteRawTag(10);
         output.WriteString(PrincipalEmail);
       }
+      if (AuthoritySelector.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AuthoritySelector);
+      }
+      if (thirdPartyPrincipal_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ThirdPartyPrincipal);
+      }
+      if (ServiceAccountKeyName.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ServiceAccountKeyName);
+      }
+      serviceAccountDelegationInfo_.WriteTo(output, _repeated_serviceAccountDelegationInfo_codec);
+      if (PrincipalSubject.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(PrincipalSubject);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -659,6 +1710,19 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       int size = 0;
       if (PrincipalEmail.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PrincipalEmail);
+      }
+      if (AuthoritySelector.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AuthoritySelector);
+      }
+      if (thirdPartyPrincipal_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ThirdPartyPrincipal);
+      }
+      if (ServiceAccountKeyName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceAccountKeyName);
+      }
+      size += serviceAccountDelegationInfo_.CalculateSize(_repeated_serviceAccountDelegationInfo_codec);
+      if (PrincipalSubject.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PrincipalSubject);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -674,6 +1738,22 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (other.PrincipalEmail.Length != 0) {
         PrincipalEmail = other.PrincipalEmail;
       }
+      if (other.AuthoritySelector.Length != 0) {
+        AuthoritySelector = other.AuthoritySelector;
+      }
+      if (other.thirdPartyPrincipal_ != null) {
+        if (thirdPartyPrincipal_ == null) {
+          ThirdPartyPrincipal = new global::Google.Protobuf.WellKnownTypes.Struct();
+        }
+        ThirdPartyPrincipal.MergeFrom(other.ThirdPartyPrincipal);
+      }
+      if (other.ServiceAccountKeyName.Length != 0) {
+        ServiceAccountKeyName = other.ServiceAccountKeyName;
+      }
+      serviceAccountDelegationInfo_.Add(other.serviceAccountDelegationInfo_);
+      if (other.PrincipalSubject.Length != 0) {
+        PrincipalSubject = other.PrincipalSubject;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -687,6 +1767,29 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
             break;
           case 10: {
             PrincipalEmail = input.ReadString();
+            break;
+          }
+          case 18: {
+            AuthoritySelector = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (thirdPartyPrincipal_ == null) {
+              ThirdPartyPrincipal = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(ThirdPartyPrincipal);
+            break;
+          }
+          case 42: {
+            ServiceAccountKeyName = input.ReadString();
+            break;
+          }
+          case 50: {
+            serviceAccountDelegationInfo_.AddEntriesFrom(input, _repeated_serviceAccountDelegationInfo_codec);
+            break;
+          }
+          case 66: {
+            PrincipalSubject = input.ReadString();
             break;
           }
         }
@@ -706,7 +1809,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -726,6 +1829,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       resource_ = other.resource_;
       permission_ = other.permission_;
       granted_ = other.granted_;
+      resourceAttributes_ = other.resourceAttributes_ != null ? other.resourceAttributes_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -740,7 +1844,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// <summary>
     /// The resource being accessed, as a REST-style string. For example:
     ///
-    ///     bigquery.googlapis.com/projects/PROJECTID/datasets/DATASETID
+    ///     bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Resource {
@@ -779,6 +1883,25 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
     }
 
+    /// <summary>Field number for the "resource_attributes" field.</summary>
+    public const int ResourceAttributesFieldNumber = 5;
+    private global::Google.Rpc.Context.AttributeContext.Types.Resource resourceAttributes_;
+    /// <summary>
+    /// Resource attributes used in IAM condition evaluation. This field contains
+    /// resource attributes like resource type and resource name.
+    ///
+    /// To get the whole view of the attributes used in IAM
+    /// condition evaluation, the user must also look into
+    /// `AuditLogData.request_metadata.request_attributes`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Rpc.Context.AttributeContext.Types.Resource ResourceAttributes {
+      get { return resourceAttributes_; }
+      set {
+        resourceAttributes_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AuthorizationInfo);
@@ -795,6 +1918,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (Resource != other.Resource) return false;
       if (Permission != other.Permission) return false;
       if (Granted != other.Granted) return false;
+      if (!object.Equals(ResourceAttributes, other.ResourceAttributes)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -804,6 +1928,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (Resource.Length != 0) hash ^= Resource.GetHashCode();
       if (Permission.Length != 0) hash ^= Permission.GetHashCode();
       if (Granted != false) hash ^= Granted.GetHashCode();
+      if (resourceAttributes_ != null) hash ^= ResourceAttributes.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -829,6 +1954,10 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         output.WriteRawTag(24);
         output.WriteBool(Granted);
       }
+      if (resourceAttributes_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ResourceAttributes);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -845,6 +1974,9 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
       if (Granted != false) {
         size += 1 + 1;
+      }
+      if (resourceAttributes_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ResourceAttributes);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -865,6 +1997,12 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
       if (other.Granted != false) {
         Granted = other.Granted;
+      }
+      if (other.resourceAttributes_ != null) {
+        if (resourceAttributes_ == null) {
+          ResourceAttributes = new global::Google.Rpc.Context.AttributeContext.Types.Resource();
+        }
+        ResourceAttributes.MergeFrom(other.ResourceAttributes);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -889,6 +2027,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
             Granted = input.ReadBool();
             break;
           }
+          case 42: {
+            if (resourceAttributes_ == null) {
+              ResourceAttributes = new global::Google.Rpc.Context.AttributeContext.Types.Resource();
+            }
+            input.ReadMessage(ResourceAttributes);
+            break;
+          }
         }
       }
     }
@@ -906,7 +2051,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -925,6 +2070,9 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     public RequestMetadata(RequestMetadata other) : this() {
       callerIp_ = other.callerIp_;
       callerSuppliedUserAgent_ = other.callerSuppliedUserAgent_;
+      callerNetwork_ = other.callerNetwork_;
+      requestAttributes_ = other.requestAttributes_ != null ? other.requestAttributes_.Clone() : null;
+      destinationAttributes_ = other.destinationAttributes_ != null ? other.destinationAttributes_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -938,6 +2086,14 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private string callerIp_ = "";
     /// <summary>
     /// The IP address of the caller.
+    /// For caller from internet, this will be public IPv4 or IPv6 address.
+    /// For caller from a Compute Engine VM with external IP address, this
+    /// will be the VM's external IP address. For caller from a Compute
+    /// Engine VM without external IP address, if the VM is in the same
+    /// organization (or project) as the accessed resource, `caller_ip` will
+    /// be the VM's internal IPv4 address, otherwise the `caller_ip` will be
+    /// redacted to "gce-internal-ip".
+    /// See https://cloud.google.com/compute/docs/vpc/ for more information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CallerIp {
@@ -971,6 +2127,64 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
     }
 
+    /// <summary>Field number for the "caller_network" field.</summary>
+    public const int CallerNetworkFieldNumber = 3;
+    private string callerNetwork_ = "";
+    /// <summary>
+    /// The network of the caller.
+    /// Set only if the network host project is part of the same GCP organization
+    /// (or project) as the accessed resource.
+    /// See https://cloud.google.com/compute/docs/vpc/ for more information.
+    /// This is a scheme-less URI full resource name. For example:
+    ///
+    ///     "//compute.googleapis.com/projects/PROJECT_ID/global/networks/NETWORK_ID"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CallerNetwork {
+      get { return callerNetwork_; }
+      set {
+        callerNetwork_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "request_attributes" field.</summary>
+    public const int RequestAttributesFieldNumber = 7;
+    private global::Google.Rpc.Context.AttributeContext.Types.Request requestAttributes_;
+    /// <summary>
+    /// Request attributes used in IAM condition evaluation. This field contains
+    /// request attributes like request time and access levels associated with
+    /// the request.
+    ///
+    /// To get the whole view of the attributes used in IAM
+    /// condition evaluation, the user must also look into
+    /// `AuditLog.authentication_info.resource_attributes`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Rpc.Context.AttributeContext.Types.Request RequestAttributes {
+      get { return requestAttributes_; }
+      set {
+        requestAttributes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "destination_attributes" field.</summary>
+    public const int DestinationAttributesFieldNumber = 8;
+    private global::Google.Rpc.Context.AttributeContext.Types.Peer destinationAttributes_;
+    /// <summary>
+    /// The destination of a network activity, such as accepting a TCP connection.
+    /// In a multi hop network activity, the destination represents the receiver of
+    /// the last hop. Only two fields are used in this message, Peer.port and
+    /// Peer.ip. These fields are optionally populated by those services utilizing
+    /// the IAM condition feature.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Rpc.Context.AttributeContext.Types.Peer DestinationAttributes {
+      get { return destinationAttributes_; }
+      set {
+        destinationAttributes_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RequestMetadata);
@@ -986,6 +2200,9 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
       if (CallerIp != other.CallerIp) return false;
       if (CallerSuppliedUserAgent != other.CallerSuppliedUserAgent) return false;
+      if (CallerNetwork != other.CallerNetwork) return false;
+      if (!object.Equals(RequestAttributes, other.RequestAttributes)) return false;
+      if (!object.Equals(DestinationAttributes, other.DestinationAttributes)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -994,6 +2211,9 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       int hash = 1;
       if (CallerIp.Length != 0) hash ^= CallerIp.GetHashCode();
       if (CallerSuppliedUserAgent.Length != 0) hash ^= CallerSuppliedUserAgent.GetHashCode();
+      if (CallerNetwork.Length != 0) hash ^= CallerNetwork.GetHashCode();
+      if (requestAttributes_ != null) hash ^= RequestAttributes.GetHashCode();
+      if (destinationAttributes_ != null) hash ^= DestinationAttributes.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1015,6 +2235,18 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         output.WriteRawTag(18);
         output.WriteString(CallerSuppliedUserAgent);
       }
+      if (CallerNetwork.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CallerNetwork);
+      }
+      if (requestAttributes_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(RequestAttributes);
+      }
+      if (destinationAttributes_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(DestinationAttributes);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1028,6 +2260,15 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
       if (CallerSuppliedUserAgent.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CallerSuppliedUserAgent);
+      }
+      if (CallerNetwork.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CallerNetwork);
+      }
+      if (requestAttributes_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RequestAttributes);
+      }
+      if (destinationAttributes_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DestinationAttributes);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1045,6 +2286,21 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       }
       if (other.CallerSuppliedUserAgent.Length != 0) {
         CallerSuppliedUserAgent = other.CallerSuppliedUserAgent;
+      }
+      if (other.CallerNetwork.Length != 0) {
+        CallerNetwork = other.CallerNetwork;
+      }
+      if (other.requestAttributes_ != null) {
+        if (requestAttributes_ == null) {
+          RequestAttributes = new global::Google.Rpc.Context.AttributeContext.Types.Request();
+        }
+        RequestAttributes.MergeFrom(other.RequestAttributes);
+      }
+      if (other.destinationAttributes_ != null) {
+        if (destinationAttributes_ == null) {
+          DestinationAttributes = new global::Google.Rpc.Context.AttributeContext.Types.Peer();
+        }
+        DestinationAttributes.MergeFrom(other.DestinationAttributes);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1065,9 +2321,724 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
             CallerSuppliedUserAgent = input.ReadString();
             break;
           }
+          case 26: {
+            CallerNetwork = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (requestAttributes_ == null) {
+              RequestAttributes = new global::Google.Rpc.Context.AttributeContext.Types.Request();
+            }
+            input.ReadMessage(RequestAttributes);
+            break;
+          }
+          case 66: {
+            if (destinationAttributes_ == null) {
+              DestinationAttributes = new global::Google.Rpc.Context.AttributeContext.Types.Peer();
+            }
+            input.ReadMessage(DestinationAttributes);
+            break;
+          }
         }
       }
     }
+
+  }
+
+  /// <summary>
+  /// Location information about a resource.
+  /// </summary>
+  public sealed partial class ResourceLocation : pb::IMessage<ResourceLocation> {
+    private static readonly pb::MessageParser<ResourceLocation> _parser = new pb::MessageParser<ResourceLocation>(() => new ResourceLocation());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ResourceLocation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResourceLocation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResourceLocation(ResourceLocation other) : this() {
+      currentLocations_ = other.currentLocations_.Clone();
+      originalLocations_ = other.originalLocations_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResourceLocation Clone() {
+      return new ResourceLocation(this);
+    }
+
+    /// <summary>Field number for the "current_locations" field.</summary>
+    public const int CurrentLocationsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_currentLocations_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> currentLocations_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// The locations of a resource after the execution of the operation.
+    /// Requests to create or delete a location based resource must populate
+    /// the 'current_locations' field and not the 'original_locations' field.
+    /// For example:
+    ///
+    ///     "europe-west1-a"
+    ///     "us-east1"
+    ///     "nam3"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> CurrentLocations {
+      get { return currentLocations_; }
+    }
+
+    /// <summary>Field number for the "original_locations" field.</summary>
+    public const int OriginalLocationsFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_originalLocations_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> originalLocations_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// The locations of a resource prior to the execution of the operation.
+    /// Requests that mutate the resource's location must populate both the
+    /// 'original_locations' as well as the 'current_locations' fields.
+    /// For example:
+    ///
+    ///     "europe-west1-a"
+    ///     "us-east1"
+    ///     "nam3"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> OriginalLocations {
+      get { return originalLocations_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ResourceLocation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ResourceLocation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!currentLocations_.Equals(other.currentLocations_)) return false;
+      if(!originalLocations_.Equals(other.originalLocations_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= currentLocations_.GetHashCode();
+      hash ^= originalLocations_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      currentLocations_.WriteTo(output, _repeated_currentLocations_codec);
+      originalLocations_.WriteTo(output, _repeated_originalLocations_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += currentLocations_.CalculateSize(_repeated_currentLocations_codec);
+      size += originalLocations_.CalculateSize(_repeated_originalLocations_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ResourceLocation other) {
+      if (other == null) {
+        return;
+      }
+      currentLocations_.Add(other.currentLocations_);
+      originalLocations_.Add(other.originalLocations_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            currentLocations_.AddEntriesFrom(input, _repeated_currentLocations_codec);
+            break;
+          }
+          case 18: {
+            originalLocations_.AddEntriesFrom(input, _repeated_originalLocations_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Identity delegation history of an authenticated service account.
+  /// </summary>
+  public sealed partial class ServiceAccountDelegationInfo : pb::IMessage<ServiceAccountDelegationInfo> {
+    private static readonly pb::MessageParser<ServiceAccountDelegationInfo> _parser = new pb::MessageParser<ServiceAccountDelegationInfo>(() => new ServiceAccountDelegationInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ServiceAccountDelegationInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ServiceAccountDelegationInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ServiceAccountDelegationInfo(ServiceAccountDelegationInfo other) : this() {
+      switch (other.AuthorityCase) {
+        case AuthorityOneofCase.FirstPartyPrincipal:
+          FirstPartyPrincipal = other.FirstPartyPrincipal.Clone();
+          break;
+        case AuthorityOneofCase.ThirdPartyPrincipal:
+          ThirdPartyPrincipal = other.ThirdPartyPrincipal.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ServiceAccountDelegationInfo Clone() {
+      return new ServiceAccountDelegationInfo(this);
+    }
+
+    /// <summary>Field number for the "first_party_principal" field.</summary>
+    public const int FirstPartyPrincipalFieldNumber = 1;
+    /// <summary>
+    /// First party (Google) identity as the real authority.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal FirstPartyPrincipal {
+      get { return authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal ? (global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal) authority_ : null; }
+      set {
+        authority_ = value;
+        authorityCase_ = value == null ? AuthorityOneofCase.None : AuthorityOneofCase.FirstPartyPrincipal;
+      }
+    }
+
+    /// <summary>Field number for the "third_party_principal" field.</summary>
+    public const int ThirdPartyPrincipalFieldNumber = 2;
+    /// <summary>
+    /// Third party identity as the real authority.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal ThirdPartyPrincipal {
+      get { return authorityCase_ == AuthorityOneofCase.ThirdPartyPrincipal ? (global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal) authority_ : null; }
+      set {
+        authority_ = value;
+        authorityCase_ = value == null ? AuthorityOneofCase.None : AuthorityOneofCase.ThirdPartyPrincipal;
+      }
+    }
+
+    private object authority_;
+    /// <summary>Enum of possible cases for the "Authority" oneof.</summary>
+    public enum AuthorityOneofCase {
+      None = 0,
+      FirstPartyPrincipal = 1,
+      ThirdPartyPrincipal = 2,
+    }
+    private AuthorityOneofCase authorityCase_ = AuthorityOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AuthorityOneofCase AuthorityCase {
+      get { return authorityCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearAuthority() {
+      authorityCase_ = AuthorityOneofCase.None;
+      authority_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ServiceAccountDelegationInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ServiceAccountDelegationInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(FirstPartyPrincipal, other.FirstPartyPrincipal)) return false;
+      if (!object.Equals(ThirdPartyPrincipal, other.ThirdPartyPrincipal)) return false;
+      if (AuthorityCase != other.AuthorityCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal) hash ^= FirstPartyPrincipal.GetHashCode();
+      if (authorityCase_ == AuthorityOneofCase.ThirdPartyPrincipal) hash ^= ThirdPartyPrincipal.GetHashCode();
+      hash ^= (int) authorityCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal) {
+        output.WriteRawTag(10);
+        output.WriteMessage(FirstPartyPrincipal);
+      }
+      if (authorityCase_ == AuthorityOneofCase.ThirdPartyPrincipal) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ThirdPartyPrincipal);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FirstPartyPrincipal);
+      }
+      if (authorityCase_ == AuthorityOneofCase.ThirdPartyPrincipal) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ThirdPartyPrincipal);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ServiceAccountDelegationInfo other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.AuthorityCase) {
+        case AuthorityOneofCase.FirstPartyPrincipal:
+          if (FirstPartyPrincipal == null) {
+            FirstPartyPrincipal = new global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal();
+          }
+          FirstPartyPrincipal.MergeFrom(other.FirstPartyPrincipal);
+          break;
+        case AuthorityOneofCase.ThirdPartyPrincipal:
+          if (ThirdPartyPrincipal == null) {
+            ThirdPartyPrincipal = new global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal();
+          }
+          ThirdPartyPrincipal.MergeFrom(other.ThirdPartyPrincipal);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal subBuilder = new global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal();
+            if (authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal) {
+              subBuilder.MergeFrom(FirstPartyPrincipal);
+            }
+            input.ReadMessage(subBuilder);
+            FirstPartyPrincipal = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal subBuilder = new global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal();
+            if (authorityCase_ == AuthorityOneofCase.ThirdPartyPrincipal) {
+              subBuilder.MergeFrom(ThirdPartyPrincipal);
+            }
+            input.ReadMessage(subBuilder);
+            ThirdPartyPrincipal = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the ServiceAccountDelegationInfo message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// First party identity principal.
+      /// </summary>
+      public sealed partial class FirstPartyPrincipal : pb::IMessage<FirstPartyPrincipal> {
+        private static readonly pb::MessageParser<FirstPartyPrincipal> _parser = new pb::MessageParser<FirstPartyPrincipal>(() => new FirstPartyPrincipal());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<FirstPartyPrincipal> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public FirstPartyPrincipal() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public FirstPartyPrincipal(FirstPartyPrincipal other) : this() {
+          principalEmail_ = other.principalEmail_;
+          serviceMetadata_ = other.serviceMetadata_ != null ? other.serviceMetadata_.Clone() : null;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public FirstPartyPrincipal Clone() {
+          return new FirstPartyPrincipal(this);
+        }
+
+        /// <summary>Field number for the "principal_email" field.</summary>
+        public const int PrincipalEmailFieldNumber = 1;
+        private string principalEmail_ = "";
+        /// <summary>
+        /// The email address of a Google account.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string PrincipalEmail {
+          get { return principalEmail_; }
+          set {
+            principalEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "service_metadata" field.</summary>
+        public const int ServiceMetadataFieldNumber = 2;
+        private global::Google.Protobuf.WellKnownTypes.Struct serviceMetadata_;
+        /// <summary>
+        /// Metadata about the service that uses the service account.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Google.Protobuf.WellKnownTypes.Struct ServiceMetadata {
+          get { return serviceMetadata_; }
+          set {
+            serviceMetadata_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as FirstPartyPrincipal);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(FirstPartyPrincipal other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (PrincipalEmail != other.PrincipalEmail) return false;
+          if (!object.Equals(ServiceMetadata, other.ServiceMetadata)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (PrincipalEmail.Length != 0) hash ^= PrincipalEmail.GetHashCode();
+          if (serviceMetadata_ != null) hash ^= ServiceMetadata.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (PrincipalEmail.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(PrincipalEmail);
+          }
+          if (serviceMetadata_ != null) {
+            output.WriteRawTag(18);
+            output.WriteMessage(ServiceMetadata);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (PrincipalEmail.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(PrincipalEmail);
+          }
+          if (serviceMetadata_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(ServiceMetadata);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(FirstPartyPrincipal other) {
+          if (other == null) {
+            return;
+          }
+          if (other.PrincipalEmail.Length != 0) {
+            PrincipalEmail = other.PrincipalEmail;
+          }
+          if (other.serviceMetadata_ != null) {
+            if (serviceMetadata_ == null) {
+              ServiceMetadata = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            ServiceMetadata.MergeFrom(other.ServiceMetadata);
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                PrincipalEmail = input.ReadString();
+                break;
+              }
+              case 18: {
+                if (serviceMetadata_ == null) {
+                  ServiceMetadata = new global::Google.Protobuf.WellKnownTypes.Struct();
+                }
+                input.ReadMessage(ServiceMetadata);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Third party identity principal.
+      /// </summary>
+      public sealed partial class ThirdPartyPrincipal : pb::IMessage<ThirdPartyPrincipal> {
+        private static readonly pb::MessageParser<ThirdPartyPrincipal> _parser = new pb::MessageParser<ThirdPartyPrincipal>(() => new ThirdPartyPrincipal());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<ThirdPartyPrincipal> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyPrincipal() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyPrincipal(ThirdPartyPrincipal other) : this() {
+          thirdPartyClaims_ = other.thirdPartyClaims_ != null ? other.thirdPartyClaims_.Clone() : null;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyPrincipal Clone() {
+          return new ThirdPartyPrincipal(this);
+        }
+
+        /// <summary>Field number for the "third_party_claims" field.</summary>
+        public const int ThirdPartyClaimsFieldNumber = 1;
+        private global::Google.Protobuf.WellKnownTypes.Struct thirdPartyClaims_;
+        /// <summary>
+        /// Metadata about third party identity.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Google.Protobuf.WellKnownTypes.Struct ThirdPartyClaims {
+          get { return thirdPartyClaims_; }
+          set {
+            thirdPartyClaims_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as ThirdPartyPrincipal);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(ThirdPartyPrincipal other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (!object.Equals(ThirdPartyClaims, other.ThirdPartyClaims)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (thirdPartyClaims_ != null) hash ^= ThirdPartyClaims.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (thirdPartyClaims_ != null) {
+            output.WriteRawTag(10);
+            output.WriteMessage(ThirdPartyClaims);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (thirdPartyClaims_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(ThirdPartyClaims);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(ThirdPartyPrincipal other) {
+          if (other == null) {
+            return;
+          }
+          if (other.thirdPartyClaims_ != null) {
+            if (thirdPartyClaims_ == null) {
+              ThirdPartyClaims = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            ThirdPartyClaims.MergeFrom(other.ThirdPartyClaims);
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                if (thirdPartyClaims_ == null) {
+                  ThirdPartyClaims = new global::Google.Protobuf.WellKnownTypes.Struct();
+                }
+                input.ReadMessage(ThirdPartyClaims);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 
