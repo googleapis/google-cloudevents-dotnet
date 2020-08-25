@@ -42,7 +42,6 @@ namespace Google.Events.Tools.CodeGenerator
             var info = LoadCloudEventDataInfo(descriptorSetFile);
 
             GenerateCode(info, srcDirectory, "Google.Events.Protobuf", "ProtobufCloudEventDataConverter");
-            GenerateCode(info, srcDirectory, "Google.Events.SystemTextJson", "JsonCloudEventDataConverter");
             return 0;
         }
 

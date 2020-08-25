@@ -11,11 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Events.Protobuf", "G
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Events.Protobuf.Tests", "Google.Events.Protobuf.Tests\Google.Events.Protobuf.Tests.csproj", "{365C0D17-F92F-497E-81A1-D756B35A4CBA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Events.SystemTextJson", "Google.Events.SystemTextJson\Google.Events.SystemTextJson.csproj", "{E209BDD4-2BA3-42CC-A02B-652E5988444C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Events.SystemTextJson.Tests", "Google.Events.SystemTextJson.Tests\Google.Events.SystemTextJson.Tests.csproj", "{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Events.ValidateSchema", "Google.Events.ValidateSchema\Google.Events.ValidateSchema.csproj", "{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Events.ValidateSchema", "Google.Events.ValidateSchema\Google.Events.ValidateSchema.csproj", "{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,30 +71,6 @@ Global
 		{365C0D17-F92F-497E-81A1-D756B35A4CBA}.Release|x64.Build.0 = Release|Any CPU
 		{365C0D17-F92F-497E-81A1-D756B35A4CBA}.Release|x86.ActiveCfg = Release|Any CPU
 		{365C0D17-F92F-497E-81A1-D756B35A4CBA}.Release|x86.Build.0 = Release|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Debug|x64.Build.0 = Debug|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Debug|x86.Build.0 = Debug|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Release|x64.ActiveCfg = Release|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Release|x64.Build.0 = Release|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Release|x86.ActiveCfg = Release|Any CPU
-		{E209BDD4-2BA3-42CC-A02B-652E5988444C}.Release|x86.Build.0 = Release|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Debug|x64.Build.0 = Debug|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Debug|x86.Build.0 = Debug|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|x64.ActiveCfg = Release|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|x64.Build.0 = Release|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|x86.ActiveCfg = Release|Any CPU
-		{DBB267E7-A1F7-4C80-ADDE-524A63CA1C7B}.Release|x86.Build.0 = Release|Any CPU
 		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B00EDA38-1901-4E09-A2B5-F058A2E5FB66}.Debug|x64.ActiveCfg = Debug|Any CPU
