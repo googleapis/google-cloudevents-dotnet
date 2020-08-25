@@ -27,43 +27,40 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
             "Citnb29nbGUvZXZlbnRzL2Nsb3VkL2ZpcmVzdG9yZS92MS9kYXRhLnByb3Rv",
             "EiBnb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52MRocZ29vZ2xlL3By",
             "b3RvYnVmL3N0cnVjdC5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFt",
-            "cC5wcm90bxoYZ29vZ2xlL3R5cGUvbGF0bG5nLnByb3RvItsCChFEb2N1bWVu",
+            "cC5wcm90bxoYZ29vZ2xlL3R5cGUvbGF0bG5nLnByb3RvItIBChFEb2N1bWVu",
             "dEV2ZW50RGF0YRI5CgV2YWx1ZRgBIAEoCzIqLmdvb2dsZS5ldmVudHMuY2xv",
             "dWQuZmlyZXN0b3JlLnYxLkRvY3VtZW50Ej0KCW9sZF92YWx1ZRgCIAEoCzIq",
             "Lmdvb2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3JlLnYxLkRvY3VtZW50EkMK",
             "C3VwZGF0ZV9tYXNrGAMgASgLMi4uZ29vZ2xlLmV2ZW50cy5jbG91ZC5maXJl",
-            "c3RvcmUudjEuRG9jdW1lbnRNYXNrElUKCXdpbGRjYXJkcxgEIAMoCzJCLmdv",
-            "b2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3JlLnYxLkRvY3VtZW50RXZlbnRE",
-            "YXRhLldpbGRjYXJkc0VudHJ5GjAKDldpbGRjYXJkc0VudHJ5EgsKA2tleRgB",
-            "IAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiIwoMRG9jdW1lbnRNYXNrEhMKC2Zp",
-            "ZWxkX3BhdGhzGAEgAygJIpoCCghEb2N1bWVudBIMCgRuYW1lGAEgASgJEkYK",
-            "BmZpZWxkcxgCIAMoCzI2Lmdvb2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3Jl",
-            "LnYxLkRvY3VtZW50LkZpZWxkc0VudHJ5Ei8KC2NyZWF0ZV90aW1lGAMgASgL",
-            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIvCgt1cGRhdGVfdGltZRgE",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAaVgoLRmllbGRzRW50",
-            "cnkSCwoDa2V5GAEgASgJEjYKBXZhbHVlGAIgASgLMicuZ29vZ2xlLmV2ZW50",
-            "cy5jbG91ZC5maXJlc3RvcmUudjEuVmFsdWU6AjgBIsgDCgVWYWx1ZRIwCgpu",
-            "dWxsX3ZhbHVlGAsgASgOMhouZ29vZ2xlLnByb3RvYnVmLk51bGxWYWx1ZUgA",
-            "EhcKDWJvb2xlYW5fdmFsdWUYASABKAhIABIXCg1pbnRlZ2VyX3ZhbHVlGAIg",
-            "ASgDSAASFgoMZG91YmxlX3ZhbHVlGAMgASgBSAASNQoPdGltZXN0YW1wX3Zh",
-            "bHVlGAogASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgAEhYKDHN0",
-            "cmluZ192YWx1ZRgRIAEoCUgAEhUKC2J5dGVzX3ZhbHVlGBIgASgMSAASGQoP",
-            "cmVmZXJlbmNlX3ZhbHVlGAUgASgJSAASLgoPZ2VvX3BvaW50X3ZhbHVlGAgg",
-            "ASgLMhMuZ29vZ2xlLnR5cGUuTGF0TG5nSAASQwoLYXJyYXlfdmFsdWUYCSAB",
-            "KAsyLC5nb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52MS5BcnJheVZh",
-            "bHVlSAASPwoJbWFwX3ZhbHVlGAYgASgLMiouZ29vZ2xlLmV2ZW50cy5jbG91",
-            "ZC5maXJlc3RvcmUudjEuTWFwVmFsdWVIAEIMCgp2YWx1ZV90eXBlIkUKCkFy",
-            "cmF5VmFsdWUSNwoGdmFsdWVzGAEgAygLMicuZ29vZ2xlLmV2ZW50cy5jbG91",
-            "ZC5maXJlc3RvcmUudjEuVmFsdWUiqgEKCE1hcFZhbHVlEkYKBmZpZWxkcxgB",
-            "IAMoCzI2Lmdvb2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3JlLnYxLk1hcFZh",
-            "bHVlLkZpZWxkc0VudHJ5GlYKC0ZpZWxkc0VudHJ5EgsKA2tleRgBIAEoCRI2",
-            "CgV2YWx1ZRgCIAEoCzInLmdvb2dsZS5ldmVudHMuY2xvdWQuZmlyZXN0b3Jl",
-            "LnYxLlZhbHVlOgI4AUIsqgIpR29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5DbG91",
-            "ZC5GaXJlc3RvcmUuVjFiBnByb3RvMw=="));
+            "c3RvcmUudjEuRG9jdW1lbnRNYXNrIiMKDERvY3VtZW50TWFzaxITCgtmaWVs",
+            "ZF9wYXRocxgBIAMoCSKaAgoIRG9jdW1lbnQSDAoEbmFtZRgBIAEoCRJGCgZm",
+            "aWVsZHMYAiADKAsyNi5nb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52",
+            "MS5Eb2N1bWVudC5GaWVsZHNFbnRyeRIvCgtjcmVhdGVfdGltZRgDIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLwoLdXBkYXRlX3RpbWUYBCAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGlYKC0ZpZWxkc0VudHJ5",
+            "EgsKA2tleRgBIAEoCRI2CgV2YWx1ZRgCIAEoCzInLmdvb2dsZS5ldmVudHMu",
+            "Y2xvdWQuZmlyZXN0b3JlLnYxLlZhbHVlOgI4ASLIAwoFVmFsdWUSMAoKbnVs",
+            "bF92YWx1ZRgLIAEoDjIaLmdvb2dsZS5wcm90b2J1Zi5OdWxsVmFsdWVIABIX",
+            "Cg1ib29sZWFuX3ZhbHVlGAEgASgISAASFwoNaW50ZWdlcl92YWx1ZRgCIAEo",
+            "A0gAEhYKDGRvdWJsZV92YWx1ZRgDIAEoAUgAEjUKD3RpbWVzdGFtcF92YWx1",
+            "ZRgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIABIWCgxzdHJp",
+            "bmdfdmFsdWUYESABKAlIABIVCgtieXRlc192YWx1ZRgSIAEoDEgAEhkKD3Jl",
+            "ZmVyZW5jZV92YWx1ZRgFIAEoCUgAEi4KD2dlb19wb2ludF92YWx1ZRgIIAEo",
+            "CzITLmdvb2dsZS50eXBlLkxhdExuZ0gAEkMKC2FycmF5X3ZhbHVlGAkgASgL",
+            "MiwuZ29vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuQXJyYXlWYWx1",
+            "ZUgAEj8KCW1hcF92YWx1ZRgGIAEoCzIqLmdvb2dsZS5ldmVudHMuY2xvdWQu",
+            "ZmlyZXN0b3JlLnYxLk1hcFZhbHVlSABCDAoKdmFsdWVfdHlwZSJFCgpBcnJh",
+            "eVZhbHVlEjcKBnZhbHVlcxgBIAMoCzInLmdvb2dsZS5ldmVudHMuY2xvdWQu",
+            "ZmlyZXN0b3JlLnYxLlZhbHVlIqoBCghNYXBWYWx1ZRJGCgZmaWVsZHMYASAD",
+            "KAsyNi5nb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52MS5NYXBWYWx1",
+            "ZS5GaWVsZHNFbnRyeRpWCgtGaWVsZHNFbnRyeRILCgNrZXkYASABKAkSNgoF",
+            "dmFsdWUYAiABKAsyJy5nb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52",
+            "MS5WYWx1ZToCOAFCLKoCKUdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQu",
+            "RmlyZXN0b3JlLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Type.LatlngReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData), global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData.Parser, new[]{ "Value", "OldValue", "UpdateMask", "Wildcards" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData), global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentEventData.Parser, new[]{ "Value", "OldValue", "UpdateMask" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask), global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask.Parser, new[]{ "FieldPaths" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.Document), global::Google.Events.Protobuf.Cloud.Firestore.V1.Document.Parser, new[]{ "Name", "Fields", "CreateTime", "UpdateTime" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Firestore.V1.Value), global::Google.Events.Protobuf.Cloud.Firestore.V1.Value.Parser, new[]{ "NullValue", "BooleanValue", "IntegerValue", "DoubleValue", "TimestampValue", "StringValue", "BytesValue", "ReferenceValue", "GeoPointValue", "ArrayValue", "MapValue" }, new[]{ "ValueType" }, null, null, null),
@@ -106,7 +103,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       value_ = other.value_ != null ? other.value_.Clone() : null;
       oldValue_ = other.oldValue_ != null ? other.oldValue_.Clone() : null;
       updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
-      wildcards_ = other.wildcards_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -160,25 +156,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       }
     }
 
-    /// <summary>Field number for the "wildcards" field.</summary>
-    public const int WildcardsFieldNumber = 4;
-    private static readonly pbc::MapField<string, string>.Codec _map_wildcards_codec
-        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 34);
-    private readonly pbc::MapField<string, string> wildcards_ = new pbc::MapField<string, string>();
-    /// <summary>
-    /// The matches from wildcards specified in the event subscription, to the
-    /// values of those wildcards in the document name. For example,
-    /// a subscription to
-    /// `/projects/my_project/databases/(default)/documents/users/{username}`
-    /// matching a document with name
-    /// `/projects/my_project/databases/(default)/documents/users/marie`
-    /// would result in a mapping of `'username': 'marie'`.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::MapField<string, string> Wildcards {
-      get { return wildcards_; }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DocumentEventData);
@@ -195,7 +172,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       if (!object.Equals(Value, other.Value)) return false;
       if (!object.Equals(OldValue, other.OldValue)) return false;
       if (!object.Equals(UpdateMask, other.UpdateMask)) return false;
-      if (!Wildcards.Equals(other.Wildcards)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -205,7 +181,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       if (value_ != null) hash ^= Value.GetHashCode();
       if (oldValue_ != null) hash ^= OldValue.GetHashCode();
       if (updateMask_ != null) hash ^= UpdateMask.GetHashCode();
-      hash ^= Wildcards.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -231,7 +206,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(UpdateMask);
       }
-      wildcards_.WriteTo(output, _map_wildcards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -249,7 +223,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       if (updateMask_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateMask);
       }
-      size += wildcards_.CalculateSize(_map_wildcards_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -279,7 +252,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
         }
         UpdateMask.MergeFrom(other.UpdateMask);
       }
-      wildcards_.Add(other.wildcards_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -310,10 +282,6 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
               UpdateMask = new global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask();
             }
             input.ReadMessage(UpdateMask);
-            break;
-          }
-          case 34: {
-            wildcards_.AddEntriesFrom(input, _map_wildcards_codec);
             break;
           }
         }

@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace Google.Events.SystemTextJson.Cloud.Audit.V1
+namespace Google.Events.SystemTextJson.Firebase.Analytics.V1
 {    
-    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<AuditLogData>))]
-    public partial class AuditLogData
+    [CloudEventDataConverter(typeof(JsonCloudEventDataConverter<AnalyticsLogData>))]
+    public partial class AnalyticsLogData
     {
         /// <summary>CloudEvent type for the 'written' event.</summary>
-        public const string WrittenCloudEventType = "google.cloud.audit.log.v1.written";
+        public const string WrittenCloudEventType = "google.firebase.analytics.log.v1.written";
 
     }
 }

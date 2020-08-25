@@ -48,14 +48,6 @@ namespace Google.Events.SystemTextJson.Cloud.Firestore.V1
         /// </summary>
         [JsonPropertyName("updateMask")]
         public DocumentMask? UpdateMask { get; set; }
-
-        /// <summary>
-        /// The wildcards matched within the trigger resource name. For example, with a trigger resource name
-        /// ending in "documents/players/{player}/levels/{level}", matching a document with a resource name ending in
-        /// "documents/players/player1/levels/level1", the mapping would be from "player" to "player1" and "level" to "level1".
-        /// </summary>
-        [JsonPropertyName("wildcards")]
-        public IDictionary<string, string> Wildcards { get; set; } = new Dictionary<string, string>();
     }
 
     /// <summary>

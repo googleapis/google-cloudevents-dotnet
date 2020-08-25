@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Events.Protobuf.Cloud.Audit.V1;
+using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
@@ -28,8 +29,9 @@ namespace Google.Events.Protobuf.Tests
         [Fact]
         public void AuditLogDataStructs()
         {
-            var json = TestResourceHelper.LoadJson("Cloud.Audit.V1.auditlog1.json");
-            var auditLog = AuditLogData.Parser.ParseJson(json);
+            var json = TestResourceHelper.LoadJson("Cloud.Audit.V1.auditlog2.json");
+            var parser = new JsonParser(JsonParser.Settings.Default.WithIgnoreUnknownFields(true));
+            var auditLog = parser.Parse<LogEntryData>(json).ProtoPayload;
 
             var request = auditLog.Request;
             var response = auditLog.Response;

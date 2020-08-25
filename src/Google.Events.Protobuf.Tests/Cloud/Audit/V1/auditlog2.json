@@ -1,0 +1,46 @@
+{
+  "insertId": "9frck8cf9j",
+  "logName": "projects/test-project/logs/cloudaudit.googleapis.com%2Factivity",
+  "protoPayload": {
+    "status": {},
+    "authenticationInfo": {
+      "principalEmail": "user@example.com"
+    },
+    "serviceName": "appengine.googleapis.com",
+    "methodName": "SetIamPolicy",
+    "serviceData": {
+      "@type": "type.googleapis.com/google.appengine.legacy.AuditData",
+      "policyDelta": {
+        "bindingDeltas": [
+          {
+            "action": "ADD",
+            "role": "roles/logging.privateLogViewer",
+            "member": "user:user@example.com"
+          }
+        ]
+      }
+    },
+    "request": {
+      "resource": "my-gcp-project-id",
+      "policy": { "bindings": [] }
+    },
+    "response": {
+      "bindings": [
+        {
+          "role": "roles/logging.privateLogViewer",
+          "members": [ "user:user@example.com" ]
+        }
+      ]
+    }
+  },
+  "receiveTimestamp": "2020-06-30T16:14:48.401489148Z",
+  "resource": {
+    "labels": {
+      "project_id": "test-project",
+      "topic_id": "projects/test-project/topics/test-auditlogs-source"
+    },
+    "type": "pubsub_topic"
+  },
+  "severity": "NOTICE",
+  "timestamp": "2020-06-30T16:14:47.593398572Z"
+}

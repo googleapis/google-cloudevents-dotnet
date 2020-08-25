@@ -26,7 +26,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
           string.Concat(
             "Cilnb29nbGUvZXZlbnRzL2Nsb3VkL3N0b3JhZ2UvdjEvZGF0YS5wcm90bxIe",
             "Z29vZ2xlLmV2ZW50cy5jbG91ZC5zdG9yYWdlLnYxGh9nb29nbGUvcHJvdG9i",
-            "dWYvdGltZXN0YW1wLnByb3RvIoMIChFTdG9yYWdlT2JqZWN0RGF0YRIYChBj",
+            "dWYvdGltZXN0YW1wLnByb3RvIpEIChFTdG9yYWdlT2JqZWN0RGF0YRIYChBj",
             "b250ZW50X2VuY29kaW5nGAEgASgJEhsKE2NvbnRlbnRfZGlzcG9zaXRpb24Y",
             "AiABKAkSFQoNY2FjaGVfY29udHJvbBgDIAEoCRIYChBjb250ZW50X2xhbmd1",
             "YWdlGAUgASgJEhYKDm1ldGFnZW5lcmF0aW9uGAYgASgDEjAKDHRpbWVfZGVs",
@@ -46,15 +46,15 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
             "IAEoCRISCgpnZW5lcmF0aW9uGBogASgDEmEKE2N1c3RvbWVyX2VuY3J5cHRp",
             "b24YHCABKAsyRC5nb29nbGUuZXZlbnRzLmNsb3VkLnN0b3JhZ2UudjEuU3Rv",
             "cmFnZU9iamVjdERhdGEuQ3VzdG9tZXJFbmNyeXB0aW9uEhIKCm1lZGlhX2xp",
-            "bmsYZCABKAkSEQoJc2VsZl9saW5rGGUgASgJGkYKEkN1c3RvbWVyRW5jcnlw",
-            "dGlvbhIcChRlbmNyeXB0aW9uX2FsZ29yaXRobRgBIAEoCRISCgprZXlfc2hh",
-            "MjU2GAIgASgJGi8KDU1ldGFkYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZh",
-            "bHVlGAIgASgJOgI4AUIqqgInR29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5DbG91",
-            "ZC5TdG9yYWdlLlYxYgZwcm90bzM="));
+            "bmsYZCABKAkSEQoJc2VsZl9saW5rGGUgASgJEgwKBGtpbmQYZiABKAkaRgoS",
+            "Q3VzdG9tZXJFbmNyeXB0aW9uEhwKFGVuY3J5cHRpb25fYWxnb3JpdGhtGAEg",
+            "ASgJEhIKCmtleV9zaGEyNTYYAiABKAkaLwoNTWV0YWRhdGFFbnRyeRILCgNr",
+            "ZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBQiqqAidHb29nbGUuRXZlbnRz",
+            "LlByb3RvYnVmLkNsb3VkLlN0b3JhZ2UuVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData), global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Parser, new[]{ "ContentEncoding", "ContentDisposition", "CacheControl", "ContentLanguage", "Metageneration", "TimeDeleted", "ContentType", "Size", "TimeCreated", "Crc32C", "ComponentCount", "Md5Hash", "Etag", "Updated", "StorageClass", "KmsKeyName", "TimeStorageClassUpdated", "TemporaryHold", "RetentionExpirationTime", "Metadata", "EventBasedHold", "Name", "Id", "Bucket", "Generation", "CustomerEncryption", "MediaLink", "SelfLink" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption), global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption.Parser, new[]{ "EncryptionAlgorithm", "KeySha256" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData), global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Parser, new[]{ "ContentEncoding", "ContentDisposition", "CacheControl", "ContentLanguage", "Metageneration", "TimeDeleted", "ContentType", "Size", "TimeCreated", "Crc32C", "ComponentCount", "Md5Hash", "Etag", "Updated", "StorageClass", "KmsKeyName", "TimeStorageClassUpdated", "TemporaryHold", "RetentionExpirationTime", "Metadata", "EventBasedHold", "Name", "Id", "Bucket", "Generation", "CustomerEncryption", "MediaLink", "SelfLink", "Kind" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption), global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption.Parser, new[]{ "EncryptionAlgorithm", "KeySha256" }, null, null, null, null),
             null, })
           }));
     }
@@ -118,6 +118,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       customerEncryption_ = other.customerEncryption_ != null ? other.customerEncryption_.Clone() : null;
       mediaLink_ = other.mediaLink_;
       selfLink_ = other.selfLink_;
+      kind_ = other.kind_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -521,7 +522,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     public const int MediaLinkFieldNumber = 100;
     private string mediaLink_ = "";
     /// <summary>
-    /// The link to this object.
+    /// Media download link.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string MediaLink {
@@ -535,13 +536,27 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     public const int SelfLinkFieldNumber = 101;
     private string selfLink_ = "";
     /// <summary>
-    /// Media download link.
+    /// The link to this object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string SelfLink {
       get { return selfLink_; }
       set {
         selfLink_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "kind" field.</summary>
+    public const int KindFieldNumber = 102;
+    private string kind_ = "";
+    /// <summary>
+    /// The kind of item this is. For objects, this is always "storage#object".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Kind {
+      get { return kind_; }
+      set {
+        kind_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -586,6 +601,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       if (!object.Equals(CustomerEncryption, other.CustomerEncryption)) return false;
       if (MediaLink != other.MediaLink) return false;
       if (SelfLink != other.SelfLink) return false;
+      if (Kind != other.Kind) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -620,6 +636,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       if (customerEncryption_ != null) hash ^= CustomerEncryption.GetHashCode();
       if (MediaLink.Length != 0) hash ^= MediaLink.GetHashCode();
       if (SelfLink.Length != 0) hash ^= SelfLink.GetHashCode();
+      if (Kind.Length != 0) hash ^= Kind.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -742,6 +759,10 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         output.WriteRawTag(170, 6);
         output.WriteString(SelfLink);
       }
+      if (Kind.Length != 0) {
+        output.WriteRawTag(178, 6);
+        output.WriteString(Kind);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -831,6 +852,9 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       }
       if (SelfLink.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(SelfLink);
+      }
+      if (Kind.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Kind);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -942,6 +966,9 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       }
       if (other.SelfLink.Length != 0) {
         SelfLink = other.SelfLink;
+      }
+      if (other.Kind.Length != 0) {
+        Kind = other.Kind;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1082,6 +1109,10 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
           }
           case 810: {
             SelfLink = input.ReadString();
+            break;
+          }
+          case 818: {
+            Kind = input.ReadString();
             break;
           }
         }

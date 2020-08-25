@@ -14,8 +14,6 @@
 
 using Google.Events.Protobuf;
 using Google.Events.Protobuf.Cloud.Firestore.V1;
-using Google.Events.Protobuf.Cloud.Storage.V1;
-using Google.Events.SystemTextJson;
 using Google.Protobuf;
 using Google.Protobuf.Reflection;
 using System.Linq;
@@ -24,7 +22,7 @@ using System.Text.Json.Serialization;
 using Xunit;
 using BclType = System.Type;
 
-namespace Google.Events.Tests
+namespace Google.Events.SystemTextJson.Tests
 {
     /// <summary>
     /// Validates that every protobuf message has a corresponding class in the JSON
