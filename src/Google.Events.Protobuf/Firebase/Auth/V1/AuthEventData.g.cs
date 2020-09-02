@@ -17,8 +17,8 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1
     [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<AuthEventData>))]
     public partial class AuthEventData
     {
-        /// <summary>CloudEvent type for the 'updated' event.</summary>
-        public const string UpdatedCloudEventType = "google.firebase.auth.user.v1.updated";
+        /// <summary>CloudEvent type for the 'created' event.</summary>
+        public const string CreatedCloudEventType = "google.firebase.auth.user.v1.created";
 
         /// <summary>CloudEvent type for the 'deleted' event.</summary>
         public const string DeletedCloudEventType = "google.firebase.auth.user.v1.deleted";

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace Google.Events.Protobuf.Cloud.Build.V1
+namespace Google.Events.Protobuf.Cloud.CloudBuild.V1
 {    
     [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<BuildEventData>))]
     public partial class BuildEventData
