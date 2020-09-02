@@ -1,6 +1,6 @@
 # Google CloudEvents for  .NET
 
-[![Build Status](https://travis-ci.org/googleapis/google-cloudevents-dotnet.svg?branch=master)](https://travis-ci.org/googleapis/google-cloudevents-dotnet)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fgoogleapis%2Fgoogle-cloudevents-dotnet%2Fbadge&style=flat)](https://actions-badge.atrox.dev/googleapis/google-cloudevents-dotnet/goto)
 
 ## Overview
 
