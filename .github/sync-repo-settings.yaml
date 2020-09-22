@@ -4,6 +4,7 @@ mergeCommitAllowed: false
 branchProtectionRules:
 - pattern: master
   requiredStatusCheckContexts:
+    - 'build'
     - 'cla/google'
   requiredApprovingReviewCount: 1
   requiresCodeOwnerReviews: true
