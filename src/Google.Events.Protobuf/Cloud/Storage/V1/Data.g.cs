@@ -65,7 +65,11 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
   /// <summary>
   /// An object within Google Cloud Storage.
   /// </summary>
-  public sealed partial class StorageObjectData : pb::IMessage<StorageObjectData> {
+  public sealed partial class StorageObjectData : pb::IMessage<StorageObjectData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<StorageObjectData> _parser = new pb::MessageParser<StorageObjectData>(() => new StorageObjectData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -650,6 +654,9 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ContentEncoding.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ContentEncoding);
@@ -766,7 +773,130 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ContentEncoding.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ContentEncoding);
+      }
+      if (ContentDisposition.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ContentDisposition);
+      }
+      if (CacheControl.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CacheControl);
+      }
+      if (ContentLanguage.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ContentLanguage);
+      }
+      if (Metageneration != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(Metageneration);
+      }
+      if (timeDeleted_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(TimeDeleted);
+      }
+      if (ContentType.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(ContentType);
+      }
+      if (Size != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(Size);
+      }
+      if (timeCreated_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(TimeCreated);
+      }
+      if (Crc32C.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Crc32C);
+      }
+      if (ComponentCount != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(ComponentCount);
+      }
+      if (Md5Hash.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(Md5Hash);
+      }
+      if (Etag.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(Etag);
+      }
+      if (updated_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(Updated);
+      }
+      if (StorageClass.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(StorageClass);
+      }
+      if (KmsKeyName.Length != 0) {
+        output.WriteRawTag(138, 1);
+        output.WriteString(KmsKeyName);
+      }
+      if (timeStorageClassUpdated_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(TimeStorageClassUpdated);
+      }
+      if (TemporaryHold != false) {
+        output.WriteRawTag(152, 1);
+        output.WriteBool(TemporaryHold);
+      }
+      if (retentionExpirationTime_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(RetentionExpirationTime);
+      }
+      metadata_.WriteTo(ref output, _map_metadata_codec);
+      if (Name.Length != 0) {
+        output.WriteRawTag(186, 1);
+        output.WriteString(Name);
+      }
+      if (Id.Length != 0) {
+        output.WriteRawTag(194, 1);
+        output.WriteString(Id);
+      }
+      if (Bucket.Length != 0) {
+        output.WriteRawTag(202, 1);
+        output.WriteString(Bucket);
+      }
+      if (Generation != 0L) {
+        output.WriteRawTag(208, 1);
+        output.WriteInt64(Generation);
+      }
+      if (customerEncryption_ != null) {
+        output.WriteRawTag(226, 1);
+        output.WriteMessage(CustomerEncryption);
+      }
+      if (EventBasedHold != false) {
+        output.WriteRawTag(232, 1);
+        output.WriteBool(EventBasedHold);
+      }
+      if (MediaLink.Length != 0) {
+        output.WriteRawTag(162, 6);
+        output.WriteString(MediaLink);
+      }
+      if (SelfLink.Length != 0) {
+        output.WriteRawTag(170, 6);
+        output.WriteString(SelfLink);
+      }
+      if (Kind.Length != 0) {
+        output.WriteRawTag(178, 6);
+        output.WriteString(Kind);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -975,6 +1105,9 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1117,7 +1250,156 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ContentEncoding = input.ReadString();
+            break;
+          }
+          case 18: {
+            ContentDisposition = input.ReadString();
+            break;
+          }
+          case 26: {
+            CacheControl = input.ReadString();
+            break;
+          }
+          case 42: {
+            ContentLanguage = input.ReadString();
+            break;
+          }
+          case 48: {
+            Metageneration = input.ReadInt64();
+            break;
+          }
+          case 58: {
+            if (timeDeleted_ == null) {
+              TimeDeleted = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(TimeDeleted);
+            break;
+          }
+          case 66: {
+            ContentType = input.ReadString();
+            break;
+          }
+          case 72: {
+            Size = input.ReadInt64();
+            break;
+          }
+          case 82: {
+            if (timeCreated_ == null) {
+              TimeCreated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(TimeCreated);
+            break;
+          }
+          case 90: {
+            Crc32C = input.ReadString();
+            break;
+          }
+          case 96: {
+            ComponentCount = input.ReadInt32();
+            break;
+          }
+          case 106: {
+            Md5Hash = input.ReadString();
+            break;
+          }
+          case 114: {
+            Etag = input.ReadString();
+            break;
+          }
+          case 122: {
+            if (updated_ == null) {
+              Updated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Updated);
+            break;
+          }
+          case 130: {
+            StorageClass = input.ReadString();
+            break;
+          }
+          case 138: {
+            KmsKeyName = input.ReadString();
+            break;
+          }
+          case 146: {
+            if (timeStorageClassUpdated_ == null) {
+              TimeStorageClassUpdated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(TimeStorageClassUpdated);
+            break;
+          }
+          case 152: {
+            TemporaryHold = input.ReadBool();
+            break;
+          }
+          case 162: {
+            if (retentionExpirationTime_ == null) {
+              RetentionExpirationTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(RetentionExpirationTime);
+            break;
+          }
+          case 170: {
+            metadata_.AddEntriesFrom(ref input, _map_metadata_codec);
+            break;
+          }
+          case 186: {
+            Name = input.ReadString();
+            break;
+          }
+          case 194: {
+            Id = input.ReadString();
+            break;
+          }
+          case 202: {
+            Bucket = input.ReadString();
+            break;
+          }
+          case 208: {
+            Generation = input.ReadInt64();
+            break;
+          }
+          case 226: {
+            if (customerEncryption_ == null) {
+              CustomerEncryption = new global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption();
+            }
+            input.ReadMessage(CustomerEncryption);
+            break;
+          }
+          case 232: {
+            EventBasedHold = input.ReadBool();
+            break;
+          }
+          case 802: {
+            MediaLink = input.ReadString();
+            break;
+          }
+          case 810: {
+            SelfLink = input.ReadString();
+            break;
+          }
+          case 818: {
+            Kind = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the StorageObjectData message type.</summary>
@@ -1126,7 +1408,11 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       /// <summary>
       /// Describes the customer-specified mechanism used to store the data at rest.
       /// </summary>
-      public sealed partial class CustomerEncryption : pb::IMessage<CustomerEncryption> {
+      public sealed partial class CustomerEncryption : pb::IMessage<CustomerEncryption>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<CustomerEncryption> _parser = new pb::MessageParser<CustomerEncryption>(() => new CustomerEncryption());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1225,6 +1511,9 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           if (EncryptionAlgorithm.Length != 0) {
             output.WriteRawTag(10);
             output.WriteString(EncryptionAlgorithm);
@@ -1236,7 +1525,25 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (EncryptionAlgorithm.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(EncryptionAlgorithm);
+          }
+          if (KeySha256.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteString(KeySha256);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -1269,6 +1576,9 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -1285,7 +1595,30 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                EncryptionAlgorithm = input.ReadString();
+                break;
+              }
+              case 18: {
+                KeySha256 = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
       }
 
