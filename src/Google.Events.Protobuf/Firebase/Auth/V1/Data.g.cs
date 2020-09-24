@@ -56,7 +56,11 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
   /// <summary>
   /// The data within all Firebase Auth events
   /// </summary>
-  public sealed partial class AuthEventData : pb::IMessage<AuthEventData> {
+  public sealed partial class AuthEventData : pb::IMessage<AuthEventData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AuthEventData> _parser = new pb::MessageParser<AuthEventData>(() => new AuthEventData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -291,6 +295,9 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Uid.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Uid);
@@ -331,7 +338,54 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Uid.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uid);
+      }
+      if (Email.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Email);
+      }
+      if (EmailVerified != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(EmailVerified);
+      }
+      if (DisplayName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(DisplayName);
+      }
+      if (PhotoURL.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(PhotoURL);
+      }
+      if (Disabled != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(Disabled);
+      }
+      if (metadata_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Metadata);
+      }
+      providerData_.WriteTo(ref output, _repeated_providerData_codec);
+      if (PhoneNumber.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(PhoneNumber);
+      }
+      if (customClaims_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(CustomClaims);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -414,6 +468,9 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -468,14 +525,79 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Uid = input.ReadString();
+            break;
+          }
+          case 18: {
+            Email = input.ReadString();
+            break;
+          }
+          case 24: {
+            EmailVerified = input.ReadBool();
+            break;
+          }
+          case 34: {
+            DisplayName = input.ReadString();
+            break;
+          }
+          case 42: {
+            PhotoURL = input.ReadString();
+            break;
+          }
+          case 48: {
+            Disabled = input.ReadBool();
+            break;
+          }
+          case 58: {
+            if (metadata_ == null) {
+              Metadata = new global::Google.Events.Protobuf.Firebase.Auth.V1.UserMetadata();
+            }
+            input.ReadMessage(Metadata);
+            break;
+          }
+          case 66: {
+            providerData_.AddEntriesFrom(ref input, _repeated_providerData_codec);
+            break;
+          }
+          case 74: {
+            PhoneNumber = input.ReadString();
+            break;
+          }
+          case 82: {
+            if (customClaims_ == null) {
+              CustomClaims = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(CustomClaims);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Additional metadata about the user.
   /// </summary>
-  public sealed partial class UserMetadata : pb::IMessage<UserMetadata> {
+  public sealed partial class UserMetadata : pb::IMessage<UserMetadata>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UserMetadata> _parser = new pb::MessageParser<UserMetadata>(() => new UserMetadata());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -574,6 +696,9 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (createdAt_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(CreatedAt);
@@ -585,7 +710,25 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (createdAt_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CreatedAt);
+      }
+      if (lastSignedInAt_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(LastSignedInAt);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -624,6 +767,9 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -646,14 +792,47 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (createdAt_ == null) {
+              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreatedAt);
+            break;
+          }
+          case 18: {
+            if (lastSignedInAt_ == null) {
+              LastSignedInAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(LastSignedInAt);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// User's info at the identity provider
   /// </summary>
-  public sealed partial class UserInfo : pb::IMessage<UserInfo> {
+  public sealed partial class UserInfo : pb::IMessage<UserInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UserInfo> _parser = new pb::MessageParser<UserInfo>(() => new UserInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -803,6 +982,9 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Uid.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Uid);
@@ -826,7 +1008,37 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Uid.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uid);
+      }
+      if (Email.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Email);
+      }
+      if (DisplayName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(DisplayName);
+      }
+      if (PhotoURL.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(PhotoURL);
+      }
+      if (ProviderId.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ProviderId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -877,6 +1089,9 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -905,7 +1120,42 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Uid = input.ReadString();
+            break;
+          }
+          case 18: {
+            Email = input.ReadString();
+            break;
+          }
+          case 26: {
+            DisplayName = input.ReadString();
+            break;
+          }
+          case 34: {
+            PhotoURL = input.ReadString();
+            break;
+          }
+          case 42: {
+            ProviderId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

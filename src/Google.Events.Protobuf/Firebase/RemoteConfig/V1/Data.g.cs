@@ -107,7 +107,11 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
   /// <summary>
   /// The data within all Firebase Remote Config events.
   /// </summary>
-  public sealed partial class RemoteConfigEventData : pb::IMessage<RemoteConfigEventData> {
+  public sealed partial class RemoteConfigEventData : pb::IMessage<RemoteConfigEventData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RemoteConfigEventData> _parser = new pb::MessageParser<RemoteConfigEventData>(() => new RemoteConfigEventData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -292,6 +296,9 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (VersionNumber != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(VersionNumber);
@@ -323,7 +330,45 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (VersionNumber != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(VersionNumber);
+      }
+      if (updateTime_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(UpdateTime);
+      }
+      if (updateUser_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(UpdateUser);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Description);
+      }
+      if (UpdateOrigin != global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateOrigin.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) UpdateOrigin);
+      }
+      if (UpdateType != global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateType.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) UpdateType);
+      }
+      if (RollbackSource != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(RollbackSource);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -392,6 +437,9 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -434,7 +482,56 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            VersionNumber = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            if (updateTime_ == null) {
+              UpdateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UpdateTime);
+            break;
+          }
+          case 26: {
+            if (updateUser_ == null) {
+              UpdateUser = new global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUser();
+            }
+            input.ReadMessage(UpdateUser);
+            break;
+          }
+          case 34: {
+            Description = input.ReadString();
+            break;
+          }
+          case 40: {
+            UpdateOrigin = (global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateOrigin) input.ReadEnum();
+            break;
+          }
+          case 48: {
+            UpdateType = (global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateType) input.ReadEnum();
+            break;
+          }
+          case 56: {
+            RollbackSource = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -442,7 +539,11 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
   /// All the fields associated with the person/service account
   /// that wrote a Remote Config template.
   /// </summary>
-  public sealed partial class RemoteConfigUser : pb::IMessage<RemoteConfigUser> {
+  public sealed partial class RemoteConfigUser : pb::IMessage<RemoteConfigUser>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RemoteConfigUser> _parser = new pb::MessageParser<RemoteConfigUser>(() => new RemoteConfigUser());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -558,6 +659,9 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Name.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Name);
@@ -573,7 +677,29 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Email.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Email);
+      }
+      if (ImageUrl.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ImageUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -612,6 +738,9 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -632,7 +761,34 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Email = input.ReadString();
+            break;
+          }
+          case 26: {
+            ImageUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
