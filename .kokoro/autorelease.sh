@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Environment variables:
+# - COMMITTISH_OVERRIDE: The commit to actually build the release from, if not the one that has been checked out
+# - SKIP_NUGET_PUSH: If non-empty, the push to nuget.org is skipped
+
+set -e
+
+SCRIPT=$(readlink -f "$0")
+SCRIPT_DIR=$(dirname "$SCRIPT")
+
+cd $SCRIPT_DIR/..
+
+# Make sure secrets are loaded in a well known location before running releasetool
+source $SCRIPT_DIR/populatesecrets.sh
+populate_all_secrets
+
+NUGET_API_KEY="$(cat "$SECRETS_LOCATION"/google-apis-nuget-api-key)"
+
+# Make sure we have the most recent version of pip, then install the gcp-releasetool package
+python -m pip install --upgrade pip
+python -m pip install gcp-releasetool
+python -m releasetool publish-reporter-script > /tmp/publisher-script
+
+# The publish reporter script uses "python3" which doesn't exist on Windows.
+# Work out what we should use instead.
+PYTHON3=$(source ../toolversions.sh && echo $PYTHON3)
+
+# Fix up the publish reporter script using $PYTHON3. We assume this won't
+# be harmful within sed - at the moment it's always "python", "py -3" or "python3".
+sed -i "s/python3/$PYTHON3/g" /tmp/publisher-script
+
+source /tmp/publisher-script
+
+COMMITTISH=$COMMITTISH_OVERRIDE
+if [[ $COMMITTISH_OVERRIDE = "" ]]
+then
+  COMMITTISH=$(git rev-parse HEAD)
+else
+  COMMITTISH=$COMMITTISH_OVERRIDE
+fi
+
+echo "Building with commit $COMMITTISH"
+
+# Build the release and run the tests.
+./buildrelease.sh $COMMITTISH
+
+if [[ $SKIP_NUGET_PUSH = "" ]]
+then
+  echo "Pushing NuGet packages"
+  # Push the changes to nuget.
+  cd ./tmp/release/nupkg
+  for pkg in *.nupkg
+  do
+    # Don't actually push while we're testing...
+    echo "dotnet nuget push -s https://api.nuget.org/v3/index.json -k $NUGET_API_KEY $pkg"
+  done
+  cd ../../..
+else
+  echo "Skipping NuGet push"
+fi
