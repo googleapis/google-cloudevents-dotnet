@@ -50,7 +50,7 @@ fi
 echo "Building with commit $COMMITTISH"
 
 # Build the release and run the tests.
-./buildrelease.sh $COMMITTISH
+./build-release.sh $COMMITTISH
 
 if [[ $SKIP_NUGET_PUSH = "" ]]
 then
