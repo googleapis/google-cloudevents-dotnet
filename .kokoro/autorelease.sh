@@ -59,8 +59,7 @@ then
   cd ./tmp/release/nupkg
   for pkg in *.nupkg
   do
-    # Don't actually push while we're testing...
-    echo "dotnet nuget push -s https://api.nuget.org/v3/index.json -k $NUGET_API_KEY $pkg"
+    dotnet nuget push -s https://api.nuget.org/v3/index.json -k $NUGET_API_KEY $pkg
   done
   cd ../../..
 else
