@@ -87,6 +87,32 @@ $PROTOC \
   -I tmp/google-cloudevents/proto \
   $(find tmp/google-cloudevents/proto -name data.proto)
 
+# protoc doesn't include a copyright message. Add it here.
+
+echo "- Adding copyright to generated code"
+cat > tmp/copyright.txt <<END_OF_COPYRIGHT
+// Copyright $(date +%Y), Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+END_OF_COPYRIGHT
+
+for generated in $(find src/Google.Events.Protobuf -name '*.g.cs')
+do
+  cat tmp/copyright.txt $generated > tmp/with-copyright
+  mv tmp/with-copyright $generated
+done
+
 # Create a protobuf descriptor set, which we can use to extract the CloudEvent
 # types from annotations.
 
