@@ -2,13 +2,14 @@
 
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fgoogleapis%2Fgoogle-cloudevents-dotnet%2Fbadge&style=flat)](https://actions-badge.atrox.dev/googleapis/google-cloudevents-dotnet/goto)
 
+[![Google.Events](https://img.shields.io/nuget/vpre/Google.Events?label=Google.Events)](https://nuget.org/packages/Google.Events)
+
+[![Google.Events](https://img.shields.io/nuget/vpre/Google.Events.Protobuf?label=Google.Events.Protobuf)](https://nuget.org/packages/Google.Events.Protobuf)
+
 ## Overview
 
 This repository contains .NET libraries for CloudEvents issued by
-Google. The following packages are provided:
-
-- [Google.Events](https://www.nuget.org/packages/Google.Events)
-- [Google.Events.Protobuf](https://www.nuget.org/packages/Google.Events.Protobuf)
+Google.
 
 The `Google.Events` package is very small and has no dependencies.
 Its purpose is to expose attributes such as
