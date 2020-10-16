@@ -4,7 +4,7 @@
 
 [![Google.Events](https://img.shields.io/nuget/vpre/Google.Events?label=Google.Events)](https://nuget.org/packages/Google.Events)
 
-[![Google.Events](https://img.shields.io/nuget/vpre/Google.Events.Protobuf?label=Google.Events.Protobuf)](https://nuget.org/packages/Google.Events.Protobuf)
+[![Google.Events.Protobuf](https://img.shields.io/nuget/vpre/Google.Events.Protobuf?label=Google.Events.Protobuf)](https://nuget.org/packages/Google.Events.Protobuf)
 
 ## Overview
 
