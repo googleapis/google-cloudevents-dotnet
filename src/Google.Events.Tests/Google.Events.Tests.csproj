@@ -1,8 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\TestProperties.xml" />
+  
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <IsPackable>false</IsPackable>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
