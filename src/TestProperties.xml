@@ -1,0 +1,11 @@
+<Project>
+  <!-- Properties common to all test projects under this directory. -->
+
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>../GoogleEvents.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <Deterministic>true</Deterministic>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <IsPackable>False</IsPackable>
+  </PropertyGroup>
+</Project>
