@@ -60,7 +60,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
   }
   #region Messages
   /// <summary>
-  /// The data received in an event when a message is published to a topic.
+  /// The event data when a message is published to a topic.
   /// </summary>
   public sealed partial class MessagePublishedData : pb::IMessage<MessagePublishedData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

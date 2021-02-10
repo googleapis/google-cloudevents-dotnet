@@ -175,10 +175,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   }
   #region Messages
   /// <summary>
-  /// Build event data
-  /// Common build format for Google Cloud Platform API operations.
-  /// Copied from
-  /// https://github.com/googleapis/googleapis/blob/master/google/devtools/cloudbuild/v1/cloudbuild.proto.
+  /// Build event data for Google Cloud Platform API operations.
   /// </summary>
   public sealed partial class BuildEventData : pb::IMessage<BuildEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
