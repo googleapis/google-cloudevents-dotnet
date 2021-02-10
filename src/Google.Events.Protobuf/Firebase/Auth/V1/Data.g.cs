@@ -48,18 +48,18 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
             "LnYxLlVzZXJNZXRhZGF0YRI/Cg1wcm92aWRlcl9kYXRhGAggAygLMiguZ29v",
             "Z2xlLmV2ZW50cy5maXJlYmFzZS5hdXRoLnYxLlVzZXJJbmZvEhQKDHBob25l",
             "X251bWJlchgJIAEoCRIuCg1jdXN0b21fY2xhaW1zGAogASgLMhcuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cnVjdCJ1CgxVc2VyTWV0YWRhdGESLgoKY3JlYXRlZF9h",
-            "dBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNQoRbGFzdF9z",
-            "aWduZWRfaW5fYXQYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "ImQKCFVzZXJJbmZvEgsKA3VpZBgBIAEoCRINCgVlbWFpbBgCIAEoCRIUCgxk",
-            "aXNwbGF5X25hbWUYAyABKAkSEQoJcGhvdG9fVVJMGAQgASgJEhMKC3Byb3Zp",
-            "ZGVyX2lkGAUgASgJQiqqAidHb29nbGUuRXZlbnRzLlByb3RvYnVmLkZpcmVi",
-            "YXNlLkF1dGguVjFiBnByb3RvMw=="));
+            "LnByb3RvYnVmLlN0cnVjdCJ2CgxVc2VyTWV0YWRhdGESLwoLY3JlYXRlX3Rp",
+            "bWUYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjUKEWxhc3Rf",
+            "c2lnbl9pbl90aW1lGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cCJkCghVc2VySW5mbxILCgN1aWQYASABKAkSDQoFZW1haWwYAiABKAkSFAoM",
+            "ZGlzcGxheV9uYW1lGAMgASgJEhEKCXBob3RvX1VSTBgEIAEoCRITCgtwcm92",
+            "aWRlcl9pZBgFIAEoCUIqqgInR29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5GaXJl",
+            "YmFzZS5BdXRoLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.Auth.V1.AuthEventData), global::Google.Events.Protobuf.Firebase.Auth.V1.AuthEventData.Parser, new[]{ "Uid", "Email", "EmailVerified", "DisplayName", "PhotoURL", "Disabled", "Metadata", "ProviderData", "PhoneNumber", "CustomClaims" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.Auth.V1.UserMetadata), global::Google.Events.Protobuf.Firebase.Auth.V1.UserMetadata.Parser, new[]{ "CreatedAt", "LastSignedInAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.Auth.V1.UserMetadata), global::Google.Events.Protobuf.Firebase.Auth.V1.UserMetadata.Parser, new[]{ "CreateTime", "LastSignInTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.Auth.V1.UserInfo), global::Google.Events.Protobuf.Firebase.Auth.V1.UserInfo.Parser, new[]{ "Uid", "Email", "DisplayName", "PhotoURL", "ProviderId" }, null, null, null, null)
           }));
     }
@@ -636,8 +636,8 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UserMetadata(UserMetadata other) : this() {
-      createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
-      lastSignedInAt_ = other.lastSignedInAt_ != null ? other.lastSignedInAt_.Clone() : null;
+      createTime_ = other.createTime_ != null ? other.createTime_.Clone() : null;
+      lastSignInTime_ = other.lastSignInTime_ != null ? other.lastSignInTime_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -646,31 +646,31 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
       return new UserMetadata(this);
     }
 
-    /// <summary>Field number for the "created_at" field.</summary>
-    public const int CreatedAtFieldNumber = 1;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
+    /// <summary>Field number for the "create_time" field.</summary>
+    public const int CreateTimeFieldNumber = 1;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createTime_;
     /// <summary>
     /// The date the user was created.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
-      get { return createdAt_; }
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
+      get { return createTime_; }
       set {
-        createdAt_ = value;
+        createTime_ = value;
       }
     }
 
-    /// <summary>Field number for the "last_signed_in_at" field.</summary>
-    public const int LastSignedInAtFieldNumber = 2;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp lastSignedInAt_;
+    /// <summary>Field number for the "last_sign_in_time" field.</summary>
+    public const int LastSignInTimeFieldNumber = 2;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp lastSignInTime_;
     /// <summary>
     /// The date the user last signed in.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp LastSignedInAt {
-      get { return lastSignedInAt_; }
+    public global::Google.Protobuf.WellKnownTypes.Timestamp LastSignInTime {
+      get { return lastSignInTime_; }
       set {
-        lastSignedInAt_ = value;
+        lastSignInTime_ = value;
       }
     }
 
@@ -687,16 +687,16 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
-      if (!object.Equals(LastSignedInAt, other.LastSignedInAt)) return false;
+      if (!object.Equals(CreateTime, other.CreateTime)) return false;
+      if (!object.Equals(LastSignInTime, other.LastSignInTime)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
-      if (lastSignedInAt_ != null) hash ^= LastSignedInAt.GetHashCode();
+      if (createTime_ != null) hash ^= CreateTime.GetHashCode();
+      if (lastSignInTime_ != null) hash ^= LastSignInTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -713,13 +713,13 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (createdAt_ != null) {
+      if (createTime_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(CreatedAt);
+        output.WriteMessage(CreateTime);
       }
-      if (lastSignedInAt_ != null) {
+      if (lastSignInTime_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(LastSignedInAt);
+        output.WriteMessage(LastSignInTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -730,13 +730,13 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (createdAt_ != null) {
+      if (createTime_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(CreatedAt);
+        output.WriteMessage(CreateTime);
       }
-      if (lastSignedInAt_ != null) {
+      if (lastSignInTime_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(LastSignedInAt);
+        output.WriteMessage(LastSignInTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -747,11 +747,11 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (createdAt_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedAt);
+      if (createTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreateTime);
       }
-      if (lastSignedInAt_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LastSignedInAt);
+      if (lastSignInTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LastSignInTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -764,17 +764,17 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
       if (other == null) {
         return;
       }
-      if (other.createdAt_ != null) {
-        if (createdAt_ == null) {
-          CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+      if (other.createTime_ != null) {
+        if (createTime_ == null) {
+          CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
-        CreatedAt.MergeFrom(other.CreatedAt);
+        CreateTime.MergeFrom(other.CreateTime);
       }
-      if (other.lastSignedInAt_ != null) {
-        if (lastSignedInAt_ == null) {
-          LastSignedInAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+      if (other.lastSignInTime_ != null) {
+        if (lastSignInTime_ == null) {
+          LastSignInTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
-        LastSignedInAt.MergeFrom(other.LastSignedInAt);
+        LastSignInTime.MergeFrom(other.LastSignInTime);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -791,17 +791,17 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (createdAt_ == null) {
-              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            if (createTime_ == null) {
+              CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
-            input.ReadMessage(CreatedAt);
+            input.ReadMessage(CreateTime);
             break;
           }
           case 18: {
-            if (lastSignedInAt_ == null) {
-              LastSignedInAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            if (lastSignInTime_ == null) {
+              LastSignInTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
-            input.ReadMessage(LastSignedInAt);
+            input.ReadMessage(LastSignInTime);
             break;
           }
         }
@@ -819,17 +819,17 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (createdAt_ == null) {
-              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            if (createTime_ == null) {
+              CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
-            input.ReadMessage(CreatedAt);
+            input.ReadMessage(CreateTime);
             break;
           }
           case 18: {
-            if (lastSignedInAt_ == null) {
-              LastSignedInAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            if (lastSignInTime_ == null) {
+              LastSignInTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
-            input.ReadMessage(LastSignedInAt);
+            input.ReadMessage(LastSignInTime);
             break;
           }
         }
