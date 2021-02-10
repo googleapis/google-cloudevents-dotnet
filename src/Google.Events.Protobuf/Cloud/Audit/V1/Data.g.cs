@@ -173,10 +173,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
   #region Messages
   /// <summary>
-  /// Generic log entry, used as a wrapper for Cloud Audit Logs in events.
-  /// This is copied from
-  /// https://github.com/googleapis/googleapis/blob/master/google/logging/v2/log_entry.proto
-  /// and adapted appropriately.
+  /// The data within all Cloud Audit Logs log entry events.
   /// </summary>
   public sealed partial class LogEntryData : pb::IMessage<LogEntryData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

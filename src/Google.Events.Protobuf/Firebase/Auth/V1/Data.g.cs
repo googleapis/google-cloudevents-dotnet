@@ -68,7 +68,7 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
   }
   #region Messages
   /// <summary>
-  /// The data within all Firebase Auth events
+  /// The data within all Firebase Auth events.
   /// </summary>
   public sealed partial class AuthEventData : pb::IMessage<AuthEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
