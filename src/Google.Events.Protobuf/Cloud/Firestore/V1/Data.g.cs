@@ -589,8 +589,8 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     public const int NameFieldNumber = 1;
     private string name_ = "";
     /// <summary>
-    /// The resource name of the document, for example
-    /// `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+    /// The resource name of the document. For example:
+    /// `projects/{project_id}/databases/{database_id}/documents/{document_path}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
