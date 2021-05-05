@@ -197,7 +197,8 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     public const int UpdateUserFieldNumber = 3;
     private global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUser updateUser_;
     /// <summary>
-    ///  Aggregation of all metadata fields about the account that performed the update.
+    ///  Aggregation of all metadata fields about the account that performed the
+    ///  update.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUser UpdateUser {

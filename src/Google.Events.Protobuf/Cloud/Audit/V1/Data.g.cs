@@ -127,7 +127,8 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// standard severity levels listed below.  For your reference, the levels are
   /// assigned the listed numeric values. The effect of using numeric values other
   /// than those listed is undefined.
-  /// Copied from https://github.com/googleapis/googleapis/blob/master/google/logging/type/log_severity.proto
+  /// Copied from
+  /// https://github.com/googleapis/googleapis/blob/master/google/logging/type/log_severity.proto
   /// </summary>
   public enum LogSeverity {
     /// <summary>
@@ -259,7 +260,8 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     public const int ProtoPayloadFieldNumber = 2;
     private global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog protoPayload_;
     /// <summary>
-    /// The log entry payload, which is always an AuditLog for Cloud Audit Log events.
+    /// The log entry payload, which is always an AuditLog for Cloud Audit Log
+    /// events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog ProtoPayload {
@@ -273,7 +275,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     public const int InsertIdFieldNumber = 4;
     private string insertId_ = "";
     /// <summary>
-    /// A unique identifier for the log entry. 
+    /// A unique identifier for the log entry.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string InsertId {
@@ -301,7 +303,8 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     public const int OperationFieldNumber = 15;
     private global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation operation_;
     /// <summary>
-    /// Information about an operation associated with the log entry, if applicable.
+    /// Information about an operation associated with the log entry, if
+    /// applicable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation Operation {
@@ -1358,7 +1361,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     public const int ServiceDataFieldNumber = 15;
     private global::Google.Protobuf.WellKnownTypes.Struct serviceData_;
     /// <summary>
-    /// Deprecated, use `metadata` field instead.
+    /// Deprecated: Use `metadata` field instead.
     /// Other service-specific data about the request, response, and other
     /// activities.
     /// When the JSON object represented here has a proto equivalent, the proto

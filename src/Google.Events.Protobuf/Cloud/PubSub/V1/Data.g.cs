@@ -42,19 +42,19 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
             "b29nbGUuZXZlbnRzLmNsb3VkLnB1YnN1Yi52MRofZ29vZ2xlL3Byb3RvYnVm",
             "L3RpbWVzdGFtcC5wcm90byJrChRNZXNzYWdlUHVibGlzaGVkRGF0YRI9Cgdt",
             "ZXNzYWdlGAEgASgLMiwuZ29vZ2xlLmV2ZW50cy5jbG91ZC5wdWJzdWIudjEu",
-            "UHVic3ViTWVzc2FnZRIUCgxzdWJzY3JpcHRpb24YAiABKAki6AEKDVB1YnN1",
+            "UHVic3ViTWVzc2FnZRIUCgxzdWJzY3JpcHRpb24YAiABKAki/gEKDVB1YnN1",
             "Yk1lc3NhZ2USDAoEZGF0YRgBIAEoDBJQCgphdHRyaWJ1dGVzGAIgAygLMjwu",
             "Z29vZ2xlLmV2ZW50cy5jbG91ZC5wdWJzdWIudjEuUHVic3ViTWVzc2FnZS5B",
             "dHRyaWJ1dGVzRW50cnkSEgoKbWVzc2FnZV9pZBgDIAEoCRIwCgxwdWJsaXNo",
-            "X3RpbWUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGjEKD0F0",
-            "dHJpYnV0ZXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgB",
-            "QimqAiZHb29nbGUuRXZlbnRzLlByb3RvYnVmLkNsb3VkLlB1YlN1Yi5WMWIG",
-            "cHJvdG8z"));
+            "X3RpbWUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhQKDG9y",
+            "ZGVyaW5nX2tleRgFIAEoCRoxCg9BdHRyaWJ1dGVzRW50cnkSCwoDa2V5GAEg",
+            "ASgJEg0KBXZhbHVlGAIgASgJOgI4AUIpqgImR29vZ2xlLkV2ZW50cy5Qcm90",
+            "b2J1Zi5DbG91ZC5QdWJTdWIuVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.PubSub.V1.MessagePublishedData), global::Google.Events.Protobuf.Cloud.PubSub.V1.MessagePublishedData.Parser, new[]{ "Message", "Subscription" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.PubSub.V1.PubsubMessage), global::Google.Events.Protobuf.Cloud.PubSub.V1.PubsubMessage.Parser, new[]{ "Data", "Attributes", "MessageId", "PublishTime" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.PubSub.V1.PubsubMessage), global::Google.Events.Protobuf.Cloud.PubSub.V1.PubsubMessage.Parser, new[]{ "Data", "Attributes", "MessageId", "PublishTime", "OrderingKey" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -325,6 +325,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       attributes_ = other.attributes_.Clone();
       messageId_ = other.messageId_;
       publishTime_ = other.publishTime_ != null ? other.publishTime_.Clone() : null;
+      orderingKey_ = other.orderingKey_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -390,6 +391,21 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       }
     }
 
+    /// <summary>Field number for the "ordering_key" field.</summary>
+    public const int OrderingKeyFieldNumber = 5;
+    private string orderingKey_ = "";
+    /// <summary>
+    /// If non-empty, identifies related messages for which publish order should be
+    /// respected.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string OrderingKey {
+      get { return orderingKey_; }
+      set {
+        orderingKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PubsubMessage);
@@ -407,6 +423,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       if (!Attributes.Equals(other.Attributes)) return false;
       if (MessageId != other.MessageId) return false;
       if (!object.Equals(PublishTime, other.PublishTime)) return false;
+      if (OrderingKey != other.OrderingKey) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -417,6 +434,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       hash ^= Attributes.GetHashCode();
       if (MessageId.Length != 0) hash ^= MessageId.GetHashCode();
       if (publishTime_ != null) hash ^= PublishTime.GetHashCode();
+      if (OrderingKey.Length != 0) hash ^= OrderingKey.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -446,6 +464,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(PublishTime);
       }
+      if (OrderingKey.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(OrderingKey);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -468,6 +490,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(PublishTime);
       }
+      if (OrderingKey.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(OrderingKey);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -486,6 +512,9 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       }
       if (publishTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PublishTime);
+      }
+      if (OrderingKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OrderingKey);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -510,6 +539,9 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
           PublishTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         PublishTime.MergeFrom(other.PublishTime);
+      }
+      if (other.OrderingKey.Length != 0) {
+        OrderingKey = other.OrderingKey;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -544,6 +576,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
             input.ReadMessage(PublishTime);
             break;
           }
+          case 42: {
+            OrderingKey = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -575,6 +611,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
               PublishTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(PublishTime);
+            break;
+          }
+          case 42: {
+            OrderingKey = input.ReadString();
             break;
           }
         }
