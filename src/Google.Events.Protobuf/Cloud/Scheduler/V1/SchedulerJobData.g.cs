@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Cloud.Scheduler.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<SchedulerJobData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<SchedulerJobData>))]
     public partial class SchedulerJobData
     {
         /// <summary>CloudEvent type for the 'executed' event.</summary>

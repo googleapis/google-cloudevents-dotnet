@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Firebase.Analytics.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<AnalyticsLogData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<AnalyticsLogData>))]
     public partial class AnalyticsLogData
     {
         /// <summary>CloudEvent type for the 'written' event.</summary>

@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Cloud.Storage.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<StorageObjectData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<StorageObjectData>))]
     public partial class StorageObjectData
     {
         /// <summary>CloudEvent type for the 'finalized' event.</summary>

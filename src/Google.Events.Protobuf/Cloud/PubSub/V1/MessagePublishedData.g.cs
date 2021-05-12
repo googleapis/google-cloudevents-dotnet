@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Cloud.PubSub.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<MessagePublishedData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<MessagePublishedData>))]
     public partial class MessagePublishedData
     {
         /// <summary>CloudEvent type for the 'messagePublished' event.</summary>

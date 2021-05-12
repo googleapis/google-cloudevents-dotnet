@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<RemoteConfigEventData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<RemoteConfigEventData>))]
     public partial class RemoteConfigEventData
     {
         /// <summary>CloudEvent type for the 'updated' event.</summary>
