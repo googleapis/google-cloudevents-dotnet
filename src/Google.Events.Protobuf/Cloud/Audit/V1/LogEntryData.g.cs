@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Cloud.Audit.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<LogEntryData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<LogEntryData>))]
     public partial class LogEntryData
     {
         /// <summary>CloudEvent type for the 'written' event.</summary>

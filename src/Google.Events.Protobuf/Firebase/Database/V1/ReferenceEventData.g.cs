@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Firebase.Database.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<ReferenceEventData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<ReferenceEventData>))]
     public partial class ReferenceEventData
     {
         /// <summary>CloudEvent type for the 'created' event.</summary>

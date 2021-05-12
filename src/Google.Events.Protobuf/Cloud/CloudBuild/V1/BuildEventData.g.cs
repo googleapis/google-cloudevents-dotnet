@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Cloud.CloudBuild.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<BuildEventData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<BuildEventData>))]
     public partial class BuildEventData
     {
         /// <summary>CloudEvent type for the 'statusChanged' event.</summary>

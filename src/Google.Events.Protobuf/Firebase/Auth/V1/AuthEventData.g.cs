@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Firebase.Auth.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<AuthEventData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<AuthEventData>))]
     public partial class AuthEventData
     {
         /// <summary>CloudEvent type for the 'created' event.</summary>

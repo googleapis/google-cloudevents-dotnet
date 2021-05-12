@@ -14,7 +14,7 @@
 
 namespace Google.Events.Protobuf.Cloud.Firestore.V1
 {    
-    [CloudEventDataConverter(typeof(ProtobufCloudEventDataConverter<DocumentEventData>))]
+    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof(ProtobufJsonCloudEventFormatter<DocumentEventData>))]
     public partial class DocumentEventData
     {
         /// <summary>CloudEvent type for the 'created' event.</summary>
