@@ -29,7 +29,7 @@ namespace Google.Events.Protobuf.Tests
         [Fact]
         public void AuditLogDataStructs()
         {
-            var json = TestResourceHelper.LoadJson("Cloud.Audit.V1.auditlog2.json");
+            var json = TestResourceHelper.LoadString("Cloud.Audit.V1.auditlog2.json");
             var parser = new JsonParser(JsonParser.Settings.Default.WithIgnoreUnknownFields(true));
             var auditLog = parser.Parse<LogEntryData>(json).ProtoPayload;
 

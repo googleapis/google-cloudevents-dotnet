@@ -1,0 +1,28 @@
+﻿[
+  {
+    "specversion": "1.0",
+    "id": "sample-event-id",
+    "type": "google.cloud.storage.object.v1.finalized",
+    "source": "//storage.googleapis.com/projects/_/buckets/sample-bucket",
+    "subject": "folder/Test.cs",
+    "data": {
+      "bucket": "sample-bucket",
+      "contentType": "text/plain",
+      "generation": "1587627537231057",
+      "name": "folder/Test.cs"
+    }
+  },
+  {
+    "specversion": "1.0",
+    "id": "sample-event-id-2",
+    "type": "google.cloud.storage.object.v1.archived",
+    "source": "//storage.googleapis.com/projects/_/buckets/sample-bucket-2",
+    "subject": "object.txt",
+    "data": {
+      "bucket": "sample-bucket-2",
+      "contentType": "application/json",
+      "generation": 12345,
+      "name": "object.txt"
+    }
+  }
+]

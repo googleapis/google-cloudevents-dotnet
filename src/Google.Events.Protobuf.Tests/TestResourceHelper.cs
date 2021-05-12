@@ -23,7 +23,10 @@ namespace Google.Events.Protobuf.Tests
     /// </summary>
     internal static class TestResourceHelper
     {
-        public static string LoadJson(string resourceName)
+        public static string LoadString(string resourceName) =>
+            Encoding.UTF8.GetString(LoadBytes(resourceName));
+
+        public static byte[] LoadBytes(string resourceName)
         {
             MemoryStream ret = new MemoryStream();
             var type = typeof(TestResourceHelper);
@@ -35,7 +38,7 @@ namespace Google.Events.Protobuf.Tests
                 }
                 resource.CopyTo(ret);
             }
-            return Encoding.UTF8.GetString(ret.ToArray());
+            return ret.ToArray();
         }
     }
 }

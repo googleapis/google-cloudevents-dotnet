@@ -1,0 +1,8 @@
+﻿{
+  "specversion": "1.0",
+  "id": "sample-event-id",
+  "type": "google.cloud.storage.object.v1.finalized",
+  "source": "//storage.googleapis.com/projects/_/buckets/sample-bucket",
+  "subject": "folder/Test.cs",
+  "data_base64": "e30="
+}
