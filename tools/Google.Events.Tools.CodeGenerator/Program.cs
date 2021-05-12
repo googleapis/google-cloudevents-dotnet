@@ -41,7 +41,7 @@ namespace Google.Events.Tools.CodeGenerator
 
             var info = LoadCloudEventDataInfo(descriptorSetFile);
 
-            GenerateCode(info, srcDirectory, "Google.Events.Protobuf", "ProtobufCloudEventDataConverter");
+            GenerateCode(info, srcDirectory, "Google.Events.Protobuf", "ProtobufJsonCloudEventFormatter");
             return 0;
         }
 
@@ -108,7 +108,7 @@ namespace Google.Events.Tools.CodeGenerator
                     writer.WriteLine();
                     writer.WriteLine($"namespace {fileNamespace}");
                     writer.WriteLine("{    ");
-                    writer.WriteLine($"    [CloudEventDataConverter(typeof({converter}<{info.MessageName}>))]");
+                    writer.WriteLine($"    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof({converter}<{info.MessageName}>))]");
                     writer.WriteLine($"    public partial class {info.MessageName}");
                     writer.WriteLine("    {");
                     foreach (var type in info.CloudEventTypes)
