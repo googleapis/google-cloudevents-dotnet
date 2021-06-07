@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using CloudNative.CloudEvents;
+using CloudNative.CloudEvents.Core;
 using CloudNative.CloudEvents.SystemTextJson;
 using Google.Protobuf;
 using System;
@@ -38,21 +39,21 @@ namespace Google.Events.Protobuf
         private static readonly CloudEventFormatter s_structuredEventFormatter = new StructuredEventFormatter();
 
         /// <inheritdoc />
-        public override void DecodeBinaryModeEventData(byte[] data, CloudEvent cloudEvent) =>
-            cloudEvent.Data = data.Length == 0 ? null : s_jsonParser.Parse<T>(new StreamReader(new MemoryStream(data)));
+        public override void DecodeBinaryModeEventData(ReadOnlyMemory<byte> body, CloudEvent cloudEvent) =>
+            cloudEvent.Data = body.Length == 0 ? null : s_jsonParser.Parse<T>(new StreamReader(BinaryDataUtilities.AsStream(body)));
 
         // TODO: Handle other structured modes beyond JSON?
 
         /// <inheritdoc />
-        public override CloudEvent DecodeStructuredModeMessage(byte[] data, ContentType contentType, IEnumerable<CloudEventAttribute> extensionAttributes) =>
-            s_structuredEventFormatter.DecodeStructuredModeMessage(data, contentType, extensionAttributes);
+        public override CloudEvent DecodeStructuredModeMessage(ReadOnlyMemory<byte> body, ContentType contentType, IEnumerable<CloudEventAttribute> extensionAttributes) =>
+            s_structuredEventFormatter.DecodeStructuredModeMessage(body, contentType, extensionAttributes);
 
         /// <inheritdoc />
-        public override IReadOnlyList<CloudEvent> DecodeBatchModeMessage(byte[] data, ContentType contentType, IEnumerable<CloudEventAttribute> extensionAttributes) =>
-            s_structuredEventFormatter.DecodeBatchModeMessage(data, contentType, extensionAttributes);
+        public override IReadOnlyList<CloudEvent> DecodeBatchModeMessage(ReadOnlyMemory<byte> body, ContentType contentType, IEnumerable<CloudEventAttribute> extensionAttributes) =>
+            s_structuredEventFormatter.DecodeBatchModeMessage(body, contentType, extensionAttributes);
 
         /// <inheritdoc />
-        public override byte[] EncodeBinaryModeEventData(CloudEvent cloudEvent)
+        public override ReadOnlyMemory<byte> EncodeBinaryModeEventData(CloudEvent cloudEvent)
         {
             var data = (T)cloudEvent.Data;
             if (data is null)
@@ -64,11 +65,11 @@ namespace Google.Events.Protobuf
         }
 
         /// <inheritdoc />
-        public override byte[] EncodeStructuredModeMessage(CloudEvent cloudEvent, out ContentType contentType) =>
+        public override ReadOnlyMemory<byte> EncodeStructuredModeMessage(CloudEvent cloudEvent, out ContentType contentType) =>
             s_structuredEventFormatter.EncodeStructuredModeMessage(cloudEvent, out contentType);
 
         /// <inheritdoc />
-        public override byte[] EncodeBatchModeMessage(IEnumerable<CloudEvent> cloudEvents, out ContentType contentType) =>
+        public override ReadOnlyMemory<byte> EncodeBatchModeMessage(IEnumerable<CloudEvent> cloudEvents, out ContentType contentType) =>
             s_structuredEventFormatter.EncodeBatchModeMessage(cloudEvents, out contentType);
 
         private class StructuredEventFormatter : JsonEventFormatter

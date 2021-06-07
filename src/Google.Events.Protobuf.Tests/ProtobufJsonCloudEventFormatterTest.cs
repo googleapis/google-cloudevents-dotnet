@@ -106,7 +106,7 @@ namespace Google.Events.Protobuf.Tests
             var expectedBytes = TestResourceHelper.LoadBytes("structured-mode-body.json");
 
             var converter = new ProtobufJsonCloudEventFormatter<StorageObjectData>();
-            var actualBytes = converter.EncodeStructuredModeMessage(cloudEvent, out var contentType);
+            var actualBytes = converter.EncodeStructuredModeMessage(cloudEvent, out var contentType).ToArray();
             Assert.Equal("application/cloudevents+json", contentType.MediaType);
 
             AssertJsonBytesEqual(expectedBytes, actualBytes);
@@ -119,7 +119,7 @@ namespace Google.Events.Protobuf.Tests
             cloudEvent.Data = null;
 
             var converter = new ProtobufJsonCloudEventFormatter<StorageObjectData>();
-            var bytes = converter.EncodeStructuredModeMessage(cloudEvent, out var contentType);
+            var bytes = converter.EncodeStructuredModeMessage(cloudEvent, out var contentType).ToArray();
             Assert.Equal("application/cloudevents+json", contentType.MediaType);
 
             var obj = JObject.Parse(Encoding.UTF8.GetString(bytes));
@@ -133,7 +133,7 @@ namespace Google.Events.Protobuf.Tests
             var expectedBytes = TestResourceHelper.LoadBytes("binary-mode-body.json");
 
             var converter = new ProtobufJsonCloudEventFormatter<StorageObjectData>();
-            var actualBytes = converter.EncodeBinaryModeEventData(cloudEvent);
+            var actualBytes = converter.EncodeBinaryModeEventData(cloudEvent).ToArray();
 
             AssertJsonBytesEqual(expectedBytes, actualBytes);
         }
@@ -145,7 +145,7 @@ namespace Google.Events.Protobuf.Tests
             cloudEvent.Data = null;
 
             var converter = new ProtobufJsonCloudEventFormatter<StorageObjectData>();
-            Assert.Empty(converter.EncodeBinaryModeEventData(cloudEvent));
+            Assert.Empty(converter.EncodeBinaryModeEventData(cloudEvent).ToArray());
         }
 
         [Fact]
@@ -155,7 +155,7 @@ namespace Google.Events.Protobuf.Tests
             var expectedBytes = TestResourceHelper.LoadBytes("batch-body.json");
 
             var converter = new ProtobufJsonCloudEventFormatter<StorageObjectData>();
-            var actualBytes = converter.EncodeBatchModeMessage(batch, out var contentType);
+            var actualBytes = converter.EncodeBatchModeMessage(batch, out var contentType).ToArray();
             Assert.Equal("application/cloudevents-batch+json", contentType.MediaType);
 
             AssertJsonBytesEqual(expectedBytes, actualBytes);
