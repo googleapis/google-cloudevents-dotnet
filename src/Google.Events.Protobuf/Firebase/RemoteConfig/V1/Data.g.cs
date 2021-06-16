@@ -56,8 +56,10 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
             "ARIMCghSRVNUX0FQSRACEhIKDkFETUlOX1NES19OT0RFEAMqfAoWUmVtb3Rl",
             "Q29uZmlnVXBkYXRlVHlwZRIpCiVSRU1PVEVfQ09ORklHX1VQREFURV9UWVBF",
             "X1VOU1BFQ0lGSUVEEAASFgoSSU5DUkVNRU5UQUxfVVBEQVRFEAESEQoNRk9S",
-            "Q0VEX1VQREFURRACEgwKCFJPTExCQUNLEANCMqoCL0dvb2dsZS5FdmVudHMu",
-            "UHJvdG9idWYuRmlyZWJhc2UuUmVtb3RlQ29uZmlnLlYxYgZwcm90bzM="));
+            "Q0VEX1VQREFURRACEgwKCFJPTExCQUNLEANCaQoqY29tLmdvb2dsZS5ldmVu",
+            "dHMuZmlyZWJhc2UucmVtb3RlY29uZmlnLnYxQglEYXRhUHJvdG+qAi9Hb29n",
+            "bGUuRXZlbnRzLlByb3RvYnVmLkZpcmViYXNlLlJlbW90ZUNvbmZpZy5WMWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateOrigin), typeof(global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateType), }, null, new pbr::GeneratedClrTypeInfo[] {
