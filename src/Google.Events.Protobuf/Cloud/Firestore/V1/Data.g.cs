@@ -134,7 +134,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     private global::Google.Events.Protobuf.Cloud.Firestore.V1.Document value_;
     /// <summary>
     /// A Document object containing a post-operation document snapshot.
-    /// This is not populated for delete events. (TODO: check this!)
+    /// This is not populated for delete events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Events.Protobuf.Cloud.Firestore.V1.Document Value {
