@@ -75,7 +75,7 @@ namespace Google.Events.ValidateSchema
         private static bool ValidateSchemaData(string testRoot, string file)
         {
             string relativePath = Path.GetRelativePath(testRoot, file).Replace('\\', '/');
-            Console.WriteLine($"Testing {relativePath}");
+            Console.Write($"Testing {relativePath}: ");
             string json = File.ReadAllText(file);
             try
             {
@@ -88,11 +88,12 @@ namespace Google.Events.ValidateSchema
                 // any *unexpected* unknown fields.
                 json = MaybeModifyJson(descriptor.File.Package, descriptor.Name, json);
                 StrictParser.Parse(json, descriptor);
-
+                Console.WriteLine("Pass");
                 return true;
             }
             catch (Exception e)
             {
+                Console.WriteLine("Fail");
                 Console.WriteLine(e);
                 return false;
             }
