@@ -45,17 +45,17 @@ namespace Google.Events.Protobuf
         // TODO: Handle other structured modes beyond JSON?
 
         /// <inheritdoc />
-        public override CloudEvent DecodeStructuredModeMessage(ReadOnlyMemory<byte> body, ContentType contentType, IEnumerable<CloudEventAttribute> extensionAttributes) =>
+        public override CloudEvent DecodeStructuredModeMessage(ReadOnlyMemory<byte> body, ContentType? contentType, IEnumerable<CloudEventAttribute>? extensionAttributes) =>
             s_structuredEventFormatter.DecodeStructuredModeMessage(body, contentType, extensionAttributes);
 
         /// <inheritdoc />
-        public override IReadOnlyList<CloudEvent> DecodeBatchModeMessage(ReadOnlyMemory<byte> body, ContentType contentType, IEnumerable<CloudEventAttribute> extensionAttributes) =>
+        public override IReadOnlyList<CloudEvent> DecodeBatchModeMessage(ReadOnlyMemory<byte> body, ContentType? contentType, IEnumerable<CloudEventAttribute>? extensionAttributes) =>
             s_structuredEventFormatter.DecodeBatchModeMessage(body, contentType, extensionAttributes);
 
         /// <inheritdoc />
         public override ReadOnlyMemory<byte> EncodeBinaryModeEventData(CloudEvent cloudEvent)
         {
-            var data = (T)cloudEvent.Data;
+            var data = (T?)cloudEvent.Data;
             if (data is null)
             {
                 return Array.Empty<byte>();
@@ -79,7 +79,7 @@ namespace Google.Events.Protobuf
                 writer.WritePropertyName("data");
                 // TODO: Try to make this cleaner. It's annoying that we have to convert to a JSON string,
                 // reparse, then reserialize.
-                using var document = JsonDocument.Parse(cloudEvent.Data.ToString());
+                using var document = JsonDocument.Parse(cloudEvent.Data!.ToString());
                 document.WriteTo(writer);
             }
 
