@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "ignorePaths": [
+    "src/Google.Events.Protobuf/**"  
+  ],
+  "schedule": ["before 8am"],
+  "timezone": "Europe/London"
+}
