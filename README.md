@@ -1,6 +1,6 @@
 # Google CloudEvents for  .NET
 
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fgoogleapis%2Fgoogle-cloudevents-dotnet%2Fbadge&style=flat)](https://actions-badge.atrox.dev/googleapis/google-cloudevents-dotnet/goto)
+[![Build Status](https://github.com/googleapis/google-cloudevents-dotnet/actions/workflows/build.yml/badge.svg)](https://github.com/googleapis/google-cloudevents-dotnet/actions/workflows/build.yml)
 
 [![Google.Events.Protobuf](https://img.shields.io/nuget/vpre/Google.Events.Protobuf?label=Google.Events.Protobuf)](https://nuget.org/packages/Google.Events.Protobuf)
 
