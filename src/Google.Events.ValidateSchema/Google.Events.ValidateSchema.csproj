@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.19.0" />
-    <PackageReference Include="Google.Api.CommonProtos" Version="2.4.0" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <Compile Include="../../tmp/ValidationSource/**" />
   </ItemGroup>
