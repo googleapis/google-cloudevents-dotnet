@@ -40,7 +40,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
           string.Concat(
             "Cixnb29nbGUvZXZlbnRzL2ZpcmViYXNlL3Rlc3RsYWIvdjEvZGF0YS5wcm90",
             "bxIhZ29vZ2xlLmV2ZW50cy5maXJlYmFzZS50ZXN0bGFiLnYxGh9nb29nbGUv",
-            "cHJvdG9idWYvdGltZXN0YW1wLnByb3RvIv0CChNUZXN0TWF0cml4RXZlbnRE",
+            "cHJvdG9idWYvdGltZXN0YW1wLnByb3RvIpUDChNUZXN0TWF0cml4RXZlbnRE",
             "YXRhEi8KC2NyZWF0ZV90aW1lGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
             "bWVzdGFtcBI7CgVzdGF0ZRgCIAEoDjIsLmdvb2dsZS5ldmVudHMuZmlyZWJh",
             "c2UudGVzdGxhYi52MS5UZXN0U3RhdGUSHgoWaW52YWxpZF9tYXRyaXhfZGV0",
@@ -49,24 +49,24 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
             "cmVzdWx0X3N0b3JhZ2UYBSABKAsyMC5nb29nbGUuZXZlbnRzLmZpcmViYXNl",
             "LnRlc3RsYWIudjEuUmVzdWx0U3RvcmFnZRJCCgtjbGllbnRfaW5mbxgGIAEo",
             "CzItLmdvb2dsZS5ldmVudHMuZmlyZWJhc2UudGVzdGxhYi52MS5DbGllbnRJ",
-            "bmZvIpkBCgpDbGllbnRJbmZvEg4KBmNsaWVudBgBIAEoCRJLCgdkZXRhaWxz",
-            "GAIgAygLMjouZ29vZ2xlLmV2ZW50cy5maXJlYmFzZS50ZXN0bGFiLnYxLkNs",
-            "aWVudEluZm8uRGV0YWlsc0VudHJ5Gi4KDERldGFpbHNFbnRyeRILCgNrZXkY",
-            "ASABKAkSDQoFdmFsdWUYAiABKAk6AjgBInQKDVJlc3VsdFN0b3JhZ2USHAoU",
-            "dG9vbF9yZXN1bHRzX2hpc3RvcnkYASABKAkSHgoWdG9vbF9yZXN1bHRzX2V4",
-            "ZWN1dGlvbhgCIAEoCRITCgtyZXN1bHRzX3VyaRgDIAEoCRIQCghnY3NfcGF0",
-            "aBgEIAEoCSpqCglUZXN0U3RhdGUSGgoWVEVTVF9TVEFURV9VTlNQRUNJRklF",
-            "RBAAEg4KClZBTElEQVRJTkcQARILCgdQRU5ESU5HEAISDAoIRklOSVNIRUQQ",
-            "AxIJCgVFUlJPUhAEEgsKB0lOVkFMSUQQBSpqCg5PdXRjb21lU3VtbWFyeRIf",
-            "ChtPVVRDT01FX1NVTU1BUllfVU5TUEVDSUZJRUQQABILCgdTVUNDRVNTEAES",
-            "CwoHRkFJTFVSRRACEhAKDElOQ09OQ0xVU0lWRRADEgsKB1NLSVBQRUQQBEJh",
-            "CiVjb20uZ29vZ2xlLmV2ZW50cy5maXJlYmFzZS50ZXN0bGFiLnYxQglEYXRh",
-            "UHJvdG9QAaoCKkdvb2dsZS5FdmVudHMuUHJvdG9idWYuRmlyZWJhc2UuVGVz",
-            "dExhYi5WMWIGcHJvdG8z"));
+            "bmZvEhYKDnRlc3RfbWF0cml4X2lkGAcgASgJIpkBCgpDbGllbnRJbmZvEg4K",
+            "BmNsaWVudBgBIAEoCRJLCgdkZXRhaWxzGAIgAygLMjouZ29vZ2xlLmV2ZW50",
+            "cy5maXJlYmFzZS50ZXN0bGFiLnYxLkNsaWVudEluZm8uRGV0YWlsc0VudHJ5",
+            "Gi4KDERldGFpbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6",
+            "AjgBInQKDVJlc3VsdFN0b3JhZ2USHAoUdG9vbF9yZXN1bHRzX2hpc3RvcnkY",
+            "ASABKAkSHgoWdG9vbF9yZXN1bHRzX2V4ZWN1dGlvbhgCIAEoCRITCgtyZXN1",
+            "bHRzX3VyaRgDIAEoCRIQCghnY3NfcGF0aBgEIAEoCSpqCglUZXN0U3RhdGUS",
+            "GgoWVEVTVF9TVEFURV9VTlNQRUNJRklFRBAAEg4KClZBTElEQVRJTkcQARIL",
+            "CgdQRU5ESU5HEAISDAoIRklOSVNIRUQQAxIJCgVFUlJPUhAEEgsKB0lOVkFM",
+            "SUQQBSpqCg5PdXRjb21lU3VtbWFyeRIfChtPVVRDT01FX1NVTU1BUllfVU5T",
+            "UEVDSUZJRUQQABILCgdTVUNDRVNTEAESCwoHRkFJTFVSRRACEhAKDElOQ09O",
+            "Q0xVU0lWRRADEgsKB1NLSVBQRUQQBEJhCiVjb20uZ29vZ2xlLmV2ZW50cy5m",
+            "aXJlYmFzZS50ZXN0bGFiLnYxQglEYXRhUHJvdG9QAaoCKkdvb2dsZS5FdmVu",
+            "dHMuUHJvdG9idWYuRmlyZWJhc2UuVGVzdExhYi5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Firebase.TestLab.V1.TestState), typeof(global::Google.Events.Protobuf.Firebase.TestLab.V1.OutcomeSummary), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.TestLab.V1.TestMatrixEventData), global::Google.Events.Protobuf.Firebase.TestLab.V1.TestMatrixEventData.Parser, new[]{ "CreateTime", "State", "InvalidMatrixDetails", "OutcomeSummary", "ResultStorage", "ClientInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.TestLab.V1.TestMatrixEventData), global::Google.Events.Protobuf.Firebase.TestLab.V1.TestMatrixEventData.Parser, new[]{ "CreateTime", "State", "InvalidMatrixDetails", "OutcomeSummary", "ResultStorage", "ClientInfo", "TestMatrixId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.TestLab.V1.ClientInfo), global::Google.Events.Protobuf.Firebase.TestLab.V1.ClientInfo.Parser, new[]{ "Client", "Details" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Firebase.TestLab.V1.ResultStorage), global::Google.Events.Protobuf.Firebase.TestLab.V1.ResultStorage.Parser, new[]{ "ToolResultsHistory", "ToolResultsExecution", "ResultsUri", "GcsPath" }, null, null, null, null)
           }));
@@ -179,6 +179,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
       outcomeSummary_ = other.outcomeSummary_;
       resultStorage_ = other.resultStorage_ != null ? other.resultStorage_.Clone() : null;
       clientInfo_ = other.clientInfo_ != null ? other.clientInfo_.Clone() : null;
+      testMatrixId_ = other.testMatrixId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -272,6 +273,20 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
       }
     }
 
+    /// <summary>Field number for the "test_matrix_id" field.</summary>
+    public const int TestMatrixIdFieldNumber = 7;
+    private string testMatrixId_ = "";
+    /// <summary>
+    /// ID of the test matrix this event belongs to.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TestMatrixId {
+      get { return testMatrixId_; }
+      set {
+        testMatrixId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TestMatrixEventData);
@@ -291,6 +306,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
       if (OutcomeSummary != other.OutcomeSummary) return false;
       if (!object.Equals(ResultStorage, other.ResultStorage)) return false;
       if (!object.Equals(ClientInfo, other.ClientInfo)) return false;
+      if (TestMatrixId != other.TestMatrixId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -303,6 +319,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
       if (OutcomeSummary != global::Google.Events.Protobuf.Firebase.TestLab.V1.OutcomeSummary.Unspecified) hash ^= OutcomeSummary.GetHashCode();
       if (resultStorage_ != null) hash ^= ResultStorage.GetHashCode();
       if (clientInfo_ != null) hash ^= ClientInfo.GetHashCode();
+      if (TestMatrixId.Length != 0) hash ^= TestMatrixId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -343,6 +360,10 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
         output.WriteRawTag(50);
         output.WriteMessage(ClientInfo);
       }
+      if (TestMatrixId.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(TestMatrixId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -376,6 +397,10 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
         output.WriteRawTag(50);
         output.WriteMessage(ClientInfo);
       }
+      if (TestMatrixId.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(TestMatrixId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -402,6 +427,9 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
       }
       if (clientInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientInfo);
+      }
+      if (TestMatrixId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TestMatrixId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -440,6 +468,9 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
           ClientInfo = new global::Google.Events.Protobuf.Firebase.TestLab.V1.ClientInfo();
         }
         ClientInfo.MergeFrom(other.ClientInfo);
+      }
+      if (other.TestMatrixId.Length != 0) {
+        TestMatrixId = other.TestMatrixId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -488,6 +519,10 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
             input.ReadMessage(ClientInfo);
             break;
           }
+          case 58: {
+            TestMatrixId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -533,6 +568,10 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
               ClientInfo = new global::Google.Events.Protobuf.Firebase.TestLab.V1.ClientInfo();
             }
             input.ReadMessage(ClientInfo);
+            break;
+          }
+          case 58: {
+            TestMatrixId = input.ReadString();
             break;
           }
         }
