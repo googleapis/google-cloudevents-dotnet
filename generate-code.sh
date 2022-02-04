@@ -11,7 +11,7 @@
 set -e
 
 echo "~ START"
-PROTOBUF_VERSION=3.13.0
+PROTOBUF_VERSION=3.19.0
 
 # protoc is a native application, so we need to download different zip files
 # and use different binaries depending on the OS.

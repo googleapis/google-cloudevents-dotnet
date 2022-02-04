@@ -4,6 +4,7 @@
   "type": "google.cloud.storage.object.v1.finalized",
   "source": "//storage.googleapis.com/projects/_/buckets/sample-bucket",
   "subject": "folder/Test.cs",
+  "datacontenttype": "application/json",
   "data": {
     "bucket": "sample-bucket",
     "contentType": "text/plain",
