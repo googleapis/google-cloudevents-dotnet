@@ -152,19 +152,23 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     private static readonly pb::MessageParser<TestMatrixEventData> _parser = new pb::MessageParser<TestMatrixEventData>(() => new TestMatrixEventData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TestMatrixEventData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Firebase.TestLab.V1.DataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestMatrixEventData() {
       OnConstruction();
     }
@@ -172,6 +176,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestMatrixEventData(TestMatrixEventData other) : this() {
       createTime_ = other.createTime_ != null ? other.createTime_.Clone() : null;
       state_ = other.state_;
@@ -184,6 +189,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestMatrixEventData Clone() {
       return new TestMatrixEventData(this);
     }
@@ -195,6 +201,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// Time the test matrix was created.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
       get { return createTime_; }
       set {
@@ -209,6 +216,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// State of the test matrix.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Firebase.TestLab.V1.TestState State {
       get { return state_; }
       set {
@@ -224,6 +232,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// matrices in the INVALID state.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string InvalidMatrixDetails {
       get { return invalidMatrixDetails_; }
       set {
@@ -238,6 +247,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// Outcome summary of the test matrix.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Firebase.TestLab.V1.OutcomeSummary OutcomeSummary {
       get { return outcomeSummary_; }
       set {
@@ -252,6 +262,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// Locations where test results are stored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Firebase.TestLab.V1.ResultStorage ResultStorage {
       get { return resultStorage_; }
       set {
@@ -266,6 +277,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// Information provided by the client that created the test matrix.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Firebase.TestLab.V1.ClientInfo ClientInfo {
       get { return clientInfo_; }
       set {
@@ -280,6 +292,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// ID of the test matrix this event belongs to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TestMatrixId {
       get { return testMatrixId_; }
       set {
@@ -288,11 +301,13 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TestMatrixEventData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TestMatrixEventData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -311,6 +326,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (createTime_ != null) hash ^= CreateTime.GetHashCode();
@@ -327,11 +343,13 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -372,6 +390,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (createTime_ != null) {
         output.WriteRawTag(10);
@@ -408,6 +427,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (createTime_ != null) {
@@ -438,6 +458,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TestMatrixEventData other) {
       if (other == null) {
         return;
@@ -476,6 +497,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -530,6 +552,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -592,19 +615,23 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     private static readonly pb::MessageParser<ClientInfo> _parser = new pb::MessageParser<ClientInfo>(() => new ClientInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClientInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Firebase.TestLab.V1.DataReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientInfo() {
       OnConstruction();
     }
@@ -612,6 +639,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientInfo(ClientInfo other) : this() {
       client_ = other.client_;
       details_ = other.details_.Clone();
@@ -619,6 +647,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientInfo Clone() {
       return new ClientInfo(this);
     }
@@ -630,6 +659,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// Client name, such as "gcloud".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Client {
       get { return client_; }
       set {
@@ -646,16 +676,19 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// Map of detailed information about the client.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> Details {
       get { return details_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClientInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClientInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -669,6 +702,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Client.Length != 0) hash ^= Client.GetHashCode();
@@ -680,11 +714,13 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -702,6 +738,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Client.Length != 0) {
         output.WriteRawTag(10);
@@ -715,6 +752,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Client.Length != 0) {
@@ -728,6 +766,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClientInfo other) {
       if (other == null) {
         return;
@@ -740,6 +779,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -765,6 +805,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -798,19 +839,23 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     private static readonly pb::MessageParser<ResultStorage> _parser = new pb::MessageParser<ResultStorage>(() => new ResultStorage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ResultStorage> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Firebase.TestLab.V1.DataReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResultStorage() {
       OnConstruction();
     }
@@ -818,6 +863,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResultStorage(ResultStorage other) : this() {
       toolResultsHistory_ = other.toolResultsHistory_;
       toolResultsExecution_ = other.toolResultsExecution_;
@@ -827,6 +873,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResultStorage Clone() {
       return new ResultStorage(this);
     }
@@ -841,6 +888,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// for more information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ToolResultsHistory {
       get { return toolResultsHistory_; }
       set {
@@ -859,6 +907,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// for more information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ToolResultsExecution {
       get { return toolResultsExecution_; }
       set {
@@ -873,6 +922,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// URI to the test results in the Firebase Web Console.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResultsUri {
       get { return resultsUri_; }
       set {
@@ -888,6 +938,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     /// In the form "gs://bucket/path/to/somewhere".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GcsPath {
       get { return gcsPath_; }
       set {
@@ -896,11 +947,13 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ResultStorage);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ResultStorage other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -916,6 +969,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ToolResultsHistory.Length != 0) hash ^= ToolResultsHistory.GetHashCode();
@@ -929,11 +983,13 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -962,6 +1018,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ToolResultsHistory.Length != 0) {
         output.WriteRawTag(10);
@@ -986,6 +1043,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ToolResultsHistory.Length != 0) {
@@ -1007,6 +1065,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ResultStorage other) {
       if (other == null) {
         return;
@@ -1027,6 +1086,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1060,6 +1120,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

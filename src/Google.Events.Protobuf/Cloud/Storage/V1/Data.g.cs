@@ -87,19 +87,23 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     private static readonly pb::MessageParser<StorageObjectData> _parser = new pb::MessageParser<StorageObjectData>(() => new StorageObjectData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<StorageObjectData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Storage.V1.DataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StorageObjectData() {
       OnConstruction();
     }
@@ -107,6 +111,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StorageObjectData(StorageObjectData other) : this() {
       contentEncoding_ = other.contentEncoding_;
       contentDisposition_ = other.contentDisposition_;
@@ -141,6 +146,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StorageObjectData Clone() {
       return new StorageObjectData(this);
     }
@@ -153,6 +159,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// [https://tools.ietf.org/html/rfc7231#section-3.1.2.2][RFC 7231 §3.1.2.2]
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ContentEncoding {
       get { return contentEncoding_; }
       set {
@@ -168,6 +175,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// [https://tools.ietf.org/html/rfc6266][RFC 6266].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ContentDisposition {
       get { return contentDisposition_; }
       set {
@@ -183,6 +191,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// [https://tools.ietf.org/html/rfc7234#section-5.2"][RFC 7234 §5.2].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CacheControl {
       get { return cacheControl_; }
       set {
@@ -198,6 +207,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// [https://tools.ietf.org/html/rfc7231#section-3.1.3.2][RFC 7231 §3.1.3.2].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ContentLanguage {
       get { return contentLanguage_; }
       set {
@@ -215,6 +225,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// particular object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Metageneration {
       get { return metageneration_; }
       set {
@@ -230,6 +241,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// version of the object has been deleted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp TimeDeleted {
       get { return timeDeleted_; }
       set {
@@ -247,6 +259,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// `application/octet-stream`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ContentType {
       get { return contentType_; }
       set {
@@ -262,6 +275,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// [https://tools.ietf.org/html/rfc7230#section-3.3.2][RFC 7230 §3.3.2].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Size {
       get { return size_; }
       set {
@@ -277,6 +291,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// Attempting to set this field will result in an error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp TimeCreated {
       get { return timeCreated_; }
       set {
@@ -294,6 +309,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// ETags: Best Practices].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Crc32C {
       get { return crc32C_; }
       set {
@@ -310,6 +326,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// Attempting to set this field will result in an error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ComponentCount {
       get { return componentCount_; }
       set {
@@ -328,6 +345,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// ETags: Best Practices].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Md5Hash {
       get { return md5Hash_; }
       set {
@@ -343,6 +361,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// [https://tools.ietf.org/html/rfc7232#section-2.3][RFC 7232 §2.3].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Etag {
       get { return etag_; }
       set {
@@ -357,6 +376,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// The modification time of the object metadata.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
       get { return updated_; }
       set {
@@ -371,6 +391,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// Storage class of the object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StorageClass {
       get { return storageClass_; }
       set {
@@ -386,6 +407,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// such a key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string KmsKeyName {
       get { return kmsKeyName_; }
       set {
@@ -400,6 +422,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// The time at which the object's storage class was last changed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp TimeStorageClassUpdated {
       get { return timeStorageClassUpdated_; }
       set {
@@ -414,6 +437,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// Whether an object is under temporary hold.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool TemporaryHold {
       get { return temporaryHold_; }
       set {
@@ -429,6 +453,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// object's retention period expires.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp RetentionExpirationTime {
       get { return retentionExpirationTime_; }
       set {
@@ -445,6 +470,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// User-provided metadata, in key/value pairs.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> Metadata {
       get { return metadata_; }
     }
@@ -456,6 +482,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// Whether an object is under event-based hold.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool EventBasedHold {
       get { return eventBasedHold_; }
       set {
@@ -470,6 +497,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// The name of the object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -485,6 +513,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// generation number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -499,6 +528,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// The name of the bucket containing this object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Bucket {
       get { return bucket_; }
       set {
@@ -514,6 +544,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// Attempting to set this field will result in an error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Generation {
       get { return generation_; }
       set {
@@ -529,6 +560,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// such a key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Types.CustomerEncryption CustomerEncryption {
       get { return customerEncryption_; }
       set {
@@ -543,6 +575,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// Media download link.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaLink {
       get { return mediaLink_; }
       set {
@@ -557,6 +590,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// The link to this object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SelfLink {
       get { return selfLink_; }
       set {
@@ -571,6 +605,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     /// The kind of item this is. For objects, this is always "storage#object".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Kind {
       get { return kind_; }
       set {
@@ -579,11 +614,13 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as StorageObjectData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(StorageObjectData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -624,6 +661,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ContentEncoding.Length != 0) hash ^= ContentEncoding.GetHashCode();
@@ -662,11 +700,13 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -792,6 +832,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ContentEncoding.Length != 0) {
         output.WriteRawTag(10);
@@ -913,6 +954,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ContentEncoding.Length != 0) {
@@ -1007,6 +1049,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(StorageObjectData other) {
       if (other == null) {
         return;
@@ -1118,6 +1161,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1269,6 +1313,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1418,6 +1463,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
     #region Nested types
     /// <summary>Container for nested types declared in the StorageObjectData message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// Describes the customer-specified mechanism used to store the data at rest.
@@ -1430,19 +1476,23 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         private static readonly pb::MessageParser<CustomerEncryption> _parser = new pb::MessageParser<CustomerEncryption>(() => new CustomerEncryption());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<CustomerEncryption> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Google.Events.Protobuf.Cloud.Storage.V1.StorageObjectData.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public CustomerEncryption() {
           OnConstruction();
         }
@@ -1450,6 +1500,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public CustomerEncryption(CustomerEncryption other) : this() {
           encryptionAlgorithm_ = other.encryptionAlgorithm_;
           keySha256_ = other.keySha256_;
@@ -1457,6 +1508,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public CustomerEncryption Clone() {
           return new CustomerEncryption(this);
         }
@@ -1468,6 +1520,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         /// The encryption algorithm.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string EncryptionAlgorithm {
           get { return encryptionAlgorithm_; }
           set {
@@ -1482,6 +1535,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         /// SHA256 hash value of the encryption key.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string KeySha256 {
           get { return keySha256_; }
           set {
@@ -1490,11 +1544,13 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as CustomerEncryption);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(CustomerEncryption other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1508,6 +1564,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (EncryptionAlgorithm.Length != 0) hash ^= EncryptionAlgorithm.GetHashCode();
@@ -1519,11 +1576,13 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -1544,6 +1603,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (EncryptionAlgorithm.Length != 0) {
             output.WriteRawTag(10);
@@ -1560,6 +1620,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (EncryptionAlgorithm.Length != 0) {
@@ -1575,6 +1636,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(CustomerEncryption other) {
           if (other == null) {
             return;
@@ -1589,6 +1651,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -1614,6 +1677,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {

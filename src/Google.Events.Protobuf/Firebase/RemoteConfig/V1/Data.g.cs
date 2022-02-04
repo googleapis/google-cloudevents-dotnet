@@ -131,19 +131,23 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     private static readonly pb::MessageParser<RemoteConfigEventData> _parser = new pb::MessageParser<RemoteConfigEventData>(() => new RemoteConfigEventData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RemoteConfigEventData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.DataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RemoteConfigEventData() {
       OnConstruction();
     }
@@ -151,6 +155,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RemoteConfigEventData(RemoteConfigEventData other) : this() {
       versionNumber_ = other.versionNumber_;
       updateTime_ = other.updateTime_ != null ? other.updateTime_.Clone() : null;
@@ -163,6 +168,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RemoteConfigEventData Clone() {
       return new RemoteConfigEventData(this);
     }
@@ -174,6 +180,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// The version number of the version's corresponding Remote Config template.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long VersionNumber {
       get { return versionNumber_; }
       set {
@@ -188,6 +195,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// When the Remote Config template was written to the Remote Config server.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp UpdateTime {
       get { return updateTime_; }
       set {
@@ -203,6 +211,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     ///  update.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUser UpdateUser {
       get { return updateUser_; }
       set {
@@ -217,6 +226,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// The user-provided description of the corresponding Remote Config template.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -231,6 +241,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// Where the update action originated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateOrigin UpdateOrigin {
       get { return updateOrigin_; }
       set {
@@ -245,6 +256,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// What type of update was made.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateType UpdateType {
       get { return updateType_; }
       set {
@@ -260,6 +272,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// version number of the Remote Config template that was rolled-back to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RollbackSource {
       get { return rollbackSource_; }
       set {
@@ -268,11 +281,13 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RemoteConfigEventData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RemoteConfigEventData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -291,6 +306,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (VersionNumber != 0L) hash ^= VersionNumber.GetHashCode();
@@ -307,11 +323,13 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -352,6 +370,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (VersionNumber != 0L) {
         output.WriteRawTag(8);
@@ -388,6 +407,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (VersionNumber != 0L) {
@@ -418,6 +438,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RemoteConfigEventData other) {
       if (other == null) {
         return;
@@ -453,6 +474,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -504,6 +526,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -564,19 +587,23 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     private static readonly pb::MessageParser<RemoteConfigUser> _parser = new pb::MessageParser<RemoteConfigUser>(() => new RemoteConfigUser());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RemoteConfigUser> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.DataReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RemoteConfigUser() {
       OnConstruction();
     }
@@ -584,6 +611,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RemoteConfigUser(RemoteConfigUser other) : this() {
       name_ = other.name_;
       email_ = other.email_;
@@ -592,6 +620,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RemoteConfigUser Clone() {
       return new RemoteConfigUser(this);
     }
@@ -603,6 +632,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// Display name.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -617,6 +647,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// Email address.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Email {
       get { return email_; }
       set {
@@ -631,6 +662,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     /// Image URL.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ImageUrl {
       get { return imageUrl_; }
       set {
@@ -639,11 +671,13 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RemoteConfigUser);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RemoteConfigUser other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -658,6 +692,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
@@ -670,11 +705,13 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -699,6 +736,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Name.Length != 0) {
         output.WriteRawTag(10);
@@ -719,6 +757,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Name.Length != 0) {
@@ -737,6 +776,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RemoteConfigUser other) {
       if (other == null) {
         return;
@@ -754,6 +794,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -783,6 +824,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
