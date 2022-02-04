@@ -184,19 +184,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<LogEntryData> _parser = new pb::MessageParser<LogEntryData>(() => new LogEntryData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LogEntryData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogEntryData() {
       OnConstruction();
     }
@@ -204,6 +208,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogEntryData(LogEntryData other) : this() {
       logName_ = other.logName_;
       resource_ = other.resource_ != null ? other.resource_.Clone() : null;
@@ -220,6 +225,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogEntryData Clone() {
       return new LogEntryData(this);
     }
@@ -231,6 +237,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// The resource name of the log to which this log entry belongs.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LogName {
       get { return logName_; }
       set {
@@ -249,6 +256,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// the error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Api.MonitoredResource Resource {
       get { return resource_; }
       set {
@@ -264,6 +272,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.AuditLog ProtoPayload {
       get { return protoPayload_; }
       set {
@@ -278,6 +287,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// A unique identifier for the log entry.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string InsertId {
       get { return insertId_; }
       set {
@@ -295,6 +305,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// information about the log entry.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> Labels {
       get { return labels_; }
     }
@@ -307,6 +318,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// applicable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation Operation {
       get { return operation_; }
       set {
@@ -321,6 +333,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// The time the event described by the log entry occurred.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
       get { return timestamp_; }
       set {
@@ -335,6 +348,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// The time the log entry was received by Logging.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ReceiveTimestamp {
       get { return receiveTimestamp_; }
       set {
@@ -349,6 +363,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// The severity of the log entry.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity Severity {
       get { return severity_; }
       set {
@@ -366,6 +381,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// `projects/my-projectid/traces/06796866738c859f2f19b7cfb3214824`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Trace {
       get { return trace_; }
       set {
@@ -384,6 +400,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// `000000000000004a`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SpanId {
       get { return spanId_; }
       set {
@@ -392,11 +409,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LogEntryData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LogEntryData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -419,6 +438,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (LogName.Length != 0) hash ^= LogName.GetHashCode();
@@ -439,11 +459,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -497,6 +519,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (protoPayload_ != null) {
         output.WriteRawTag(18);
@@ -546,6 +569,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (LogName.Length != 0) {
@@ -586,6 +610,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LogEntryData other) {
       if (other == null) {
         return;
@@ -640,6 +665,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -716,6 +742,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -801,19 +828,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<LogEntryOperation> _parser = new pb::MessageParser<LogEntryOperation>(() => new LogEntryOperation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LogEntryOperation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogEntryOperation() {
       OnConstruction();
     }
@@ -821,6 +852,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogEntryOperation(LogEntryOperation other) : this() {
       id_ = other.id_;
       producer_ = other.producer_;
@@ -830,6 +862,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LogEntryOperation Clone() {
       return new LogEntryOperation(this);
     }
@@ -842,6 +875,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// identifier are assumed to be part of the same operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -858,6 +892,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// `"MyDivision.MyBigCompany.com"`, `"github.com/MyProject/MyApplication"`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Producer {
       get { return producer_; }
       set {
@@ -872,6 +907,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// True if this is the first log entry in the operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool First {
       get { return first_; }
       set {
@@ -886,6 +922,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// True if this is the last log entry in the operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Last {
       get { return last_; }
       set {
@@ -894,11 +931,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LogEntryOperation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LogEntryOperation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -914,6 +953,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -927,11 +967,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -960,6 +1002,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -984,6 +1027,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -1005,6 +1049,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LogEntryOperation other) {
       if (other == null) {
         return;
@@ -1025,6 +1070,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1058,6 +1104,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1102,19 +1149,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<AuditLog> _parser = new pb::MessageParser<AuditLog>(() => new AuditLog());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AuditLog> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuditLog() {
       OnConstruction();
     }
@@ -1122,6 +1173,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuditLog(AuditLog other) : this() {
       serviceName_ = other.serviceName_;
       methodName_ = other.methodName_;
@@ -1141,6 +1193,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuditLog Clone() {
       return new AuditLog(this);
     }
@@ -1153,6 +1206,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// `"datastore.googleapis.com"`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ServiceName {
       get { return serviceName_; }
       set {
@@ -1172,6 +1226,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     ///     "google.logging.v1.LoggingService.DeleteLog"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MethodName {
       get { return methodName_; }
       set {
@@ -1191,6 +1246,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     ///     "shelves/SHELF_ID/books/BOOK_ID"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -1205,6 +1261,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// The resource location information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.ResourceLocation ResourceLocation {
       get { return resourceLocation_; }
       set {
@@ -1225,6 +1282,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// the proto name will be indicated in the `@type` property.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct ResourceOriginalState {
       get { return resourceOriginalState_; }
       set {
@@ -1240,6 +1298,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// if applicable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long NumResponseItems {
       get { return numResponseItems_; }
       set {
@@ -1254,6 +1313,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// The status of the overall operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Rpc.Status Status {
       get { return status_; }
       set {
@@ -1268,6 +1328,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// Authentication information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.AuthenticationInfo AuthenticationInfo {
       get { return authenticationInfo_; }
       set {
@@ -1286,6 +1347,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// one AuthorizationInfo element for each {resource, permission} tuple.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Events.Protobuf.Cloud.Audit.V1.AuthorizationInfo> AuthorizationInfo {
       get { return authorizationInfo_; }
     }
@@ -1297,6 +1359,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// Metadata about the operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.RequestMetadata RequestMetadata {
       get { return requestMetadata_; }
       set {
@@ -1316,6 +1379,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// name will be indicated in the `@type` property.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct Request {
       get { return request_; }
       set {
@@ -1335,6 +1399,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// name will be indicated in the `@type` property.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct Response {
       get { return response_; }
       set {
@@ -1350,6 +1415,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// information associated with the current audited event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct Metadata {
       get { return metadata_; }
       set {
@@ -1368,6 +1434,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// name will be indicated in the `@type` property.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct ServiceData {
       get { return serviceData_; }
       set {
@@ -1376,11 +1443,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AuditLog);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AuditLog other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1406,6 +1475,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ServiceName.Length != 0) hash ^= ServiceName.GetHashCode();
@@ -1429,11 +1499,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1499,6 +1571,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (status_ != null) {
         output.WriteRawTag(18);
@@ -1560,6 +1633,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ServiceName.Length != 0) {
@@ -1609,6 +1683,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AuditLog other) {
       if (other == null) {
         return;
@@ -1684,6 +1759,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1784,6 +1860,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1892,19 +1969,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<AuthenticationInfo> _parser = new pb::MessageParser<AuthenticationInfo>(() => new AuthenticationInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AuthenticationInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuthenticationInfo() {
       OnConstruction();
     }
@@ -1912,6 +1993,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuthenticationInfo(AuthenticationInfo other) : this() {
       principalEmail_ = other.principalEmail_;
       authoritySelector_ = other.authoritySelector_;
@@ -1923,6 +2005,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuthenticationInfo Clone() {
       return new AuthenticationInfo(this);
     }
@@ -1937,6 +2020,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// with a "permission denied" error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PrincipalEmail {
       get { return principalEmail_; }
       set {
@@ -1952,6 +2036,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// It is not guaranteed that the principal was allowed to use this authority.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AuthoritySelector {
       get { return authoritySelector_; }
       set {
@@ -1969,6 +2054,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// name will be indicated in the `@type` property.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct ThirdPartyPrincipal {
       get { return thirdPartyPrincipal_; }
       set {
@@ -1987,6 +2073,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// "//iam.googleapis.com/projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}/keys/{key}"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ServiceAccountKeyName {
       get { return serviceAccountKeyName_; }
       set {
@@ -2007,6 +2094,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// ordering of the identity delegation events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo> ServiceAccountDelegationInfo {
       get { return serviceAccountDelegationInfo_; }
     }
@@ -2019,6 +2107,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// Populated for both first and third party identities.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PrincipalSubject {
       get { return principalSubject_; }
       set {
@@ -2027,11 +2116,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AuthenticationInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AuthenticationInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2049,6 +2140,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PrincipalEmail.Length != 0) hash ^= PrincipalEmail.GetHashCode();
@@ -2064,11 +2156,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2102,6 +2196,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (PrincipalEmail.Length != 0) {
         output.WriteRawTag(10);
@@ -2131,6 +2226,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PrincipalEmail.Length != 0) {
@@ -2156,6 +2252,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AuthenticationInfo other) {
       if (other == null) {
         return;
@@ -2183,6 +2280,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2227,6 +2325,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2279,19 +2378,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<AuthorizationInfo> _parser = new pb::MessageParser<AuthorizationInfo>(() => new AuthorizationInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AuthorizationInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuthorizationInfo() {
       OnConstruction();
     }
@@ -2299,6 +2402,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuthorizationInfo(AuthorizationInfo other) : this() {
       resource_ = other.resource_;
       permission_ = other.permission_;
@@ -2308,6 +2412,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuthorizationInfo Clone() {
       return new AuthorizationInfo(this);
     }
@@ -2321,6 +2426,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     ///     bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Resource {
       get { return resource_; }
       set {
@@ -2335,6 +2441,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// The required IAM permission.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Permission {
       get { return permission_; }
       set {
@@ -2350,6 +2457,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// was granted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Granted {
       get { return granted_; }
       set {
@@ -2369,6 +2477,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// `AuditLogData.request_metadata.request_attributes`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Rpc.Context.AttributeContext.Types.Resource ResourceAttributes {
       get { return resourceAttributes_; }
       set {
@@ -2377,11 +2486,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AuthorizationInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AuthorizationInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2397,6 +2508,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Resource.Length != 0) hash ^= Resource.GetHashCode();
@@ -2410,11 +2522,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2443,6 +2557,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Resource.Length != 0) {
         output.WriteRawTag(10);
@@ -2467,6 +2582,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Resource.Length != 0) {
@@ -2488,6 +2604,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AuthorizationInfo other) {
       if (other == null) {
         return;
@@ -2511,6 +2628,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2547,6 +2665,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2591,19 +2710,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<RequestMetadata> _parser = new pb::MessageParser<RequestMetadata>(() => new RequestMetadata());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RequestMetadata> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestMetadata() {
       OnConstruction();
     }
@@ -2611,6 +2734,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestMetadata(RequestMetadata other) : this() {
       callerIp_ = other.callerIp_;
       callerSuppliedUserAgent_ = other.callerSuppliedUserAgent_;
@@ -2621,6 +2745,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestMetadata Clone() {
       return new RequestMetadata(this);
     }
@@ -2640,6 +2765,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// See https://cloud.google.com/compute/docs/vpc/ for more information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CallerIp {
       get { return callerIp_; }
       set {
@@ -2664,6 +2790,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     ///     The request was made from the `my-project` App Engine app.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CallerSuppliedUserAgent {
       get { return callerSuppliedUserAgent_; }
       set {
@@ -2684,6 +2811,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     ///     "//compute.googleapis.com/projects/PROJECT_ID/global/networks/NETWORK_ID"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CallerNetwork {
       get { return callerNetwork_; }
       set {
@@ -2704,6 +2832,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// `AuditLog.authentication_info.resource_attributes`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Rpc.Context.AttributeContext.Types.Request RequestAttributes {
       get { return requestAttributes_; }
       set {
@@ -2722,6 +2851,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// the IAM condition feature.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Rpc.Context.AttributeContext.Types.Peer DestinationAttributes {
       get { return destinationAttributes_; }
       set {
@@ -2730,11 +2860,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RequestMetadata);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RequestMetadata other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2751,6 +2883,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (CallerIp.Length != 0) hash ^= CallerIp.GetHashCode();
@@ -2765,11 +2898,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2802,6 +2937,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (CallerIp.Length != 0) {
         output.WriteRawTag(10);
@@ -2830,6 +2966,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (CallerIp.Length != 0) {
@@ -2854,6 +2991,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RequestMetadata other) {
       if (other == null) {
         return;
@@ -2883,6 +3021,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2926,6 +3065,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2977,19 +3117,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<ResourceLocation> _parser = new pb::MessageParser<ResourceLocation>(() => new ResourceLocation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ResourceLocation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResourceLocation() {
       OnConstruction();
     }
@@ -2997,6 +3141,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResourceLocation(ResourceLocation other) : this() {
       currentLocations_ = other.currentLocations_.Clone();
       originalLocations_ = other.originalLocations_.Clone();
@@ -3004,6 +3149,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResourceLocation Clone() {
       return new ResourceLocation(this);
     }
@@ -3024,6 +3170,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     ///     "nam3"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> CurrentLocations {
       get { return currentLocations_; }
     }
@@ -3044,16 +3191,19 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     ///     "nam3"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> OriginalLocations {
       get { return originalLocations_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ResourceLocation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ResourceLocation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3067,6 +3217,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= currentLocations_.GetHashCode();
@@ -3078,11 +3229,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3097,6 +3250,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       currentLocations_.WriteTo(ref output, _repeated_currentLocations_codec);
       originalLocations_.WriteTo(ref output, _repeated_originalLocations_codec);
@@ -3107,6 +3261,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += currentLocations_.CalculateSize(_repeated_currentLocations_codec);
@@ -3118,6 +3273,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ResourceLocation other) {
       if (other == null) {
         return;
@@ -3128,6 +3284,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3153,6 +3310,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3186,19 +3344,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     private static readonly pb::MessageParser<ServiceAccountDelegationInfo> _parser = new pb::MessageParser<ServiceAccountDelegationInfo>(() => new ServiceAccountDelegationInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ServiceAccountDelegationInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Audit.V1.DataReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServiceAccountDelegationInfo() {
       OnConstruction();
     }
@@ -3206,6 +3368,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServiceAccountDelegationInfo(ServiceAccountDelegationInfo other) : this() {
       switch (other.AuthorityCase) {
         case AuthorityOneofCase.FirstPartyPrincipal:
@@ -3220,6 +3383,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServiceAccountDelegationInfo Clone() {
       return new ServiceAccountDelegationInfo(this);
     }
@@ -3230,6 +3394,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// First party (Google) identity as the real authority.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal FirstPartyPrincipal {
       get { return authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal ? (global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.FirstPartyPrincipal) authority_ : null; }
       set {
@@ -3244,6 +3409,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     /// Third party identity as the real authority.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal ThirdPartyPrincipal {
       get { return authorityCase_ == AuthorityOneofCase.ThirdPartyPrincipal ? (global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Types.ThirdPartyPrincipal) authority_ : null; }
       set {
@@ -3261,22 +3427,26 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
     private AuthorityOneofCase authorityCase_ = AuthorityOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AuthorityOneofCase AuthorityCase {
       get { return authorityCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAuthority() {
       authorityCase_ = AuthorityOneofCase.None;
       authority_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ServiceAccountDelegationInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ServiceAccountDelegationInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3291,6 +3461,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal) hash ^= FirstPartyPrincipal.GetHashCode();
@@ -3303,11 +3474,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3328,6 +3501,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal) {
         output.WriteRawTag(10);
@@ -3344,6 +3518,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (authorityCase_ == AuthorityOneofCase.FirstPartyPrincipal) {
@@ -3359,6 +3534,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ServiceAccountDelegationInfo other) {
       if (other == null) {
         return;
@@ -3382,6 +3558,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3417,6 +3594,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3450,6 +3628,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
     #region Nested types
     /// <summary>Container for nested types declared in the ServiceAccountDelegationInfo message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// First party identity principal.
@@ -3462,19 +3641,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         private static readonly pb::MessageParser<FirstPartyPrincipal> _parser = new pb::MessageParser<FirstPartyPrincipal>(() => new FirstPartyPrincipal());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<FirstPartyPrincipal> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public FirstPartyPrincipal() {
           OnConstruction();
         }
@@ -3482,6 +3665,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public FirstPartyPrincipal(FirstPartyPrincipal other) : this() {
           principalEmail_ = other.principalEmail_;
           serviceMetadata_ = other.serviceMetadata_ != null ? other.serviceMetadata_.Clone() : null;
@@ -3489,6 +3673,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public FirstPartyPrincipal Clone() {
           return new FirstPartyPrincipal(this);
         }
@@ -3500,6 +3685,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         /// The email address of a Google account.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string PrincipalEmail {
           get { return principalEmail_; }
           set {
@@ -3514,6 +3700,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         /// Metadata about the service that uses the service account.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Protobuf.WellKnownTypes.Struct ServiceMetadata {
           get { return serviceMetadata_; }
           set {
@@ -3522,11 +3709,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as FirstPartyPrincipal);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(FirstPartyPrincipal other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -3540,6 +3729,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (PrincipalEmail.Length != 0) hash ^= PrincipalEmail.GetHashCode();
@@ -3551,11 +3741,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -3576,6 +3768,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (PrincipalEmail.Length != 0) {
             output.WriteRawTag(10);
@@ -3592,6 +3785,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (PrincipalEmail.Length != 0) {
@@ -3607,6 +3801,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(FirstPartyPrincipal other) {
           if (other == null) {
             return;
@@ -3624,6 +3819,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -3652,6 +3848,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -3688,19 +3885,23 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         private static readonly pb::MessageParser<ThirdPartyPrincipal> _parser = new pb::MessageParser<ThirdPartyPrincipal>(() => new ThirdPartyPrincipal());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<ThirdPartyPrincipal> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Google.Events.Protobuf.Cloud.Audit.V1.ServiceAccountDelegationInfo.Descriptor.NestedTypes[1]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ThirdPartyPrincipal() {
           OnConstruction();
         }
@@ -3708,12 +3909,14 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ThirdPartyPrincipal(ThirdPartyPrincipal other) : this() {
           thirdPartyClaims_ = other.thirdPartyClaims_ != null ? other.thirdPartyClaims_.Clone() : null;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ThirdPartyPrincipal Clone() {
           return new ThirdPartyPrincipal(this);
         }
@@ -3725,6 +3928,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         /// Metadata about third party identity.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Protobuf.WellKnownTypes.Struct ThirdPartyClaims {
           get { return thirdPartyClaims_; }
           set {
@@ -3733,11 +3937,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as ThirdPartyPrincipal);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(ThirdPartyPrincipal other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -3750,6 +3956,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (thirdPartyClaims_ != null) hash ^= ThirdPartyClaims.GetHashCode();
@@ -3760,11 +3967,13 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -3781,6 +3990,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (thirdPartyClaims_ != null) {
             output.WriteRawTag(10);
@@ -3793,6 +4003,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (thirdPartyClaims_ != null) {
@@ -3805,6 +4016,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(ThirdPartyPrincipal other) {
           if (other == null) {
             return;
@@ -3819,6 +4031,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -3843,6 +4056,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {

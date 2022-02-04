@@ -72,19 +72,23 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     private static readonly pb::MessageParser<MessagePublishedData> _parser = new pb::MessageParser<MessagePublishedData>(() => new MessagePublishedData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MessagePublishedData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.PubSub.V1.DataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MessagePublishedData() {
       OnConstruction();
     }
@@ -92,6 +96,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MessagePublishedData(MessagePublishedData other) : this() {
       message_ = other.message_ != null ? other.message_.Clone() : null;
       subscription_ = other.subscription_;
@@ -99,6 +104,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MessagePublishedData Clone() {
       return new MessagePublishedData(this);
     }
@@ -110,6 +116,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     /// The message that was published.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.PubSub.V1.PubsubMessage Message {
       get { return message_; }
       set {
@@ -126,6 +133,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     /// `projects/{project-id}/subscriptions/{subscription-id}`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Subscription {
       get { return subscription_; }
       set {
@@ -134,11 +142,13 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MessagePublishedData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MessagePublishedData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -152,6 +162,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (message_ != null) hash ^= Message.GetHashCode();
@@ -163,11 +174,13 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -188,6 +201,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (message_ != null) {
         output.WriteRawTag(10);
@@ -204,6 +218,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (message_ != null) {
@@ -219,6 +234,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MessagePublishedData other) {
       if (other == null) {
         return;
@@ -236,6 +252,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -264,6 +281,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -300,19 +318,23 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     private static readonly pb::MessageParser<PubsubMessage> _parser = new pb::MessageParser<PubsubMessage>(() => new PubsubMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PubsubMessage> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.PubSub.V1.DataReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PubsubMessage() {
       OnConstruction();
     }
@@ -320,6 +342,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PubsubMessage(PubsubMessage other) : this() {
       data_ = other.data_;
       attributes_ = other.attributes_.Clone();
@@ -330,6 +353,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PubsubMessage Clone() {
       return new PubsubMessage(this);
     }
@@ -341,6 +365,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     /// The binary data in the message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Data {
       get { return data_; }
       set {
@@ -357,6 +382,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     /// Attributes for this message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> Attributes {
       get { return attributes_; }
     }
@@ -369,6 +395,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     /// Guaranteed to be unique within the topic.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MessageId {
       get { return messageId_; }
       set {
@@ -384,6 +411,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     /// it receives the `Publish` call.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp PublishTime {
       get { return publishTime_; }
       set {
@@ -399,6 +427,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     /// respected.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrderingKey {
       get { return orderingKey_; }
       set {
@@ -407,11 +436,13 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PubsubMessage);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PubsubMessage other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -428,6 +459,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Data.Length != 0) hash ^= Data.GetHashCode();
@@ -442,11 +474,13 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -476,6 +510,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Data.Length != 0) {
         output.WriteRawTag(10);
@@ -501,6 +536,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Data.Length != 0) {
@@ -523,6 +559,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PubsubMessage other) {
       if (other == null) {
         return;
@@ -547,6 +584,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -587,6 +625,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

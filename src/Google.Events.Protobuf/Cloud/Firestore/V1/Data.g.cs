@@ -97,19 +97,23 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     private static readonly pb::MessageParser<DocumentEventData> _parser = new pb::MessageParser<DocumentEventData>(() => new DocumentEventData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DocumentEventData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Firestore.V1.DataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DocumentEventData() {
       OnConstruction();
     }
@@ -117,6 +121,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DocumentEventData(DocumentEventData other) : this() {
       value_ = other.value_ != null ? other.value_.Clone() : null;
       oldValue_ = other.oldValue_ != null ? other.oldValue_.Clone() : null;
@@ -125,6 +130,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DocumentEventData Clone() {
       return new DocumentEventData(this);
     }
@@ -137,6 +143,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// This is not populated for delete events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Firestore.V1.Document Value {
       get { return value_; }
       set {
@@ -152,6 +159,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// This is only populated for update and delete events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Firestore.V1.Document OldValue {
       get { return oldValue_; }
       set {
@@ -167,6 +175,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// This is only populated for update events.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Firestore.V1.DocumentMask UpdateMask {
       get { return updateMask_; }
       set {
@@ -175,11 +184,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DocumentEventData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DocumentEventData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -194,6 +205,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (value_ != null) hash ^= Value.GetHashCode();
@@ -206,11 +218,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -235,6 +249,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (value_ != null) {
         output.WriteRawTag(10);
@@ -255,6 +270,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (value_ != null) {
@@ -273,6 +289,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DocumentEventData other) {
       if (other == null) {
         return;
@@ -299,6 +316,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -337,6 +355,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -383,19 +402,23 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     private static readonly pb::MessageParser<DocumentMask> _parser = new pb::MessageParser<DocumentMask>(() => new DocumentMask());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DocumentMask> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Firestore.V1.DataReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DocumentMask() {
       OnConstruction();
     }
@@ -403,12 +426,14 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DocumentMask(DocumentMask other) : this() {
       fieldPaths_ = other.fieldPaths_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DocumentMask Clone() {
       return new DocumentMask(this);
     }
@@ -424,16 +449,19 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// for a field path syntax reference.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> FieldPaths {
       get { return fieldPaths_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DocumentMask);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DocumentMask other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -446,6 +474,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= fieldPaths_.GetHashCode();
@@ -456,11 +485,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -474,6 +505,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       fieldPaths_.WriteTo(ref output, _repeated_fieldPaths_codec);
       if (_unknownFields != null) {
@@ -483,6 +515,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += fieldPaths_.CalculateSize(_repeated_fieldPaths_codec);
@@ -493,6 +526,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DocumentMask other) {
       if (other == null) {
         return;
@@ -502,6 +536,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -523,6 +558,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -552,19 +588,23 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     private static readonly pb::MessageParser<Document> _parser = new pb::MessageParser<Document>(() => new Document());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Document> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Firestore.V1.DataReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Document() {
       OnConstruction();
     }
@@ -572,6 +612,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Document(Document other) : this() {
       name_ = other.name_;
       fields_ = other.fields_.Clone();
@@ -581,6 +622,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Document Clone() {
       return new Document(this);
     }
@@ -593,6 +635,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// `projects/{project_id}/databases/{database_id}/documents/{document_path}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -632,6 +675,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// `` `bak\`tik` `` represents `` bak`tik ``.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Google.Events.Protobuf.Cloud.Firestore.V1.Value> Fields {
       get { return fields_; }
     }
@@ -647,6 +691,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// the `read_time` of a query.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
       get { return createTime_; }
       set {
@@ -665,6 +710,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// compared to values from other documents and the `read_time` of a query.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp UpdateTime {
       get { return updateTime_; }
       set {
@@ -673,11 +719,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Document);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Document other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -693,6 +741,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
@@ -706,11 +755,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -736,6 +787,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Name.Length != 0) {
         output.WriteRawTag(10);
@@ -757,6 +809,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Name.Length != 0) {
@@ -776,6 +829,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Document other) {
       if (other == null) {
         return;
@@ -800,6 +854,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -839,6 +894,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -886,19 +942,23 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     private static readonly pb::MessageParser<Value> _parser = new pb::MessageParser<Value>(() => new Value());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Value> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Firestore.V1.DataReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Value() {
       OnConstruction();
     }
@@ -906,6 +966,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Value(Value other) : this() {
       switch (other.ValueTypeCase) {
         case ValueTypeOneofCase.NullValue:
@@ -947,6 +1008,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Value Clone() {
       return new Value(this);
     }
@@ -957,6 +1019,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// A null value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.NullValue NullValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.NullValue ? (global::Google.Protobuf.WellKnownTypes.NullValue) valueType_ : global::Google.Protobuf.WellKnownTypes.NullValue.NullValue; }
       set {
@@ -971,6 +1034,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// A boolean value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool BooleanValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.BooleanValue ? (bool) valueType_ : false; }
       set {
@@ -985,6 +1049,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// An integer value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IntegerValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.IntegerValue ? (long) valueType_ : 0L; }
       set {
@@ -999,6 +1064,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// A double value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double DoubleValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.DoubleValue ? (double) valueType_ : 0D; }
       set {
@@ -1016,6 +1082,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// rounded down.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp TimestampValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.TimestampValue ? (global::Google.Protobuf.WellKnownTypes.Timestamp) valueType_ : null; }
       set {
@@ -1034,6 +1101,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// queries.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StringValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.StringValue ? (string) valueType_ : ""; }
       set {
@@ -1051,6 +1119,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// Only the first 1,500 bytes are considered by queries.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString BytesValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.BytesValue ? (pb::ByteString) valueType_ : pb::ByteString.Empty; }
       set {
@@ -1066,6 +1135,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ReferenceValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.ReferenceValue ? (string) valueType_ : ""; }
       set {
@@ -1080,6 +1150,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// A geo point value representing a point on the surface of Earth.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Type.LatLng GeoPointValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.GeoPointValue ? (global::Google.Type.LatLng) valueType_ : null; }
       set {
@@ -1097,6 +1168,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// map which contains another array.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Firestore.V1.ArrayValue ArrayValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.ArrayValue ? (global::Google.Events.Protobuf.Cloud.Firestore.V1.ArrayValue) valueType_ : null; }
       set {
@@ -1111,6 +1183,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// A map value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Events.Protobuf.Cloud.Firestore.V1.MapValue MapValue {
       get { return valueTypeCase_ == ValueTypeOneofCase.MapValue ? (global::Google.Events.Protobuf.Cloud.Firestore.V1.MapValue) valueType_ : null; }
       set {
@@ -1137,22 +1210,26 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
     private ValueTypeOneofCase valueTypeCase_ = ValueTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValueTypeOneofCase ValueTypeCase {
       get { return valueTypeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearValueType() {
       valueTypeCase_ = ValueTypeOneofCase.None;
       valueType_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Value);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Value other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1176,6 +1253,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (valueTypeCase_ == ValueTypeOneofCase.NullValue) hash ^= NullValue.GetHashCode();
@@ -1197,11 +1275,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1258,6 +1338,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (valueTypeCase_ == ValueTypeOneofCase.BooleanValue) {
         output.WriteRawTag(8);
@@ -1310,6 +1391,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (valueTypeCase_ == ValueTypeOneofCase.NullValue) {
@@ -1352,6 +1434,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Value other) {
       if (other == null) {
         return;
@@ -1408,6 +1491,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1490,6 +1574,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1580,19 +1665,23 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     private static readonly pb::MessageParser<ArrayValue> _parser = new pb::MessageParser<ArrayValue>(() => new ArrayValue());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ArrayValue> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Firestore.V1.DataReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ArrayValue() {
       OnConstruction();
     }
@@ -1600,12 +1689,14 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ArrayValue(ArrayValue other) : this() {
       values_ = other.values_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ArrayValue Clone() {
       return new ArrayValue(this);
     }
@@ -1619,16 +1710,19 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// Values in the array.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Events.Protobuf.Cloud.Firestore.V1.Value> Values {
       get { return values_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ArrayValue);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ArrayValue other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1641,6 +1735,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= values_.GetHashCode();
@@ -1651,11 +1746,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1669,6 +1766,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       values_.WriteTo(ref output, _repeated_values_codec);
       if (_unknownFields != null) {
@@ -1678,6 +1776,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += values_.CalculateSize(_repeated_values_codec);
@@ -1688,6 +1787,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ArrayValue other) {
       if (other == null) {
         return;
@@ -1697,6 +1797,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1718,6 +1819,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1747,19 +1849,23 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     private static readonly pb::MessageParser<MapValue> _parser = new pb::MessageParser<MapValue>(() => new MapValue());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MapValue> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Events.Protobuf.Cloud.Firestore.V1.DataReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MapValue() {
       OnConstruction();
     }
@@ -1767,12 +1873,14 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MapValue(MapValue other) : this() {
       fields_ = other.fields_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MapValue Clone() {
       return new MapValue(this);
     }
@@ -1791,16 +1899,19 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     /// not exceed 1,500 bytes and cannot be empty.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Google.Events.Protobuf.Cloud.Firestore.V1.Value> Fields {
       get { return fields_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MapValue);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MapValue other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1813,6 +1924,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= Fields.GetHashCode();
@@ -1823,11 +1935,13 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1841,6 +1955,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       fields_.WriteTo(ref output, _map_fields_codec);
       if (_unknownFields != null) {
@@ -1850,6 +1965,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += fields_.CalculateSize(_map_fields_codec);
@@ -1860,6 +1976,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MapValue other) {
       if (other == null) {
         return;
@@ -1869,6 +1986,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1890,6 +2008,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
