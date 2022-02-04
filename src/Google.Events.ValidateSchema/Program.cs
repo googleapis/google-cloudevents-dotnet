@@ -119,7 +119,10 @@ namespace Google.Events.ValidateSchema
                 $"{expectedNamespace}.{messageName}",
                 throwOnError: true,
                 ignoreCase: true);
-
+            if (messageType is null)
+            {
+                throw new InvalidOperationException($"Unable to determine expected event type from relative file name '{relativeFile}'");
+            }
             return (MessageDescriptor) messageType
                 .GetProperty("Descriptor", BindingFlags.Public | BindingFlags.Static)
                 .GetValue(null);
@@ -140,7 +143,7 @@ namespace Google.Events.ValidateSchema
             {
                 var rootObject = JObject.Parse(json);
                 var protoPayload = (JObject) rootObject["protoPayload"];
-                protoPayload.Remove("@type");
+                protoPayload?.Remove("@type");
                 return rootObject.ToString();
             }
 
@@ -148,7 +151,7 @@ namespace Google.Events.ValidateSchema
             {
                 var rootObject = JObject.Parse(json);
                 var protoPayload = (JObject) rootObject["message"];
-                protoPayload.Remove("@type");
+                protoPayload?.Remove("@type");
                 return rootObject.ToString();
             }
             return json;
