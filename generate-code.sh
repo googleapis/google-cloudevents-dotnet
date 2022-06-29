@@ -127,7 +127,7 @@ $PROTOC \
 # Run code generation from the descriptor set
 
 echo "- Generating additional code from descriptor set"
-dotnet run -p tools/Google.Events.Tools.CodeGenerator -- tmp/protos.pb src
+dotnet run --project tools/Google.Events.Tools.CodeGenerator -- tmp/protos.pb src
 
 echo "- Removing tmp/"
 rm -rf tmp
