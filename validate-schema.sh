@@ -76,4 +76,4 @@ $PROTOC \
   $(find $GOOGLE_CLOUDEVENTS/proto -name data.proto)
 
 echo "- Testing"
-dotnet run -p src/Google.Events.ValidateSchema -- $GOOGLE_CLOUDEVENTS/testdata
+dotnet run --project src/Google.Events.ValidateSchema -- $GOOGLE_CLOUDEVENTS/testdata
