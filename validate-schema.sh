@@ -35,7 +35,7 @@ cd $(dirname $(readlink -f "$0"))
 rm -rf tmp
 mkdir tmp
 
-PROTOBUF_VERSION=3.12.3
+PROTOBUF_VERSION=3.19.0
 case "$OSTYPE" in
   linux*)
     PROTOBUF_PLATFORM=linux-x86_64
