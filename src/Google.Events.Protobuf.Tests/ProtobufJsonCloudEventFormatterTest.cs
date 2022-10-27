@@ -14,6 +14,7 @@
 
 using CloudNative.CloudEvents;
 using Google.Events.Protobuf.Cloud.Storage.V1;
+using Google.Protobuf;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -82,6 +83,21 @@ namespace Google.Events.Protobuf.Tests
             var converter = new ProtobufJsonCloudEventFormatter<StorageObjectData>();
             converter.DecodeBinaryModeEventData(new byte[0], cloudEvent);
             Assert.Null(cloudEvent.Data);
+        }
+
+        [Fact]
+        public void DecodeBinary_ProtobufWireFormat()
+        {
+            var cloudEvent = CreateSampleEvent();
+            var expectedData = cloudEvent.Data;
+            var binaryData = ((IMessage) expectedData).ToByteArray();
+            cloudEvent.Data = null;
+            cloudEvent.DataContentType = "application/protobuf";
+
+            var converter = new ProtobufJsonCloudEventFormatter<StorageObjectData>();
+            converter.DecodeBinaryModeEventData(binaryData, cloudEvent);
+            var actualData = cloudEvent.Data;
+            Assert.Equal(expectedData, actualData);
         }
 
         [Fact]

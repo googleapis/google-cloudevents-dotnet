@@ -28,10 +28,14 @@ namespace Google.Events.Protobuf
     /// <summary>
     /// <see cref="CloudEventFormatter"/> which is able to serialize protobuf messages in JSON.
     /// (Note that this does not implement the protobuf CloudEvent format, which is separate.)
+    /// Additionally, when deserializing binary mode events, if the data content type has a media type of "application/protobuf",
+    /// this will deserialize the body as protobuf binary data.
     /// </summary>
     /// <typeparam name="T">The type of message to serialize/deserialize</typeparam>
     public class ProtobufJsonCloudEventFormatter<T> : CloudEventFormatter where T : class, IMessage<T>, new()
     {
+        private const string BinaryProtobufMediaType = "application/protobuf";
+
         private static readonly JsonParser s_jsonParser = new JsonParser(JsonParser.Settings.Default.WithIgnoreUnknownFields(true));
 
         // Note: although we delegate to a JsonEventFormatter (via StructuredEventFormatter) and *could* just derive from JsonEventFormatter,
@@ -39,8 +43,25 @@ namespace Google.Events.Protobuf
         private static readonly CloudEventFormatter s_structuredEventFormatter = new StructuredEventFormatter();
 
         /// <inheritdoc />
-        public override void DecodeBinaryModeEventData(ReadOnlyMemory<byte> body, CloudEvent cloudEvent) =>
-            cloudEvent.Data = body.Length == 0 ? null : s_jsonParser.Parse<T>(new StreamReader(BinaryDataUtilities.AsStream(body)));
+        public override void DecodeBinaryModeEventData(ReadOnlyMemory<byte> body, CloudEvent cloudEvent)
+        {
+            if (body.Length == 0)
+            {
+                cloudEvent.Data = null;
+                return;
+            }
+            ContentType dataContentType = new ContentType(cloudEvent.DataContentType ?? "application/json");
+            cloudEvent.Data =
+                dataContentType.MediaType == BinaryProtobufMediaType ? ParseBinaryProtobuf(body)
+                : s_jsonParser.Parse<T>(new StreamReader(BinaryDataUtilities.AsStream(body)));
+        }
+
+        private T ParseBinaryProtobuf(ReadOnlyMemory<byte> body)
+        {
+            var message = new T();
+            message.MergeFrom(body.Span);
+            return message;
+        }
 
         // TODO: Handle other structured modes beyond JSON?
 
