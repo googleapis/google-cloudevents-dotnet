@@ -772,7 +772,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
       if (other.DisplayName.Length != 0) {
         DisplayName = other.DisplayName;
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.AuthorizedNetwork.Length != 0) {
         AuthorizedNetwork = other.AuthorizedNetwork;
       }
@@ -3103,7 +3103,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
       if (other.Id.Length != 0) {
         Id = other.Id;
       }
-      params_.Add(other.params_);
+      params_.MergeFrom(other.params_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

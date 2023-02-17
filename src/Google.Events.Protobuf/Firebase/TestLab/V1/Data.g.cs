@@ -774,7 +774,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
       if (other.Client.Length != 0) {
         Client = other.Client;
       }
-      details_.Add(other.details_);
+      details_.MergeFrom(other.details_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

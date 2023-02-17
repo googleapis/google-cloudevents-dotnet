@@ -1614,11 +1614,11 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         }
         Transport.MergeFrom(other.Transport);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.Channel.Length != 0) {
         Channel = other.Channel;
       }
-      conditions_.Add(other.conditions_);
+      conditions_.MergeFrom(other.conditions_);
       if (other.Etag.Length != 0) {
         Etag = other.Etag;
       }

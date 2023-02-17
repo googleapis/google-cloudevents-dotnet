@@ -612,7 +612,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       stateMessages_.Add(other.stateMessages_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2877,7 +2877,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
       if (other.WorkerPool.Length != 0) {
         WorkerPool = other.WorkerPool;
       }
-      environmentVariables_.Add(other.environmentVariables_);
+      environmentVariables_.MergeFrom(other.environmentVariables_);
       if (other.DockerRegistry != global::Google.Events.Protobuf.Cloud.Functions.V2.BuildConfig.Types.DockerRegistry.Unspecified) {
         DockerRegistry = other.DockerRegistry;
       }
@@ -3718,7 +3718,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
       if (other.AvailableCpu.Length != 0) {
         AvailableCpu = other.AvailableCpu;
       }
-      environmentVariables_.Add(other.environmentVariables_);
+      environmentVariables_.MergeFrom(other.environmentVariables_);
       if (other.MaxInstanceCount != 0) {
         MaxInstanceCount = other.MaxInstanceCount;
       }

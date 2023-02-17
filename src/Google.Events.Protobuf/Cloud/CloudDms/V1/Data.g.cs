@@ -3263,7 +3263,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
       if (other.DatabaseVersion != global::Google.Events.Protobuf.Cloud.CloudDms.V1.CloudSqlSettings.Types.SqlDatabaseVersion.Unspecified) {
         DatabaseVersion = other.DatabaseVersion;
       }
-      userLabels_.Add(other.userLabels_);
+      userLabels_.MergeFrom(other.userLabels_);
       if (other.Tier.Length != 0) {
         Tier = other.Tier;
       }
@@ -3286,7 +3286,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
           AutoStorageIncrease = other.AutoStorageIncrease;
         }
       }
-      databaseFlags_.Add(other.databaseFlags_);
+      databaseFlags_.MergeFrom(other.databaseFlags_);
       if (other.DataDiskType != global::Google.Events.Protobuf.Cloud.CloudDms.V1.CloudSqlSettings.Types.SqlDataDiskType.Unspecified) {
         DataDiskType = other.DataDiskType;
       }
@@ -3822,7 +3822,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
       if (other.VpcNetwork.Length != 0) {
         VpcNetwork = other.VpcNetwork;
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.primaryInstanceSettings_ != null) {
         if (primaryInstanceSettings_ == null) {
           PrimaryInstanceSettings = new global::Google.Events.Protobuf.Cloud.CloudDms.V1.AlloyDbSettings.Types.PrimaryInstanceSettings();
@@ -4395,8 +4395,8 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
             }
             MachineConfig.MergeFrom(other.MachineConfig);
           }
-          databaseFlags_.Add(other.databaseFlags_);
-          labels_.Add(other.labels_);
+          databaseFlags_.MergeFrom(other.databaseFlags_);
+          labels_.MergeFrom(other.labels_);
           if (other.PrivateIp.Length != 0) {
             PrivateIp = other.PrivateIp;
           }
@@ -6357,7 +6357,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.DisplayName.Length != 0) {
         DisplayName = other.DisplayName;
       }
@@ -7773,7 +7773,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.State != global::Google.Events.Protobuf.Cloud.CloudDms.V1.ConnectionProfile.Types.State.Unspecified) {
         State = other.State;
       }

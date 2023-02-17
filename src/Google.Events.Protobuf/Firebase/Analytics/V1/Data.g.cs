@@ -720,7 +720,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
       if (other.FirstOpenTimestampMicros != 0L) {
         FirstOpenTimestampMicros = other.FirstOpenTimestampMicros;
       }
-      userProperties_.Add(other.userProperties_);
+      userProperties_.MergeFrom(other.userProperties_);
       if (other.deviceInfo_ != null) {
         if (deviceInfo_ == null) {
           DeviceInfo = new global::Google.Events.Protobuf.Firebase.Analytics.V1.DeviceInfo();
@@ -3854,7 +3854,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
-      params_.Add(other.params_);
+      params_.MergeFrom(other.params_);
       if (other.TimestampMicros != 0L) {
         TimestampMicros = other.TimestampMicros;
       }

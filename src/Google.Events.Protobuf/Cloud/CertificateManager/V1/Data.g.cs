@@ -597,7 +597,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.Description.Length != 0) {
         Description = other.Description;
       }
@@ -1693,7 +1693,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       sanDnsnames_.Add(other.sanDnsnames_);
       if (other.PemCertificate.Length != 0) {
         PemCertificate = other.PemCertificate;
@@ -3402,7 +3402,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       gclbTargets_.Add(other.gclbTargets_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4460,7 +4460,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       certificates_.Add(other.certificates_);
       if (other.State != global::Google.Events.Protobuf.Cloud.CertificateManager.V1.ServingState.Unspecified) {
         State = other.State;
@@ -4955,7 +4955,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.Description.Length != 0) {
         Description = other.Description;
       }

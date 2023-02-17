@@ -1039,7 +1039,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
       if (other.LogLevel != global::Google.Events.Protobuf.Cloud.Iot.V1.LogLevel.Unspecified) {
         LogLevel = other.LogLevel;
       }
-      metadata_.Add(other.metadata_);
+      metadata_.MergeFrom(other.metadata_);
       if (other.gatewayConfig_ != null) {
         if (gatewayConfig_ == null) {
           GatewayConfig = new global::Google.Events.Protobuf.Cloud.Iot.V1.GatewayConfig();

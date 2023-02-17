@@ -837,7 +837,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
-      fields_.Add(other.fields_);
+      fields_.MergeFrom(other.fields_);
       if (other.createTime_ != null) {
         if (createTime_ == null) {
           CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
@@ -1981,7 +1981,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
       if (other == null) {
         return;
       }
-      fields_.Add(other.fields_);
+      fields_.MergeFrom(other.fields_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
