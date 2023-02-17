@@ -2173,8 +2173,8 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
         }
         NetworkConfig.MergeFrom(other.NetworkConfig);
       }
-      labels_.Add(other.labels_);
-      options_.Add(other.options_);
+      labels_.MergeFrom(other.labels_);
+      options_.MergeFrom(other.options_);
       if (other.createTime_ != null) {
         if (createTime_ == null) {
           CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();

@@ -551,7 +551,7 @@ namespace Google.Events.Protobuf.Cloud.Workflows.V1 {
         }
         RevisionCreateTime.MergeFrom(other.RevisionCreateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.ServiceAccount.Length != 0) {
         ServiceAccount = other.ServiceAccount;
       }

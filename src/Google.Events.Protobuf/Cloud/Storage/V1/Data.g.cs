@@ -1126,7 +1126,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
         }
         RetentionExpirationTime.MergeFrom(other.RetentionExpirationTime);
       }
-      metadata_.Add(other.metadata_);
+      metadata_.MergeFrom(other.metadata_);
       if (other.EventBasedHold != false) {
         EventBasedHold = other.EventBasedHold;
       }

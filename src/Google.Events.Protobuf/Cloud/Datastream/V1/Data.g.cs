@@ -562,7 +562,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
       if (other.DatabaseService.Length != 0) {
         DatabaseService = other.DatabaseService;
       }
-      connectionAttributes_.Add(other.connectionAttributes_);
+      connectionAttributes_.MergeFrom(other.connectionAttributes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2693,7 +2693,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.DisplayName.Length != 0) {
         DisplayName = other.DisplayName;
       }
@@ -3399,7 +3399,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.DisplayName.Length != 0) {
         DisplayName = other.DisplayName;
       }
@@ -4363,7 +4363,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.DisplayName.Length != 0) {
         DisplayName = other.DisplayName;
       }
@@ -12496,7 +12496,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
         }
         UpdateTime.MergeFrom(other.UpdateTime);
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.DisplayName.Length != 0) {
         DisplayName = other.DisplayName;
       }
@@ -13541,7 +13541,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
         }
         ErrorTime.MergeFrom(other.ErrorTime);
       }
-      details_.Add(other.details_);
+      details_.MergeFrom(other.details_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

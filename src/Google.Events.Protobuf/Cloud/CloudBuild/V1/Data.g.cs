@@ -1019,10 +1019,10 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
       if (other.LogUrl.Length != 0) {
         LogUrl = other.LogUrl;
       }
-      substitutions_.Add(other.substitutions_);
+      substitutions_.MergeFrom(other.substitutions_);
       tags_.Add(other.tags_);
       secrets_.Add(other.secrets_);
-      timing_.Add(other.timing_);
+      timing_.MergeFrom(other.timing_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2321,7 +2321,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
       if (other.InvertRegex != false) {
         InvertRegex = other.InvertRegex;
       }
-      substitutions_.Add(other.substitutions_);
+      substitutions_.MergeFrom(other.substitutions_);
       switch (other.RevisionCase) {
         case RevisionOneofCase.BranchName:
           BranchName = other.BranchName;
@@ -5051,7 +5051,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
         }
         ResolvedRepoSource.MergeFrom(other.ResolvedRepoSource);
       }
-      fileHashes_.Add(other.fileHashes_);
+      fileHashes_.MergeFrom(other.fileHashes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -5747,7 +5747,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
       if (other.KmsKeyName.Length != 0) {
         KmsKeyName = other.KmsKeyName;
       }
-      secretEnv_.Add(other.secretEnv_);
+      secretEnv_.MergeFrom(other.secretEnv_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

@@ -667,7 +667,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       if (other.InsertId.Length != 0) {
         InsertId = other.InsertId;
       }
-      labels_.Add(other.labels_);
+      labels_.MergeFrom(other.labels_);
       if (other.operation_ != null) {
         if (operation_ == null) {
           Operation = new global::Google.Events.Protobuf.Cloud.Audit.V1.LogEntryOperation();

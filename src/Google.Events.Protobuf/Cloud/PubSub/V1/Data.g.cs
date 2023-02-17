@@ -567,7 +567,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       if (other.Data.Length != 0) {
         Data = other.Data;
       }
-      attributes_.Add(other.attributes_);
+      attributes_.MergeFrom(other.attributes_);
       if (other.MessageId.Length != 0) {
         MessageId = other.MessageId;
       }

@@ -1278,8 +1278,8 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
       if (other.RecommendedDeployment.Length != 0) {
         RecommendedDeployment = other.RecommendedDeployment;
       }
-      labels_.Add(other.labels_);
-      annotations_.Add(other.annotations_);
+      labels_.MergeFrom(other.labels_);
+      annotations_.MergeFrom(other.annotations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1784,8 +1784,8 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
       if (other.State.Length != 0) {
         State = other.State;
       }
-      labels_.Add(other.labels_);
-      annotations_.Add(other.annotations_);
+      labels_.MergeFrom(other.labels_);
+      annotations_.MergeFrom(other.annotations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2456,8 +2456,8 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
       if (other.SourceUri.Length != 0) {
         SourceUri = other.SourceUri;
       }
-      labels_.Add(other.labels_);
-      annotations_.Add(other.annotations_);
+      labels_.MergeFrom(other.labels_);
+      annotations_.MergeFrom(other.annotations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3197,8 +3197,8 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
       if (other.AccessGuidance.Length != 0) {
         AccessGuidance = other.AccessGuidance;
       }
-      labels_.Add(other.labels_);
-      annotations_.Add(other.annotations_);
+      labels_.MergeFrom(other.labels_);
+      annotations_.MergeFrom(other.annotations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
