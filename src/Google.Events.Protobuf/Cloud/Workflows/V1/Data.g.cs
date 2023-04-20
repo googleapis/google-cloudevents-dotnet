@@ -54,8 +54,10 @@ namespace Google.Events.Protobuf.Cloud.Workflows.V1 {
             "EVNUQVRFX1VOU1BFQ0lGSUVEEAASCgoGQUNUSVZFEAFCDQoLc291cmNlX2Nv",
             "ZGUiYQoRV29ya2Zsb3dFdmVudERhdGESQAoHcGF5bG9hZBgBIAEoCzIqLmdv",
             "b2dsZS5ldmVudHMuY2xvdWQud29ya2Zsb3dzLnYxLldvcmtmbG93SACIAQFC",
-            "CgoIX3BheWxvYWRCLKoCKUdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQu",
-            "V29ya2Zsb3dzLlYxYgZwcm90bzM="));
+            "CgoIX3BheWxvYWRCdqoCKUdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQu",
+            "V29ya2Zsb3dzLlYxygIgR29vZ2xlXEV2ZW50c1xDbG91ZFxXb3JrZmxvd3Nc",
+            "VjHqAiRHb29nbGU6OkV2ZW50czo6Q2xvdWQ6OldvcmtmbG93czo6VjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

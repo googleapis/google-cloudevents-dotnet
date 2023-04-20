@@ -102,8 +102,9 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
             "bi52MS5JbnN0YW5jZUgAiAEBQgoKCF9wYXlsb2FkImYKE0Ruc1BlZXJpbmdF",
             "dmVudERhdGESQwoHcGF5bG9hZBgBIAEoCzItLmdvb2dsZS5ldmVudHMuY2xv",
             "dWQuZGF0YWZ1c2lvbi52MS5EbnNQZWVyaW5nSACIAQFCCgoIX3BheWxvYWRC",
-            "LaoCKkdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQuRGF0YUZ1c2lvbi5W",
-            "MWIGcHJvdG8z"));
+            "eaoCKkdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQuRGF0YUZ1c2lvbi5W",
+            "McoCIUdvb2dsZVxFdmVudHNcQ2xvdWRcRGF0YUZ1c2lvblxWMeoCJUdvb2ds",
+            "ZTo6RXZlbnRzOjpDbG91ZDo6RGF0YUZ1c2lvbjo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

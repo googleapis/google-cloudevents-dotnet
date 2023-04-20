@@ -171,9 +171,11 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
             "ChFKT0JfU1RBVEVfVVBEQVRFRBAGEhYKEkpPQl9TVEFURV9EUkFJTklORxAH",
             "EhUKEUpPQl9TVEFURV9EUkFJTkVEEAgSFQoRSk9CX1NUQVRFX1BFTkRJTkcQ",
             "CRIYChRKT0JfU1RBVEVfQ0FOQ0VMTElORxAKEhQKEEpPQl9TVEFURV9RVUVV",
-            "RUQQCxIiCh5KT0JfU1RBVEVfUkVTT1VSQ0VfQ0xFQU5JTkdfVVAQDEIwqgIt",
-            "R29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5DbG91ZC5EYXRhZmxvdy5WMUJldGEz",
-            "YgZwcm90bzM="));
+            "RUQQCxIiCh5KT0JfU1RBVEVfUkVTT1VSQ0VfQ0xFQU5JTkdfVVAQDEKCAaoC",
+            "LUdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQuRGF0YWZsb3cuVjFCZXRh",
+            "M8oCJEdvb2dsZVxFdmVudHNcQ2xvdWRcRGF0YWZsb3dcVjFiZXRhM+oCKEdv",
+            "b2dsZTo6RXZlbnRzOjpDbG91ZDo6RGF0YWZsb3c6OlYxYmV0YTNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.JobType), typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.FlexResourceSchedulingGoal), typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.TeardownPolicy), typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.DefaultPackageSet), typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.AutoscalingAlgorithm), typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.WorkerIPAddressConfiguration), typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.ShuffleMode), typeof(global::Google.Events.Protobuf.Cloud.Dataflow.V1Beta3.JobState), }, null, new pbr::GeneratedClrTypeInfo[] {

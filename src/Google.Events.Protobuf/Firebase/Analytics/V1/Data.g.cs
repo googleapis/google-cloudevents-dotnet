@@ -88,8 +88,10 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
             "KAMSIQoZcHJldmlvdXNfdGltZXN0YW1wX21pY3JvcxgFIAEoAxIUCgx2YWx1",
             "ZV9pbl91c2QYByABKAEaYgoLUGFyYW1zRW50cnkSCwoDa2V5GAEgASgJEkIK",
             "BXZhbHVlGAIgASgLMjMuZ29vZ2xlLmV2ZW50cy5maXJlYmFzZS5hbmFseXRp",
-            "Y3MudjEuQW5hbHl0aWNzVmFsdWU6AjgBQi+qAixHb29nbGUuRXZlbnRzLlBy",
-            "b3RvYnVmLkZpcmViYXNlLkFuYWx5dGljcy5WMWIGcHJvdG8z"));
+            "Y3MudjEuQW5hbHl0aWNzVmFsdWU6AjgBQn+qAixHb29nbGUuRXZlbnRzLlBy",
+            "b3RvYnVmLkZpcmViYXNlLkFuYWx5dGljcy5WMcoCI0dvb2dsZVxFdmVudHNc",
+            "RmlyZWJhc2VcQW5hbHl0aWNzXFYx6gInR29vZ2xlOjpFdmVudHM6OkZpcmVi",
+            "YXNlOjpBbmFseXRpY3M6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
