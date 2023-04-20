@@ -1,0 +1,28 @@
+﻿{
+  "specversion": "1.0",
+  "id": "sample-event-id",
+  "function": "sample-function",
+  "location": "europe-west1",
+  "type": "google.cloud.functions.function.v2.created",
+  "source": "//cloudfunctions.googleapis.com/projects/sample-project-number/locations/europe-west1",
+  "dataschema": "https://googleapis.github.io/google-cloudevents/proto/google/events/cloud/functions/v2/data.proto#FunctionEventData",
+  "subject": "functions/sample-event",
+  "project": "sample-project-number",
+  "datacontenttype": "application/json",
+  "data": {
+    "payload": {
+      "name": "projects/sample-project/locations/europe-west1/functions/sample-event",
+      "buildConfig": {
+        "runtime": "dotnet6"
+      },
+      "serviceConfig": {
+        "timeoutSeconds": 60
+      },
+      "eventTrigger": {
+        "triggerRegion": "europe-west1"
+      },
+      "state": "ACTIVE",
+      "environment": "GEN_2"
+    }
+  }
+}
