@@ -123,6 +123,14 @@ done
 # Create a protobuf descriptor set, which we can use to extract the CloudEvent
 # types from annotations.
 
+echo "- Generating protobuf extensions for tooling"
+$PROTOC \
+  -I tmp/protobuf/include \
+  -I $GOOGLE_CLOUDEVENTS/proto \
+  --csharp_out=tools/Google.Events.Tools.CodeGenerator \
+  --csharp_opt=file_extension=.g.cs \
+  $GOOGLE_CLOUDEVENTS/proto/google/events/cloudevent.proto
+
 echo "- Compiling protobuf descriptor set"
 $PROTOC \
   --descriptor_set_out=tmp/protos.pb \
