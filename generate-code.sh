@@ -34,13 +34,20 @@ case "$OSTYPE" in
     exit 1
 esac
 
-echo "- Cloning github.com/googleapis/google-cloudevents into tmp"
-# For the moment, just clone google-cloudevents. Later we might make
-# it a submodule. We clone quietly, and only with a depth of 1
-# as we don't need history.
 rm -rf tmp
 mkdir tmp
-git clone https://github.com/googleapis/google-cloudevents tmp/google-cloudevents -q --depth 1
+
+if [[ -z $GOOGLE_CLOUDEVENTS ]]
+then
+  echo "- Cloning github.com/googleapis/google-cloudevents into tmp"
+  # For the moment, just clone google-cloudevents. Later we might make
+  # it a submodule. We clone quietly, and only with a depth of 1
+  # as we don't need history.
+  git clone https://github.com/googleapis/google-cloudevents tmp/google-cloudevents -q --depth 1
+  GOOGLE_CLOUDEVENTS=tmp/google-cloudevents
+else
+  echo "Using local copy of google-cloudevents: $GOOGLE_CLOUDEVENTS"
+fi
 
 # We download a specific version rather than using package managers
 # for portability and being able to rely on the version being available
@@ -70,11 +77,11 @@ rm -f $(find src/Google.Events.Protobuf -name '*.g.cs')
 #   Controls the extension of generated files (C# specific)
 # -I tmp/protobuf/include
 #   Make the google.protobuf protos available (e.g. google.protobuf.Timestamp)
-# -I tmp/google-cloud-events/third_party/googleapis
+# -I $GOOGLE_CLOUDEVENTS/third_party/googleapis
 #   Make the common API-related protos available (e.g. google.type.Date)
-# -I tmp/google-cloud-events/proto
+# -I $GOOGLE_CLOUDEVENTS/proto
 #   Make the CloudEvent protos themselves available (these are the ones we generate)
-# $(find tmp/google-cloudevents/proto -name data.proto)
+# $(find  $GOOGLE_CLOUDEVENTS/proto -name data.proto)
 #   Specifies the protos we want to generate - just the event data messages
 
 echo "- Generating C# from protobuf messages"
@@ -83,9 +90,9 @@ $PROTOC \
   --csharp_opt=base_namespace=Google.Events.Protobuf \
   --csharp_opt=file_extension=.g.cs \
   -I tmp/protobuf/include \
-  -I tmp/google-cloudevents/third_party/googleapis \
-  -I tmp/google-cloudevents/proto \
-  $(find tmp/google-cloudevents/proto -name data.proto)
+  -I $GOOGLE_CLOUDEVENTS/third_party/googleapis \
+  -I $GOOGLE_CLOUDEVENTS/proto \
+  $(find $GOOGLE_CLOUDEVENTS/proto -name data.proto)
 
 # protoc doesn't include a copyright message. Add it here.
 
@@ -120,9 +127,9 @@ echo "- Compiling protobuf descriptor set"
 $PROTOC \
   --descriptor_set_out=tmp/protos.pb \
   -I tmp/protobuf/include \
-  -I tmp/google-cloudevents/third_party/googleapis \
-  -I tmp/google-cloudevents/proto \
-  $(find tmp/google-cloudevents/proto -name '*.proto')
+  -I $GOOGLE_CLOUDEVENTS/third_party/googleapis \
+  -I $GOOGLE_CLOUDEVENTS/proto \
+  $(find $GOOGLE_CLOUDEVENTS/proto -name '*.proto')
 
 # Run code generation from the descriptor set
 
