@@ -12,10 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Events.Protobuf;
 using Google.Protobuf;
 using Google.Protobuf.Reflection;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -35,88 +35,129 @@ namespace Google.Events.Tools.CodeGenerator
                 Console.WriteLine($"Required arguments: <path to protobuf descriptor set> <src directory to generate in>");
                 return 1;
             }
-
-            string descriptorSetFile = args[0];
             string srcDirectory = args[1];
 
-            var info = LoadCloudEventDataInfo(descriptorSetFile);
+            var extensionRegistry = new ExtensionRegistry
+            {
+                CloudeventExtensions.CloudEventType,
+                CloudeventExtensions.CloudEventProduct,
+                CloudeventExtensions.CloudEventExtensionAttribute,
+                CloudeventExtensions.CloudEventExtensionName
+            };
+            var descriptorSet = FileDescriptorSet.Parser.WithExtensionRegistry(extensionRegistry).ParseFrom(File.ReadAllBytes(args[0]));
 
-            GenerateCode(info, srcDirectory, "Google.Events.Protobuf", "ProtobufJsonCloudEventFormatter");
+            var descriptorsByPackage = descriptorSet.File.GroupBy(fd => fd.Package);
+
+            foreach (var group in descriptorsByPackage)
+            {
+                var cloudEvents = group.SelectMany(fd => fd.MessageType.Select(CloudEventInfo.FromMessage))
+                    .OfType<CloudEventInfo>()
+                    .ToList();
+                var extensionAttributes = group.SelectMany(fd => fd.Options?.GetExtension(CloudeventExtensions.CloudEventExtensionAttribute) ?? Enumerable.Empty<ExtensionAttribute>())
+                    .ToList();
+                var csharpNamespace = group.First().Options.CsharpNamespace;
+
+                GenerateCode(srcDirectory, "Google.Events.Protobuf", csharpNamespace, "ProtobufJsonCloudEventFormatter", cloudEvents, extensionAttributes);
+            }
             return 0;
         }
 
         /// <summary>
-        /// Loads the specified descriptor set, and extracts CloudEvent information from it.
+        /// Generates all the code for the CloudEvents in a single proto package.
         /// </summary>
-        private static List<CloudEventDataInfo> LoadCloudEventDataInfo(string file)
-        {
-            // Note: while it's slightly annoying to hard-code this, it's less annoying than loading the
-            // descriptor set without extensions, finding the extension number, and then reloading it.
-            const int extensionField = 11716486;
-            var fieldCodec = FieldCodec.ForString(WireFormat.MakeTag(extensionField, WireFormat.WireType.LengthDelimited), "");
-            var extension = new Extension<MessageOptions, string>(extensionField, fieldCodec);
-            var extensionRegistry = new ExtensionRegistry { extension };
-
-            var descriptorSetBytes = File.ReadAllBytes(file);
-            var descriptorSet = FileDescriptorSet.Parser.WithExtensionRegistry(extensionRegistry).ParseFrom(descriptorSetBytes);
-
-            var typeToNamespace = (from protoFile in descriptorSet.File
-                                   from message in protoFile.MessageType
-                                   select (protoFile, message))
-                                   .ToDictionary(pair => $"{pair.protoFile.Package}.{pair.message.Name}", pair => pair.protoFile.Options.CsharpNamespace);
-
-            // ConcurrentDictionary has a convenient GetOrAdd method.
-            ConcurrentDictionary<string, CloudEventDataInfo> infoByFqn = new ConcurrentDictionary<string, CloudEventDataInfo>();
-
-            // Find every message in every file in the descriptor set, and check for the cloud_event_type extension.
-            // If it has one, check for a field called "data" and take the type of that, then create a CloudEventDataInfo
-            // that knows the C# namespace of the message, the message name, and the CloudEvent type.
-            foreach (var protoFile in descriptorSet.File)
-            {
-                var package = protoFile.Package;
-                foreach (var message in protoFile.MessageType)
-                {
-                    var eventType = message.Options?.GetExtension(extension);
-                    if (string.IsNullOrWhiteSpace(eventType))
-                    {
-                        continue;
-                    }
-                    // We expect each CloudEvent message to have a data field, which is a message.
-                    var dataFieldType = message.Field.Single(f => f.Name == "data").TypeName;
-                    // Convert the type to a fully-qualified name
-                    var fqn = dataFieldType.StartsWith(".") ? dataFieldType.Substring(1) : $"{package}.{dataFieldType}";
-                    var messageName = fqn.Split('.').Last();
-                    CloudEventDataInfo info = infoByFqn.GetOrAdd(fqn, _ => new CloudEventDataInfo(messageName, typeToNamespace[fqn]));
-                    info.CloudEventTypes.Add(eventType);
-                }
-            }
-            return infoByFqn.Values.ToList();
-        }
-
-        private static void GenerateCode(IEnumerable<CloudEventDataInfo> infos, string srcDirectory, string project, string converter)
+        /// <param name="srcDirectory">The root source directory in the repo.</param>
+        /// <param name="project">The name of the project to generate code in.</param>
+        /// <param name="protoCSharpNamespace">The C# namespace specified as options in the proto files.</param>
+        /// <param name="formatter">The CloudEventFormatter type to specify</param>
+        /// <param name="events">The CloudEvents in this package.</param>
+        /// <param name="extensionAttributes">The extension attributes in this package.</param>
+        private static void GenerateCode(string srcDirectory, string project, string protoCSharpNamespace, string formatter, IEnumerable<CloudEventInfo> events, IEnumerable<ExtensionAttribute> extensionAttributes)
         {
             var projectDirectory = Path.Combine(srcDirectory, project);
-            foreach (var info in infos)
-            {
-                var trailingNamespace = info.ProtobufNamespace.Replace("Google.Events.Protobuf.", "");
-                var fileNamespace = $"{project}.{trailingNamespace}";
-                var file = Path.Combine(projectDirectory, trailingNamespace.Replace('.', '/'), $"{info.MessageName}.g.cs");
+            var trailingNamespace = protoCSharpNamespace.Replace("Google.Events.Protobuf.", "");
+            string directory = Path.Combine(projectDirectory, trailingNamespace.Replace('.', '/'));
+            Directory.CreateDirectory(directory);
+            var packageNamespace = $"{project}.{trailingNamespace}";
+            GenerateCloudEventTypes();
+            GenerateExtensionAttributes();
 
+            void GenerateCloudEventTypes()
+            {
+                foreach (var group in events.GroupBy(evt => evt.DataMessage))
+                {
+                    string messageName = group.Key;
+                    var file = Path.Combine(directory, $"{messageName}.g.cs");
+
+                    using (var writer = File.CreateText(file))
+                    {
+                        WriteCopyright(writer);
+                        writer.WriteLine();
+                        writer.WriteLine($"namespace {packageNamespace}");
+                        writer.WriteLine("{    ");
+                        writer.WriteLine($"    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof({formatter}<{messageName}>))]");
+                        writer.WriteLine($"    public partial class {messageName}");
+                        writer.WriteLine("    {");
+                        foreach (var type in group.Select(ce => ce.Type))
+                        {
+                            var suffix = type.Split('.').Last();
+                            var constantName = char.ToUpperInvariant(suffix[0]) + suffix[1..];
+                            writer.WriteLine($"        /// <summary>CloudEvent type for the '{suffix}' event.</summary>");
+                            writer.WriteLine($"        public const string {constantName}CloudEventType = \"{type}\";");
+                            writer.WriteLine();
+                        }
+                        writer.WriteLine("    }");
+                        writer.WriteLine("}");
+                    }
+                }
+            }
+
+            void GenerateExtensionAttributes()
+            {
+                if (!extensionAttributes.Any())
+                {
+                    return;
+                }
+
+                var pairs = extensionAttributes
+                    .Select(attr => (attribute: attr, events: events.Where(ev => ev.ExtensionAttributes.Contains(attr.Name)).ToList()))
+                    .OrderBy(attr => attr.attribute.Name)
+                    .ToList();
+
+                var file = Path.Combine(directory, "ExtensionAttributes.g.cs");
                 using (var writer = File.CreateText(file))
                 {
                     WriteCopyright(writer);
                     writer.WriteLine();
-                    writer.WriteLine($"namespace {fileNamespace}");
+                    writer.WriteLine("using CloudNative.CloudEvents;");
+                    writer.WriteLine();
+                    writer.WriteLine($"namespace {packageNamespace}");
                     writer.WriteLine("{    ");
-                    writer.WriteLine($"    [global::CloudNative.CloudEvents.CloudEventFormatterAttribute(typeof({converter}<{info.MessageName}>))]");
-                    writer.WriteLine($"    public partial class {info.MessageName}");
+                    writer.WriteLine($"    /// <summary>Extension attributes for {packageNamespace} events.</summary>");
+                    writer.WriteLine("    public static class ExtensionAttributes");
                     writer.WriteLine("    {");
-                    foreach (var type in info.CloudEventTypes)
+                    foreach (var (attribute, eventsUsingAttribute) in pairs)
                     {
-                        var suffix = type.Split('.').Last();
-                        var constantName = char.ToUpperInvariant(suffix[0]) + suffix[1..];
-                        writer.WriteLine($"        /// <summary>CloudEvent type for the '{suffix}' event.</summary>");
-                        writer.WriteLine($"        public const string {constantName}CloudEventType = \"{type}\";");
+                        var camelCaseName = attribute.CamelCaseName == "" ? attribute.Name : attribute.CamelCaseName;
+                        var propertyName = char.ToUpperInvariant(camelCaseName[0]) + camelCaseName[1..];
+                        writer.WriteLine($"        /// <summary>");
+                        writer.WriteLine($"        /// <para>{attribute.Description}</para>");
+
+                        // Some extension attributes (e.g. for Firebase Database events) don't specify which
+                        // events they'll be present on. It's still better to generate them than not though.
+                        if (eventsUsingAttribute.Any())
+                        {
+                            writer.WriteLine($"        ///");
+                            writer.WriteLine($"        /// <para>This is used by the following events:</para>");
+                            writer.WriteLine($"        ///");
+                            writer.WriteLine($"        /// <list type=\"bullet\">");
+                            foreach (var evt in eventsUsingAttribute)
+                            {
+                                writer.WriteLine($"        ///   <item><description>{evt.Type}</description></item>");
+                            }
+                            writer.WriteLine($"        /// </list>");
+                        }
+                        writer.WriteLine($"        /// </summary>");
+                        writer.WriteLine($"        public static CloudEventAttribute {propertyName} {{ get; }} = CloudEventAttribute.CreateExtension(\"{attribute.Name}\", CloudEventAttributeType.String);");
                         writer.WriteLine();
                     }
                     writer.WriteLine("    }");
