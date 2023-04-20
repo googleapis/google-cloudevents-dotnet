@@ -111,8 +111,10 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
             "Y2xvdWQuYXBpZ2VlcmVnaXN0cnkudjEuQXBpRGVwbG95bWVudEgAiAEBQgoK",
             "CF9wYXlsb2FkIlwKDEFwaUV2ZW50RGF0YRJACgdwYXlsb2FkGAEgASgLMiou",
             "Z29vZ2xlLmV2ZW50cy5jbG91ZC5hcGlnZWVyZWdpc3RyeS52MS5BcGlIAIgB",
-            "AUIKCghfcGF5bG9hZEIxqgIuR29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5DbG91",
-            "ZC5BcGlnZWVSZWdpc3RyeS5WMWIGcHJvdG8z"));
+            "AUIKCghfcGF5bG9hZEKFAaoCLkdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xv",
+            "dWQuQXBpZ2VlUmVnaXN0cnkuVjHKAiVHb29nbGVcRXZlbnRzXENsb3VkXEFw",
+            "aWdlZVJlZ2lzdHJ5XFYx6gIpR29vZ2xlOjpFdmVudHM6OkNsb3VkOjpBcGln",
+            "ZWVSZWdpc3RyeTo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

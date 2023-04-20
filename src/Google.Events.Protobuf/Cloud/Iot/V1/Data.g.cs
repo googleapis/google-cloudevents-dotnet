@@ -125,8 +125,9 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
             "Q0VSVElGSUNBVEVfUEVNEAEqdgoPUHVibGljS2V5Rm9ybWF0EiEKHVVOU1BF",
             "Q0lGSUVEX1BVQkxJQ19LRVlfRk9STUFUEAASCwoHUlNBX1BFTRADEhAKDFJT",
             "QV9YNTA5X1BFTRABEg0KCUVTMjU2X1BFTRACEhIKDkVTMjU2X1g1MDlfUEVN",
-            "EARCJqoCI0dvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQuSW90LlYxYgZw",
-            "cm90bzM="));
+            "EARCZKoCI0dvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQuSW90LlYxygIa",
+            "R29vZ2xlXEV2ZW50c1xDbG91ZFxJb3RcVjHqAh5Hb29nbGU6OkV2ZW50czo6",
+            "Q2xvdWQ6OklvdDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Cloud.Iot.V1.MqttState), typeof(global::Google.Events.Protobuf.Cloud.Iot.V1.HttpState), typeof(global::Google.Events.Protobuf.Cloud.Iot.V1.LogLevel), typeof(global::Google.Events.Protobuf.Cloud.Iot.V1.GatewayType), typeof(global::Google.Events.Protobuf.Cloud.Iot.V1.GatewayAuthMethod), typeof(global::Google.Events.Protobuf.Cloud.Iot.V1.PublicKeyCertificateFormat), typeof(global::Google.Events.Protobuf.Cloud.Iot.V1.PublicKeyFormat), }, null, new pbr::GeneratedClrTypeInfo[] {

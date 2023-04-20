@@ -241,8 +241,10 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
             "B3BheWxvYWQYASABKAsyKS5nb29nbGUuZXZlbnRzLmNsb3VkLmRhdGFzdHJl",
             "YW0udjEuU3RyZWFtSACIAQFCCgoIX3BheWxvYWQiXAoOUm91dGVFdmVudERh",
             "dGESPgoHcGF5bG9hZBgBIAEoCzIoLmdvb2dsZS5ldmVudHMuY2xvdWQuZGF0",
-            "YXN0cmVhbS52MS5Sb3V0ZUgAiAEBQgoKCF9wYXlsb2FkQi2qAipHb29nbGUu",
-            "RXZlbnRzLlByb3RvYnVmLkNsb3VkLkRhdGFzdHJlYW0uVjFiBnByb3RvMw=="));
+            "YXN0cmVhbS52MS5Sb3V0ZUgAiAEBQgoKCF9wYXlsb2FkQnmqAipHb29nbGUu",
+            "RXZlbnRzLlByb3RvYnVmLkNsb3VkLkRhdGFzdHJlYW0uVjHKAiFHb29nbGVc",
+            "RXZlbnRzXENsb3VkXERhdGFzdHJlYW1cVjHqAiVHb29nbGU6OkV2ZW50czo6",
+            "Q2xvdWQ6OkRhdGFzdHJlYW06OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -56,10 +56,12 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
             "ARIMCghSRVNUX0FQSRACEhIKDkFETUlOX1NES19OT0RFEAMqfAoWUmVtb3Rl",
             "Q29uZmlnVXBkYXRlVHlwZRIpCiVSRU1PVEVfQ09ORklHX1VQREFURV9UWVBF",
             "X1VOU1BFQ0lGSUVEEAASFgoSSU5DUkVNRU5UQUxfVVBEQVRFEAESEQoNRk9S",
-            "Q0VEX1VQREFURRACEgwKCFJPTExCQUNLEANCaQoqY29tLmdvb2dsZS5ldmVu",
-            "dHMuZmlyZWJhc2UucmVtb3RlY29uZmlnLnYxQglEYXRhUHJvdG+qAi9Hb29n",
-            "bGUuRXZlbnRzLlByb3RvYnVmLkZpcmViYXNlLlJlbW90ZUNvbmZpZy5WMWIG",
-            "cHJvdG8z"));
+            "Q0VEX1VQREFURRACEgwKCFJPTExCQUNLEANCvwEKKmNvbS5nb29nbGUuZXZl",
+            "bnRzLmZpcmViYXNlLnJlbW90ZWNvbmZpZy52MUIJRGF0YVByb3RvqgIvR29v",
+            "Z2xlLkV2ZW50cy5Qcm90b2J1Zi5GaXJlYmFzZS5SZW1vdGVDb25maWcuVjHK",
+            "AiZHb29nbGVcRXZlbnRzXEZpcmViYXNlXFJlbW90ZUNvbmZpZ1xWMeoCKkdv",
+            "b2dsZTo6RXZlbnRzOjpGaXJlYmFzZTo6UmVtb3RlQ29uZmlnOjpWMWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateOrigin), typeof(global::Google.Events.Protobuf.Firebase.RemoteConfig.V1.RemoteConfigUpdateType), }, null, new pbr::GeneratedClrTypeInfo[] {

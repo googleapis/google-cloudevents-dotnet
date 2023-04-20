@@ -44,9 +44,11 @@ namespace Google.Events.Protobuf.Firebase.FirebaseAlerts.V1 {
             "cm90b2J1Zi90aW1lc3RhbXAucHJvdG8ilAEKCUFsZXJ0RGF0YRIvCgtjcmVh",
             "dGVfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoI",
             "ZW5kX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEigK",
-            "B3BheWxvYWQYAyABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0QjSqAjFH",
-            "b29nbGUuRXZlbnRzLlByb3RvYnVmLkZpcmViYXNlLkZpcmViYXNlQWxlcnRz",
-            "LlYxYgZwcm90bzM="));
+            "B3BheWxvYWQYAyABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0Qo4BqgIx",
+            "R29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5GaXJlYmFzZS5GaXJlYmFzZUFsZXJ0",
+            "cy5WMcoCKEdvb2dsZVxFdmVudHNcRmlyZWJhc2VcRmlyZWJhc2VBbGVydHNc",
+            "VjHqAixHb29nbGU6OkV2ZW50czo6RmlyZWJhc2U6OkZpcmViYXNlQWxlcnRz",
+            "OjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

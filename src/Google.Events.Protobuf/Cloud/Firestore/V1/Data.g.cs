@@ -69,8 +69,10 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
             "KAsyNi5nb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52MS5NYXBWYWx1",
             "ZS5GaWVsZHNFbnRyeRpWCgtGaWVsZHNFbnRyeRILCgNrZXkYASABKAkSNgoF",
             "dmFsdWUYAiABKAsyJy5nb29nbGUuZXZlbnRzLmNsb3VkLmZpcmVzdG9yZS52",
-            "MS5WYWx1ZToCOAFCLKoCKUdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQu",
-            "RmlyZXN0b3JlLlYxYgZwcm90bzM="));
+            "MS5WYWx1ZToCOAFCdqoCKUdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xvdWQu",
+            "RmlyZXN0b3JlLlYxygIgR29vZ2xlXEV2ZW50c1xDbG91ZFxGaXJlc3RvcmVc",
+            "VjHqAiRHb29nbGU6OkV2ZW50czo6Q2xvdWQ6OkZpcmVzdG9yZTo6VjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Type.LatlngReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -40,8 +40,10 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
           string.Concat(
             "Citnb29nbGUvZXZlbnRzL2Nsb3VkL3NjaGVkdWxlci92MS9kYXRhLnByb3Rv",
             "EiBnb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52MSInChBTY2hlZHVs",
-            "ZXJKb2JEYXRhEhMKC2N1c3RvbV9kYXRhGAEgASgMQiyqAilHb29nbGUuRXZl",
-            "bnRzLlByb3RvYnVmLkNsb3VkLlNjaGVkdWxlci5WMWIGcHJvdG8z"));
+            "ZXJKb2JEYXRhEhMKC2N1c3RvbV9kYXRhGAEgASgMQnaqAilHb29nbGUuRXZl",
+            "bnRzLlByb3RvYnVmLkNsb3VkLlNjaGVkdWxlci5WMcoCIEdvb2dsZVxFdmVu",
+            "dHNcQ2xvdWRcU2NoZWR1bGVyXFYx6gIkR29vZ2xlOjpFdmVudHM6OkNsb3Vk",
+            "OjpTY2hlZHVsZXI6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -98,9 +98,10 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
             "CToCOAEiYAoRSW5zdGFuY2VFdmVudERhdGESPwoHcGF5bG9hZBgBIAEoCzIp",
             "Lmdvb2dsZS5ldmVudHMuY2xvdWQubWVtY2FjaGUudjEuSW5zdGFuY2VIAIgB",
             "AUIKCghfcGF5bG9hZCpFCg9NZW1jYWNoZVZlcnNpb24SIAocTUVNQ0FDSEVf",
-            "VkVSU0lPTl9VTlNQRUNJRklFRBAAEhAKDE1FTUNBQ0hFXzFfNRABQiuqAihH",
-            "b29nbGUuRXZlbnRzLlByb3RvYnVmLkNsb3VkLk1lbWNhY2hlLlYxYgZwcm90",
-            "bzM="));
+            "VkVSU0lPTl9VTlNQRUNJRklFRBAAEhAKDE1FTUNBQ0hFXzFfNRABQnOqAihH",
+            "b29nbGUuRXZlbnRzLlByb3RvYnVmLkNsb3VkLk1lbWNhY2hlLlYxygIfR29v",
+            "Z2xlXEV2ZW50c1xDbG91ZFxNZW1jYWNoZVxWMeoCI0dvb2dsZTo6RXZlbnRz",
+            "OjpDbG91ZDo6TWVtY2FjaGU6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Type.DayofweekReflection.Descriptor, global::Google.Type.TimeofdayReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Cloud.Memcache.V1.MemcacheVersion), }, null, new pbr::GeneratedClrTypeInfo[] {

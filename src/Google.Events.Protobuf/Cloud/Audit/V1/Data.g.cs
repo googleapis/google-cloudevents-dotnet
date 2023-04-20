@@ -105,8 +105,9 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
             "KAUqggEKC0xvZ1NldmVyaXR5EgsKB0RFRkFVTFQQABIJCgVERUJVRxBkEgkK",
             "BElORk8QyAESCwoGTk9USUNFEKwCEgwKB1dBUk5JTkcQkAMSCgoFRVJST1IQ",
             "9AMSDQoIQ1JJVElDQUwQ2AQSCgoFQUxFUlQQvAUSDgoJRU1FUkdFTkNZEKAG",
-            "QiiqAiVHb29nbGUuRXZlbnRzLlByb3RvYnVmLkNsb3VkLkF1ZGl0LlYxYgZw",
-            "cm90bzM="));
+            "QmqqAiVHb29nbGUuRXZlbnRzLlByb3RvYnVmLkNsb3VkLkF1ZGl0LlYxygIc",
+            "R29vZ2xlXEV2ZW50c1xDbG91ZFxBdWRpdFxWMeoCIEdvb2dsZTo6RXZlbnRz",
+            "OjpDbG91ZDo6QXVkaXQ6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.MonitoredResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Rpc.Context.AttributeContextReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Cloud.Audit.V1.LogSeverity), }, null, new pbr::GeneratedClrTypeInfo[] {

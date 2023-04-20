@@ -53,7 +53,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
             "GAEgASgJEgsKA3VpZBgCIAEoCRIPCgdjaGFubmVsGAUgASgJEi8KC2NyZWF0",
             "ZV90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIvCgt1",
             "cGRhdGVfdGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAi",
-            "rAUKB1RyaWdnZXISDAoEbmFtZRgBIAEoCRILCgN1aWQYAiABKAkSLwoLY3Jl",
+            "zQUKB1RyaWdnZXISDAoEbmFtZRgBIAEoCRILCgN1aWQYAiABKAkSLwoLY3Jl",
             "YXRlX3RpbWUYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi8K",
             "C3VwZGF0ZV90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
             "cBJDCg1ldmVudF9maWx0ZXJzGAggAygLMiwuZ29vZ2xlLmV2ZW50cy5jbG91",
@@ -64,37 +64,40 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
             "EkQKBmxhYmVscxgMIAMoCzI0Lmdvb2dsZS5ldmVudHMuY2xvdWQuZXZlbnRh",
             "cmMudjEuVHJpZ2dlci5MYWJlbHNFbnRyeRIPCgdjaGFubmVsGA0gASgJEkwK",
             "CmNvbmRpdGlvbnMYDyADKAsyOC5nb29nbGUuZXZlbnRzLmNsb3VkLmV2ZW50",
-            "YXJjLnYxLlRyaWdnZXIuQ29uZGl0aW9uc0VudHJ5EgwKBGV0YWcYYyABKAka",
-            "LQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4",
-            "ARpiCg9Db25kaXRpb25zRW50cnkSCwoDa2V5GAEgASgJEj4KBXZhbHVlGAIg",
-            "ASgLMi8uZ29vZ2xlLmV2ZW50cy5jbG91ZC5ldmVudGFyYy52MS5TdGF0ZUNv",
-            "bmRpdGlvbjoCOAEiQQoLRXZlbnRGaWx0ZXISEQoJYXR0cmlidXRlGAEgASgJ",
-            "Eg0KBXZhbHVlGAIgASgJEhAKCG9wZXJhdG9yGAMgASgJIkEKDlN0YXRlQ29u",
-            "ZGl0aW9uEh4KBGNvZGUYASABKA4yEC5nb29nbGUucnBjLkNvZGUSDwoHbWVz",
-            "c2FnZRgCIAEoCSK+AQoLRGVzdGluYXRpb24SPgoJY2xvdWRfcnVuGAEgASgL",
-            "MikuZ29vZ2xlLmV2ZW50cy5jbG91ZC5ldmVudGFyYy52MS5DbG91ZFJ1bkgA",
-            "EhgKDmNsb3VkX2Z1bmN0aW9uGAIgASgJSAASMwoDZ2tlGAMgASgLMiQuZ29v",
-            "Z2xlLmV2ZW50cy5jbG91ZC5ldmVudGFyYy52MS5HS0VIABISCgh3b3JrZmxv",
-            "dxgEIAEoCUgAQgwKCmRlc2NyaXB0b3IiVgoJVHJhbnNwb3J0EjkKBnB1YnN1",
-            "YhgBIAEoCzInLmdvb2dsZS5ldmVudHMuY2xvdWQuZXZlbnRhcmMudjEuUHVi",
-            "c3ViSABCDgoMaW50ZXJtZWRpYXJ5IjkKCENsb3VkUnVuEg8KB3NlcnZpY2UY",
-            "ASABKAkSDAoEcGF0aBgCIAEoCRIOCgZyZWdpb24YAyABKAkiWgoDR0tFEg8K",
-            "B2NsdXN0ZXIYASABKAkSEAoIbG9jYXRpb24YAiABKAkSEQoJbmFtZXNwYWNl",
-            "GAMgASgJEg8KB3NlcnZpY2UYBCABKAkSDAoEcGF0aBgFIAEoCSItCgZQdWJz",
-            "dWISDQoFdG9waWMYASABKAkSFAoMc3Vic2NyaXB0aW9uGAIgASgJIk0KEFRy",
-            "aWdnZXJFdmVudERhdGESOQoHcGF5bG9hZBgBIAEoCzIoLmdvb2dsZS5ldmVu",
-            "dHMuY2xvdWQuZXZlbnRhcmMudjEuVHJpZ2dlciJNChBDaGFubmVsRXZlbnRE",
-            "YXRhEjkKB3BheWxvYWQYASABKAsyKC5nb29nbGUuZXZlbnRzLmNsb3VkLmV2",
-            "ZW50YXJjLnYxLkNoYW5uZWwiYQoaQ2hhbm5lbENvbm5lY3Rpb25FdmVudERh",
-            "dGESQwoHcGF5bG9hZBgBIAEoCzIyLmdvb2dsZS5ldmVudHMuY2xvdWQuZXZl",
-            "bnRhcmMudjEuQ2hhbm5lbENvbm5lY3Rpb25CK6oCKEdvb2dsZS5FdmVudHMu",
-            "UHJvdG9idWYuQ2xvdWQuRXZlbnRhcmMuVjFiBnByb3RvMw=="));
+            "YXJjLnYxLlRyaWdnZXIuQ29uZGl0aW9uc0VudHJ5Eh8KF2V2ZW50X2RhdGFf",
+            "Y29udGVudF90eXBlGBAgASgJEgwKBGV0YWcYYyABKAkaLQoLTGFiZWxzRW50",
+            "cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ARpiCg9Db25kaXRp",
+            "b25zRW50cnkSCwoDa2V5GAEgASgJEj4KBXZhbHVlGAIgASgLMi8uZ29vZ2xl",
+            "LmV2ZW50cy5jbG91ZC5ldmVudGFyYy52MS5TdGF0ZUNvbmRpdGlvbjoCOAEi",
+            "QQoLRXZlbnRGaWx0ZXISEQoJYXR0cmlidXRlGAEgASgJEg0KBXZhbHVlGAIg",
+            "ASgJEhAKCG9wZXJhdG9yGAMgASgJIkEKDlN0YXRlQ29uZGl0aW9uEh4KBGNv",
+            "ZGUYASABKA4yEC5nb29nbGUucnBjLkNvZGUSDwoHbWVzc2FnZRgCIAEoCSK+",
+            "AQoLRGVzdGluYXRpb24SPgoJY2xvdWRfcnVuGAEgASgLMikuZ29vZ2xlLmV2",
+            "ZW50cy5jbG91ZC5ldmVudGFyYy52MS5DbG91ZFJ1bkgAEhgKDmNsb3VkX2Z1",
+            "bmN0aW9uGAIgASgJSAASMwoDZ2tlGAMgASgLMiQuZ29vZ2xlLmV2ZW50cy5j",
+            "bG91ZC5ldmVudGFyYy52MS5HS0VIABISCgh3b3JrZmxvdxgEIAEoCUgAQgwK",
+            "CmRlc2NyaXB0b3IiVgoJVHJhbnNwb3J0EjkKBnB1YnN1YhgBIAEoCzInLmdv",
+            "b2dsZS5ldmVudHMuY2xvdWQuZXZlbnRhcmMudjEuUHVic3ViSABCDgoMaW50",
+            "ZXJtZWRpYXJ5IjkKCENsb3VkUnVuEg8KB3NlcnZpY2UYASABKAkSDAoEcGF0",
+            "aBgCIAEoCRIOCgZyZWdpb24YAyABKAkiWgoDR0tFEg8KB2NsdXN0ZXIYASAB",
+            "KAkSEAoIbG9jYXRpb24YAiABKAkSEQoJbmFtZXNwYWNlGAMgASgJEg8KB3Nl",
+            "cnZpY2UYBCABKAkSDAoEcGF0aBgFIAEoCSItCgZQdWJzdWISDQoFdG9waWMY",
+            "ASABKAkSFAoMc3Vic2NyaXB0aW9uGAIgASgJIk0KEFRyaWdnZXJFdmVudERh",
+            "dGESOQoHcGF5bG9hZBgBIAEoCzIoLmdvb2dsZS5ldmVudHMuY2xvdWQuZXZl",
+            "bnRhcmMudjEuVHJpZ2dlciJNChBDaGFubmVsRXZlbnREYXRhEjkKB3BheWxv",
+            "YWQYASABKAsyKC5nb29nbGUuZXZlbnRzLmNsb3VkLmV2ZW50YXJjLnYxLkNo",
+            "YW5uZWwiYQoaQ2hhbm5lbENvbm5lY3Rpb25FdmVudERhdGESQwoHcGF5bG9h",
+            "ZBgBIAEoCzIyLmdvb2dsZS5ldmVudHMuY2xvdWQuZXZlbnRhcmMudjEuQ2hh",
+            "bm5lbENvbm5lY3Rpb25Cc6oCKEdvb2dsZS5FdmVudHMuUHJvdG9idWYuQ2xv",
+            "dWQuRXZlbnRhcmMuVjHKAh9Hb29nbGVcRXZlbnRzXENsb3VkXEV2ZW50YXJj",
+            "XFYx6gIjR29vZ2xlOjpFdmVudHM6OkNsb3VkOjpFdmVudGFyYzo6VjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Rpc.CodeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.Channel), global::Google.Events.Protobuf.Cloud.Eventarc.V1.Channel.Parser, new[]{ "Name", "Uid", "CreateTime", "UpdateTime", "Provider", "PubsubTopic", "State", "ActivationToken", "CryptoKeyName" }, new[]{ "Transport" }, new[]{ typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.Channel.Types.State) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.ChannelConnection), global::Google.Events.Protobuf.Cloud.Eventarc.V1.ChannelConnection.Parser, new[]{ "Name", "Uid", "Channel", "CreateTime", "UpdateTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.Trigger), global::Google.Events.Protobuf.Cloud.Eventarc.V1.Trigger.Parser, new[]{ "Name", "Uid", "CreateTime", "UpdateTime", "EventFilters", "ServiceAccount", "Destination", "Transport", "Labels", "Channel", "Conditions", "Etag" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.Trigger), global::Google.Events.Protobuf.Cloud.Eventarc.V1.Trigger.Parser, new[]{ "Name", "Uid", "CreateTime", "UpdateTime", "EventFilters", "ServiceAccount", "Destination", "Transport", "Labels", "Channel", "Conditions", "EventDataContentType", "Etag" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.EventFilter), global::Google.Events.Protobuf.Cloud.Eventarc.V1.EventFilter.Parser, new[]{ "Attribute", "Value", "Operator" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.StateCondition), global::Google.Events.Protobuf.Cloud.Eventarc.V1.StateCondition.Parser, new[]{ "Code", "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Eventarc.V1.Destination), global::Google.Events.Protobuf.Cloud.Eventarc.V1.Destination.Parser, new[]{ "CloudRun", "CloudFunction", "Gke", "Workflow" }, new[]{ "Descriptor" }, null, null, null),
@@ -308,7 +311,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
     public const int CryptoKeyNameFieldNumber = 11;
     private string cryptoKeyName_ = "";
     /// <summary>
-    /// Optional. Resource name of a KMS crypto key (managed by the user) used to
+    /// Resource name of a KMS crypto key (managed by the user) used to
     /// encrypt/decrypt their event data.
     ///
     /// It must match the pattern
@@ -1162,6 +1165,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
       labels_ = other.labels_.Clone();
       channel_ = other.channel_;
       conditions_ = other.conditions_.Clone();
+      eventDataContentType_ = other.eventDataContentType_;
       etag_ = other.etag_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1299,7 +1303,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
     public const int TransportFieldNumber = 11;
     private global::Google.Events.Protobuf.Cloud.Eventarc.V1.Transport transport_;
     /// <summary>
-    /// Optional. To deliver messages, Eventarc might use other GCP
+    /// Optional. To deliver messages, Eventarc might use other Google Cloud
     /// products as a transport intermediary. This field contains a reference to
     /// that transport intermediary. This information can be used for debugging
     /// purposes.
@@ -1359,6 +1363,23 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
       get { return conditions_; }
     }
 
+    /// <summary>Field number for the "event_data_content_type" field.</summary>
+    public const int EventDataContentTypeFieldNumber = 16;
+    private string eventDataContentType_ = "";
+    /// <summary>
+    /// Optional. EventDataContentType specifies the type of payload in MIME
+    /// format that is expected from the CloudEvent data field. This is set to
+    /// `application/json` if the value is not defined.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string EventDataContentType {
+      get { return eventDataContentType_; }
+      set {
+        eventDataContentType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "etag" field.</summary>
     public const int EtagFieldNumber = 99;
     private string etag_ = "";
@@ -1402,6 +1423,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
       if (!Labels.Equals(other.Labels)) return false;
       if (Channel != other.Channel) return false;
       if (!Conditions.Equals(other.Conditions)) return false;
+      if (EventDataContentType != other.EventDataContentType) return false;
       if (Etag != other.Etag) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1421,6 +1443,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
       hash ^= Labels.GetHashCode();
       if (Channel.Length != 0) hash ^= Channel.GetHashCode();
       hash ^= Conditions.GetHashCode();
+      if (EventDataContentType.Length != 0) hash ^= EventDataContentType.GetHashCode();
       if (Etag.Length != 0) hash ^= Etag.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1475,6 +1498,10 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteString(Channel);
       }
       conditions_.WriteTo(output, _map_conditions_codec);
+      if (EventDataContentType.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(EventDataContentType);
+      }
       if (Etag.Length != 0) {
         output.WriteRawTag(154, 6);
         output.WriteString(Etag);
@@ -1524,6 +1551,10 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteString(Channel);
       }
       conditions_.WriteTo(ref output, _map_conditions_codec);
+      if (EventDataContentType.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(EventDataContentType);
+      }
       if (Etag.Length != 0) {
         output.WriteRawTag(154, 6);
         output.WriteString(Etag);
@@ -1565,6 +1596,9 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Channel);
       }
       size += conditions_.CalculateSize(_map_conditions_codec);
+      if (EventDataContentType.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(EventDataContentType);
+      }
       if (Etag.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Etag);
       }
@@ -1619,6 +1653,9 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         Channel = other.Channel;
       }
       conditions_.MergeFrom(other.conditions_);
+      if (other.EventDataContentType.Length != 0) {
+        EventDataContentType = other.EventDataContentType;
+      }
       if (other.Etag.Length != 0) {
         Etag = other.Etag;
       }
@@ -1691,6 +1728,10 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
           }
           case 122: {
             conditions_.AddEntriesFrom(input, _map_conditions_codec);
+            break;
+          }
+          case 130: {
+            EventDataContentType = input.ReadString();
             break;
           }
           case 794: {
@@ -1766,6 +1807,10 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
           }
           case 122: {
             conditions_.AddEntriesFrom(ref input, _map_conditions_codec);
+            break;
+          }
+          case 130: {
+            EventDataContentType = input.ReadString();
             break;
           }
           case 794: {
@@ -2377,6 +2422,10 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
     /// <summary>
     /// The Cloud Function resource name. Only Cloud Functions V2 is supported.
     /// Format: `projects/{project}/locations/{location}/functions/{function}`
+    ///
+    /// This is a read-only field. Creating Cloud Functions V2 triggers is only
+    /// supported via the Cloud Functions product. An error will be returned if
+    /// the user sets this value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
