@@ -12220,6 +12220,8 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
 
     /// <summary>Field number for the "customer_managed_encryption_key" field.</summary>
     public const int CustomerManagedEncryptionKeyFieldNumber = 10;
+    private readonly static string CustomerManagedEncryptionKeyDefaultValue = "";
+
     private string customerManagedEncryptionKey_;
     /// <summary>
     /// Immutable. A reference to a KMS encryption key.
@@ -12230,7 +12232,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CustomerManagedEncryptionKey {
-      get { return customerManagedEncryptionKey_ ?? ""; }
+      get { return customerManagedEncryptionKey_ ?? CustomerManagedEncryptionKeyDefaultValue; }
       set {
         customerManagedEncryptionKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
