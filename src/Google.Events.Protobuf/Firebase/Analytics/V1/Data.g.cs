@@ -1256,10 +1256,24 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StringValue {
-      get { return paramValueCase_ == ParamValueOneofCase.StringValue ? (string) paramValue_ : ""; }
+      get { return HasStringValue ? (string) paramValue_ : ""; }
       set {
         paramValue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         paramValueCase_ = ParamValueOneofCase.StringValue;
+      }
+    }
+    /// <summary>Gets whether the "string_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasStringValue {
+      get { return paramValueCase_ == ParamValueOneofCase.StringValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "string_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearStringValue() {
+      if (HasStringValue) {
+        ClearParamValue();
       }
     }
 
@@ -1268,10 +1282,24 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IntValue {
-      get { return paramValueCase_ == ParamValueOneofCase.IntValue ? (long) paramValue_ : 0L; }
+      get { return HasIntValue ? (long) paramValue_ : 0L; }
       set {
         paramValue_ = value;
         paramValueCase_ = ParamValueOneofCase.IntValue;
+      }
+    }
+    /// <summary>Gets whether the "int_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIntValue {
+      get { return paramValueCase_ == ParamValueOneofCase.IntValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "int_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIntValue() {
+      if (HasIntValue) {
+        ClearParamValue();
       }
     }
 
@@ -1280,10 +1308,24 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float FloatValue {
-      get { return paramValueCase_ == ParamValueOneofCase.FloatValue ? (float) paramValue_ : 0F; }
+      get { return HasFloatValue ? (float) paramValue_ : 0F; }
       set {
         paramValue_ = value;
         paramValueCase_ = ParamValueOneofCase.FloatValue;
+      }
+    }
+    /// <summary>Gets whether the "float_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFloatValue {
+      get { return paramValueCase_ == ParamValueOneofCase.FloatValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "float_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFloatValue() {
+      if (HasFloatValue) {
+        ClearParamValue();
       }
     }
 
@@ -1292,10 +1334,24 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double DoubleValue {
-      get { return paramValueCase_ == ParamValueOneofCase.DoubleValue ? (double) paramValue_ : 0D; }
+      get { return HasDoubleValue ? (double) paramValue_ : 0D; }
       set {
         paramValue_ = value;
         paramValueCase_ = ParamValueOneofCase.DoubleValue;
+      }
+    }
+    /// <summary>Gets whether the "double_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDoubleValue {
+      get { return paramValueCase_ == ParamValueOneofCase.DoubleValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "double_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDoubleValue() {
+      if (HasDoubleValue) {
+        ClearParamValue();
       }
     }
 
@@ -1349,10 +1405,10 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (paramValueCase_ == ParamValueOneofCase.StringValue) hash ^= StringValue.GetHashCode();
-      if (paramValueCase_ == ParamValueOneofCase.IntValue) hash ^= IntValue.GetHashCode();
-      if (paramValueCase_ == ParamValueOneofCase.FloatValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FloatValue);
-      if (paramValueCase_ == ParamValueOneofCase.DoubleValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(DoubleValue);
+      if (HasStringValue) hash ^= StringValue.GetHashCode();
+      if (HasIntValue) hash ^= IntValue.GetHashCode();
+      if (HasFloatValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FloatValue);
+      if (HasDoubleValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(DoubleValue);
       hash ^= (int) paramValueCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1372,19 +1428,19 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (paramValueCase_ == ParamValueOneofCase.StringValue) {
+      if (HasStringValue) {
         output.WriteRawTag(10);
         output.WriteString(StringValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.IntValue) {
+      if (HasIntValue) {
         output.WriteRawTag(16);
         output.WriteInt64(IntValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.FloatValue) {
+      if (HasFloatValue) {
         output.WriteRawTag(29);
         output.WriteFloat(FloatValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.DoubleValue) {
+      if (HasDoubleValue) {
         output.WriteRawTag(33);
         output.WriteDouble(DoubleValue);
       }
@@ -1398,19 +1454,19 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (paramValueCase_ == ParamValueOneofCase.StringValue) {
+      if (HasStringValue) {
         output.WriteRawTag(10);
         output.WriteString(StringValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.IntValue) {
+      if (HasIntValue) {
         output.WriteRawTag(16);
         output.WriteInt64(IntValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.FloatValue) {
+      if (HasFloatValue) {
         output.WriteRawTag(29);
         output.WriteFloat(FloatValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.DoubleValue) {
+      if (HasDoubleValue) {
         output.WriteRawTag(33);
         output.WriteDouble(DoubleValue);
       }
@@ -1424,16 +1480,16 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (paramValueCase_ == ParamValueOneofCase.StringValue) {
+      if (HasStringValue) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(StringValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.IntValue) {
+      if (HasIntValue) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(IntValue);
       }
-      if (paramValueCase_ == ParamValueOneofCase.FloatValue) {
+      if (HasFloatValue) {
         size += 1 + 4;
       }
-      if (paramValueCase_ == ParamValueOneofCase.DoubleValue) {
+      if (HasDoubleValue) {
         size += 1 + 8;
       }
       if (_unknownFields != null) {

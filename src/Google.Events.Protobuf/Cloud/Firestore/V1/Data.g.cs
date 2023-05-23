@@ -1023,10 +1023,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.NullValue NullValue {
-      get { return valueTypeCase_ == ValueTypeOneofCase.NullValue ? (global::Google.Protobuf.WellKnownTypes.NullValue) valueType_ : global::Google.Protobuf.WellKnownTypes.NullValue.NullValue; }
+      get { return HasNullValue ? (global::Google.Protobuf.WellKnownTypes.NullValue) valueType_ : global::Google.Protobuf.WellKnownTypes.NullValue.NullValue; }
       set {
         valueType_ = value;
         valueTypeCase_ = ValueTypeOneofCase.NullValue;
+      }
+    }
+    /// <summary>Gets whether the "null_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasNullValue {
+      get { return valueTypeCase_ == ValueTypeOneofCase.NullValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "null_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearNullValue() {
+      if (HasNullValue) {
+        ClearValueType();
       }
     }
 
@@ -1038,10 +1052,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool BooleanValue {
-      get { return valueTypeCase_ == ValueTypeOneofCase.BooleanValue ? (bool) valueType_ : false; }
+      get { return HasBooleanValue ? (bool) valueType_ : false; }
       set {
         valueType_ = value;
         valueTypeCase_ = ValueTypeOneofCase.BooleanValue;
+      }
+    }
+    /// <summary>Gets whether the "boolean_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBooleanValue {
+      get { return valueTypeCase_ == ValueTypeOneofCase.BooleanValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "boolean_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBooleanValue() {
+      if (HasBooleanValue) {
+        ClearValueType();
       }
     }
 
@@ -1053,10 +1081,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IntegerValue {
-      get { return valueTypeCase_ == ValueTypeOneofCase.IntegerValue ? (long) valueType_ : 0L; }
+      get { return HasIntegerValue ? (long) valueType_ : 0L; }
       set {
         valueType_ = value;
         valueTypeCase_ = ValueTypeOneofCase.IntegerValue;
+      }
+    }
+    /// <summary>Gets whether the "integer_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIntegerValue {
+      get { return valueTypeCase_ == ValueTypeOneofCase.IntegerValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "integer_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIntegerValue() {
+      if (HasIntegerValue) {
+        ClearValueType();
       }
     }
 
@@ -1068,10 +1110,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double DoubleValue {
-      get { return valueTypeCase_ == ValueTypeOneofCase.DoubleValue ? (double) valueType_ : 0D; }
+      get { return HasDoubleValue ? (double) valueType_ : 0D; }
       set {
         valueType_ = value;
         valueTypeCase_ = ValueTypeOneofCase.DoubleValue;
+      }
+    }
+    /// <summary>Gets whether the "double_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDoubleValue {
+      get { return valueTypeCase_ == ValueTypeOneofCase.DoubleValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "double_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDoubleValue() {
+      if (HasDoubleValue) {
+        ClearValueType();
       }
     }
 
@@ -1105,10 +1161,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StringValue {
-      get { return valueTypeCase_ == ValueTypeOneofCase.StringValue ? (string) valueType_ : ""; }
+      get { return HasStringValue ? (string) valueType_ : ""; }
       set {
         valueType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         valueTypeCase_ = ValueTypeOneofCase.StringValue;
+      }
+    }
+    /// <summary>Gets whether the "string_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasStringValue {
+      get { return valueTypeCase_ == ValueTypeOneofCase.StringValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "string_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearStringValue() {
+      if (HasStringValue) {
+        ClearValueType();
       }
     }
 
@@ -1123,10 +1193,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString BytesValue {
-      get { return valueTypeCase_ == ValueTypeOneofCase.BytesValue ? (pb::ByteString) valueType_ : pb::ByteString.Empty; }
+      get { return HasBytesValue ? (pb::ByteString) valueType_ : pb::ByteString.Empty; }
       set {
         valueType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         valueTypeCase_ = ValueTypeOneofCase.BytesValue;
+      }
+    }
+    /// <summary>Gets whether the "bytes_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBytesValue {
+      get { return valueTypeCase_ == ValueTypeOneofCase.BytesValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "bytes_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBytesValue() {
+      if (HasBytesValue) {
+        ClearValueType();
       }
     }
 
@@ -1139,10 +1223,24 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ReferenceValue {
-      get { return valueTypeCase_ == ValueTypeOneofCase.ReferenceValue ? (string) valueType_ : ""; }
+      get { return HasReferenceValue ? (string) valueType_ : ""; }
       set {
         valueType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         valueTypeCase_ = ValueTypeOneofCase.ReferenceValue;
+      }
+    }
+    /// <summary>Gets whether the "reference_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasReferenceValue {
+      get { return valueTypeCase_ == ValueTypeOneofCase.ReferenceValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "reference_value" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearReferenceValue() {
+      if (HasReferenceValue) {
+        ClearValueType();
       }
     }
 
@@ -1258,14 +1356,14 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (valueTypeCase_ == ValueTypeOneofCase.NullValue) hash ^= NullValue.GetHashCode();
-      if (valueTypeCase_ == ValueTypeOneofCase.BooleanValue) hash ^= BooleanValue.GetHashCode();
-      if (valueTypeCase_ == ValueTypeOneofCase.IntegerValue) hash ^= IntegerValue.GetHashCode();
-      if (valueTypeCase_ == ValueTypeOneofCase.DoubleValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(DoubleValue);
+      if (HasNullValue) hash ^= NullValue.GetHashCode();
+      if (HasBooleanValue) hash ^= BooleanValue.GetHashCode();
+      if (HasIntegerValue) hash ^= IntegerValue.GetHashCode();
+      if (HasDoubleValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(DoubleValue);
       if (valueTypeCase_ == ValueTypeOneofCase.TimestampValue) hash ^= TimestampValue.GetHashCode();
-      if (valueTypeCase_ == ValueTypeOneofCase.StringValue) hash ^= StringValue.GetHashCode();
-      if (valueTypeCase_ == ValueTypeOneofCase.BytesValue) hash ^= BytesValue.GetHashCode();
-      if (valueTypeCase_ == ValueTypeOneofCase.ReferenceValue) hash ^= ReferenceValue.GetHashCode();
+      if (HasStringValue) hash ^= StringValue.GetHashCode();
+      if (HasBytesValue) hash ^= BytesValue.GetHashCode();
+      if (HasReferenceValue) hash ^= ReferenceValue.GetHashCode();
       if (valueTypeCase_ == ValueTypeOneofCase.GeoPointValue) hash ^= GeoPointValue.GetHashCode();
       if (valueTypeCase_ == ValueTypeOneofCase.ArrayValue) hash ^= ArrayValue.GetHashCode();
       if (valueTypeCase_ == ValueTypeOneofCase.MapValue) hash ^= MapValue.GetHashCode();
@@ -1288,19 +1386,19 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (valueTypeCase_ == ValueTypeOneofCase.BooleanValue) {
+      if (HasBooleanValue) {
         output.WriteRawTag(8);
         output.WriteBool(BooleanValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.IntegerValue) {
+      if (HasIntegerValue) {
         output.WriteRawTag(16);
         output.WriteInt64(IntegerValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.DoubleValue) {
+      if (HasDoubleValue) {
         output.WriteRawTag(25);
         output.WriteDouble(DoubleValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.ReferenceValue) {
+      if (HasReferenceValue) {
         output.WriteRawTag(42);
         output.WriteString(ReferenceValue);
       }
@@ -1320,15 +1418,15 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
         output.WriteRawTag(82);
         output.WriteMessage(TimestampValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.NullValue) {
+      if (HasNullValue) {
         output.WriteRawTag(88);
         output.WriteEnum((int) NullValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.StringValue) {
+      if (HasStringValue) {
         output.WriteRawTag(138, 1);
         output.WriteString(StringValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.BytesValue) {
+      if (HasBytesValue) {
         output.WriteRawTag(146, 1);
         output.WriteBytes(BytesValue);
       }
@@ -1342,19 +1440,19 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (valueTypeCase_ == ValueTypeOneofCase.BooleanValue) {
+      if (HasBooleanValue) {
         output.WriteRawTag(8);
         output.WriteBool(BooleanValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.IntegerValue) {
+      if (HasIntegerValue) {
         output.WriteRawTag(16);
         output.WriteInt64(IntegerValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.DoubleValue) {
+      if (HasDoubleValue) {
         output.WriteRawTag(25);
         output.WriteDouble(DoubleValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.ReferenceValue) {
+      if (HasReferenceValue) {
         output.WriteRawTag(42);
         output.WriteString(ReferenceValue);
       }
@@ -1374,15 +1472,15 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
         output.WriteRawTag(82);
         output.WriteMessage(TimestampValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.NullValue) {
+      if (HasNullValue) {
         output.WriteRawTag(88);
         output.WriteEnum((int) NullValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.StringValue) {
+      if (HasStringValue) {
         output.WriteRawTag(138, 1);
         output.WriteString(StringValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.BytesValue) {
+      if (HasBytesValue) {
         output.WriteRawTag(146, 1);
         output.WriteBytes(BytesValue);
       }
@@ -1396,28 +1494,28 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (valueTypeCase_ == ValueTypeOneofCase.NullValue) {
+      if (HasNullValue) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NullValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.BooleanValue) {
+      if (HasBooleanValue) {
         size += 1 + 1;
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.IntegerValue) {
+      if (HasIntegerValue) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(IntegerValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.DoubleValue) {
+      if (HasDoubleValue) {
         size += 1 + 8;
       }
       if (valueTypeCase_ == ValueTypeOneofCase.TimestampValue) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TimestampValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.StringValue) {
+      if (HasStringValue) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(StringValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.BytesValue) {
+      if (HasBytesValue) {
         size += 2 + pb::CodedOutputStream.ComputeBytesSize(BytesValue);
       }
-      if (valueTypeCase_ == ValueTypeOneofCase.ReferenceValue) {
+      if (HasReferenceValue) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ReferenceValue);
       }
       if (valueTypeCase_ == ValueTypeOneofCase.GeoPointValue) {

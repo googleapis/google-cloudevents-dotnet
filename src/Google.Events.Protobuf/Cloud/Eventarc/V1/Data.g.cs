@@ -269,10 +269,24 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PubsubTopic {
-      get { return transportCase_ == TransportOneofCase.PubsubTopic ? (string) transport_ : ""; }
+      get { return HasPubsubTopic ? (string) transport_ : ""; }
       set {
         transport_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         transportCase_ = TransportOneofCase.PubsubTopic;
+      }
+    }
+    /// <summary>Gets whether the "pubsub_topic" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPubsubTopic {
+      get { return transportCase_ == TransportOneofCase.PubsubTopic; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "pubsub_topic" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPubsubTopic() {
+      if (HasPubsubTopic) {
+        ClearTransport();
       }
     }
 
@@ -383,7 +397,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
       if (createTime_ != null) hash ^= CreateTime.GetHashCode();
       if (updateTime_ != null) hash ^= UpdateTime.GetHashCode();
       if (Provider.Length != 0) hash ^= Provider.GetHashCode();
-      if (transportCase_ == TransportOneofCase.PubsubTopic) hash ^= PubsubTopic.GetHashCode();
+      if (HasPubsubTopic) hash ^= PubsubTopic.GetHashCode();
       if (State != global::Google.Events.Protobuf.Cloud.Eventarc.V1.Channel.Types.State.Unspecified) hash ^= State.GetHashCode();
       if (ActivationToken.Length != 0) hash ^= ActivationToken.GetHashCode();
       if (CryptoKeyName.Length != 0) hash ^= CryptoKeyName.GetHashCode();
@@ -426,7 +440,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteRawTag(58);
         output.WriteString(Provider);
       }
-      if (transportCase_ == TransportOneofCase.PubsubTopic) {
+      if (HasPubsubTopic) {
         output.WriteRawTag(66);
         output.WriteString(PubsubTopic);
       }
@@ -472,7 +486,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteRawTag(58);
         output.WriteString(Provider);
       }
-      if (transportCase_ == TransportOneofCase.PubsubTopic) {
+      if (HasPubsubTopic) {
         output.WriteRawTag(66);
         output.WriteString(PubsubTopic);
       }
@@ -513,7 +527,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
       if (Provider.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Provider);
       }
-      if (transportCase_ == TransportOneofCase.PubsubTopic) {
+      if (HasPubsubTopic) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PubsubTopic);
       }
       if (State != global::Google.Events.Protobuf.Cloud.Eventarc.V1.Channel.Types.State.Unspecified) {
@@ -2430,10 +2444,24 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CloudFunction {
-      get { return descriptorCase_ == DescriptorOneofCase.CloudFunction ? (string) descriptor_ : ""; }
+      get { return HasCloudFunction ? (string) descriptor_ : ""; }
       set {
         descriptor_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         descriptorCase_ = DescriptorOneofCase.CloudFunction;
+      }
+    }
+    /// <summary>Gets whether the "cloud_function" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCloudFunction {
+      get { return descriptorCase_ == DescriptorOneofCase.CloudFunction; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "cloud_function" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCloudFunction() {
+      if (HasCloudFunction) {
+        ClearDescriptor();
       }
     }
 
@@ -2464,10 +2492,24 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Workflow {
-      get { return descriptorCase_ == DescriptorOneofCase.Workflow ? (string) descriptor_ : ""; }
+      get { return HasWorkflow ? (string) descriptor_ : ""; }
       set {
         descriptor_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         descriptorCase_ = DescriptorOneofCase.Workflow;
+      }
+    }
+    /// <summary>Gets whether the "workflow" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasWorkflow {
+      get { return descriptorCase_ == DescriptorOneofCase.Workflow; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "workflow" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearWorkflow() {
+      if (HasWorkflow) {
+        ClearDescriptor();
       }
     }
 
@@ -2522,9 +2564,9 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (descriptorCase_ == DescriptorOneofCase.CloudRun) hash ^= CloudRun.GetHashCode();
-      if (descriptorCase_ == DescriptorOneofCase.CloudFunction) hash ^= CloudFunction.GetHashCode();
+      if (HasCloudFunction) hash ^= CloudFunction.GetHashCode();
       if (descriptorCase_ == DescriptorOneofCase.Gke) hash ^= Gke.GetHashCode();
-      if (descriptorCase_ == DescriptorOneofCase.Workflow) hash ^= Workflow.GetHashCode();
+      if (HasWorkflow) hash ^= Workflow.GetHashCode();
       hash ^= (int) descriptorCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2548,7 +2590,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteRawTag(10);
         output.WriteMessage(CloudRun);
       }
-      if (descriptorCase_ == DescriptorOneofCase.CloudFunction) {
+      if (HasCloudFunction) {
         output.WriteRawTag(18);
         output.WriteString(CloudFunction);
       }
@@ -2556,7 +2598,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Gke);
       }
-      if (descriptorCase_ == DescriptorOneofCase.Workflow) {
+      if (HasWorkflow) {
         output.WriteRawTag(34);
         output.WriteString(Workflow);
       }
@@ -2574,7 +2616,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteRawTag(10);
         output.WriteMessage(CloudRun);
       }
-      if (descriptorCase_ == DescriptorOneofCase.CloudFunction) {
+      if (HasCloudFunction) {
         output.WriteRawTag(18);
         output.WriteString(CloudFunction);
       }
@@ -2582,7 +2624,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Gke);
       }
-      if (descriptorCase_ == DescriptorOneofCase.Workflow) {
+      if (HasWorkflow) {
         output.WriteRawTag(34);
         output.WriteString(Workflow);
       }
@@ -2599,13 +2641,13 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
       if (descriptorCase_ == DescriptorOneofCase.CloudRun) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CloudRun);
       }
-      if (descriptorCase_ == DescriptorOneofCase.CloudFunction) {
+      if (HasCloudFunction) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CloudFunction);
       }
       if (descriptorCase_ == DescriptorOneofCase.Gke) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Gke);
       }
-      if (descriptorCase_ == DescriptorOneofCase.Workflow) {
+      if (HasWorkflow) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Workflow);
       }
       if (_unknownFields != null) {
