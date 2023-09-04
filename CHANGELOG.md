@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.4.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.3.0...Google.CloudEvents.Protobuf-1.4.0) (2023-09-04)
+
+
+### Features
+
+* Add more events ([067464c](https://github.com/googleapis/google-cloudevents-dotnet/commit/067464cf070ee88312189749c3f9484327637b51))
+* Generate extension attributes based on proto annotations ([db7afbc](https://github.com/googleapis/google-cloudevents-dotnet/commit/db7afbccc2f1277dcb281c38d01d509f7532e214))
+* Regenerate all code, including new events and extension attributes ([d219f8c](https://github.com/googleapis/google-cloudevents-dotnet/commit/d219f8c706589aa5305f03975f7fa7acc539a4bc))
+
 ## [1.3.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.2.0...Google.CloudEvents.Protobuf-1.3.0) (2023-03-28)
 
 
