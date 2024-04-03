@@ -12,8 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Api.CommonProtos" Version="2.10.0" />
-    <PackageReference Include="CloudNative.CloudEvents.SystemTextJson" Version="2.6.0" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.15.0" />
+    <PackageReference Include="CloudNative.CloudEvents.SystemTextJson" Version="2.7.1" />
   </ItemGroup>
 
 </Project>
