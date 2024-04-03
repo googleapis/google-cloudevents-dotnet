@@ -146,6 +146,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
   /// <summary>
   /// The data within all Firebase test matrix events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TestMatrixEventData : pb::IMessage<TestMatrixEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -609,6 +610,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
   /// <summary>
   /// Information about the client which invoked the test.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClientInfo : pb::IMessage<ClientInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -833,6 +835,7 @@ namespace Google.Events.Protobuf.Firebase.TestLab.V1 {
   /// <summary>
   /// Locations where test results are stored.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ResultStorage : pb::IMessage<ResultStorage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -92,6 +92,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnections.V1 {
   /// components needed for creating a BeyondCorp protected AppConnection. Multiple
   /// connectors can be authorised for a single AppConnection.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppConnection : pb::IMessage<AppConnection>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -756,6 +757,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnections.V1 {
       /// <summary>
       /// ApplicationEndpoint represents a remote application endpoint.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ApplicationEndpoint : pb::IMessage<ApplicationEndpoint>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -992,6 +994,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnections.V1 {
       /// Gateway represents a user facing component that serves as an entrance to
       /// enable connectivity.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Gateway : pb::IMessage<Gateway>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1376,6 +1379,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnections.V1 {
   /// <summary>
   /// The data within all AppConnection events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppConnectionEventData : pb::IMessage<AppConnectionEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

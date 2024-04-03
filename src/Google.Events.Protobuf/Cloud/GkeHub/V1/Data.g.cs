@@ -203,6 +203,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// Feature represents the settings and status of any Hub Feature.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Feature : pb::IMessage<Feature>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -750,6 +751,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// GkeHub API. See `FeatureState` for the "running state" of the Feature in the
   /// Hub and across Memberships.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeatureResourceState : pb::IMessage<FeatureResourceState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -988,6 +990,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// describe a Feature's state at the environ-level, or per-membershop, depending
   /// on the context.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeatureState : pb::IMessage<FeatureState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1308,6 +1311,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// CommonFeatureState contains Hub-wide Feature status information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommonFeatureState : pb::IMessage<CommonFeatureState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1512,6 +1516,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// ScopeFeatureState contains Scope-wide Feature status information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ScopeFeatureState : pb::IMessage<ScopeFeatureState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1717,6 +1722,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// MembershipFeatureState contains Feature status information for a single
   /// Membership.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MembershipFeatureState : pb::IMessage<MembershipFeatureState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1921,6 +1927,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// Scope represents a Scope in a Fleet.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Scope : pb::IMessage<Scope>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2355,6 +2362,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// ScopeLifecycleState describes the state of a Scope resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ScopeLifecycleState : pb::IMessage<ScopeLifecycleState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2586,6 +2594,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// what Fleet Scopes (or other, future Fleet resources) a Membership is bound
   /// to.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MembershipBinding : pb::IMessage<MembershipBinding>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3164,6 +3173,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// MembershipBindingLifecycleState describes the state of a Binding resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MembershipBindingLifecycleState : pb::IMessage<MembershipBindingLifecycleState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3393,6 +3403,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// Membership contains information about a member cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Membership : pb::IMessage<Membership>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4143,6 +4154,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// MembershipEndpoint contains information needed to contact a Kubernetes API,
   /// endpoint and any additional Kubernetes metadata.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MembershipEndpoint : pb::IMessage<MembershipEndpoint>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4755,6 +4767,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// Membership Kubernetes resources in the cluster. After CreateMembership or
   /// UpdateMembership, these resources should be re-applied in the cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class KubernetesResource : pb::IMessage<KubernetesResource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5030,6 +5043,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// ResourceOptions represent options for Kubernetes resource generation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ResourceOptions : pb::IMessage<ResourceOptions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5313,6 +5327,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// ResourceManifest represents a single Kubernetes resource to be applied to
   /// the cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ResourceManifest : pb::IMessage<ResourceManifest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5552,6 +5567,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// GkeCluster contains information specific to GKE clusters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GkeCluster : pb::IMessage<GkeCluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5792,6 +5808,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// OnPremCluster contains information specific to GKE On-Prem clusters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OnPremCluster : pb::IMessage<OnPremCluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6147,6 +6164,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// MultiCloudCluster contains information specific to GKE Multi-Cloud clusters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MultiCloudCluster : pb::IMessage<MultiCloudCluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6389,6 +6407,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// EdgeCluster contains information specific to Google Edge Clusters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EdgeCluster : pb::IMessage<EdgeCluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6588,6 +6607,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// ApplianceCluster contains information specific to GDC Edge Appliance
   /// Clusters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApplianceCluster : pb::IMessage<ApplianceCluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6787,6 +6807,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// KubernetesMetadata provides informational metadata for Memberships
   /// representing Kubernetes clusters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class KubernetesMetadata : pb::IMessage<KubernetesMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7198,6 +7219,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// MembershipState describes the state of a Membership resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MembershipState : pb::IMessage<MembershipState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7433,6 +7455,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// See the workload identity documentation for more details:
   /// https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Authority : pb::IMessage<Authority>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7768,6 +7791,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// The data within all Scope events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ScopeEventData : pb::IMessage<ScopeEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7972,6 +7996,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// The data within all Membership events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MembershipEventData : pb::IMessage<MembershipEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8176,6 +8201,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// The data within all Feature events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeatureEventData : pb::IMessage<FeatureEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8380,6 +8406,7 @@ namespace Google.Events.Protobuf.Cloud.GkeHub.V1 {
   /// <summary>
   /// The data within all MembershipBinding events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MembershipBindingEventData : pb::IMessage<MembershipBindingEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

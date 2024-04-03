@@ -95,6 +95,7 @@ namespace Google.Events.Protobuf.Cloud.Speech.V1 {
   /// in your audio, for example a list of passenger ship names. CustomClass items
   /// can be substituted into placeholders that you set in PhraseSet phrases.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomClass : pb::IMessage<CustomClass>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -807,6 +808,7 @@ namespace Google.Events.Protobuf.Cloud.Speech.V1 {
       /// <summary>
       /// An item of the class.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ClassItem : pb::IMessage<ClassItem>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1008,6 +1010,7 @@ namespace Google.Events.Protobuf.Cloud.Speech.V1 {
   /// Provides "hints" to the speech recognizer to favor specific words and phrases
   /// in the results.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PhraseSet : pb::IMessage<PhraseSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1751,6 +1754,7 @@ namespace Google.Events.Protobuf.Cloud.Speech.V1 {
       /// [regional endpoint](https://cloud.google.com/speech-to-text/docs/endpoints)
       /// with matching `us` or `eu` location value.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Phrase : pb::IMessage<Phrase>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1999,6 +2003,7 @@ namespace Google.Events.Protobuf.Cloud.Speech.V1 {
   /// <summary>
   /// The data within all PhraseSet events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PhraseSetEventData : pb::IMessage<PhraseSetEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2203,6 +2208,7 @@ namespace Google.Events.Protobuf.Cloud.Speech.V1 {
   /// <summary>
   /// The data within all CustomClass events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomClassEventData : pb::IMessage<CustomClassEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -297,6 +297,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// SSL configuration information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SslConfig : pb::IMessage<SslConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -520,6 +521,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// Specifies connection parameters required specifically for MySQL databases.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MySqlConnectionProfile : pb::IMessage<MySqlConnectionProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -928,6 +930,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// Specifies connection parameters required specifically for PostgreSQL
   /// databases.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostgreSqlConnectionProfile : pb::IMessage<PostgreSqlConnectionProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1377,6 +1380,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// Specifies required connection parameters, and, optionally, the parameters
   /// required to create a Cloud SQL destination database instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloudSqlConnectionProfile : pb::IMessage<CloudSqlConnectionProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1745,6 +1749,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// Specifies required connection parameters, and the parameters
   /// required to create an AlloyDB destination cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AlloyDbConnectionProfile : pb::IMessage<AlloyDbConnectionProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1990,6 +1995,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// An entry for an Access Control list.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SqlAclEntry : pb::IMessage<SqlAclEntry>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2310,6 +2316,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// IP Management configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SqlIpConfig : pb::IMessage<SqlIpConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2636,6 +2643,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// Settings for creating a Cloud SQL database instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloudSqlSettings : pb::IMessage<CloudSqlSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3625,6 +3633,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// Settings for creating an AlloyDB cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AlloyDbSettings : pb::IMessage<AlloyDbSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3904,6 +3913,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
       /// The username/password for a database user. Used for specifying initial
       /// users at cluster creation time.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class UserPassword : pb::IMessage<UserPassword>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4139,6 +4149,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
       /// <summary>
       /// Settings for the cluster's primary instance
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PrimaryInstanceSettings : pb::IMessage<PrimaryInstanceSettings>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4490,6 +4501,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
           /// <summary>
           /// MachineConfig describes the configuration of a machine.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class MachineConfig : pb::IMessage<MachineConfig>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -4698,6 +4710,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// from the Cloud SQL console or using Cloud SQL APIs. No additional
   /// configuration is required.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StaticIpConnectivity : pb::IMessage<StaticIpConnectivity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4858,6 +4871,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// to produce the script that will help set up the reverse SSH tunnel, and to
   /// set up the VPC peering between the Cloud SQL private network and the VPC.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ReverseSshConnectivity : pb::IMessage<ReverseSshConnectivity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5178,6 +5192,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// We will use this information to set up the VPC peering connection between
   /// Cloud SQL and this VPC.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VpcPeeringConnectivity : pb::IMessage<VpcPeeringConnectivity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5373,6 +5388,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// A message defining the database engine and provider.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DatabaseType : pb::IMessage<DatabaseType>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5608,6 +5624,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// Represents a Database Migration Service migration job object.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MigrationJob : pb::IMessage<MigrationJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6836,6 +6853,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
       /// <summary>
       /// Dump flag definition.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class DumpFlag : pb::IMessage<DumpFlag>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7071,6 +7089,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
       /// <summary>
       /// Dump flags definition.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class DumpFlags : pb::IMessage<DumpFlags>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7260,6 +7279,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// A connection profile definition.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConnectionProfile : pb::IMessage<ConnectionProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8057,6 +8077,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// The data within all ConnectionProfile events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConnectionProfileEventData : pb::IMessage<ConnectionProfileEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8261,6 +8282,7 @@ namespace Google.Events.Protobuf.Cloud.CloudDms.V1 {
   /// <summary>
   /// The data within all MigrationJob events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MigrationJobEventData : pb::IMessage<MigrationJobEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -95,6 +95,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientConnectorServices.V1 {
   /// <summary>
   /// Message describing ClientConnectorService object.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClientConnectorService : pb::IMessage<ClientConnectorService>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -610,6 +611,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientConnectorServices.V1 {
       /// Settings of how to connect to the ClientGateway.
       /// One of the following options should be set.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Ingress : pb::IMessage<Ingress>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -851,6 +853,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientConnectorServices.V1 {
           /// <summary>
           /// The basic ingress config for ClientGateways.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class Config : pb::IMessage<Config>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -1095,6 +1098,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientConnectorServices.V1 {
               /// It is adding routes to the client's routing table
               /// after the connection is established.
               /// </summary>
+              [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
               public sealed partial class DestinationRoute : pb::IMessage<DestinationRoute>
               #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
                   , pb::IBufferMessage
@@ -1342,6 +1346,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientConnectorServices.V1 {
       /// <summary>
       /// The details of the egress info. One of the following options should be set.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Egress : pb::IMessage<Egress>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1583,6 +1588,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientConnectorServices.V1 {
           /// <summary>
           /// The peered VPC owned by the consumer project.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class PeeredVpc : pb::IMessage<PeeredVpc>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -1788,6 +1794,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientConnectorServices.V1 {
   /// <summary>
   /// The data within all ClientConnectorService events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClientConnectorServiceEventData : pb::IMessage<ClientConnectorServiceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -208,6 +208,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// A list of Kubernetes Namespaces
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Namespaces : pb::IMessage<Namespaces>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -392,6 +393,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// A reference to a namespaced resource in Kubernetes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NamespacedName : pb::IMessage<NamespacedName>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -627,6 +629,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// A list of namespaced Kubernetes resources.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NamespacedNames : pb::IMessage<NamespacedNames>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -812,6 +815,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// Defined a customer managed encryption key that will be used to encrypt Backup
   /// artifacts.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EncryptionKey : pb::IMessage<EncryptionKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1012,6 +1016,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// comprise the Backup (the config backup and VolumeBackups).
   /// Next id: 28
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Backup : pb::IMessage<Backup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2462,6 +2467,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
       /// <summary>
       /// Information about the GKE cluster from which this Backup was created.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ClusterMetadata : pb::IMessage<ClusterMetadata>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2879,6 +2885,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// Defines the configuration and scheduling for a "line" of Backups.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BackupPlan : pb::IMessage<BackupPlan>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3612,6 +3619,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
       /// <summary>
       /// RetentionPolicy defines a Backup retention policy for a BackupPlan.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RetentionPolicy : pb::IMessage<RetentionPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3917,6 +3925,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
       /// Schedule defines scheduling parameters for automatically creating Backups
       /// via this BackupPlan.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Schedule : pb::IMessage<Schedule>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4162,6 +4171,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
       /// BackupConfig defines the configuration of Backups created via this
       /// BackupPlan.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class BackupConfig : pb::IMessage<BackupConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4660,6 +4670,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// a target GKE cluster and a record of the restore operation itself.
   /// Next id: 18
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Restore : pb::IMessage<Restore>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5588,6 +5599,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// Configuration of a restore.
   /// Next id: 12
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RestoreConfig : pb::IMessage<RestoreConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6239,6 +6251,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
       /// [GroupKind](https://godoc.org/k8s.io/apimachinery/pkg/runtime/schema#GroupKind)
       /// and is used for identifying specific "types" of resources to restore.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class GroupKind : pb::IMessage<GroupKind>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6494,6 +6507,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
       /// - Namespace
       /// - PersistentVolume
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ClusterResourceRestoreScope : pb::IMessage<ClusterResourceRestoreScope>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6682,6 +6696,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
       /// are selected for restoration from a Backup. A rule contains both filtering
       /// logic (which resources are subject to substitution) and substitution logic.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SubstitutionRule : pb::IMessage<SubstitutionRule>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7048,6 +7063,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// against Backups belong to a particular BackupPlan.
   /// Next id: 13
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RestorePlan : pb::IMessage<RestorePlan>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7638,6 +7654,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// The data within all RestorePlan events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RestorePlanEventData : pb::IMessage<RestorePlanEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7842,6 +7859,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// The data within all Backup events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BackupEventData : pb::IMessage<BackupEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8046,6 +8064,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// The data within all BackupPlan events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BackupPlanEventData : pb::IMessage<BackupPlanEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8250,6 +8269,7 @@ namespace Google.Events.Protobuf.Cloud.GkeBackup.V1 {
   /// <summary>
   /// The data within all Restore events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RestoreEventData : pb::IMessage<RestoreEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

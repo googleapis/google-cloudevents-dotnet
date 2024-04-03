@@ -81,6 +81,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
   /// <summary>
   /// An object within Google Cloud Storage.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StorageObjectData : pb::IMessage<StorageObjectData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1470,6 +1471,7 @@ namespace Google.Events.Protobuf.Cloud.Storage.V1 {
       /// <summary>
       /// Describes the customer-specified mechanism used to store the data at rest.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class CustomerEncryption : pb::IMessage<CustomerEncryption>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage

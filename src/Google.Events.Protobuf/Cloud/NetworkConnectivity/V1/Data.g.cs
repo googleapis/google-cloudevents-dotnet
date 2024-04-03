@@ -282,6 +282,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// The ServiceConnectionMap resource.
   /// Next id: 14
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceConnectionMap : pb::IMessage<ServiceConnectionMap>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -861,6 +862,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
       /// <summary>
       /// The PSC configurations on producer side.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ProducerPscConfig : pb::IMessage<ProducerPscConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1058,6 +1060,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
       /// <summary>
       /// Allow the producer to specify which consumers can connect to it.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ConsumerPscConfig : pb::IMessage<ConsumerPscConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1408,6 +1411,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
       /// <summary>
       /// PSC connection details on consumer side.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ConsumerPscConnection : pb::IMessage<ConsumerPscConnection>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2023,6 +2027,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// The ServiceConnectionPolicy resource.
   /// Next id: 11
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceConnectionPolicy : pb::IMessage<ServiceConnectionPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2626,6 +2631,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
       /// Configuration used for Private Service Connect connections. Used when
       /// Infrastructure is PSC.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PscConfig : pb::IMessage<PscConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2869,6 +2875,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
       /// <summary>
       /// Information about a specific Private Service Connect connection.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PscConnection : pb::IMessage<PscConnection>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3361,6 +3368,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// The ServiceClass resource.
   /// Next id: 8
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceClass : pb::IMessage<ServiceClass>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3798,6 +3806,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// The ServiceConnectionToken resource.
   /// Next id: 9
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceConnectionToken : pb::IMessage<ServiceConnectionToken>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4210,6 +4219,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// network. Spokes that do not use site-to-site data transfer can be associated
   /// with any VPC network in your project.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Hub : pb::IMessage<Hub>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4691,6 +4701,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// RoutingVPC contains information about the VPC networks associated
   /// with the spokes of a Network Connectivity Center hub.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RoutingVPC : pb::IMessage<RoutingVPC>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4938,6 +4949,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// * linked_interconnect_attachments
   /// * linked_router_appliance_instances
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Spoke : pb::IMessage<Spoke>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5576,6 +5588,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// Cloud. Alternatively, in a passive/active configuration, all tunnels
   /// should be capable of advertising the same prefixes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LinkedVpnTunnels : pb::IMessage<LinkedVpnTunnels>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5845,6 +5858,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// Cloud. Alternatively, in active/passive configurations, all attachments
   /// should be capable of advertising the same prefixes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LinkedInterconnectAttachments : pb::IMessage<LinkedInterconnectAttachments>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6114,6 +6128,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// Google Cloud, we recommend that you associate those instances with the same
   /// spoke.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LinkedRouterApplianceInstances : pb::IMessage<LinkedRouterApplianceInstances>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6384,6 +6399,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// URI of the VM and the internal IP address of one of the VM's network
   /// interfaces.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RouterApplianceInstance : pb::IMessage<RouterApplianceInstance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6619,6 +6635,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// <summary>
   /// The data within all ServiceClass events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceClassEventData : pb::IMessage<ServiceClassEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6823,6 +6840,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// <summary>
   /// The data within all ServiceConnectionToken events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceConnectionTokenEventData : pb::IMessage<ServiceConnectionTokenEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7028,6 +7046,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// <summary>
   /// The data within all ServiceConnectionMap events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceConnectionMapEventData : pb::IMessage<ServiceConnectionMapEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7233,6 +7252,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// <summary>
   /// The data within all Hub events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HubEventData : pb::IMessage<HubEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7437,6 +7457,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// <summary>
   /// The data within all Spoke events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SpokeEventData : pb::IMessage<SpokeEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7641,6 +7662,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkConnectivity.V1 {
   /// <summary>
   /// The data within all ServiceConnectionPolicy events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceConnectionPolicyEventData : pb::IMessage<ServiceConnectionPolicyEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

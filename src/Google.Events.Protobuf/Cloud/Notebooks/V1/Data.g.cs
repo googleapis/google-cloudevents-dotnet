@@ -354,6 +354,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// Definition of a software environment that is used to start a notebook
   /// instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Environment : pb::IMessage<Environment>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -862,6 +863,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// Definition of a custom Compute Engine virtual machine image for starting a
   /// notebook instance with the environment installed directly on the VM.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VmImage : pb::IMessage<VmImage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1201,6 +1203,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// Definition of a container image for starting a notebook instance with the
   /// environment installed in a container.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ContainerImage : pb::IMessage<ContainerImage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1438,6 +1441,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The definition of a Runtime for a managed notebook instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Runtime : pb::IMessage<Runtime>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2173,6 +2177,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// * `nvidia-tesla-t4`
   /// * `nvidia-tesla-a100`
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RuntimeAcceleratorConfig : pb::IMessage<RuntimeAcceleratorConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2471,6 +2476,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// Represents a custom encryption key configuration that can be applied to
   /// a resource. This will encrypt all disks in Virtual Machine.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EncryptionConfig : pb::IMessage<EncryptionConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2669,6 +2675,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// A Local attached disk resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LocalDisk : pb::IMessage<LocalDisk>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3285,6 +3292,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// to see a list of available options.
       /// Guest OS features for boot disk.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RuntimeGuestOsFeature : pb::IMessage<RuntimeGuestOsFeature>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3500,6 +3508,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// This property is mutually exclusive with the source property; you can only
   /// define one or the other, but not both.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LocalDiskInitializeParams : pb::IMessage<LocalDiskInitializeParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3843,6 +3852,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// Specifies the login configuration for Runtime
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RuntimeAccessConfig : pb::IMessage<RuntimeAccessConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4155,6 +4165,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// * `idle_shutdown_timeout: 180`
   /// * `enable_health_monitoring: true`
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RuntimeSoftwareConfig : pb::IMessage<RuntimeSoftwareConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4948,6 +4959,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// Contains runtime daemon metrics, such as OS and kernels and sessions stats.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RuntimeMetrics : pb::IMessage<RuntimeMetrics>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5135,6 +5147,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// features](https://cloud.google.com/compute/docs/instances/modifying-shielded-vm).
   /// Not all combinations are valid.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RuntimeShieldedInstanceConfig : pb::IMessage<RuntimeShieldedInstanceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5419,6 +5432,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// Runtime using Virtual Machine for computing.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VirtualMachine : pb::IMessage<VirtualMachine>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5703,6 +5717,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The config settings for virtual machine.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VirtualMachineConfig : pb::IMessage<VirtualMachineConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6614,6 +6629,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// Definition of the boot image used by the Runtime.
       /// Used to facilitate runtime upgradeability.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class BootImage : pb::IMessage<BootImage>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6774,6 +6790,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The description a notebook execution workload.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExecutionTemplate : pb::IMessage<ExecutionTemplate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7767,6 +7784,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// Compute Engine](https://cloud.google.com/compute/docs/gpus) to find a valid
       /// combination. TPUs are not supported.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SchedulerAcceleratorConfig : pb::IMessage<SchedulerAcceleratorConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8002,6 +8020,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// <summary>
       /// Parameters used in Dataproc JobType executions.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class DataprocParameters : pb::IMessage<DataprocParameters>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8198,6 +8217,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// <summary>
       /// Parameters used in Vertex AI JobType executions.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class VertexAIParameters : pb::IMessage<VertexAIParameters>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8439,6 +8459,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The definition of a single executed notebook.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Execution : pb::IMessage<Execution>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9041,6 +9062,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// Reservation Affinity for consuming Zonal reservation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ReservationAffinity : pb::IMessage<ReservationAffinity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9336,6 +9358,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The definition of a notebook instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Instance : pb::IMessage<Instance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10871,6 +10894,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// Engine](https://cloud.google.com/compute/docs/gpus/#gpus-list) to find a
       /// valid combination. TPUs are not supported.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AcceleratorConfig : pb::IMessage<AcceleratorConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11106,6 +11130,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// <summary>
       /// An instance-attached disk resource.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Disk : pb::IMessage<Disk>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11757,6 +11782,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
           /// <summary>
           /// Guest OS features for boot disk.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class GuestOsFeature : pb::IMessage<GuestOsFeature>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -11969,6 +11995,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// features](https://cloud.google.com/compute/docs/instances/modifying-shielded-vm).
       /// Not all combinations are valid.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ShieldedInstanceConfig : pb::IMessage<ShieldedInstanceConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -12253,6 +12280,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
       /// <summary>
       /// The entry of VM image upgrade history.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class UpgradeHistoryEntry : pb::IMessage<UpgradeHistoryEntry>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -12870,6 +12898,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The definition of a schedule.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Schedule : pb::IMessage<Schedule>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13499,6 +13528,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The data within all Runtime events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RuntimeEventData : pb::IMessage<RuntimeEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13703,6 +13733,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The data within all Execution events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExecutionEventData : pb::IMessage<ExecutionEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13907,6 +13938,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The data within all Instance events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InstanceEventData : pb::IMessage<InstanceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14111,6 +14143,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The data within all Schedule events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ScheduleEventData : pb::IMessage<ScheduleEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14315,6 +14348,7 @@ namespace Google.Events.Protobuf.Cloud.Notebooks.V1 {
   /// <summary>
   /// The data within all Environment events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EnvironmentEventData : pb::IMessage<EnvironmentEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

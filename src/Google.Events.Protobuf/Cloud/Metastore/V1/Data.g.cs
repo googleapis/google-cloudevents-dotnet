@@ -229,6 +229,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Represents a federation of multiple backend metastores.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Federation : pb::IMessage<Federation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -830,6 +831,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Represents a backend metastore for the federation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BackendMetastore : pb::IMessage<BackendMetastore>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1094,6 +1096,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// A managed metastore service that serves metadata queries.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Service : pb::IMessage<Service>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2321,6 +2324,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// Maintenance window. This specifies when Dataproc Metastore
   /// may perform system maintenance operation to the service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MaintenanceWindow : pb::IMessage<MaintenanceWindow>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2565,6 +2569,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// Specifies configuration information specific to running Hive metastore
   /// software as the metastore service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HiveMetastoreConfig : pb::IMessage<HiveMetastoreConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2882,6 +2887,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Configuration information for a Kerberos principal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class KerberosConfig : pb::IMessage<KerberosConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3171,6 +3177,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// A securely stored value.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Secret : pb::IMessage<Secret>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3413,6 +3420,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Encryption settings for the service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EncryptionConfig : pb::IMessage<EncryptionConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3611,6 +3619,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Configuration information for the auxiliary service versions.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuxiliaryVersionConfig : pb::IMessage<AuxiliaryVersionConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3890,6 +3899,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Network configuration for the Dataproc Metastore service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NetworkConfig : pb::IMessage<NetworkConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4078,6 +4088,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
       /// <summary>
       /// Contains information of the customer's network configurations.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Consumer : pb::IMessage<Consumer>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4370,6 +4381,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Telemetry Configuration for the Dataproc Metastore service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TelemetryConfig : pb::IMessage<TelemetryConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4588,6 +4600,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The metadata management activities of the metastore service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MetadataManagementActivity : pb::IMessage<MetadataManagementActivity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4801,6 +4814,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// A metastore resource that imports metadata.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MetadataImport : pb::IMessage<MetadataImport>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5339,6 +5353,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
       /// A specification of the location of and metadata about a database dump from
       /// a relational database management system.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class DatabaseDump : pb::IMessage<DatabaseDump>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5683,6 +5698,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The details of a metadata export operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MetadataExport : pb::IMessage<MetadataExport>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6137,6 +6153,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The details of a backup resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Backup : pb::IMessage<Backup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6628,6 +6645,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The details of a metadata restore operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Restore : pb::IMessage<Restore>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7097,6 +7115,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// Represents the scaling configuration of a metastore service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ScalingConfig : pb::IMessage<ScalingConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7435,6 +7454,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The specification of database dump to import from or export to.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DatabaseDumpSpec : pb::IMessage<DatabaseDumpSpec>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7616,6 +7636,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The data within all MetadataImport events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MetadataImportEventData : pb::IMessage<MetadataImportEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7820,6 +7841,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The data within all Federation events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FederationEventData : pb::IMessage<FederationEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8024,6 +8046,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The data within all Backup events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BackupEventData : pb::IMessage<BackupEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8228,6 +8251,7 @@ namespace Google.Events.Protobuf.Cloud.Metastore.V1 {
   /// <summary>
   /// The data within all Service events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceEventData : pb::IMessage<ServiceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

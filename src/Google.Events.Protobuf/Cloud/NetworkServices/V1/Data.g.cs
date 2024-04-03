@@ -347,6 +347,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// Specification of a port-based selector.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TrafficPortSelector : pb::IMessage<TrafficPortSelector>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -535,6 +536,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// A definition of a matcher that selects endpoints to which the policies
   /// should be applied.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EndpointMatcher : pb::IMessage<EndpointMatcher>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -776,6 +778,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The matcher that is based on node metadata presented by xDS clients.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class MetadataLabelMatcher : pb::IMessage<MetadataLabelMatcher>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1052,6 +1055,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
           /// <summary>
           /// Defines a name-pair value for a single label.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class MetadataLabels : pb::IMessage<MetadataLabels>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -1301,6 +1305,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// For example, this resource can be used to apply "authentication config"
   /// an all endpoints that serve on port 8080.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EndpointPolicy : pb::IMessage<EndpointPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1969,6 +1974,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// along with any policy configurations. Routes have reference to to Gateways to
   /// dictate how requests should be routed by this Gateway.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Gateway : pb::IMessage<Gateway>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2768,6 +2774,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// GrpcRoute is the resource defining how gRPC traffic routed by a Mesh
   /// or Gateway resource is routed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GrpcRoute : pb::IMessage<GrpcRoute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3334,6 +3341,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Specifies a match against a method.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class MethodMatch : pb::IMessage<MethodMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3698,6 +3706,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// A match against a collection of headers.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class HeaderMatch : pb::IMessage<HeaderMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4002,6 +4011,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// Criteria for matching traffic. A RouteMatch will be considered to match
       /// when all supplied fields match.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteMatch : pb::IMessage<RouteMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4236,6 +4246,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The destination to which traffic will be routed.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Destination : pb::IMessage<Destination>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4551,6 +4562,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// destination service. Similarly requests from clients can be aborted by for
       /// a percentage of requests.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class FaultInjectionPolicy : pb::IMessage<FaultInjectionPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4808,6 +4820,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
           /// Specification of how client requests are delayed as part of fault
           /// injection before being sent to a destination.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class Delay : pb::IMessage<Delay>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -5072,6 +5085,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
           /// Specification of how client requests are aborted as part of fault
           /// injection before being sent to a destination.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class Abort : pb::IMessage<Abort>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -5348,6 +5362,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The specifications for retries.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RetryPolicy : pb::IMessage<RetryPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5588,6 +5603,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Specifies how to route matched traffic.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteAction : pb::IMessage<RouteAction>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5932,6 +5948,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Describes how to route traffic.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteRule : pb::IMessage<RouteRule>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6175,6 +6192,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// HttpRoute is the resource defining how HTTP traffic should be routed by a
   /// Mesh or Gateway resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HttpRoute : pb::IMessage<HttpRoute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6734,6 +6752,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Specifies how to select a route rule based on HTTP request headers.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class HeaderMatch : pb::IMessage<HeaderMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7346,6 +7365,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
           /// <summary>
           /// Represents an integer value range.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class IntegerRange : pb::IMessage<IntegerRange>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -7586,6 +7606,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Specifications to match a query parameter in the request.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class QueryParameterMatch : pb::IMessage<QueryParameterMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7992,6 +8013,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// types are set, this RouteMatch will match if ALL type of matches are
       /// matched.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteMatch : pb::IMessage<RouteMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8459,6 +8481,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Specifications of a destination to which the request should be routed to.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Destination : pb::IMessage<Destination>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8707,6 +8730,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The specification for redirecting traffic.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Redirect : pb::IMessage<Redirect>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -9201,6 +9225,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// requests to the destination service. Similarly requests can be aborted by
       /// client proxy for a percentage of requests.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class FaultInjectionPolicy : pb::IMessage<FaultInjectionPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -9458,6 +9483,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
           /// Specification of how client requests are delayed as part of fault
           /// injection before being sent to a destination.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class Delay : pb::IMessage<Delay>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -9705,6 +9731,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
           /// Specification of how client requests are aborted as part of fault
           /// injection before being sent to a destination.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class Abort : pb::IMessage<Abort>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -9950,6 +9977,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// The specification for modifying HTTP header in HTTP request and HTTP
       /// response.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class HeaderModifier : pb::IMessage<HeaderModifier>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -10195,6 +10223,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// The specification for modifying the URL of the request, prior to forwarding
       /// the request to the destination.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class URLRewrite : pb::IMessage<URLRewrite>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -10432,6 +10461,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The specifications for retries.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RetryPolicy : pb::IMessage<RetryPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -10730,6 +10760,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// shadow service. Prior to sending traffic to the shadow service, the
       /// host/authority header is suffixed with -shadow.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RequestMirrorPolicy : pb::IMessage<RequestMirrorPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -10935,6 +10966,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The Specification for allowing client side cross-origin requests.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class CorsPolicy : pb::IMessage<CorsPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11365,6 +11397,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The specifications for routing traffic and applying associated policies.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteAction : pb::IMessage<RouteAction>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -12008,6 +12041,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// Specifies how to match traffic and how to route traffic when traffic is
       /// matched.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteRule : pb::IMessage<RouteRule>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -12256,6 +12290,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// communication within a service mesh. Routes that point to mesh dictate how
   /// requests are routed within this logical mesh boundary.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Mesh : pb::IMessage<Mesh>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12706,6 +12741,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// ServiceBinding is the resource that defines a Service Directory Service to
   /// be used in a BackendService resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceBinding : pb::IMessage<ServiceBinding>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13155,6 +13191,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// TcpRoute is the resource defining how TCP traffic should be routed by a
   /// Mesh/Gateway resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TcpRoute : pb::IMessage<TcpRoute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13662,6 +13699,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// Specifies how to match traffic and how to route traffic when traffic is
       /// matched.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteRule : pb::IMessage<RouteRule>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -13901,6 +13939,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// If no routeMatch field is specified, this rule will unconditionally match
       /// traffic.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteMatch : pb::IMessage<RouteMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -14142,6 +14181,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The specifications for routing traffic and applying associated policies.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteAction : pb::IMessage<RouteAction>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -14370,6 +14410,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Describe the destination for traffic to be routed to.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteDestination : pb::IMessage<RouteDestination>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -14624,6 +14665,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// TlsRoute defines how traffic should be routed based on SNI and other matching
   /// L3 attributes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TlsRoute : pb::IMessage<TlsRoute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15102,6 +15144,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// Specifies how to match traffic and how to route traffic when traffic is
       /// matched.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteRule : pb::IMessage<RouteRule>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -15339,6 +15382,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// If no routeMatch field is specified, this rule will unconditionally match
       /// traffic.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteMatch : pb::IMessage<RouteMatch>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -15562,6 +15606,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// The specifications for routing traffic and applying associated policies.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteAction : pb::IMessage<RouteAction>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -15747,6 +15792,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
       /// <summary>
       /// Describe the destination for traffic to be routed to.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class RouteDestination : pb::IMessage<RouteDestination>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -15990,6 +16036,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all EndpointPolicy events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EndpointPolicyEventData : pb::IMessage<EndpointPolicyEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16194,6 +16241,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all HttpRoute events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HttpRouteEventData : pb::IMessage<HttpRouteEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16398,6 +16446,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all ServiceBinding events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceBindingEventData : pb::IMessage<ServiceBindingEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16602,6 +16651,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all Gateway events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GatewayEventData : pb::IMessage<GatewayEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16806,6 +16856,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all TlsRoute events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TlsRouteEventData : pb::IMessage<TlsRouteEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17010,6 +17061,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all GrpcRoute events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GrpcRouteEventData : pb::IMessage<GrpcRouteEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17214,6 +17266,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all Mesh events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MeshEventData : pb::IMessage<MeshEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17418,6 +17471,7 @@ namespace Google.Events.Protobuf.Cloud.NetworkServices.V1 {
   /// <summary>
   /// The data within all TcpRoute events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TcpRouteEventData : pb::IMessage<TcpRouteEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -59,6 +59,7 @@ namespace Google.Events.Protobuf.Firebase.Database.V1 {
   /// <summary>
   /// The data within all Firebase Real Time Database reference events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ReferenceEventData : pb::IMessage<ReferenceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -497,6 +497,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// ReplicationCycle contains information about the current replication cycle
   /// status.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ReplicationCycle : pb::IMessage<ReplicationCycle>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1103,6 +1104,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// CycleStep holds information about a step progress.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CycleStep : pb::IMessage<CycleStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1551,6 +1553,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// InitializingReplicationStep contains specific step details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InitializingReplicationStep : pb::IMessage<InitializingReplicationStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1706,6 +1709,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// ReplicatingStep contains specific step details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ReplicatingStep : pb::IMessage<ReplicatingStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2023,6 +2027,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// PostProcessingStep contains specific step details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostProcessingStep : pb::IMessage<PostProcessingStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2178,6 +2183,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// ReplicationSync contain information about the last replica sync to the cloud.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ReplicationSync : pb::IMessage<ReplicationSync>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2384,6 +2390,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// MigratingVm describes the VM that will be migrated from a Source environment
   /// and its replication state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MigratingVm : pb::IMessage<MigratingVm>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3559,6 +3566,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// CutoverForecast holds information about future CutoverJobs of a MigratingVm.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CutoverForecast : pb::IMessage<CutoverForecast>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3772,6 +3780,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// never touch the instance it created. It will only delete it in case of the
   /// CloneJob being cancelled or upon failure to clone.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloneJob : pb::IMessage<CloneJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4364,6 +4373,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// CloneStep holds information about the clone step progress.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloneStep : pb::IMessage<CloneStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4812,6 +4822,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// AdaptingOSStep contains specific step details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdaptingOSStep : pb::IMessage<AdaptingOSStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4967,6 +4978,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// PreparingVMDisksStep contains specific step details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PreparingVMDisksStep : pb::IMessage<PreparingVMDisksStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5122,6 +5134,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// InstantiatingMigratedVMStep contains specific step details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InstantiatingMigratedVMStep : pb::IMessage<InstantiatingMigratedVMStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5279,6 +5292,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// the operation of shutting down the VM, creating a snapshot and
   /// clonning the VM using the replicated snapshot.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CutoverJob : pb::IMessage<CutoverJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5952,6 +5966,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// CutoverStep holds information about the cutover step progress.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CutoverStep : pb::IMessage<CutoverStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6512,6 +6527,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// ShuttingDownSourceVMStep contains specific step details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ShuttingDownSourceVMStep : pb::IMessage<ShuttingDownSourceVMStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6668,6 +6684,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// Source message describes a specific vm migration Source resource. It contains
   /// the source environment information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Source : pb::IMessage<Source>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7170,6 +7187,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// VmwareSourceDetails message describes a specific source details for the
   /// vmware source type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VmwareSourceDetails : pb::IMessage<VmwareSourceDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7486,6 +7504,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// AwsSourceDetails message describes a specific source details for the
   /// AWS source type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AwsSourceDetails : pb::IMessage<AwsSourceDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8014,6 +8033,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
       /// <summary>
       /// Message describing AWS Credentials using access key id and secret.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AccessKeyCredentials : pb::IMessage<AccessKeyCredentials>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8209,6 +8229,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
       /// <summary>
       /// Tag is an AWS tag representation.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Tag : pb::IMessage<Tag>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8452,6 +8473,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// by the user) to connect the Datacenter to Google Cloud and support vm
   /// migration data transfer.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DatacenterConnector : pb::IMessage<DatacenterConnector>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9270,6 +9292,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// UpgradeStatus contains information about upgradeAppliance operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UpgradeStatus : pb::IMessage<UpgradeStatus>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9673,6 +9696,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// Holds informatiom about the available versions for upgrade.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AvailableUpdates : pb::IMessage<AvailableUpdates>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9930,6 +9954,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// Describes an appliance version.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApplianceVersion : pb::IMessage<ApplianceVersion>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10245,6 +10270,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// VmwareVmDetails describes a VM in vCenter.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VmwareVmDetails : pb::IMessage<VmwareVmDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10932,6 +10958,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// Utilization report details the utilization (CPU, memory, etc.) of selected
   /// source VMs.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UtilizationReport : pb::IMessage<UtilizationReport>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11572,6 +11599,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// Utilization information of a single VM.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VmUtilizationInfo : pb::IMessage<VmUtilizationInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11899,6 +11927,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// Utilization metrics values for a single VM.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VmUtilizationMetrics : pb::IMessage<VmUtilizationMetrics>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12377,6 +12406,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// ComputeEngineTargetDefaults is a collection of details for creating a VM in a
   /// target Compute Engine project.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ComputeEngineTargetDefaults : pb::IMessage<ComputeEngineTargetDefaults>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13218,6 +13248,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// ComputeEngineTargetDetails is a collection of details for creating a VM in a
   /// target Compute Engine project.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ComputeEngineTargetDetails : pb::IMessage<ComputeEngineTargetDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14057,6 +14088,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// NetworkInterface represents a NIC of a VM.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NetworkInterface : pb::IMessage<NetworkInterface>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14374,6 +14406,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// AppliedLicense holds the license data returned by adaptation module report.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppliedLicense : pb::IMessage<AppliedLicense>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14641,6 +14674,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// could be scheduled. Based on
   /// https://cloud.google.com/compute/docs/reference/rest/v1/instances/setScheduling
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SchedulingNodeAffinity : pb::IMessage<SchedulingNodeAffinity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14934,6 +14968,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// Scheduling information for VM on maintenance/restart behaviour and
   /// node allocation in sole tenant nodes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ComputeScheduling : pb::IMessage<ComputeScheduling>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15291,6 +15326,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// A policy for scheduling replications.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SchedulePolicy : pb::IMessage<SchedulePolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15538,6 +15574,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// TargetProject message represents a target Compute Engine project for a
   /// migration or a clone.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TargetProject : pb::IMessage<TargetProject>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15913,6 +15950,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// Describes message for 'Group' resource. The Group is a collections of several
   /// MigratingVms.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Group : pb::IMessage<Group>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16288,6 +16326,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// google.rpc.Status message. MigrationWarning is used to present the user with
   /// warning information in migration operations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MigrationWarning : pb::IMessage<MigrationWarning>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16681,6 +16720,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// Represent the source AWS VM details.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AwsSourceVmDetails : pb::IMessage<AwsSourceVmDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16966,6 +17006,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
       /// <summary>
       /// The details of an AWS instance disk.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AwsDiskDetails : pb::IMessage<AwsDiskDetails>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -17246,6 +17287,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all UtilizationReport events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UtilizationReportEventData : pb::IMessage<UtilizationReportEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17450,6 +17492,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all Group events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GroupEventData : pb::IMessage<GroupEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17654,6 +17697,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all CloneJob events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloneJobEventData : pb::IMessage<CloneJobEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17858,6 +17902,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all DatacenterConnector events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DatacenterConnectorEventData : pb::IMessage<DatacenterConnectorEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -18062,6 +18107,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all TargetProject events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TargetProjectEventData : pb::IMessage<TargetProjectEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -18266,6 +18312,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all CutoverJob events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CutoverJobEventData : pb::IMessage<CutoverJobEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -18470,6 +18517,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all Source events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SourceEventData : pb::IMessage<SourceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -18674,6 +18722,7 @@ namespace Google.Events.Protobuf.Cloud.VMMigration.V1 {
   /// <summary>
   /// The data within all MigratingVm events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MigratingVmEventData : pb::IMessage<MigratingVmEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

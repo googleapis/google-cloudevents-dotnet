@@ -128,6 +128,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnectors.V1 {
   ///           - tunnel
   ///       - logagent
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ResourceInfo : pb::IMessage<ResourceInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -447,6 +448,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnectors.V1 {
   /// environment and GCP. It initiates connections to the applications and can
   /// proxy the data from users over the connection.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppConnector : pb::IMessage<AppConnector>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1024,6 +1026,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnectors.V1 {
       /// <summary>
       /// PrincipalInfo represents an Identity oneof.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PrincipalInfo : pb::IMessage<PrincipalInfo>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1265,6 +1268,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnectors.V1 {
           /// <summary>
           /// ServiceAccount represents a GCP service account.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class ServiceAccount : pb::IMessage<ServiceAccount>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -1470,6 +1474,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppConnectors.V1 {
   /// <summary>
   /// The data within all AppConnector events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppConnectorEventData : pb::IMessage<AppConnectorEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

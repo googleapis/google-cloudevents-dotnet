@@ -115,6 +115,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// The data within Firebase Analytics log events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AnalyticsLogData : pb::IMessage<AnalyticsLogData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -348,6 +349,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// Message containing information about the user associated with the event.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UserDimensions : pb::IMessage<UserDimensions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -908,6 +910,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// Predefined (eg: LTV) or custom properties (eg: birthday) stored on client
   /// side and associated with subsequent HitBundles.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UserPropertyValue : pb::IMessage<UserPropertyValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1193,6 +1196,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// Value for Event Params and UserProperty can be of type string or int or
   /// float or double.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AnalyticsValue : pb::IMessage<AnalyticsValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1591,6 +1595,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// Message containing device informations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeviceInfo : pb::IMessage<DeviceInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2200,6 +2205,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// Message which contains App Information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppInfo : pb::IMessage<AppInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2560,6 +2566,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// User's geographic informaiton.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GeoInfo : pb::IMessage<GeoInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2879,6 +2886,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// Mesage containing marketing campaign information which acquired the user.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TrafficSource : pb::IMessage<TrafficSource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3155,6 +3163,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// Message containing information regarding the bundle in which these
   /// events were uploaded.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExportBundleInfo : pb::IMessage<ExportBundleInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3390,6 +3399,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// Lifetime Value information about this user.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LtvInfo : pb::IMessage<LtvInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3625,6 +3635,7 @@ namespace Google.Events.Protobuf.Firebase.Analytics.V1 {
   /// <summary>
   /// Message containing information pertaining to the event.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventDimensions : pb::IMessage<EventDimensions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

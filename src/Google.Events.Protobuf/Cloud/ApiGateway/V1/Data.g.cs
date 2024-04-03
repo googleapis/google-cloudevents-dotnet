@@ -114,6 +114,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
   /// <summary>
   /// An API that can be served by one or more Gateways.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Api : pb::IMessage<Api>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -601,6 +602,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
   /// An API Configuration is a combination of settings for both the Managed
   /// Service and Gateways serving this API Config.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiConfig : pb::IMessage<ApiConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1231,6 +1233,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
       /// <summary>
       /// A lightweight description of a file.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class File : pb::IMessage<File>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1467,6 +1470,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
       /// <summary>
       /// An OpenAPI Specification Document describing an API.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class OpenApiDocument : pb::IMessage<OpenApiDocument>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1671,6 +1675,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
       /// <summary>
       /// A gRPC service definition.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class GrpcServiceDefinition : pb::IMessage<GrpcServiceDefinition>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1865,6 +1870,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
   /// API-Consumer specific actions based on an API Config such as authentication,
   /// policy enforcement, and backend selection.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Gateway : pb::IMessage<Gateway>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2390,6 +2396,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
   /// <summary>
   /// The data within all Gateway events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GatewayEventData : pb::IMessage<GatewayEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2594,6 +2601,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
   /// <summary>
   /// The data within all ApiConfig events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiConfigEventData : pb::IMessage<ApiConfigEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2798,6 +2806,7 @@ namespace Google.Events.Protobuf.Cloud.ApiGateway.V1 {
   /// <summary>
   /// The data within all Api events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiEventData : pb::IMessage<ApiEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

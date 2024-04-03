@@ -71,6 +71,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientGateways.V1 {
   /// <summary>
   /// Message describing ClientGateway object.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClientGateway : pb::IMessage<ClientGateway>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -529,6 +530,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.ClientGateways.V1 {
   /// <summary>
   /// The data within all ClientGateway events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClientGatewayEventData : pb::IMessage<ClientGatewayEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

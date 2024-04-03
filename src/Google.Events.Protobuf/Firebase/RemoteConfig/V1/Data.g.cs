@@ -125,6 +125,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
   /// <summary>
   /// The data within all Firebase Remote Config events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RemoteConfigEventData : pb::IMessage<RemoteConfigEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -581,6 +582,7 @@ namespace Google.Events.Protobuf.Firebase.RemoteConfig.V1 {
   /// All the fields associated with the person/service account
   /// that wrote a Remote Config template.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RemoteConfigUser : pb::IMessage<RemoteConfigUser>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

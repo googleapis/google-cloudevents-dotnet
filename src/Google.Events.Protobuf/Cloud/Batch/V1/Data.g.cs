@@ -254,6 +254,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Volume describes a volume and parameters for it to be mounted to a VM.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Volume : pb::IMessage<Volume>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -687,6 +688,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Represents an NFS volume.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NFS : pb::IMessage<NFS>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -922,6 +924,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Represents a Google Cloud Storage volume.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GCS : pb::IMessage<GCS>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1118,6 +1121,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Compute resource requirements
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ComputeResource : pb::IMessage<ComputeResource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1393,6 +1397,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Status event
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StatusEvent : pb::IMessage<StatusEvent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1767,6 +1772,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// This Task Execution field includes detail information for
   /// task execution procedures, based on StatusEvent types.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TaskExecution : pb::IMessage<TaskExecution>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1963,6 +1969,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Status of a task
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TaskStatus : pb::IMessage<TaskStatus>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2161,6 +2168,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// Runnable describes instructions for executing a specific script or container
   /// as part of a Task.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Runnable : pb::IMessage<Runnable>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2772,6 +2780,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// Container runnable.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Container : pb::IMessage<Container>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3237,6 +3246,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// Script runnable.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Script : pb::IMessage<Script>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3547,6 +3557,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// Barrier runnable blocks until all tasks in a taskgroup reach it.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Barrier : pb::IMessage<Barrier>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3748,6 +3759,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Spec of a task
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TaskSpec : pb::IMessage<TaskSpec>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4226,6 +4238,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// LifecyclePolicy describes how to deal with task failures
   /// based on different conditions.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LifecyclePolicy : pb::IMessage<LifecyclePolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4495,6 +4508,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// Conditions for actions to deal with task failures.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ActionCondition : pb::IMessage<ActionCondition>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4690,6 +4704,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// An Environment describes a collection of environment variables to set when
   /// executing Tasks.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Environment : pb::IMessage<Environment>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4955,6 +4970,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class KMSEnvMap : pb::IMessage<KMSEnvMap>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5195,6 +5211,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// The Cloud Batch Job description.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Job : pb::IMessage<Job>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5817,6 +5834,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// LogsPolicy describes how outputs from a Job's Tasks (stdout/stderr) will be
   /// preserved.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LogsPolicy : pb::IMessage<LogsPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6080,6 +6098,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Job status.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobStatus : pb::IMessage<JobStatus>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6424,6 +6443,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// VM instance status.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class InstanceStatus : pb::IMessage<InstanceStatus>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6748,6 +6768,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// Aggregated task status for a TaskGroup.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class TaskGroupStatus : pb::IMessage<TaskGroupStatus>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6967,6 +6988,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Notification configurations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobNotification : pb::IMessage<JobNotification>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7239,6 +7261,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// Describe the attribute that a message should have.
       /// Without specified message attributes, no message will be sent by default.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Message : pb::IMessage<Message>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7520,6 +7543,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// A Job's resource allocation policy describes when, where, and how compute
   /// resources should be allocated for the Job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AllocationPolicy : pb::IMessage<AllocationPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7963,6 +7987,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
         [pbr::OriginalName("PREEMPTIBLE")] Preemptible = 3,
       }
 
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class LocationPolicy : pb::IMessage<LocationPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8163,6 +8188,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// See https://cloud.google.com/compute/docs/disks#pdspecs and
       /// https://cloud.google.com/compute/docs/disks#localssds.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Disk : pb::IMessage<Disk>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8609,6 +8635,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// A new or an existing persistent disk (PD) or a local ssd attached to a VM
       /// instance.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AttachedDisk : pb::IMessage<AttachedDisk>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8944,6 +8971,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// Accelerator describes Compute Engine accelerators to be attached to the VM.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Accelerator : pb::IMessage<Accelerator>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -9221,6 +9249,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// InstancePolicy describes an instance type and resources attached to each VM
       /// created by this InstancePolicy.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class InstancePolicy : pb::IMessage<InstancePolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -9608,6 +9637,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// Either an InstancePolicy or an instance template.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class InstancePolicyOrTemplate : pb::IMessage<InstancePolicyOrTemplate>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -9948,6 +9978,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// A network interface.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class NetworkInterface : pb::IMessage<NetworkInterface>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -10243,6 +10274,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// <summary>
       /// NetworkPolicy describes VM instance network configurations.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class NetworkPolicy : pb::IMessage<NetworkPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -10428,6 +10460,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
       /// PlacementPolicy describes a group placement policy for the VMs controlled
       /// by this AllocationPolicy.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PlacementPolicy : pb::IMessage<PlacementPolicy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -10675,6 +10708,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// A TaskGroup defines one or more Tasks that all share the same TaskSpec.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TaskGroup : pb::IMessage<TaskGroup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11237,6 +11271,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// Carries information about a Google Cloud service account.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceAccount : pb::IMessage<ServiceAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11465,6 +11500,7 @@ namespace Google.Events.Protobuf.Cloud.Batch.V1 {
   /// <summary>
   /// The data within all Job events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobEventData : pb::IMessage<JobEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
