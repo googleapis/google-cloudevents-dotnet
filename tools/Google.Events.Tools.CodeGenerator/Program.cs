@@ -99,9 +99,18 @@ namespace Google.Events.Tools.CodeGenerator
                         writer.WriteLine("    {");
                         foreach (var type in group.Select(ce => ce.Type))
                         {
-                            var suffix = type.Split('.').Last();
+                            // Firestore and Datastore have separate "withAuthContext" variants; in those cases we want to
+                            // use the previous segment as well. Hard-coding this isn't pleasant, but it'll do until we see
+                            // anything else we need to do.
+                            var suffix = type
+                                .Replace(".withAuthContext", "WithAuthContext")
+                                .Split('.')
+                                .Last();
+                            // "Undo" the hack before to get back to the relevant part of the type.
+                            // (We can't just use type.Split('.').Last(), as that would just give us "withAuthContext".)
+                            var description = suffix.Replace("WithAuthContext", ".withAuthContext");
                             var constantName = char.ToUpperInvariant(suffix[0]) + suffix[1..];
-                            writer.WriteLine($"        /// <summary>CloudEvent type for the '{suffix}' event.</summary>");
+                            writer.WriteLine($"        /// <summary>CloudEvent type for the '{description}' event.</summary>");
                             writer.WriteLine($"        public const string {constantName}CloudEventType = \"{type}\";");
                             writer.WriteLine();
                         }
