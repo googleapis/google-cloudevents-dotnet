@@ -91,6 +91,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
   /// <summary>
   /// The data within all Firestore document events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DocumentEventData : pb::IMessage<DocumentEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -396,6 +397,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
   /// <summary>
   /// A set of field paths on a document.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DocumentMask : pb::IMessage<DocumentMask>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -582,6 +584,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
   /// <summary>
   /// A Firestore document.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Document : pb::IMessage<Document>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -936,6 +939,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
   /// <summary>
   /// A message that can hold any of the supported value types.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Value : pb::IMessage<Value>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1757,6 +1761,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
   /// <summary>
   /// An array value.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ArrayValue : pb::IMessage<ArrayValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1941,6 +1946,7 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1 {
   /// <summary>
   /// A map value.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MapValue : pb::IMessage<MapValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

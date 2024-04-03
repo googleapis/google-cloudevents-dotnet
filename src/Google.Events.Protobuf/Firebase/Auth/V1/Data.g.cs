@@ -71,6 +71,7 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
   /// <summary>
   /// The data within all Firebase Auth events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuthEventData : pb::IMessage<AuthEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -634,6 +635,7 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
   /// <summary>
   /// Additional metadata about the user.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UserMetadata : pb::IMessage<UserMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -887,6 +889,7 @@ namespace Google.Events.Protobuf.Firebase.Auth.V1 {
   /// <summary>
   /// User's info at the identity provider
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UserInfo : pb::IMessage<UserInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

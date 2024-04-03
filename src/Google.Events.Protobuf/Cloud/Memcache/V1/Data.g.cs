@@ -137,6 +137,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
   /// <summary>
   /// A Memorystore for Memcached instance
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Instance : pb::IMessage<Instance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1085,6 +1086,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
       /// <summary>
       /// Configuration for a Memcached Node.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class NodeConfig : pb::IMessage<NodeConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1317,6 +1319,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
 
       }
 
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Node : pb::IMessage<Node>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1754,6 +1757,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
 
       }
 
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class InstanceMessage : pb::IMessage<InstanceMessage>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2013,6 +2017,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
   /// <summary>
   /// Maintenance policy per instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MaintenancePolicy : pb::IMessage<MaintenancePolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2338,6 +2343,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
   /// <summary>
   /// Time window specified for weekly operations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class WeeklyMaintenanceWindow : pb::IMessage<WeeklyMaintenanceWindow>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2631,6 +2637,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
   /// <summary>
   /// Upcoming maintenance schedule.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MaintenanceSchedule : pb::IMessage<MaintenanceSchedule>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2933,6 +2940,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemcacheParameters : pb::IMessage<MemcacheParameters>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3161,6 +3169,7 @@ namespace Google.Events.Protobuf.Cloud.Memcache.V1 {
   /// <summary>
   /// The data within all Instance events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InstanceEventData : pb::IMessage<InstanceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

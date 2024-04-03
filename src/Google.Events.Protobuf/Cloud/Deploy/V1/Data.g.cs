@@ -556,6 +556,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// A `DeliveryPipeline` defines a pipeline through which a Skaffold
   /// configuration can progress.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeliveryPipeline : pb::IMessage<DeliveryPipeline>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1215,6 +1216,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// SerialPipeline defines a sequential set of stages for a `DeliveryPipeline`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SerialPipeline : pb::IMessage<SerialPipeline>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1400,6 +1402,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Stage specifies a location to which to deploy.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Stage : pb::IMessage<Stage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1708,6 +1711,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// DeployParameters contains deploy parameters information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeployParameters : pb::IMessage<DeployParameters>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1923,6 +1927,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Strategy contains deployment strategy information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Strategy : pb::IMessage<Strategy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2219,6 +2224,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Predeploy contains the predeploy job configuration information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Predeploy : pb::IMessage<Predeploy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2404,6 +2410,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Postdeploy contains the postdeploy job configuration information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Postdeploy : pb::IMessage<Postdeploy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2589,6 +2596,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Standard represents the standard deployment strategy.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Standard : pb::IMessage<Standard>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2884,6 +2892,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Canary represents the canary deployment strategy.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Canary : pb::IMessage<Canary>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3231,6 +3240,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// CanaryDeployment represents the canary deployment configuration
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CanaryDeployment : pb::IMessage<CanaryDeployment>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3560,6 +3570,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// CustomCanaryDeployment represents the custom canary deployment
   /// configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomCanaryDeployment : pb::IMessage<CustomCanaryDeployment>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3749,6 +3760,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// PhaseConfig represents the configuration for a phase in the custom
       /// canary deployment.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PhaseConfig : pb::IMessage<PhaseConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4164,6 +4176,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// KubernetesConfig contains the Kubernetes runtime configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class KubernetesConfig : pb::IMessage<KubernetesConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4461,6 +4474,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// <summary>
       /// Information about the Kubernetes Gateway API service mesh configuration.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class GatewayServiceMesh : pb::IMessage<GatewayServiceMesh>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4840,6 +4854,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// <summary>
       /// Information about the Kubernetes Service networking configuration.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ServiceNetworking : pb::IMessage<ServiceNetworking>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5124,6 +5139,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// CloudRunConfig contains the Cloud Run runtime configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloudRunConfig : pb::IMessage<CloudRunConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5413,6 +5429,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// RuntimeConfig contains the runtime specific configurations for a deployment
   /// strategy.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RuntimeConfig : pb::IMessage<RuntimeConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5708,6 +5725,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// PipelineReadyCondition contains information around the status of the
   /// Pipeline.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PipelineReadyCondition : pb::IMessage<PipelineReadyCondition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5956,6 +5974,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// `TargetsPresentCondition` contains information on any Targets referenced in
   /// the Delivery Pipeline that do not actually exist.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TargetsPresentCondition : pb::IMessage<TargetsPresentCondition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6231,6 +6250,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// TargetsTypeCondition contains information on whether the Targets defined in
   /// the Delivery Pipeline are of the same type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TargetsTypeCondition : pb::IMessage<TargetsTypeCondition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6468,6 +6488,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// PipelineCondition contains all conditions relevant to a Delivery Pipeline.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PipelineCondition : pb::IMessage<PipelineCondition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6774,6 +6795,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// A `Target` defines a location to which a Skaffold configuration
   /// can be deployed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Target : pb::IMessage<Target>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7712,6 +7734,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Configuration of the environment to use when calling Skaffold.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExecutionConfig : pb::IMessage<ExecutionConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8254,6 +8277,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Execution using the default Cloud Build pool.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DefaultPool : pb::IMessage<DefaultPool>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8494,6 +8518,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Execution using a private Cloud Build pool.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivatePool : pb::IMessage<PrivatePool>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8775,6 +8800,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Information specifying a GKE Cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GkeCluster : pb::IMessage<GkeCluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9018,6 +9044,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Information specifying an Anthos Cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AnthosCluster : pb::IMessage<AnthosCluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9215,6 +9242,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Information specifying where to deploy a Cloud Run Service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloudRunLocation : pb::IMessage<CloudRunLocation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9411,6 +9439,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Information specifying a multiTarget.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MultiTarget : pb::IMessage<MultiTarget>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9595,6 +9624,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Information specifying a Custom Target.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomTarget : pb::IMessage<CustomTarget>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9795,6 +9825,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// in a `Target` in order to facilitate deploying to other systems besides the
   /// supported runtimes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomTargetType : pb::IMessage<CustomTargetType>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10408,6 +10439,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// CustomTargetSkaffoldActions represents the `CustomTargetType` configuration
   /// using Skaffold custom actions.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomTargetSkaffoldActions : pb::IMessage<CustomTargetSkaffoldActions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10675,6 +10707,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Skaffold Config modules and their remote source.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SkaffoldModules : pb::IMessage<SkaffoldModules>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11001,6 +11034,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// <summary>
       /// Git repository containing Skaffold Config modules.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SkaffoldGitSource : pb::IMessage<SkaffoldGitSource>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11276,6 +11310,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// <summary>
       /// Cloud Storage bucket containing Skaffold Config modules.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SkaffoldGCSSource : pb::IMessage<SkaffoldGCSSource>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11518,6 +11553,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Contains criteria for selecting Targets.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TargetAttribute : pb::IMessage<TargetAttribute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11749,6 +11785,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// A `Release` defines a specific Skaffold configuration instance
   /// that can be deployed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Release : pb::IMessage<Release>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12789,6 +12826,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// <summary>
       /// Details of rendering for a single target.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class TargetRender : pb::IMessage<TargetRender>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -13236,6 +13274,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// Release. If a release is not ready, you cannot create a rollout with the
       /// release.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ReleaseReadyCondition : pb::IMessage<ReleaseReadyCondition>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -13435,6 +13474,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// SkaffoldSupportedCondition contains information about when support for the
       /// release's version of Skaffold ends.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SkaffoldSupportedCondition : pb::IMessage<SkaffoldSupportedCondition>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -13770,6 +13810,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// <summary>
       /// ReleaseCondition contains all conditions relevant to a Release.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ReleaseCondition : pb::IMessage<ReleaseCondition>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -14029,6 +14070,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Description of an a image to use during Skaffold rendering.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BuildArtifact : pb::IMessage<BuildArtifact>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14266,6 +14308,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// The artifacts produced by a target render operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TargetArtifact : pb::IMessage<TargetArtifact>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14620,6 +14663,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
       /// <summary>
       /// Contains the paths to the artifacts, relative to the URI, for a phase.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PhaseArtifact : pb::IMessage<PhaseArtifact>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -14903,6 +14947,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// CloudRunRenderMetadata contains Cloud Run information associated with a
   /// `Release` render.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloudRunRenderMetadata : pb::IMessage<CloudRunRenderMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15099,6 +15144,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// RenderMetadata includes information associated with a `Release` render.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RenderMetadata : pb::IMessage<RenderMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15354,6 +15400,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   ///
   /// A `Rollout` contains information around a specific deployment to a `Target`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Rollout : pb::IMessage<Rollout>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16552,6 +16599,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Metadata includes information associated with a `Rollout`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Metadata : pb::IMessage<Metadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16856,6 +16904,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// CloudRunMetadata contains information from a Cloud Run deployment.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloudRunMetadata : pb::IMessage<CloudRunMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17166,6 +17215,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// AutomationRolloutMetadata contains Automation-related actions that
   /// were performed on a rollout.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AutomationRolloutMetadata : pb::IMessage<AutomationRolloutMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17462,6 +17512,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// CustomMetadata contains information from a user-defined operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomMetadata : pb::IMessage<CustomMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -17647,6 +17698,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// Phase represents a collection of jobs that are logically grouped together
   /// for a `Rollout`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Phase : pb::IMessage<Phase>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -18104,6 +18156,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Deployment job composition.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeploymentJobs : pb::IMessage<DeploymentJobs>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -18455,6 +18508,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// ChildRollouts job composition
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChildRolloutJobs : pb::IMessage<ChildRolloutJobs>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -18668,6 +18722,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Job represents an operation for a `Rollout`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Job : pb::IMessage<Job>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -19398,6 +19453,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// A deploy Job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeployJob : pb::IMessage<DeployJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -19553,6 +19609,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// A verify Job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VerifyJob : pb::IMessage<VerifyJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -19708,6 +19765,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// A predeploy Job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PredeployJob : pb::IMessage<PredeployJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -19892,6 +19950,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// A postdeploy Job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostdeployJob : pb::IMessage<PostdeployJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -20076,6 +20135,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// A createChildRollout Job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CreateChildRolloutJob : pb::IMessage<CreateChildRolloutJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -20231,6 +20291,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// An advanceChildRollout Job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdvanceChildRolloutJob : pb::IMessage<AdvanceChildRolloutJob>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -20392,6 +20453,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// of Automation is to reduce manual intervention in the continuous delivery
   /// process.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Automation : pb::IMessage<Automation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -21056,6 +21118,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// AutomationResourceSelector contains the information to select the resources
   /// to which an Automation is going to be applied.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AutomationResourceSelector : pb::IMessage<AutomationResourceSelector>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -21240,6 +21303,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// `AutomationRule` defines the automation activities.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AutomationRule : pb::IMessage<AutomationRule>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -21594,6 +21658,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// `PromoteRelease` rule will automatically promote a release from the current
   /// target to a specified target.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PromoteReleaseRule : pb::IMessage<PromoteReleaseRule>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -21978,6 +22043,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// The `AdvanceRollout` automation rule will automatically advance a successful
   /// Rollout to the next phase.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdvanceRolloutRule : pb::IMessage<AdvanceRolloutRule>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -22306,6 +22372,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// The `RepairRolloutRule` automation rule will automatically repair a failed
   /// `Rollout`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RepairRolloutRule : pb::IMessage<RepairRolloutRule>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -22649,6 +22716,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Configuration of the repair action.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RepairMode : pb::IMessage<RepairMode>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -22943,6 +23011,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Retries the failed job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Retry : pb::IMessage<Retry>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -23230,6 +23299,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// Rolls back a `Rollout`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Rollback : pb::IMessage<Rollback>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -23427,6 +23497,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// `AutomationRuleCondition` contains conditions relevant to an
   /// `Automation` rule.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AutomationRuleCondition : pb::IMessage<AutomationRuleCondition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -23631,6 +23702,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// The data within all DeliveryPipeline events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeliveryPipelineEventData : pb::IMessage<DeliveryPipelineEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -23835,6 +23907,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// The data within all Target events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TargetEventData : pb::IMessage<TargetEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -24039,6 +24112,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// The data within all CustomTargetType events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomTargetTypeEventData : pb::IMessage<CustomTargetTypeEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -24243,6 +24317,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// The data within all Release events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ReleaseEventData : pb::IMessage<ReleaseEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -24447,6 +24522,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// The data within all Rollout events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RolloutEventData : pb::IMessage<RolloutEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -24651,6 +24727,7 @@ namespace Google.Events.Protobuf.Cloud.Deploy.V1 {
   /// <summary>
   /// The data within all Automation events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AutomationEventData : pb::IMessage<AutomationEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

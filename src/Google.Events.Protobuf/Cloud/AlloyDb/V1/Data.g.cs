@@ -255,6 +255,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// The username/password for a database user. Used for specifying initial
   /// users at cluster creation time.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UserPassword : pb::IMessage<UserPassword>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -491,6 +492,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// Subset of the source instance configuration that is available when reading
   /// the cluster resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MigrationSource : pb::IMessage<MigrationSource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -791,6 +793,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// EncryptionConfig describes the encryption config of a cluster or a backup
   /// that is encrypted with a CMEK (customer-managed encryption key).
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EncryptionConfig : pb::IMessage<EncryptionConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -988,6 +991,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// <summary>
   /// EncryptionInfo describes the encryption information of a cluster or a backup.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EncryptionInfo : pb::IMessage<EncryptionInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1241,6 +1245,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// <summary>
   /// SSL configuration for an AlloyDB Cluster.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SslConfig : pb::IMessage<SslConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1529,6 +1534,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// All fields in the automated backup policy are optional. Defaults for each
   /// field are provided if they are not set.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AutomatedBackupPolicy : pb::IMessage<AutomatedBackupPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2151,6 +2157,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// 22:00, configure the `start_times` field to have one element "22:00" and
       /// the `days_of_week` field to have all seven days of the week.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class WeeklySchedule : pb::IMessage<WeeklySchedule>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2374,6 +2381,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// A time based retention policy specifies that all backups within a certain
       /// time period should be retained.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class TimeBasedRetention : pb::IMessage<TimeBasedRetention>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2579,6 +2587,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// A quantity based policy specifies that a certain number of the most recent
       /// successful backups should be retained.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class QuantityBasedRetention : pb::IMessage<QuantityBasedRetention>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2779,6 +2788,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// <summary>
   /// Message describing a BackupSource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BackupSource : pb::IMessage<BackupSource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3019,6 +3029,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// primary instance and one or more read pool instances.
   /// All cluster resources share a storage layer, which scales as needed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Cluster : pb::IMessage<Cluster>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4280,6 +4291,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// Configuration information for the secondary cluster. This should be set
       /// if and only if the cluster is of type SECONDARY.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SecondaryConfig : pb::IMessage<SecondaryConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4478,6 +4490,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// replicating from this cluster. This should be set if and only if the
       /// cluster is of type PRIMARY.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class PrimaryConfig : pb::IMessage<PrimaryConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4669,6 +4682,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// An Instance is a computing unit that an end customer can connect to.
   /// It's the main unit of computing resources in AlloyDB.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Instance : pb::IMessage<Instance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5824,6 +5838,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// <summary>
       /// MachineConfig describes the configuration of a machine.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class MachineConfig : pb::IMessage<MachineConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6021,6 +6036,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// Nodes in an AlloyDB instance are ephemereal, they can change during
       /// update, failover, autohealing and resize operations.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Node : pb::IMessage<Node>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6339,6 +6355,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// <summary>
       /// QueryInsights Instance specific configuration.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class QueryInsightsInstanceConfig : pb::IMessage<QueryInsightsInstanceConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6706,6 +6723,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
       /// <summary>
       /// Configuration for a read pool instance.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ReadPoolConfig : pb::IMessage<ReadPoolConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6906,6 +6924,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// <summary>
   /// Message describing Backup object
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Backup : pb::IMessage<Backup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7933,6 +7952,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// <summary>
   /// The data within all Instance events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InstanceEventData : pb::IMessage<InstanceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8137,6 +8157,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// <summary>
   /// The data within all Backup events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BackupEventData : pb::IMessage<BackupEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8341,6 +8362,7 @@ namespace Google.Events.Protobuf.Cloud.AlloyDb.V1 {
   /// <summary>
   /// The data within all Cluster events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClusterEventData : pb::IMessage<ClusterEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

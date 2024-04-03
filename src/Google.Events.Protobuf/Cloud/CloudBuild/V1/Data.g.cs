@@ -179,6 +179,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// Build event data for Google Cloud Platform API operations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BuildEventData : pb::IMessage<BuildEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1356,6 +1357,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Source : pb::IMessage<Source>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1651,6 +1653,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// Location of the source in an archive file in Google Cloud Storage.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StorageSource : pb::IMessage<StorageSource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1929,6 +1932,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// Location of the source in a Google Cloud Source Repository.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RepoSource : pb::IMessage<RepoSource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2482,6 +2486,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// A step in the build pipeline.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BuildStep : pb::IMessage<BuildStep>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3183,6 +3188,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// Volume describes a Docker container volume which is mounted into build steps
   /// in order to persist files across build step execution.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Volume : pb::IMessage<Volume>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3424,6 +3430,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// Artifacts created by the build pipeline.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Results : pb::IMessage<Results>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3801,6 +3808,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// An image built by the pipeline.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BuiltImage : pb::IMessage<BuiltImage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4087,6 +4095,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// Artifacts produced by a build that should be uploaded upon
   /// successful completion of all build steps.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Artifacts : pb::IMessage<Artifacts>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4342,6 +4351,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
       /// Files in the workspace to upload to Cloud Storage upon successful
       /// completion of all build steps.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ArtifactObjects : pb::IMessage<ArtifactObjects>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4625,6 +4635,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// Start and end times for a build execution phase.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TimeSpan : pb::IMessage<TimeSpan>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4879,6 +4890,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// Provenance of the source. Ways to find the original source, or verify that
   /// some source was used for this build.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SourceProvenance : pb::IMessage<SourceProvenance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5173,6 +5185,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// Container message for hashes of byte content of files, used in
   /// SourceProvenance messages to verify integrity of source input to the build.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FileHashes : pb::IMessage<FileHashes>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5357,6 +5370,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// Container message for hash values.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Hash : pb::IMessage<Hash>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5619,6 +5633,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// Pairs a set of secret environment variables containing encrypted
   /// values with the Cloud KMS key to use to decrypt the value.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Secret : pb::IMessage<Secret>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5848,6 +5863,7 @@ namespace Google.Events.Protobuf.Cloud.CloudBuild.V1 {
   /// <summary>
   /// Optional arguments to enable specific features of builds.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BuildOptions : pb::IMessage<BuildOptions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

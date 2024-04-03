@@ -187,6 +187,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// Describes a Cloud Function that contains user computation executed in
   /// response to an event. It encapsulates function and trigger configurations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Function : pb::IMessage<Function>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -799,6 +800,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// <summary>
   /// Informational messages about the state of the Cloud Function or Operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StateMessage : pb::IMessage<StateMessage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1104,6 +1106,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// <summary>
   /// Location of the source in an archive file in Google Cloud Storage.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StorageSource : pb::IMessage<StorageSource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1385,6 +1388,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// <summary>
   /// Location of the source in a Google Cloud Source Repository.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RepoSource : pb::IMessage<RepoSource>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1910,6 +1914,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// <summary>
   /// The location of the function source code.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Source : pb::IMessage<Source>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2206,6 +2211,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// Provenance of the source. Ways to find the original source, or verify that
   /// some source was used for this build.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SourceProvenance : pb::IMessage<SourceProvenance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2462,6 +2468,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// Describes the Build step of the function that builds a container from the
   /// given source.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BuildConfig : pb::IMessage<BuildConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3096,6 +3103,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// Currently Supported : Cloud Run (fully managed).
   /// Next tag: 23
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceConfig : pb::IMessage<ServiceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4067,6 +4075,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// necessary to fetch the secret value from secret manager and expose it as an
   /// environment variable.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SecretEnvVar : pb::IMessage<SecretEnvVar>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4389,6 +4398,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// the secret value from secret manager and make it available as files mounted
   /// at the requested paths within the application container.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SecretVolume : pb::IMessage<SecretVolume>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4704,6 +4714,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
       /// <summary>
       /// Configuration for a single version.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SecretVersion : pb::IMessage<SecretVersion>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4950,6 +4961,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// Describes EventTrigger, used to request events to be sent from another
   /// service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventTrigger : pb::IMessage<EventTrigger>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5461,6 +5473,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// <summary>
   /// Filters events based on exact matches on the CloudEvents attributes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventFilter : pb::IMessage<EventFilter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5739,6 +5752,7 @@ namespace Google.Events.Protobuf.Cloud.Functions.V2 {
   /// <summary>
   /// The data within all Function events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FunctionEventData : pb::IMessage<FunctionEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

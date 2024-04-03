@@ -120,6 +120,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// The published events are delivered through the transport associated with the
   /// channel. Note that a channel is associated with exactly one event provider.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Channel : pb::IMessage<Channel>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -757,6 +758,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// activation process to establish a connection between the provider and the
   /// subscriber channel.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChannelConnection : pb::IMessage<ChannelConnection>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1134,6 +1136,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// A representation of the trigger resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Trigger : pb::IMessage<Trigger>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1841,6 +1844,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// Filters events based on exact matches on the CloudEvents attributes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventFilter : pb::IMessage<EventFilter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2122,6 +2126,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// A condition that is part of the trigger state computation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StateCondition : pb::IMessage<StateCondition>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2357,6 +2362,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// Represents a target of an invocation over HTTP.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Destination : pb::IMessage<Destination>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2776,6 +2782,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// Represents the transport intermediaries created for the trigger to
   /// deliver events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Transport : pb::IMessage<Transport>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3015,6 +3022,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// Represents a Cloud Run destination.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CloudRun : pb::IMessage<CloudRun>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3298,6 +3306,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// Represents a GKE destination.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GKE : pb::IMessage<GKE>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3661,6 +3670,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// Represents a Pub/Sub transport.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Pubsub : pb::IMessage<Pubsub>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3904,6 +3914,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// The data within all Trigger events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TriggerEventData : pb::IMessage<TriggerEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4108,6 +4119,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// The data within all Channel events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChannelEventData : pb::IMessage<ChannelEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4312,6 +4324,7 @@ namespace Google.Events.Protobuf.Cloud.Eventarc.V1 {
   /// <summary>
   /// The data within all ChannelConnection events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChannelConnectionEventData : pb::IMessage<ChannelConnectionEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

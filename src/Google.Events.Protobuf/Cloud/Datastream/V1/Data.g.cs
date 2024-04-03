@@ -301,6 +301,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Oracle database profile.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OracleProfile : pb::IMessage<OracleProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -645,6 +646,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// MySQL database profile.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MysqlProfile : pb::IMessage<MysqlProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -969,6 +971,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// PostgreSQL database profile.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostgresqlProfile : pb::IMessage<PostgresqlProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1284,6 +1287,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Cloud Storage bucket profile.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GcsProfile : pb::IMessage<GcsProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1519,6 +1523,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// BigQuery warehouse profile.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BigQueryProfile : pb::IMessage<BigQueryProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1674,6 +1679,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Static IP address connectivity.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StaticServiceIpConnectivity : pb::IMessage<StaticServiceIpConnectivity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1829,6 +1835,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Forward SSH Tunnel connectivity.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ForwardSshTunnelConnectivity : pb::IMessage<ForwardSshTunnelConnectivity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2105,6 +2112,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// The VPC Peering configuration is used to create VPC peering between
   /// Datastream and the consumer's VPC.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VpcPeeringConfig : pb::IMessage<VpcPeeringConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2342,6 +2350,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// The PrivateConnection resource is used to establish private connectivity
   /// between Datastream and a customer's network.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivateConnection : pb::IMessage<PrivateConnection>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2880,6 +2889,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Private Connectivity
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivateConnectivity : pb::IMessage<PrivateConnectivity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3077,6 +3087,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// The route resource is the child of the private connection resource,
   /// used for defining a route for a private connection.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Route : pb::IMessage<Route>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3519,6 +3530,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// MySQL SSL configuration information.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MysqlSslConfig : pb::IMessage<MysqlSslConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3795,6 +3807,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// A set of reusable connection configurations to be used as a source or
   /// destination for a stream.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConnectionProfile : pb::IMessage<ConnectionProfile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4659,6 +4672,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Oracle Column.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OracleColumn : pb::IMessage<OracleColumn>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5174,6 +5188,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Oracle table.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OracleTable : pb::IMessage<OracleTable>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5400,6 +5415,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Oracle schema.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OracleSchema : pb::IMessage<OracleSchema>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5624,6 +5640,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Oracle database structure.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OracleRdbms : pb::IMessage<OracleRdbms>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5808,6 +5825,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Oracle data source configuration
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OracleSourceConfig : pb::IMessage<OracleSourceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6244,6 +6262,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
       /// <summary>
       /// Configuration to drop large object values.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class DropLargeObjects : pb::IMessage<DropLargeObjects>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6399,6 +6418,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
       /// <summary>
       /// Configuration to stream large object values.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class StreamLargeObjects : pb::IMessage<StreamLargeObjects>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6559,6 +6579,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// PostgreSQL Column.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostgresqlColumn : pb::IMessage<PostgresqlColumn>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7034,6 +7055,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// PostgreSQL table.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostgresqlTable : pb::IMessage<PostgresqlTable>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7260,6 +7282,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// PostgreSQL schema.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostgresqlSchema : pb::IMessage<PostgresqlSchema>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7484,6 +7507,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// PostgreSQL database structure.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostgresqlRdbms : pb::IMessage<PostgresqlRdbms>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7668,6 +7692,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// PostgreSQL data source configuration
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PostgresqlSourceConfig : pb::IMessage<PostgresqlSourceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8003,6 +8028,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// MySQL Column.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MysqlColumn : pb::IMessage<MysqlColumn>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8439,6 +8465,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// MySQL table.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MysqlTable : pb::IMessage<MysqlTable>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8665,6 +8692,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// MySQL database.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MysqlDatabase : pb::IMessage<MysqlDatabase>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8889,6 +8917,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// MySQL database structure
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MysqlRdbms : pb::IMessage<MysqlRdbms>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9073,6 +9102,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// MySQL source configuration
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MysqlSourceConfig : pb::IMessage<MysqlSourceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9367,6 +9397,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// The configuration of the stream source.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SourceConfig : pb::IMessage<SourceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9758,6 +9789,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// AVRO file format configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AvroFileFormat : pb::IMessage<AvroFileFormat>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9913,6 +9945,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// JSON file format configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JsonFileFormat : pb::IMessage<JsonFileFormat>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10192,6 +10225,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Google Cloud Storage destination configuration
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GcsDestinationConfig : pb::IMessage<GcsDestinationConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10613,6 +10647,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BigQueryDestinationConfig : pb::IMessage<BigQueryDestinationConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10962,6 +10997,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
       /// <summary>
       /// A single target dataset to which all data will be streamed.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SingleTargetDataset : pb::IMessage<SingleTargetDataset>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11158,6 +11194,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
       /// Destination datasets are created so that hierarchy of the destination data
       /// objects matches the source hierarchy.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SourceHierarchyDatasets : pb::IMessage<SourceHierarchyDatasets>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11362,6 +11399,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
           /// <summary>
           /// Dataset template used for dynamic dataset creation.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class DatasetTemplate : pb::IMessage<DatasetTemplate>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -11657,6 +11695,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// The configuration of the stream destination.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DestinationConfig : pb::IMessage<DestinationConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11992,6 +12031,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// A resource representing streaming data from a source to a destination.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Stream : pb::IMessage<Stream>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12768,6 +12808,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
       /// Backfill strategy to automatically backfill the Stream's objects.
       /// Specific objects can be excluded.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class BackfillAllStrategy : pb::IMessage<BackfillAllStrategy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -13118,6 +13159,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
       /// <summary>
       /// Backfill strategy to disable automatic backfill for the Stream's objects.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class BackfillNoneStrategy : pb::IMessage<BackfillNoneStrategy>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -13278,6 +13320,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// Represent a user-facing Error.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Error : pb::IMessage<Error>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13632,6 +13675,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// The data within all ConnectionProfile events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConnectionProfileEventData : pb::IMessage<ConnectionProfileEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13836,6 +13880,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// The data within all PrivateConnection events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivateConnectionEventData : pb::IMessage<PrivateConnectionEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14040,6 +14085,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// The data within all Stream events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StreamEventData : pb::IMessage<StreamEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14244,6 +14290,7 @@ namespace Google.Events.Protobuf.Cloud.Datastream.V1 {
   /// <summary>
   /// The data within all Route events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RouteEventData : pb::IMessage<RouteEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

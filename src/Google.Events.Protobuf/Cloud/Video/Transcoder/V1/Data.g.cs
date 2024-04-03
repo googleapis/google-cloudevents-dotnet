@@ -278,6 +278,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Transcoding job resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Job : pb::IMessage<Job>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -963,6 +964,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Transcoding job template resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobTemplate : pb::IMessage<JobTemplate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1239,6 +1241,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Job configuration
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobConfig : pb::IMessage<JobConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1727,6 +1730,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Input asset.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Input : pb::IMessage<Input>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2016,6 +2020,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Location of output file(s) in a Cloud Storage bucket.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Output : pb::IMessage<Output>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2214,6 +2219,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Edit atom.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EditAtom : pb::IMessage<EditAtom>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2541,6 +2547,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Ad break.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdBreak : pb::IMessage<AdBreak>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2748,6 +2755,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// Elementary streams must be packaged before
   /// mapping and sharing between different output formats.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ElementaryStream : pb::IMessage<ElementaryStream>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3138,6 +3146,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Multiplexing settings for output stream.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MuxStream : pb::IMessage<MuxStream>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3507,6 +3516,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Manifest configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Manifest : pb::IMessage<Manifest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3803,6 +3813,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// A Pub/Sub destination.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PubsubDestination : pb::IMessage<PubsubDestination>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3999,6 +4010,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Sprite sheet configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SpriteSheet : pb::IMessage<SpriteSheet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4713,6 +4725,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Overlay configuration.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Overlay : pb::IMessage<Overlay>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4968,6 +4981,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// 2D normalized coordinates. Default: `{0.0, 0.0}`
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class NormalizedCoordinate : pb::IMessage<NormalizedCoordinate>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5203,6 +5217,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// Overlaid image.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Image : pb::IMessage<Image>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5492,6 +5507,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// Display static overlay object.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AnimationStatic : pb::IMessage<AnimationStatic>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5749,6 +5765,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// Display overlay object with fade animation.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AnimationFade : pb::IMessage<AnimationFade>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6098,6 +6115,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// overlay object will keep the state of previous animation until the end of
       /// the video.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AnimationEnd : pb::IMessage<AnimationEnd>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6302,6 +6320,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// Animation types.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Animation : pb::IMessage<Animation>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -6657,6 +6676,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Preprocessing configurations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PreprocessingConfig : pb::IMessage<PreprocessingConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7160,6 +7180,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       ///
       /// **Note:** This configuration is not supported.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Color : pb::IMessage<Color>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7443,6 +7464,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       ///
       /// **Note:** This configuration is not supported.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Denoise : pb::IMessage<Denoise>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7686,6 +7708,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       ///
       /// **Note:** This configuration is not supported.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Deblock : pb::IMessage<Deblock>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -7923,6 +7946,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// Audio preprocessing configuration.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Audio : pb::IMessage<Audio>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8213,6 +8237,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// Video cropping configuration for the input video. The cropped input video
       /// is scaled to match the output resolution.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Crop : pb::IMessage<Crop>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8529,6 +8554,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// Pad filter configuration for the input video. The padded input video
       /// is scaled after padding with black to match the output resolution.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Pad : pb::IMessage<Pad>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -8844,6 +8870,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// Deinterlace configuration for input video.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Deinterlace : pb::IMessage<Deinterlace>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -9141,6 +9168,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
           /// <summary>
           /// Yet Another Deinterlacing Filter Configuration.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class YadifConfig : pb::IMessage<YadifConfig>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -9469,6 +9497,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
           /// <summary>
           /// Bob Weaver Deinterlacing Filter Configuration.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class BwdifConfig : pb::IMessage<BwdifConfig>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -9766,6 +9795,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Video stream resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VideoStream : pb::IMessage<VideoStream>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10119,6 +10149,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// H264 codec settings.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class H264CodecSettings : pb::IMessage<H264CodecSettings>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -11213,6 +11244,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// H265 codec settings.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class H265CodecSettings : pb::IMessage<H265CodecSettings>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -12277,6 +12309,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// VP9 codec settings.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Vp9CodecSettings : pb::IMessage<Vp9CodecSettings>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -12954,6 +12987,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Audio stream resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AudioStream : pb::IMessage<AudioStream>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13435,6 +13469,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// The mapping for the `Job.edit_list` atoms with audio `EditAtom.inputs`.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AudioMapping : pb::IMessage<AudioMapping>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -13837,6 +13872,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Encoding of a text stream. For example, closed captions or subtitles.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TextStream : pb::IMessage<TextStream>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14156,6 +14192,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
       /// <summary>
       /// The mapping for the `Job.edit_list` atoms with text `EditAtom.inputs`.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class TextMapping : pb::IMessage<TextMapping>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -14437,6 +14474,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// Segment settings for `ts`, `fmp4` and `vtt`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SegmentSettings : pb::IMessage<SegmentSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14684,6 +14722,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// The data within all Job events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobEventData : pb::IMessage<JobEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14888,6 +14927,7 @@ namespace Google.Events.Protobuf.Cloud.Video.Transcoder.V1 {
   /// <summary>
   /// The data within all JobTemplate events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobTemplateEventData : pb::IMessage<JobTemplateEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

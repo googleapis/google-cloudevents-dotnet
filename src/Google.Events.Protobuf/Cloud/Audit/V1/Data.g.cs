@@ -181,6 +181,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// <summary>
   /// The data within all Cloud Audit Logs log entry events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LogEntryData : pb::IMessage<LogEntryData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -875,6 +876,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// Additional information about a potentially long-running operation with which
   /// a log entry is associated.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LogEntryOperation : pb::IMessage<LogEntryOperation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1196,6 +1198,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// https://github.com/googleapis/googleapis/blob/master/google/cloud/audit/audit_log.proto,
   /// but changing service_data from Any to Struct.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuditLog : pb::IMessage<AuditLog>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2016,6 +2019,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// <summary>
   /// Authentication information for the operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuthenticationInfo : pb::IMessage<AuthenticationInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2427,6 +2431,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// <summary>
   /// Authorization information for the operation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuthorizationInfo : pb::IMessage<AuthorizationInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2759,6 +2764,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// <summary>
   /// Metadata about the request.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RequestMetadata : pb::IMessage<RequestMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3166,6 +3172,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// <summary>
   /// Location information about a resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ResourceLocation : pb::IMessage<ResourceLocation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3393,6 +3400,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// <summary>
   /// Identity delegation history of an authenticated service account.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceAccountDelegationInfo : pb::IMessage<ServiceAccountDelegationInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3690,6 +3698,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       /// <summary>
       /// First party identity principal.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class FirstPartyPrincipal : pb::IMessage<FirstPartyPrincipal>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3934,6 +3943,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
       /// <summary>
       /// Third party identity principal.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ThirdPartyPrincipal : pb::IMessage<ThirdPartyPrincipal>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -4145,6 +4155,7 @@ namespace Google.Events.Protobuf.Cloud.Audit.V1 {
   /// single LogEntry would exceed the Google Cloud Logging size limit and is split
   /// across multiple entries.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LogSplit : pb::IMessage<LogSplit>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -72,6 +72,7 @@ namespace Google.Events.Protobuf.Cloud.Workflows.V1 {
   /// <summary>
   /// Workflow program to be executed by Workflows.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Workflow : pb::IMessage<Workflow>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -738,6 +739,7 @@ namespace Google.Events.Protobuf.Cloud.Workflows.V1 {
   /// <summary>
   /// The data within all Workflow events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class WorkflowEventData : pb::IMessage<WorkflowEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

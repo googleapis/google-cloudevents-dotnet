@@ -87,6 +87,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppGateways.V1 {
   /// for creating a BeyondCorp protected AppGateway. Multiple connectors can be
   /// authorised for a single AppGateway.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppGateway : pb::IMessage<AppGateway>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -745,6 +746,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppGateways.V1 {
       /// <summary>
       /// Allocated connection of the AppGateway.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AllocatedConnection : pb::IMessage<AllocatedConnection>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -985,6 +987,7 @@ namespace Google.Events.Protobuf.Cloud.BeyondCorp.AppGateways.V1 {
   /// <summary>
   /// The data within all AppGateway events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppGatewayEventData : pb::IMessage<AppGatewayEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

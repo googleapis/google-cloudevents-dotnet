@@ -76,6 +76,7 @@ namespace Google.Events.Protobuf {
   /// <summary>
   /// Description of an extension attribute.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExtensionAttribute : pb::IMessage<ExtensionAttribute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

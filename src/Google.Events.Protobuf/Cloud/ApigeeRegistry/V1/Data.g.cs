@@ -138,6 +138,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// An Instance represents the instance resources of the Registry.
   /// Currently, only one instance is allowed for each project.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Instance : pb::IMessage<Instance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -598,6 +599,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
       /// <summary>
       /// Available configurations to provision an Instance.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Config : pb::IMessage<Config>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -842,6 +844,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// A top-level description of an API.
   /// Produced by producers and are commitments to provide services.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Api : pb::IMessage<Api>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1415,6 +1418,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// Describes a particular version of an API.
   /// ApiVersions are what consumers actually use.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiVersion : pb::IMessage<ApiVersion>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1911,6 +1915,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// Synchronization of these representations would be provided by tooling and
   /// background services.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiSpec : pb::IMessage<ApiSpec>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2626,6 +2631,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// Revision identifiers should be updated whenever the served API spec or
   /// endpoint address changes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiDeployment : pb::IMessage<ApiDeployment>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3371,6 +3377,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// <summary>
   /// The data within all ApiVersion events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiVersionEventData : pb::IMessage<ApiVersionEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3575,6 +3582,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// <summary>
   /// The data within all Instance events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InstanceEventData : pb::IMessage<InstanceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3779,6 +3787,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// <summary>
   /// The data within all ApiSpec events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiSpecEventData : pb::IMessage<ApiSpecEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3983,6 +3992,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// <summary>
   /// The data within all ApiDeployment events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiDeploymentEventData : pb::IMessage<ApiDeploymentEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4187,6 +4197,7 @@ namespace Google.Events.Protobuf.Cloud.ApigeeRegistry.V1 {
   /// <summary>
   /// The data within all Api events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApiEventData : pb::IMessage<ApiEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

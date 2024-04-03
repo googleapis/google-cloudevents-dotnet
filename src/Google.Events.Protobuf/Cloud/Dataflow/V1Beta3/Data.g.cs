@@ -450,6 +450,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Describes the environment in which a Dataflow Job runs.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Environment : pb::IMessage<Environment>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1298,6 +1299,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// various dependencies (libraries, data files, etc.) required in order
   /// for that code to run.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Package : pb::IMessage<Package>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1538,6 +1540,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Settings for WorkerPool autoscaling.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AutoscalingSettings : pb::IMessage<AutoscalingSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1773,6 +1776,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Defines an SDK harness container for executing Dataflow pipelines.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SdkHarnessContainerImage : pb::IMessage<SdkHarnessContainerImage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2087,6 +2091,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// multiple pools, in order to match the various computational
   /// requirements of the various stages of the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class WorkerPool : pb::IMessage<WorkerPool>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3013,6 +3018,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Describes any options that have an effect on the debugging of pipelines.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DebugOptions : pb::IMessage<DebugOptions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3214,6 +3220,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// - pipeline_description
   /// - transform_name_mapping
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Job : pb::IMessage<Job>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4342,6 +4349,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Metadata for a Datastore connector used by the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DatastoreIODetails : pb::IMessage<DatastoreIODetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4577,6 +4585,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Metadata for a Pub/Sub connector used by the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PubSubIODetails : pb::IMessage<PubSubIODetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4812,6 +4821,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Metadata for a File connector used by the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FileIODetails : pb::IMessage<FileIODetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5007,6 +5017,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Metadata for a Cloud Bigtable connector used by the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BigTableIODetails : pb::IMessage<BigTableIODetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5282,6 +5293,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Metadata for a BigQuery connector used by the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BigQueryIODetails : pb::IMessage<BigQueryIODetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5597,6 +5609,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// Metadata for a Spanner connector used by the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SpannerIODetails : pb::IMessage<SpannerIODetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5872,6 +5885,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// The version of the SDK used to run the job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SdkVersion : pb::IMessage<SdkVersion>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6183,6 +6197,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// Metadata available primarily for filtering jobs. Will be included in the
   /// ListJob response and Job SUMMARY view.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobMetadata : pb::IMessage<JobMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6561,6 +6576,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// A message describing the state of a particular execution stage.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExecutionStageState : pb::IMessage<ExecutionStageState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6846,6 +6862,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// Additional information about how a Cloud Dataflow job will be executed that
   /// isn't contained in the submitted job.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobExecutionInfo : pb::IMessage<JobExecutionInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7032,6 +7049,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// [google.dataflow.v1beta3.Step][google.dataflow.v1beta3.Step] will be
   /// executed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobExecutionStageInfo : pb::IMessage<JobExecutionStageInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7218,6 +7236,7 @@ namespace Google.Events.Protobuf.Cloud.Dataflow.V1Beta3 {
   /// <summary>
   /// The data within all Job events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JobEventData : pb::IMessage<JobEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

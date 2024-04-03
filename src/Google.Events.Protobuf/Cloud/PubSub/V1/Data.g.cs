@@ -66,6 +66,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
   /// <summary>
   /// The event data when a message is published to a topic.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MessagePublishedData : pb::IMessage<MessagePublishedData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -312,6 +313,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
   /// <summary>
   /// A message published to a topic.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PubsubMessage : pb::IMessage<PubsubMessage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

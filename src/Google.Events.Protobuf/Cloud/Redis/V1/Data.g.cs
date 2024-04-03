@@ -147,6 +147,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// <summary>
   /// Node specific properties.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NodeInfo : pb::IMessage<NodeInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -382,6 +383,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// <summary>
   /// A Memorystore for Redis instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Instance : pb::IMessage<Instance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2136,6 +2138,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// <summary>
   /// Configuration of the persistence functionality.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PersistenceConfig : pb::IMessage<PersistenceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2530,6 +2533,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// <summary>
   /// Maintenance policy for an instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MaintenancePolicy : pb::IMessage<MaintenancePolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2856,6 +2860,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// Time window in which disruptive maintenance updates occur. Non-disruptive
   /// updates can occur inside or outside this window.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class WeeklyMaintenanceWindow : pb::IMessage<WeeklyMaintenanceWindow>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3151,6 +3156,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// Upcoming maintenance schedule. If no maintenance is scheduled, fields are not
   /// populated.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MaintenanceSchedule : pb::IMessage<MaintenanceSchedule>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3496,6 +3502,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// <summary>
   /// TlsCertificate Resource
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TlsCertificate : pb::IMessage<TlsCertificate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3833,6 +3840,7 @@ namespace Google.Events.Protobuf.Cloud.Redis.V1 {
   /// <summary>
   /// The data within all Instance events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InstanceEventData : pb::IMessage<InstanceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

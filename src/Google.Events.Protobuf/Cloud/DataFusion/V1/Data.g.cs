@@ -131,6 +131,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// while accessing the customer resources from managed Data Fusion instance
   /// nodes, as well as access to the customer on-prem resources.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NetworkConfig : pb::IMessage<NetworkConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -372,6 +373,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// The Data Fusion version. This proto message stores information about certain
   /// Data Fusion version, which is used for Data Fusion version upgrade.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Version : pb::IMessage<Version>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -702,6 +704,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// <summary>
   /// Identifies Data Fusion accelerators for an instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Accelerator : pb::IMessage<Accelerator>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -995,6 +998,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// The crypto key configuration. This field is used by the Customer-managed
   /// encryption keys (CMEK) feature.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CryptoKeyConfig : pb::IMessage<CryptoKeyConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1192,6 +1196,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// <summary>
   /// Represents a Data Fusion instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Instance : pb::IMessage<Instance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2661,6 +2666,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// <summary>
   /// Confirguration of PubSubEventWriter.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventPublishConfig : pb::IMessage<EventPublishConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2898,6 +2904,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// DNS peering configuration. These configurations are used to create
   /// DNS peering with the customer Cloud DNS.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DnsPeering : pb::IMessage<DnsPeering>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3255,6 +3262,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// <summary>
   /// The data within all Instance events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InstanceEventData : pb::IMessage<InstanceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3459,6 +3467,7 @@ namespace Google.Events.Protobuf.Cloud.DataFusion.V1 {
   /// <summary>
   /// The data within all DnsPeering events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DnsPeeringEventData : pb::IMessage<DnsPeeringEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

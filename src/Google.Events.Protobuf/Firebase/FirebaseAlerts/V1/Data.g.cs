@@ -62,6 +62,7 @@ namespace Google.Events.Protobuf.Firebase.FirebaseAlerts.V1 {
   /// <summary>
   /// The data within all Firebase Alerts.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AlertData : pb::IMessage<AlertData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

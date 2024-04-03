@@ -212,6 +212,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// CertificateIssuanceConfig specifies how to issue and manage a certificate.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateIssuanceConfig : pb::IMessage<CertificateIssuanceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -779,6 +780,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
       /// The CA that issues the workload certificate. It includes CA address, type,
       /// authentication to CA service, etc.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class CertificateAuthorityConfig : pb::IMessage<CertificateAuthorityConfig>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1020,6 +1022,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
           /// <summary>
           /// Contains information required to contact CA service.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class CertificateAuthorityServiceConfig : pb::IMessage<CertificateAuthorityServiceConfig>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -1227,6 +1230,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// Defines TLS certificate.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Certificate : pb::IMessage<Certificate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1911,6 +1915,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
       /// SelfManaged Certificates are uploaded by the user. Updating such
       /// certificates before they expire remains the user's responsibility.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SelfManagedCertificate : pb::IMessage<SelfManagedCertificate>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2068,6 +2073,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
       /// Certificate Manager provisions and renews Managed Certificates
       /// automatically, for as long as it's authorized to do so.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class ManagedCertificate : pb::IMessage<ManagedCertificate>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2475,6 +2481,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
           /// <summary>
           /// Information about issues with provisioning a Managed Certificate.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class ProvisioningIssue : pb::IMessage<ProvisioningIssue>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -2737,6 +2744,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
           /// State of the latest attempt to authorize a domain for certificate
           /// issuance.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class AuthorizationAttemptInfo : pb::IMessage<AuthorizationAttemptInfo>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -3111,6 +3119,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// Defines a collection of certificate configurations.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateMap : pb::IMessage<CertificateMap>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3509,6 +3518,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
       /// <summary>
       /// Describes a Target Proxy that uses this Certificate Map.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class GclbTarget : pb::IMessage<GclbTarget>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3842,6 +3852,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
           /// <summary>
           /// Defines IP configuration where this Certificate Map is serving.
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class IpConfig : pb::IMessage<IpConfig>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -4078,6 +4089,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// Defines a certificate map entry.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateMapEntry : pb::IMessage<CertificateMapEntry>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4683,6 +4695,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// A DnsAuthorization resource describes a way to perform domain authorization
   /// for certificate issuance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DnsAuthorization : pb::IMessage<DnsAuthorization>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5145,6 +5158,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
       /// to DNS configuration for the authorization to be usable by
       /// certificate.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class DnsResourceRecord : pb::IMessage<DnsResourceRecord>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -5427,6 +5441,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// The data within all DnsAuthorization events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DnsAuthorizationEventData : pb::IMessage<DnsAuthorizationEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5631,6 +5646,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// The data within all CertificateIssuanceConfig events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateIssuanceConfigEventData : pb::IMessage<CertificateIssuanceConfigEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5836,6 +5852,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// The data within all CertificateMapEntry events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateMapEntryEventData : pb::IMessage<CertificateMapEntryEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6040,6 +6057,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// The data within all CertificateMap events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateMapEventData : pb::IMessage<CertificateMapEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6244,6 +6262,7 @@ namespace Google.Events.Protobuf.Cloud.CertificateManager.V1 {
   /// <summary>
   /// The data within all Certificate events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateEventData : pb::IMessage<CertificateEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

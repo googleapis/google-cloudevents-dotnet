@@ -331,6 +331,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The device resource.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Device : pb::IMessage<Device>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1283,6 +1284,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// Gateway-related configuration and state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GatewayConfig : pb::IMessage<GatewayConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1609,6 +1611,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// A container for a group of devices.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeviceRegistry : pb::IMessage<DeviceRegistry>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2116,6 +2119,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The configuration of MQTT for a device registry.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MqttConfig : pb::IMessage<MqttConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2312,6 +2316,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The configuration of the HTTP bridge for a device registry.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HttpConfig : pb::IMessage<HttpConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2508,6 +2513,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The configuration for forwarding telemetry events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventNotificationConfig : pb::IMessage<EventNotificationConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2747,6 +2753,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The configuration for notification of new states received from the device.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StateNotificationConfig : pb::IMessage<StateNotificationConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2943,6 +2950,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// A server-stored registry credential used to validate device credentials.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RegistryCredential : pb::IMessage<RegistryCredential>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3181,6 +3189,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// Details of an X.509 certificate. For informational purposes only.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class X509CertificateDetails : pb::IMessage<X509CertificateDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3594,6 +3603,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// A public key certificate format and data.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PublicKeyCertificate : pb::IMessage<PublicKeyCertificate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3878,6 +3888,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// A server-stored device credential used for authentication.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeviceCredential : pb::IMessage<DeviceCredential>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4177,6 +4188,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// A public key format and data.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PublicKeyCredential : pb::IMessage<PublicKeyCredential>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4412,6 +4424,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The device configuration. Eventually delivered to devices.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeviceConfig : pb::IMessage<DeviceConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4757,6 +4770,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The device state, as reported by the device.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeviceState : pb::IMessage<DeviceState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5002,6 +5016,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The data within all Cloud IoT Device events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeviceEventData : pb::IMessage<DeviceEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5206,6 +5221,7 @@ namespace Google.Events.Protobuf.Cloud.Iot.V1 {
   /// <summary>
   /// The data within all Cloud IoT Registry events.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RegistryEventData : pb::IMessage<RegistryEventData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
