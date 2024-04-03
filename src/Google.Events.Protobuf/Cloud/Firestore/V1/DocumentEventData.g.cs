@@ -29,5 +29,17 @@ namespace Google.Events.Protobuf.Cloud.Firestore.V1
         /// <summary>CloudEvent type for the 'written' event.</summary>
         public const string WrittenCloudEventType = "google.cloud.firestore.document.v1.written";
 
+        /// <summary>CloudEvent type for the 'created.withAuthContext' event.</summary>
+        public const string CreatedWithAuthContextCloudEventType = "google.cloud.firestore.document.v1.created.withAuthContext";
+
+        /// <summary>CloudEvent type for the 'updated.withAuthContext' event.</summary>
+        public const string UpdatedWithAuthContextCloudEventType = "google.cloud.firestore.document.v1.updated.withAuthContext";
+
+        /// <summary>CloudEvent type for the 'deleted.withAuthContext' event.</summary>
+        public const string DeletedWithAuthContextCloudEventType = "google.cloud.firestore.document.v1.deleted.withAuthContext";
+
+        /// <summary>CloudEvent type for the 'written.withAuthContext' event.</summary>
+        public const string WrittenWithAuthContextCloudEventType = "google.cloud.firestore.document.v1.written.withAuthContext";
+
     }
 }

@@ -29,6 +29,10 @@ namespace Google.Events.Protobuf.Cloud.Datastore.V1
         ///   <item><description>google.cloud.datastore.entity.v1.updated</description></item>
         ///   <item><description>google.cloud.datastore.entity.v1.deleted</description></item>
         ///   <item><description>google.cloud.datastore.entity.v1.written</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.created.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.updated.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.deleted.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.written.withAuthContext</description></item>
         /// </list>
         /// </summary>
         public static CloudEventAttribute Database { get; } = CloudEventAttribute.CreateExtension("database", CloudEventAttributeType.String);
@@ -43,6 +47,10 @@ namespace Google.Events.Protobuf.Cloud.Datastore.V1
         ///   <item><description>google.cloud.datastore.entity.v1.updated</description></item>
         ///   <item><description>google.cloud.datastore.entity.v1.deleted</description></item>
         ///   <item><description>google.cloud.datastore.entity.v1.written</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.created.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.updated.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.deleted.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.written.withAuthContext</description></item>
         /// </list>
         /// </summary>
         public static CloudEventAttribute Entity { get; } = CloudEventAttribute.CreateExtension("entity", CloudEventAttributeType.String);
@@ -57,6 +65,10 @@ namespace Google.Events.Protobuf.Cloud.Datastore.V1
         ///   <item><description>google.cloud.datastore.entity.v1.updated</description></item>
         ///   <item><description>google.cloud.datastore.entity.v1.deleted</description></item>
         ///   <item><description>google.cloud.datastore.entity.v1.written</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.created.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.updated.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.deleted.withAuthContext</description></item>
+        ///   <item><description>google.cloud.datastore.entity.v1.written.withAuthContext</description></item>
         /// </list>
         /// </summary>
         public static CloudEventAttribute Namespace { get; } = CloudEventAttribute.CreateExtension("namespace", CloudEventAttributeType.String);

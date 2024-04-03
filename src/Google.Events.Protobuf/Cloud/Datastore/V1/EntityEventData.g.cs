@@ -29,5 +29,17 @@ namespace Google.Events.Protobuf.Cloud.Datastore.V1
         /// <summary>CloudEvent type for the 'written' event.</summary>
         public const string WrittenCloudEventType = "google.cloud.datastore.entity.v1.written";
 
+        /// <summary>CloudEvent type for the 'created.withAuthContext' event.</summary>
+        public const string CreatedWithAuthContextCloudEventType = "google.cloud.datastore.entity.v1.created.withAuthContext";
+
+        /// <summary>CloudEvent type for the 'updated.withAuthContext' event.</summary>
+        public const string UpdatedWithAuthContextCloudEventType = "google.cloud.datastore.entity.v1.updated.withAuthContext";
+
+        /// <summary>CloudEvent type for the 'deleted.withAuthContext' event.</summary>
+        public const string DeletedWithAuthContextCloudEventType = "google.cloud.datastore.entity.v1.deleted.withAuthContext";
+
+        /// <summary>CloudEvent type for the 'written.withAuthContext' event.</summary>
+        public const string WrittenWithAuthContextCloudEventType = "google.cloud.datastore.entity.v1.written.withAuthContext";
+
     }
 }
