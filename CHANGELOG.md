@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.4.0...Google.CloudEvents.Protobuf-1.5.0) (2024-04-04)
+
+
+### Features
+
+* Generate updated event definitions ([9d3b0c7](https://github.com/googleapis/google-cloudevents-dotnet/commit/9d3b0c7ed40fd3e1df711a264c04f65f57bacbc5))
+
 ## [1.4.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.3.0...Google.CloudEvents.Protobuf-1.4.0) (2023-09-04)
 
 
