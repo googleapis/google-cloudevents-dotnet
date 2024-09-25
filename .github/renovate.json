@@ -4,7 +4,6 @@
     ":disableDependencyDashboard"
   ],
   "ignorePaths": [
-    "src/Google.Events.Protobuf/**",
     ".kokoro/**"
   ],
   "schedule": ["before 8am"],
