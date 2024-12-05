@@ -40,22 +40,22 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
           string.Concat(
             "Cihnb29nbGUvZXZlbnRzL2Nsb3VkL3B1YnN1Yi92MS9kYXRhLnByb3RvEh1n",
             "b29nbGUuZXZlbnRzLmNsb3VkLnB1YnN1Yi52MRofZ29vZ2xlL3Byb3RvYnVm",
-            "L3RpbWVzdGFtcC5wcm90byJrChRNZXNzYWdlUHVibGlzaGVkRGF0YRI9Cgdt",
-            "ZXNzYWdlGAEgASgLMiwuZ29vZ2xlLmV2ZW50cy5jbG91ZC5wdWJzdWIudjEu",
-            "UHVic3ViTWVzc2FnZRIUCgxzdWJzY3JpcHRpb24YAiABKAki/gEKDVB1YnN1",
-            "Yk1lc3NhZ2USDAoEZGF0YRgBIAEoDBJQCgphdHRyaWJ1dGVzGAIgAygLMjwu",
-            "Z29vZ2xlLmV2ZW50cy5jbG91ZC5wdWJzdWIudjEuUHVic3ViTWVzc2FnZS5B",
-            "dHRyaWJ1dGVzRW50cnkSEgoKbWVzc2FnZV9pZBgDIAEoCRIwCgxwdWJsaXNo",
-            "X3RpbWUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhQKDG9y",
-            "ZGVyaW5nX2tleRgFIAEoCRoxCg9BdHRyaWJ1dGVzRW50cnkSCwoDa2V5GAEg",
-            "ASgJEg0KBXZhbHVlGAIgASgJOgI4AUJtqgImR29vZ2xlLkV2ZW50cy5Qcm90",
-            "b2J1Zi5DbG91ZC5QdWJTdWIuVjHKAh1Hb29nbGVcRXZlbnRzXENsb3VkXFB1",
-            "YlN1YlxWMeoCIUdvb2dsZTo6RXZlbnRzOjpDbG91ZDo6UHViU3ViOjpWMWIG",
-            "cHJvdG8z"));
+            "L3RpbWVzdGFtcC5wcm90byKFAQoUTWVzc2FnZVB1Ymxpc2hlZERhdGESPQoH",
+            "bWVzc2FnZRgBIAEoCzIsLmdvb2dsZS5ldmVudHMuY2xvdWQucHVic3ViLnYx",
+            "LlB1YnN1Yk1lc3NhZ2USFAoMc3Vic2NyaXB0aW9uGAIgASgJEhgKEGRlbGl2",
+            "ZXJ5X2F0dGVtcHQYAyABKAUi/gEKDVB1YnN1Yk1lc3NhZ2USDAoEZGF0YRgB",
+            "IAEoDBJQCgphdHRyaWJ1dGVzGAIgAygLMjwuZ29vZ2xlLmV2ZW50cy5jbG91",
+            "ZC5wdWJzdWIudjEuUHVic3ViTWVzc2FnZS5BdHRyaWJ1dGVzRW50cnkSEgoK",
+            "bWVzc2FnZV9pZBgDIAEoCRIwCgxwdWJsaXNoX3RpbWUYBCABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEhQKDG9yZGVyaW5nX2tleRgFIAEoCRox",
+            "Cg9BdHRyaWJ1dGVzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJ",
+            "OgI4AUJtqgImR29vZ2xlLkV2ZW50cy5Qcm90b2J1Zi5DbG91ZC5QdWJTdWIu",
+            "VjHKAh1Hb29nbGVcRXZlbnRzXENsb3VkXFB1YlN1YlxWMeoCIUdvb2dsZTo6",
+            "RXZlbnRzOjpDbG91ZDo6UHViU3ViOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.PubSub.V1.MessagePublishedData), global::Google.Events.Protobuf.Cloud.PubSub.V1.MessagePublishedData.Parser, new[]{ "Message", "Subscription" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.PubSub.V1.MessagePublishedData), global::Google.Events.Protobuf.Cloud.PubSub.V1.MessagePublishedData.Parser, new[]{ "Message", "Subscription", "DeliveryAttempt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.PubSub.V1.PubsubMessage), global::Google.Events.Protobuf.Cloud.PubSub.V1.PubsubMessage.Parser, new[]{ "Data", "Attributes", "MessageId", "PublishTime", "OrderingKey" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
@@ -103,6 +103,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
     public MessagePublishedData(MessagePublishedData other) : this() {
       message_ = other.message_ != null ? other.message_.Clone() : null;
       subscription_ = other.subscription_;
+      deliveryAttempt_ = other.deliveryAttempt_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -144,6 +145,30 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       }
     }
 
+    /// <summary>Field number for the "delivery_attempt" field.</summary>
+    public const int DeliveryAttemptFieldNumber = 3;
+    private int deliveryAttempt_;
+    /// <summary>
+    /// The approximate number of times that Pub/Sub has attempted to deliver
+    /// the associated message to a subscriber.
+    ///
+    /// More precisely, this is 1 + (number of NACKs) +
+    /// (number of ack_deadline exceeds) for this message.
+    ///
+    /// Upon the first delivery of a given message, `delivery_attempt` will have a
+    /// value of 1. The value is calculated at best effort and is approximate.
+    ///
+    /// If a DeadLetterPolicy is not set on the subscription, this will be 0.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int DeliveryAttempt {
+      get { return deliveryAttempt_; }
+      set {
+        deliveryAttempt_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -161,6 +186,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       }
       if (!object.Equals(Message, other.Message)) return false;
       if (Subscription != other.Subscription) return false;
+      if (DeliveryAttempt != other.DeliveryAttempt) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -170,6 +196,7 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       int hash = 1;
       if (message_ != null) hash ^= Message.GetHashCode();
       if (Subscription.Length != 0) hash ^= Subscription.GetHashCode();
+      if (DeliveryAttempt != 0) hash ^= DeliveryAttempt.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -196,6 +223,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
         output.WriteRawTag(18);
         output.WriteString(Subscription);
       }
+      if (DeliveryAttempt != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(DeliveryAttempt);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -214,6 +245,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
         output.WriteRawTag(18);
         output.WriteString(Subscription);
       }
+      if (DeliveryAttempt != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(DeliveryAttempt);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -229,6 +264,9 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       }
       if (Subscription.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Subscription);
+      }
+      if (DeliveryAttempt != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DeliveryAttempt);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -250,6 +288,9 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
       }
       if (other.Subscription.Length != 0) {
         Subscription = other.Subscription;
+      }
+      if (other.DeliveryAttempt != 0) {
+        DeliveryAttempt = other.DeliveryAttempt;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -277,6 +318,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
             Subscription = input.ReadString();
             break;
           }
+          case 24: {
+            DeliveryAttempt = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -301,6 +346,10 @@ namespace Google.Events.Protobuf.Cloud.PubSub.V1 {
           }
           case 18: {
             Subscription = input.ReadString();
+            break;
+          }
+          case 24: {
+            DeliveryAttempt = input.ReadInt32();
             break;
           }
         }
