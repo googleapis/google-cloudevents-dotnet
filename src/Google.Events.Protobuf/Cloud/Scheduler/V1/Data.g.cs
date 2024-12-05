@@ -39,20 +39,124 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citnb29nbGUvZXZlbnRzL2Nsb3VkL3NjaGVkdWxlci92MS9kYXRhLnByb3Rv",
-            "EiBnb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52MSInChBTY2hlZHVs",
-            "ZXJKb2JEYXRhEhMKC2N1c3RvbV9kYXRhGAEgASgMQnaqAilHb29nbGUuRXZl",
-            "bnRzLlByb3RvYnVmLkNsb3VkLlNjaGVkdWxlci5WMcoCIEdvb2dsZVxFdmVu",
-            "dHNcQ2xvdWRcU2NoZWR1bGVyXFYx6gIkR29vZ2xlOjpFdmVudHM6OkNsb3Vk",
-            "OjpTY2hlZHVsZXI6OlYxYgZwcm90bzM="));
+            "EiBnb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52MRoeZ29vZ2xlL3By",
+            "b3RvYnVmL2R1cmF0aW9uLnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0",
+            "YW1wLnByb3RvGhdnb29nbGUvcnBjL3N0YXR1cy5wcm90byInChBTY2hlZHVs",
+            "ZXJKb2JEYXRhEhMKC2N1c3RvbV9kYXRhGAEgASgMIoYDCgpIdHRwVGFyZ2V0",
+            "EgsKA3VyaRgBIAEoCRJBCgtodHRwX21ldGhvZBgCIAEoDjIsLmdvb2dsZS5l",
+            "dmVudHMuY2xvdWQuc2NoZWR1bGVyLnYxLkh0dHBNZXRob2QSSgoHaGVhZGVy",
+            "cxgDIAMoCzI5Lmdvb2dsZS5ldmVudHMuY2xvdWQuc2NoZWR1bGVyLnYxLkh0",
+            "dHBUYXJnZXQuSGVhZGVyc0VudHJ5EgwKBGJvZHkYBCABKAwSQwoLb2F1dGhf",
+            "dG9rZW4YBSABKAsyLC5nb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52",
+            "MS5PQXV0aFRva2VuSAASQQoKb2lkY190b2tlbhgGIAEoCzIrLmdvb2dsZS5l",
+            "dmVudHMuY2xvdWQuc2NoZWR1bGVyLnYxLk9pZGNUb2tlbkgAGi4KDEhlYWRl",
+            "cnNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBQhYKFGF1",
+            "dGhvcml6YXRpb25faGVhZGVyItECChNBcHBFbmdpbmVIdHRwVGFyZ2V0EkEK",
+            "C2h0dHBfbWV0aG9kGAEgASgOMiwuZ29vZ2xlLmV2ZW50cy5jbG91ZC5zY2hl",
+            "ZHVsZXIudjEuSHR0cE1ldGhvZBJOChJhcHBfZW5naW5lX3JvdXRpbmcYAiAB",
+            "KAsyMi5nb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52MS5BcHBFbmdp",
+            "bmVSb3V0aW5nEhQKDHJlbGF0aXZlX3VyaRgDIAEoCRJTCgdoZWFkZXJzGAQg",
+            "AygLMkIuZ29vZ2xlLmV2ZW50cy5jbG91ZC5zY2hlZHVsZXIudjEuQXBwRW5n",
+            "aW5lSHR0cFRhcmdldC5IZWFkZXJzRW50cnkSDAoEYm9keRgFIAEoDBouCgxI",
+            "ZWFkZXJzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASK3",
+            "AQoMUHVic3ViVGFyZ2V0EhIKCnRvcGljX25hbWUYASABKAkSDAoEZGF0YRgD",
+            "IAEoDBJSCgphdHRyaWJ1dGVzGAQgAygLMj4uZ29vZ2xlLmV2ZW50cy5jbG91",
+            "ZC5zY2hlZHVsZXIudjEuUHVic3ViVGFyZ2V0LkF0dHJpYnV0ZXNFbnRyeRox",
+            "Cg9BdHRyaWJ1dGVzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJ",
+            "OgI4ASJUChBBcHBFbmdpbmVSb3V0aW5nEg8KB3NlcnZpY2UYASABKAkSDwoH",
+            "dmVyc2lvbhgCIAEoCRIQCghpbnN0YW5jZRgDIAEoCRIMCgRob3N0GAQgASgJ",
+            "IjoKCk9BdXRoVG9rZW4SHQoVc2VydmljZV9hY2NvdW50X2VtYWlsGAEgASgJ",
+            "Eg0KBXNjb3BlGAIgASgJIjwKCU9pZGNUb2tlbhIdChVzZXJ2aWNlX2FjY291",
+            "bnRfZW1haWwYASABKAkSEAoIYXVkaWVuY2UYAiABKAkikgYKA0pvYhIMCgRu",
+            "YW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJEkcKDXB1YnN1Yl90YXJn",
+            "ZXQYBCABKAsyLi5nb29nbGUuZXZlbnRzLmNsb3VkLnNjaGVkdWxlci52MS5Q",
+            "dWJzdWJUYXJnZXRIABJXChZhcHBfZW5naW5lX2h0dHBfdGFyZ2V0GAUgASgL",
+            "MjUuZ29vZ2xlLmV2ZW50cy5jbG91ZC5zY2hlZHVsZXIudjEuQXBwRW5naW5l",
+            "SHR0cFRhcmdldEgAEkMKC2h0dHBfdGFyZ2V0GAYgASgLMiwuZ29vZ2xlLmV2",
+            "ZW50cy5jbG91ZC5zY2hlZHVsZXIudjEuSHR0cFRhcmdldEgAEhAKCHNjaGVk",
+            "dWxlGBQgASgJEhEKCXRpbWVfem9uZRgVIAEoCRI0ChB1c2VyX3VwZGF0ZV90",
+            "aW1lGAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI6CgVzdGF0",
+            "ZRgKIAEoDjIrLmdvb2dsZS5ldmVudHMuY2xvdWQuc2NoZWR1bGVyLnYxLkpv",
+            "Yi5TdGF0ZRIiCgZzdGF0dXMYCyABKAsyEi5nb29nbGUucnBjLlN0YXR1cxIx",
+            "Cg1zY2hlZHVsZV90aW1lGBEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
+            "dGFtcBI1ChFsYXN0X2F0dGVtcHRfdGltZRgSIAEoCzIaLmdvb2dsZS5wcm90",
+            "b2J1Zi5UaW1lc3RhbXASQwoMcmV0cnlfY29uZmlnGBMgASgLMi0uZ29vZ2xl",
+            "LmV2ZW50cy5jbG91ZC5zY2hlZHVsZXIudjEuUmV0cnlDb25maWcSMwoQYXR0",
+            "ZW1wdF9kZWFkbGluZRgWIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlv",
+            "biJYCgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAAEgsKB0VOQUJMRUQQ",
+            "ARIKCgZQQVVTRUQQAhIMCghESVNBQkxFRBADEhEKDVVQREFURV9GQUlMRUQQ",
+            "BEIICgZ0YXJnZXQi4gEKC1JldHJ5Q29uZmlnEhMKC3JldHJ5X2NvdW50GAEg",
+            "ASgFEjUKEm1heF9yZXRyeV9kdXJhdGlvbhgCIAEoCzIZLmdvb2dsZS5wcm90",
+            "b2J1Zi5EdXJhdGlvbhI3ChRtaW5fYmFja29mZl9kdXJhdGlvbhgDIAEoCzIZ",
+            "Lmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbhI3ChRtYXhfYmFja29mZl9kdXJh",
+            "dGlvbhgEIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbhIVCg1tYXhf",
+            "ZG91YmxpbmdzGAUgASgFIkYKDEpvYkV2ZW50RGF0YRI2CgdwYXlsb2FkGAEg",
+            "ASgLMiUuZ29vZ2xlLmV2ZW50cy5jbG91ZC5zY2hlZHVsZXIudjEuSm9iKnMK",
+            "Ckh0dHBNZXRob2QSGwoXSFRUUF9NRVRIT0RfVU5TUEVDSUZJRUQQABIICgRQ",
+            "T1NUEAESBwoDR0VUEAISCAoESEVBRBADEgcKA1BVVBAEEgoKBkRFTEVURRAF",
+            "EgkKBVBBVENIEAYSCwoHT1BUSU9OUxAHQnaqAilHb29nbGUuRXZlbnRzLlBy",
+            "b3RvYnVmLkNsb3VkLlNjaGVkdWxlci5WMcoCIEdvb2dsZVxFdmVudHNcQ2xv",
+            "dWRcU2NoZWR1bGVyXFYx6gIkR29vZ2xlOjpFdmVudHM6OkNsb3VkOjpTY2hl",
+            "ZHVsZXI6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerJobData), global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerJobData.Parser, new[]{ "CustomData" }, null, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerJobData), global::Google.Events.Protobuf.Cloud.Scheduler.V1.SchedulerJobData.Parser, new[]{ "CustomData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget), global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget.Parser, new[]{ "Uri", "HttpMethod", "Headers", "Body", "OauthToken", "OidcToken" }, new[]{ "AuthorizationHeader" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget), global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget.Parser, new[]{ "HttpMethod", "AppEngineRouting", "RelativeUri", "Headers", "Body" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget), global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget.Parser, new[]{ "TopicName", "Data", "Attributes" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineRouting), global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineRouting.Parser, new[]{ "Service", "Version", "Instance", "Host" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken), global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken.Parser, new[]{ "ServiceAccountEmail", "Scope" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken), global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken.Parser, new[]{ "ServiceAccountEmail", "Audience" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job), global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Parser, new[]{ "Name", "Description", "PubsubTarget", "AppEngineHttpTarget", "HttpTarget", "Schedule", "TimeZone", "UserUpdateTime", "State", "Status", "ScheduleTime", "LastAttemptTime", "RetryConfig", "AttemptDeadline" }, new[]{ "Target" }, new[]{ typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.RetryConfig), global::Google.Events.Protobuf.Cloud.Scheduler.V1.RetryConfig.Parser, new[]{ "RetryCount", "MaxRetryDuration", "MinBackoffDuration", "MaxBackoffDuration", "MaxDoublings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Events.Protobuf.Cloud.Scheduler.V1.JobEventData), global::Google.Events.Protobuf.Cloud.Scheduler.V1.JobEventData.Parser, new[]{ "Payload" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  /// <summary>
+  /// The HTTP method used to execute the job.
+  /// </summary>
+  public enum HttpMethod {
+    /// <summary>
+    /// HTTP method unspecified. Defaults to POST.
+    /// </summary>
+    [pbr::OriginalName("HTTP_METHOD_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// HTTP POST
+    /// </summary>
+    [pbr::OriginalName("POST")] Post = 1,
+    /// <summary>
+    /// HTTP GET
+    /// </summary>
+    [pbr::OriginalName("GET")] Get = 2,
+    /// <summary>
+    /// HTTP HEAD
+    /// </summary>
+    [pbr::OriginalName("HEAD")] Head = 3,
+    /// <summary>
+    /// HTTP PUT
+    /// </summary>
+    [pbr::OriginalName("PUT")] Put = 4,
+    /// <summary>
+    /// HTTP DELETE
+    /// </summary>
+    [pbr::OriginalName("DELETE")] Delete = 5,
+    /// <summary>
+    /// HTTP PATCH
+    /// </summary>
+    [pbr::OriginalName("PATCH")] Patch = 6,
+    /// <summary>
+    /// HTTP OPTIONS
+    /// </summary>
+    [pbr::OriginalName("OPTIONS")] Options = 7,
+  }
+
+  #endregion
+
   #region Messages
   /// <summary>
   /// Scheduler job data.
@@ -241,6 +345,3701 @@ namespace Google.Events.Protobuf.Cloud.Scheduler.V1 {
             break;
           case 10: {
             CustomData = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Http target. The job will be pushed to the job handler by means of
+  /// an HTTP request via an
+  /// [http_method][google.cloud.scheduler.v1.HttpTarget.http_method] such as HTTP
+  /// POST, HTTP GET, etc. The job is acknowledged by means of an HTTP
+  /// response code in the range [200 - 299]. A failure to receive a response
+  /// constitutes a failed execution. For a redirected request, the response
+  /// returned by the redirected request is considered.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class HttpTarget : pb::IMessage<HttpTarget>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<HttpTarget> _parser = new pb::MessageParser<HttpTarget>(() => new HttpTarget());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<HttpTarget> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HttpTarget() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HttpTarget(HttpTarget other) : this() {
+      uri_ = other.uri_;
+      httpMethod_ = other.httpMethod_;
+      headers_ = other.headers_.Clone();
+      body_ = other.body_;
+      switch (other.AuthorizationHeaderCase) {
+        case AuthorizationHeaderOneofCase.OauthToken:
+          OauthToken = other.OauthToken.Clone();
+          break;
+        case AuthorizationHeaderOneofCase.OidcToken:
+          OidcToken = other.OidcToken.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HttpTarget Clone() {
+      return new HttpTarget(this);
+    }
+
+    /// <summary>Field number for the "uri" field.</summary>
+    public const int UriFieldNumber = 1;
+    private string uri_ = "";
+    /// <summary>
+    /// Required. The full URI path that the request will be sent to. This string
+    /// must begin with either "http://" or "https://". Some examples of
+    /// valid values for [uri][google.cloud.scheduler.v1.HttpTarget.uri] are:
+    /// `http://acme.com` and `https://acme.com/sales:8080`. Cloud Scheduler will
+    /// encode some characters for safety and compatibility. The maximum allowed
+    /// URL length is 2083 characters after encoding.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Uri {
+      get { return uri_; }
+      set {
+        uri_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "http_method" field.</summary>
+    public const int HttpMethodFieldNumber = 2;
+    private global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod httpMethod_ = global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified;
+    /// <summary>
+    /// Which HTTP method to use for the request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod HttpMethod {
+      get { return httpMethod_; }
+      set {
+        httpMethod_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "headers" field.</summary>
+    public const int HeadersFieldNumber = 3;
+    private static readonly pbc::MapField<string, string>.Codec _map_headers_codec
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 26);
+    private readonly pbc::MapField<string, string> headers_ = new pbc::MapField<string, string>();
+    /// <summary>
+    /// HTTP request headers.
+    ///
+    /// This map contains the header field names and values.
+    ///
+    /// The user can specify HTTP request headers to send with the job's
+    /// HTTP request. Repeated headers are not supported, but a header value can
+    /// contain commas.
+    ///
+    /// The following headers represent a subset of the headers
+    /// that accompany the job's HTTP request. Some HTTP request
+    /// headers are ignored or replaced. A partial list of headers that
+    /// are ignored or replaced is below:
+    ///
+    /// * Host: This will be computed by Cloud Scheduler and derived from
+    /// [uri][google.cloud.scheduler.v1.HttpTarget.uri].
+    /// * `Content-Length`: This will be computed by Cloud Scheduler.
+    /// * `User-Agent`: This will be set to `"Google-Cloud-Scheduler"`.
+    /// * `X-Google-*`: Google internal use only.
+    /// * `X-AppEngine-*`: Google internal use only.
+    /// * `X-CloudScheduler`: This header will be set to true.
+    /// * `X-CloudScheduler-JobName`: This header will contain the job name.
+    /// * `X-CloudScheduler-ScheduleTime`: For Cloud Scheduler jobs specified in
+    /// the unix-cron format, this header will contain the job schedule as an
+    /// offset of UTC parsed according to RFC3339.
+    ///
+    /// If the job has a [body][google.cloud.scheduler.v1.HttpTarget.body] and the
+    /// following headers are not set by the user, Cloud Scheduler sets default
+    /// values:
+    ///
+    /// * `Content-Type`: This will be set to `"application/octet-stream"`. You
+    ///   can override this default by explicitly setting `Content-Type` to a
+    ///   particular media type when creating the job. For example, you can set
+    ///   `Content-Type` to `"application/json"`.
+    ///
+    /// The total size of headers must be less than 80KB.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, string> Headers {
+      get { return headers_; }
+    }
+
+    /// <summary>Field number for the "body" field.</summary>
+    public const int BodyFieldNumber = 4;
+    private pb::ByteString body_ = pb::ByteString.Empty;
+    /// <summary>
+    /// HTTP request body. A request body is allowed only if the HTTP
+    /// method is POST, PUT, or PATCH. It is an error to set body on a job with an
+    /// incompatible [HttpMethod][google.cloud.scheduler.v1.HttpMethod].
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Body {
+      get { return body_; }
+      set {
+        body_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "oauth_token" field.</summary>
+    public const int OauthTokenFieldNumber = 5;
+    /// <summary>
+    /// If specified, an
+    /// [OAuth token](https://developers.google.com/identity/protocols/OAuth2)
+    /// will be generated and attached as an `Authorization` header in the HTTP
+    /// request.
+    ///
+    /// This type of authorization should generally only be used when calling
+    /// Google APIs hosted on *.googleapis.com.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken OauthToken {
+      get { return authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OauthToken ? (global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken) authorizationHeader_ : null; }
+      set {
+        authorizationHeader_ = value;
+        authorizationHeaderCase_ = value == null ? AuthorizationHeaderOneofCase.None : AuthorizationHeaderOneofCase.OauthToken;
+      }
+    }
+
+    /// <summary>Field number for the "oidc_token" field.</summary>
+    public const int OidcTokenFieldNumber = 6;
+    /// <summary>
+    /// If specified, an
+    /// [OIDC](https://developers.google.com/identity/protocols/OpenIDConnect)
+    /// token will be generated and attached as an `Authorization` header in the
+    /// HTTP request.
+    ///
+    /// This type of authorization can be used for many scenarios, including
+    /// calling Cloud Run, or endpoints where you intend to validate the token
+    /// yourself.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken OidcToken {
+      get { return authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OidcToken ? (global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken) authorizationHeader_ : null; }
+      set {
+        authorizationHeader_ = value;
+        authorizationHeaderCase_ = value == null ? AuthorizationHeaderOneofCase.None : AuthorizationHeaderOneofCase.OidcToken;
+      }
+    }
+
+    private object authorizationHeader_;
+    /// <summary>Enum of possible cases for the "authorization_header" oneof.</summary>
+    public enum AuthorizationHeaderOneofCase {
+      None = 0,
+      OauthToken = 5,
+      OidcToken = 6,
+    }
+    private AuthorizationHeaderOneofCase authorizationHeaderCase_ = AuthorizationHeaderOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AuthorizationHeaderOneofCase AuthorizationHeaderCase {
+      get { return authorizationHeaderCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAuthorizationHeader() {
+      authorizationHeaderCase_ = AuthorizationHeaderOneofCase.None;
+      authorizationHeader_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as HttpTarget);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(HttpTarget other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Uri != other.Uri) return false;
+      if (HttpMethod != other.HttpMethod) return false;
+      if (!Headers.Equals(other.Headers)) return false;
+      if (Body != other.Body) return false;
+      if (!object.Equals(OauthToken, other.OauthToken)) return false;
+      if (!object.Equals(OidcToken, other.OidcToken)) return false;
+      if (AuthorizationHeaderCase != other.AuthorizationHeaderCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Uri.Length != 0) hash ^= Uri.GetHashCode();
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) hash ^= HttpMethod.GetHashCode();
+      hash ^= Headers.GetHashCode();
+      if (Body.Length != 0) hash ^= Body.GetHashCode();
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OauthToken) hash ^= OauthToken.GetHashCode();
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OidcToken) hash ^= OidcToken.GetHashCode();
+      hash ^= (int) authorizationHeaderCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Uri.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uri);
+      }
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) HttpMethod);
+      }
+      headers_.WriteTo(output, _map_headers_codec);
+      if (Body.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteBytes(Body);
+      }
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OauthToken) {
+        output.WriteRawTag(42);
+        output.WriteMessage(OauthToken);
+      }
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OidcToken) {
+        output.WriteRawTag(50);
+        output.WriteMessage(OidcToken);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Uri.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uri);
+      }
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) HttpMethod);
+      }
+      headers_.WriteTo(ref output, _map_headers_codec);
+      if (Body.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteBytes(Body);
+      }
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OauthToken) {
+        output.WriteRawTag(42);
+        output.WriteMessage(OauthToken);
+      }
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OidcToken) {
+        output.WriteRawTag(50);
+        output.WriteMessage(OidcToken);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Uri.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Uri);
+      }
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HttpMethod);
+      }
+      size += headers_.CalculateSize(_map_headers_codec);
+      if (Body.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Body);
+      }
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OauthToken) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OauthToken);
+      }
+      if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OidcToken) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OidcToken);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(HttpTarget other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Uri.Length != 0) {
+        Uri = other.Uri;
+      }
+      if (other.HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        HttpMethod = other.HttpMethod;
+      }
+      headers_.MergeFrom(other.headers_);
+      if (other.Body.Length != 0) {
+        Body = other.Body;
+      }
+      switch (other.AuthorizationHeaderCase) {
+        case AuthorizationHeaderOneofCase.OauthToken:
+          if (OauthToken == null) {
+            OauthToken = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken();
+          }
+          OauthToken.MergeFrom(other.OauthToken);
+          break;
+        case AuthorizationHeaderOneofCase.OidcToken:
+          if (OidcToken == null) {
+            OidcToken = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken();
+          }
+          OidcToken.MergeFrom(other.OidcToken);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Uri = input.ReadString();
+            break;
+          }
+          case 16: {
+            HttpMethod = (global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            headers_.AddEntriesFrom(input, _map_headers_codec);
+            break;
+          }
+          case 34: {
+            Body = input.ReadBytes();
+            break;
+          }
+          case 42: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken();
+            if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OauthToken) {
+              subBuilder.MergeFrom(OauthToken);
+            }
+            input.ReadMessage(subBuilder);
+            OauthToken = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken();
+            if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OidcToken) {
+              subBuilder.MergeFrom(OidcToken);
+            }
+            input.ReadMessage(subBuilder);
+            OidcToken = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Uri = input.ReadString();
+            break;
+          }
+          case 16: {
+            HttpMethod = (global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            headers_.AddEntriesFrom(ref input, _map_headers_codec);
+            break;
+          }
+          case 34: {
+            Body = input.ReadBytes();
+            break;
+          }
+          case 42: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.OAuthToken();
+            if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OauthToken) {
+              subBuilder.MergeFrom(OauthToken);
+            }
+            input.ReadMessage(subBuilder);
+            OauthToken = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.OidcToken();
+            if (authorizationHeaderCase_ == AuthorizationHeaderOneofCase.OidcToken) {
+              subBuilder.MergeFrom(OidcToken);
+            }
+            input.ReadMessage(subBuilder);
+            OidcToken = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// App Engine target. The job will be pushed to a job handler by means
+  /// of an HTTP request via an
+  /// [http_method][google.cloud.scheduler.v1.AppEngineHttpTarget.http_method] such
+  /// as HTTP POST, HTTP GET, etc. The job is acknowledged by means of an
+  /// HTTP response code in the range [200 - 299]. Error 503 is
+  /// considered an App Engine system error instead of an application
+  /// error. Requests returning error 503 will be retried regardless of
+  /// retry configuration and not counted against retry counts. Any other
+  /// response code, or a failure to receive a response before the
+  /// deadline, constitutes a failed attempt.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AppEngineHttpTarget : pb::IMessage<AppEngineHttpTarget>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AppEngineHttpTarget> _parser = new pb::MessageParser<AppEngineHttpTarget>(() => new AppEngineHttpTarget());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AppEngineHttpTarget> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppEngineHttpTarget() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppEngineHttpTarget(AppEngineHttpTarget other) : this() {
+      httpMethod_ = other.httpMethod_;
+      appEngineRouting_ = other.appEngineRouting_ != null ? other.appEngineRouting_.Clone() : null;
+      relativeUri_ = other.relativeUri_;
+      headers_ = other.headers_.Clone();
+      body_ = other.body_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppEngineHttpTarget Clone() {
+      return new AppEngineHttpTarget(this);
+    }
+
+    /// <summary>Field number for the "http_method" field.</summary>
+    public const int HttpMethodFieldNumber = 1;
+    private global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod httpMethod_ = global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified;
+    /// <summary>
+    /// The HTTP method to use for the request. PATCH and OPTIONS are not
+    /// permitted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod HttpMethod {
+      get { return httpMethod_; }
+      set {
+        httpMethod_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "app_engine_routing" field.</summary>
+    public const int AppEngineRoutingFieldNumber = 2;
+    private global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineRouting appEngineRouting_;
+    /// <summary>
+    /// App Engine Routing setting for the job.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineRouting AppEngineRouting {
+      get { return appEngineRouting_; }
+      set {
+        appEngineRouting_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "relative_uri" field.</summary>
+    public const int RelativeUriFieldNumber = 3;
+    private string relativeUri_ = "";
+    /// <summary>
+    /// The relative URI.
+    ///
+    /// The relative URL must begin with "/" and must be a valid HTTP relative URL.
+    /// It can contain a path, query string arguments, and `#` fragments.
+    /// If the relative URL is empty, then the root path "/" will be used.
+    /// No spaces are allowed, and the maximum length allowed is 2083 characters.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RelativeUri {
+      get { return relativeUri_; }
+      set {
+        relativeUri_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "headers" field.</summary>
+    public const int HeadersFieldNumber = 4;
+    private static readonly pbc::MapField<string, string>.Codec _map_headers_codec
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 34);
+    private readonly pbc::MapField<string, string> headers_ = new pbc::MapField<string, string>();
+    /// <summary>
+    /// HTTP request headers.
+    ///
+    /// This map contains the header field names and values. Headers can be set
+    /// when the job is created.
+    ///
+    /// Cloud Scheduler sets some headers to default values:
+    ///
+    /// * `User-Agent`: By default, this header is
+    ///   `"AppEngine-Google; (+http://code.google.com/appengine)"`.
+    ///   This header can be modified, but Cloud Scheduler will append
+    ///   `"AppEngine-Google; (+http://code.google.com/appengine)"` to the
+    ///   modified `User-Agent`.
+    /// * `X-CloudScheduler`: This header will be set to true.
+    /// * `X-CloudScheduler-JobName`: This header will contain the job name.
+    /// * `X-CloudScheduler-ScheduleTime`: For Cloud Scheduler jobs specified in
+    /// the unix-cron format, this header will contain the job schedule as an
+    /// offset of UTC parsed according to RFC3339.
+    ///
+    /// If the job has a [body][google.cloud.scheduler.v1.AppEngineHttpTarget.body]
+    /// and the following headers are not set by the user, Cloud Scheduler sets
+    /// default values:
+    ///
+    /// * `Content-Type`: This will be set to `"application/octet-stream"`. You
+    ///   can override this default by explicitly setting `Content-Type` to a
+    ///   particular media type when creating the job. For example, you can set
+    ///   `Content-Type` to `"application/json"`.
+    ///
+    /// The headers below are output only. They cannot be set or overridden:
+    ///
+    /// * `Content-Length`: This is computed by Cloud Scheduler.
+    /// * `X-Google-*`: For Google internal use only.
+    /// * `X-AppEngine-*`: For Google internal use only.
+    ///
+    /// In addition, some App Engine headers, which contain
+    /// job-specific information, are also be sent to the job handler.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, string> Headers {
+      get { return headers_; }
+    }
+
+    /// <summary>Field number for the "body" field.</summary>
+    public const int BodyFieldNumber = 5;
+    private pb::ByteString body_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Body.
+    ///
+    /// HTTP request body. A request body is allowed only if the HTTP method is
+    /// POST or PUT. It will result in invalid argument error to set a body on a
+    /// job with an incompatible
+    /// [HttpMethod][google.cloud.scheduler.v1.HttpMethod].
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Body {
+      get { return body_; }
+      set {
+        body_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AppEngineHttpTarget);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AppEngineHttpTarget other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (HttpMethod != other.HttpMethod) return false;
+      if (!object.Equals(AppEngineRouting, other.AppEngineRouting)) return false;
+      if (RelativeUri != other.RelativeUri) return false;
+      if (!Headers.Equals(other.Headers)) return false;
+      if (Body != other.Body) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) hash ^= HttpMethod.GetHashCode();
+      if (appEngineRouting_ != null) hash ^= AppEngineRouting.GetHashCode();
+      if (RelativeUri.Length != 0) hash ^= RelativeUri.GetHashCode();
+      hash ^= Headers.GetHashCode();
+      if (Body.Length != 0) hash ^= Body.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) HttpMethod);
+      }
+      if (appEngineRouting_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AppEngineRouting);
+      }
+      if (RelativeUri.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(RelativeUri);
+      }
+      headers_.WriteTo(output, _map_headers_codec);
+      if (Body.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteBytes(Body);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) HttpMethod);
+      }
+      if (appEngineRouting_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AppEngineRouting);
+      }
+      if (RelativeUri.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(RelativeUri);
+      }
+      headers_.WriteTo(ref output, _map_headers_codec);
+      if (Body.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteBytes(Body);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HttpMethod);
+      }
+      if (appEngineRouting_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AppEngineRouting);
+      }
+      if (RelativeUri.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RelativeUri);
+      }
+      size += headers_.CalculateSize(_map_headers_codec);
+      if (Body.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Body);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AppEngineHttpTarget other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HttpMethod != global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod.Unspecified) {
+        HttpMethod = other.HttpMethod;
+      }
+      if (other.appEngineRouting_ != null) {
+        if (appEngineRouting_ == null) {
+          AppEngineRouting = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineRouting();
+        }
+        AppEngineRouting.MergeFrom(other.AppEngineRouting);
+      }
+      if (other.RelativeUri.Length != 0) {
+        RelativeUri = other.RelativeUri;
+      }
+      headers_.MergeFrom(other.headers_);
+      if (other.Body.Length != 0) {
+        Body = other.Body;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            HttpMethod = (global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (appEngineRouting_ == null) {
+              AppEngineRouting = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineRouting();
+            }
+            input.ReadMessage(AppEngineRouting);
+            break;
+          }
+          case 26: {
+            RelativeUri = input.ReadString();
+            break;
+          }
+          case 34: {
+            headers_.AddEntriesFrom(input, _map_headers_codec);
+            break;
+          }
+          case 42: {
+            Body = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            HttpMethod = (global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpMethod) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (appEngineRouting_ == null) {
+              AppEngineRouting = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineRouting();
+            }
+            input.ReadMessage(AppEngineRouting);
+            break;
+          }
+          case 26: {
+            RelativeUri = input.ReadString();
+            break;
+          }
+          case 34: {
+            headers_.AddEntriesFrom(ref input, _map_headers_codec);
+            break;
+          }
+          case 42: {
+            Body = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Pub/Sub target. The job will be delivered by publishing a message to
+  /// the given Pub/Sub topic.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PubsubTarget : pb::IMessage<PubsubTarget>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PubsubTarget> _parser = new pb::MessageParser<PubsubTarget>(() => new PubsubTarget());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PubsubTarget> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PubsubTarget() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PubsubTarget(PubsubTarget other) : this() {
+      topicName_ = other.topicName_;
+      data_ = other.data_;
+      attributes_ = other.attributes_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PubsubTarget Clone() {
+      return new PubsubTarget(this);
+    }
+
+    /// <summary>Field number for the "topic_name" field.</summary>
+    public const int TopicNameFieldNumber = 1;
+    private string topicName_ = "";
+    /// <summary>
+    /// Required. The name of the Cloud Pub/Sub topic to which messages will
+    /// be published when a job is delivered. The topic name must be in the
+    /// same format as required by Pub/Sub's
+    /// [PublishRequest.name](https://cloud.google.com/pubsub/docs/reference/rpc/google.pubsub.v1#publishrequest),
+    /// for example `projects/PROJECT_ID/topics/TOPIC_ID`.
+    ///
+    /// The topic must be in the same project as the Cloud Scheduler job.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TopicName {
+      get { return topicName_; }
+      set {
+        topicName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "data" field.</summary>
+    public const int DataFieldNumber = 3;
+    private pb::ByteString data_ = pb::ByteString.Empty;
+    /// <summary>
+    /// The message payload for PubsubMessage.
+    ///
+    /// Pubsub message must contain either non-empty data, or at least one
+    /// attribute.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Data {
+      get { return data_; }
+      set {
+        data_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "attributes" field.</summary>
+    public const int AttributesFieldNumber = 4;
+    private static readonly pbc::MapField<string, string>.Codec _map_attributes_codec
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 34);
+    private readonly pbc::MapField<string, string> attributes_ = new pbc::MapField<string, string>();
+    /// <summary>
+    /// Attributes for PubsubMessage.
+    ///
+    /// Pubsub message must contain either non-empty data, or at least one
+    /// attribute.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, string> Attributes {
+      get { return attributes_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PubsubTarget);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PubsubTarget other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TopicName != other.TopicName) return false;
+      if (Data != other.Data) return false;
+      if (!Attributes.Equals(other.Attributes)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TopicName.Length != 0) hash ^= TopicName.GetHashCode();
+      if (Data.Length != 0) hash ^= Data.GetHashCode();
+      hash ^= Attributes.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (TopicName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TopicName);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(Data);
+      }
+      attributes_.WriteTo(output, _map_attributes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TopicName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TopicName);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(Data);
+      }
+      attributes_.WriteTo(ref output, _map_attributes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (TopicName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TopicName);
+      }
+      if (Data.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
+      }
+      size += attributes_.CalculateSize(_map_attributes_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PubsubTarget other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TopicName.Length != 0) {
+        TopicName = other.TopicName;
+      }
+      if (other.Data.Length != 0) {
+        Data = other.Data;
+      }
+      attributes_.MergeFrom(other.attributes_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            TopicName = input.ReadString();
+            break;
+          }
+          case 26: {
+            Data = input.ReadBytes();
+            break;
+          }
+          case 34: {
+            attributes_.AddEntriesFrom(input, _map_attributes_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            TopicName = input.ReadString();
+            break;
+          }
+          case 26: {
+            Data = input.ReadBytes();
+            break;
+          }
+          case 34: {
+            attributes_.AddEntriesFrom(ref input, _map_attributes_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// App Engine Routing.
+  ///
+  /// For more information about services, versions, and instances see
+  /// [An Overview of App
+  /// Engine](https://cloud.google.com/appengine/docs/python/an-overview-of-app-engine),
+  /// [Microservices Architecture on Google App
+  /// Engine](https://cloud.google.com/appengine/docs/python/microservices-on-app-engine),
+  /// [App Engine Standard request
+  /// routing](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed),
+  /// and [App Engine Flex request
+  /// routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AppEngineRouting : pb::IMessage<AppEngineRouting>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AppEngineRouting> _parser = new pb::MessageParser<AppEngineRouting>(() => new AppEngineRouting());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AppEngineRouting> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppEngineRouting() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppEngineRouting(AppEngineRouting other) : this() {
+      service_ = other.service_;
+      version_ = other.version_;
+      instance_ = other.instance_;
+      host_ = other.host_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppEngineRouting Clone() {
+      return new AppEngineRouting(this);
+    }
+
+    /// <summary>Field number for the "service" field.</summary>
+    public const int ServiceFieldNumber = 1;
+    private string service_ = "";
+    /// <summary>
+    /// App service.
+    ///
+    /// By default, the job is sent to the service which is the default
+    /// service when the job is attempted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Service {
+      get { return service_; }
+      set {
+        service_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "version" field.</summary>
+    public const int VersionFieldNumber = 2;
+    private string version_ = "";
+    /// <summary>
+    /// App version.
+    ///
+    /// By default, the job is sent to the version which is the default
+    /// version when the job is attempted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Version {
+      get { return version_; }
+      set {
+        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "instance" field.</summary>
+    public const int InstanceFieldNumber = 3;
+    private string instance_ = "";
+    /// <summary>
+    /// App instance.
+    ///
+    /// By default, the job is sent to an instance which is available when
+    /// the job is attempted.
+    ///
+    /// Requests can only be sent to a specific instance if
+    /// [manual scaling is used in App Engine
+    /// Standard](https://cloud.google.com/appengine/docs/python/an-overview-of-app-engine?#scaling_types_and_instance_classes).
+    /// App Engine Flex does not support instances. For more information, see
+    /// [App Engine Standard request
+    /// routing](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed)
+    /// and [App Engine Flex request
+    /// routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Instance {
+      get { return instance_; }
+      set {
+        instance_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "host" field.</summary>
+    public const int HostFieldNumber = 4;
+    private string host_ = "";
+    /// <summary>
+    /// Output only. The host that the job is sent to.
+    ///
+    /// For more information about how App Engine requests are routed, see
+    /// [here](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed).
+    ///
+    /// The host is constructed as:
+    ///
+    /// * `host = [application_domain_name]`&lt;/br>
+    ///   `| [service] + '.' + [application_domain_name]`&lt;/br>
+    ///   `| [version] + '.' + [application_domain_name]`&lt;/br>
+    ///   `| [version_dot_service]+ '.' + [application_domain_name]`&lt;/br>
+    ///   `| [instance] + '.' + [application_domain_name]`&lt;/br>
+    ///   `| [instance_dot_service] + '.' + [application_domain_name]`&lt;/br>
+    ///   `| [instance_dot_version] + '.' + [application_domain_name]`&lt;/br>
+    ///   `| [instance_dot_version_dot_service] + '.' + [application_domain_name]`
+    ///
+    /// * `application_domain_name` = The domain name of the app, for
+    ///   example &lt;app-id>.appspot.com, which is associated with the
+    ///   job's project ID.
+    ///
+    /// * `service =` [service][google.cloud.scheduler.v1.AppEngineRouting.service]
+    ///
+    /// * `version =` [version][google.cloud.scheduler.v1.AppEngineRouting.version]
+    ///
+    /// * `version_dot_service =`
+    ///   [version][google.cloud.scheduler.v1.AppEngineRouting.version] `+ '.' +`
+    ///   [service][google.cloud.scheduler.v1.AppEngineRouting.service]
+    ///
+    /// * `instance =`
+    /// [instance][google.cloud.scheduler.v1.AppEngineRouting.instance]
+    ///
+    /// * `instance_dot_service =`
+    ///   [instance][google.cloud.scheduler.v1.AppEngineRouting.instance] `+ '.' +`
+    ///   [service][google.cloud.scheduler.v1.AppEngineRouting.service]
+    ///
+    /// * `instance_dot_version =`
+    ///   [instance][google.cloud.scheduler.v1.AppEngineRouting.instance] `+ '.' +`
+    ///   [version][google.cloud.scheduler.v1.AppEngineRouting.version]
+    ///
+    /// * `instance_dot_version_dot_service =`
+    ///   [instance][google.cloud.scheduler.v1.AppEngineRouting.instance] `+ '.' +`
+    ///   [version][google.cloud.scheduler.v1.AppEngineRouting.version] `+ '.' +`
+    ///   [service][google.cloud.scheduler.v1.AppEngineRouting.service]
+    ///
+    /// If [service][google.cloud.scheduler.v1.AppEngineRouting.service] is empty,
+    /// then the job will be sent to the service which is the default service when
+    /// the job is attempted.
+    ///
+    /// If [version][google.cloud.scheduler.v1.AppEngineRouting.version] is empty,
+    /// then the job will be sent to the version which is the default version when
+    /// the job is attempted.
+    ///
+    /// If [instance][google.cloud.scheduler.v1.AppEngineRouting.instance] is
+    /// empty, then the job will be sent to an instance which is available when the
+    /// job is attempted.
+    ///
+    /// If [service][google.cloud.scheduler.v1.AppEngineRouting.service],
+    /// [version][google.cloud.scheduler.v1.AppEngineRouting.version], or
+    /// [instance][google.cloud.scheduler.v1.AppEngineRouting.instance] is invalid,
+    /// then the job will be sent to the default version of the default service
+    /// when the job is attempted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Host {
+      get { return host_; }
+      set {
+        host_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AppEngineRouting);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AppEngineRouting other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Service != other.Service) return false;
+      if (Version != other.Version) return false;
+      if (Instance != other.Instance) return false;
+      if (Host != other.Host) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Service.Length != 0) hash ^= Service.GetHashCode();
+      if (Version.Length != 0) hash ^= Version.GetHashCode();
+      if (Instance.Length != 0) hash ^= Instance.GetHashCode();
+      if (Host.Length != 0) hash ^= Host.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Service.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Service);
+      }
+      if (Version.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Version);
+      }
+      if (Instance.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Instance);
+      }
+      if (Host.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Host);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Service.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Service);
+      }
+      if (Version.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Version);
+      }
+      if (Instance.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Instance);
+      }
+      if (Host.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Host);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Service.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Service);
+      }
+      if (Version.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Version);
+      }
+      if (Instance.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Instance);
+      }
+      if (Host.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Host);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AppEngineRouting other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Service.Length != 0) {
+        Service = other.Service;
+      }
+      if (other.Version.Length != 0) {
+        Version = other.Version;
+      }
+      if (other.Instance.Length != 0) {
+        Instance = other.Instance;
+      }
+      if (other.Host.Length != 0) {
+        Host = other.Host;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Service = input.ReadString();
+            break;
+          }
+          case 18: {
+            Version = input.ReadString();
+            break;
+          }
+          case 26: {
+            Instance = input.ReadString();
+            break;
+          }
+          case 34: {
+            Host = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Service = input.ReadString();
+            break;
+          }
+          case 18: {
+            Version = input.ReadString();
+            break;
+          }
+          case 26: {
+            Instance = input.ReadString();
+            break;
+          }
+          case 34: {
+            Host = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Contains information needed for generating an
+  /// [OAuth token](https://developers.google.com/identity/protocols/OAuth2).
+  /// This type of authorization should generally only be used when calling Google
+  /// APIs hosted on *.googleapis.com.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class OAuthToken : pb::IMessage<OAuthToken>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<OAuthToken> _parser = new pb::MessageParser<OAuthToken>(() => new OAuthToken());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<OAuthToken> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OAuthToken() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OAuthToken(OAuthToken other) : this() {
+      serviceAccountEmail_ = other.serviceAccountEmail_;
+      scope_ = other.scope_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OAuthToken Clone() {
+      return new OAuthToken(this);
+    }
+
+    /// <summary>Field number for the "service_account_email" field.</summary>
+    public const int ServiceAccountEmailFieldNumber = 1;
+    private string serviceAccountEmail_ = "";
+    /// <summary>
+    /// [Service account email](https://cloud.google.com/iam/docs/service-accounts)
+    /// to be used for generating OAuth token.
+    /// The service account must be within the same project as the job. The caller
+    /// must have iam.serviceAccounts.actAs permission for the service account.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ServiceAccountEmail {
+      get { return serviceAccountEmail_; }
+      set {
+        serviceAccountEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "scope" field.</summary>
+    public const int ScopeFieldNumber = 2;
+    private string scope_ = "";
+    /// <summary>
+    /// OAuth scope to be used for generating OAuth access token.
+    /// If not specified, "https://www.googleapis.com/auth/cloud-platform"
+    /// will be used.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Scope {
+      get { return scope_; }
+      set {
+        scope_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as OAuthToken);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(OAuthToken other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ServiceAccountEmail != other.ServiceAccountEmail) return false;
+      if (Scope != other.Scope) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ServiceAccountEmail.Length != 0) hash ^= ServiceAccountEmail.GetHashCode();
+      if (Scope.Length != 0) hash ^= Scope.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ServiceAccountEmail.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ServiceAccountEmail);
+      }
+      if (Scope.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Scope);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ServiceAccountEmail.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ServiceAccountEmail);
+      }
+      if (Scope.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Scope);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ServiceAccountEmail.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceAccountEmail);
+      }
+      if (Scope.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Scope);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(OAuthToken other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ServiceAccountEmail.Length != 0) {
+        ServiceAccountEmail = other.ServiceAccountEmail;
+      }
+      if (other.Scope.Length != 0) {
+        Scope = other.Scope;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ServiceAccountEmail = input.ReadString();
+            break;
+          }
+          case 18: {
+            Scope = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ServiceAccountEmail = input.ReadString();
+            break;
+          }
+          case 18: {
+            Scope = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Contains information needed for generating an
+  /// [OpenID Connect
+  /// token](https://developers.google.com/identity/protocols/OpenIDConnect).
+  /// This type of authorization can be used for many scenarios, including
+  /// calling Cloud Run, or endpoints where you intend to validate the token
+  /// yourself.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class OidcToken : pb::IMessage<OidcToken>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<OidcToken> _parser = new pb::MessageParser<OidcToken>(() => new OidcToken());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<OidcToken> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OidcToken() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OidcToken(OidcToken other) : this() {
+      serviceAccountEmail_ = other.serviceAccountEmail_;
+      audience_ = other.audience_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OidcToken Clone() {
+      return new OidcToken(this);
+    }
+
+    /// <summary>Field number for the "service_account_email" field.</summary>
+    public const int ServiceAccountEmailFieldNumber = 1;
+    private string serviceAccountEmail_ = "";
+    /// <summary>
+    /// [Service account email](https://cloud.google.com/iam/docs/service-accounts)
+    /// to be used for generating OIDC token.
+    /// The service account must be within the same project as the job. The caller
+    /// must have iam.serviceAccounts.actAs permission for the service account.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ServiceAccountEmail {
+      get { return serviceAccountEmail_; }
+      set {
+        serviceAccountEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "audience" field.</summary>
+    public const int AudienceFieldNumber = 2;
+    private string audience_ = "";
+    /// <summary>
+    /// Audience to be used when generating OIDC token. If not specified, the URI
+    /// specified in target will be used.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Audience {
+      get { return audience_; }
+      set {
+        audience_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as OidcToken);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(OidcToken other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ServiceAccountEmail != other.ServiceAccountEmail) return false;
+      if (Audience != other.Audience) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ServiceAccountEmail.Length != 0) hash ^= ServiceAccountEmail.GetHashCode();
+      if (Audience.Length != 0) hash ^= Audience.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ServiceAccountEmail.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ServiceAccountEmail);
+      }
+      if (Audience.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Audience);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ServiceAccountEmail.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ServiceAccountEmail);
+      }
+      if (Audience.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Audience);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ServiceAccountEmail.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServiceAccountEmail);
+      }
+      if (Audience.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Audience);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(OidcToken other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ServiceAccountEmail.Length != 0) {
+        ServiceAccountEmail = other.ServiceAccountEmail;
+      }
+      if (other.Audience.Length != 0) {
+        Audience = other.Audience;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ServiceAccountEmail = input.ReadString();
+            break;
+          }
+          case 18: {
+            Audience = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ServiceAccountEmail = input.ReadString();
+            break;
+          }
+          case 18: {
+            Audience = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Configuration for a job.
+  /// The maximum allowed size for a job is 1MB.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class Job : pb::IMessage<Job>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Job> _parser = new pb::MessageParser<Job>(() => new Job());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Job> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Job() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Job(Job other) : this() {
+      name_ = other.name_;
+      description_ = other.description_;
+      schedule_ = other.schedule_;
+      timeZone_ = other.timeZone_;
+      userUpdateTime_ = other.userUpdateTime_ != null ? other.userUpdateTime_.Clone() : null;
+      state_ = other.state_;
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      scheduleTime_ = other.scheduleTime_ != null ? other.scheduleTime_.Clone() : null;
+      lastAttemptTime_ = other.lastAttemptTime_ != null ? other.lastAttemptTime_.Clone() : null;
+      retryConfig_ = other.retryConfig_ != null ? other.retryConfig_.Clone() : null;
+      attemptDeadline_ = other.attemptDeadline_ != null ? other.attemptDeadline_.Clone() : null;
+      switch (other.TargetCase) {
+        case TargetOneofCase.PubsubTarget:
+          PubsubTarget = other.PubsubTarget.Clone();
+          break;
+        case TargetOneofCase.AppEngineHttpTarget:
+          AppEngineHttpTarget = other.AppEngineHttpTarget.Clone();
+          break;
+        case TargetOneofCase.HttpTarget:
+          HttpTarget = other.HttpTarget.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Job Clone() {
+      return new Job(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    /// <summary>
+    /// Optionally caller-specified in
+    /// [CreateJob][google.cloud.scheduler.v1.CloudScheduler.CreateJob], after
+    /// which it becomes output only.
+    ///
+    /// The job name. For example:
+    /// `projects/PROJECT_ID/locations/LOCATION_ID/jobs/JOB_ID`.
+    ///
+    /// * `PROJECT_ID` can contain letters ([A-Za-z]), numbers ([0-9]),
+    ///    hyphens (-), colons (:), or periods (.).
+    ///    For more information, see
+    ///    [Identifying
+    ///    projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
+    /// * `LOCATION_ID` is the canonical ID for the job's location.
+    ///    The list of available locations can be obtained by calling
+    ///    [ListLocations][google.cloud.location.Locations.ListLocations].
+    ///    For more information, see https://cloud.google.com/about/locations/.
+    /// * `JOB_ID` can contain only letters ([A-Za-z]), numbers ([0-9]),
+    ///    hyphens (-), or underscores (_). The maximum length is 500 characters.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 2;
+    private string description_ = "";
+    /// <summary>
+    /// Optionally caller-specified in
+    /// [CreateJob][google.cloud.scheduler.v1.CloudScheduler.CreateJob] or
+    /// [UpdateJob][google.cloud.scheduler.v1.CloudScheduler.UpdateJob].
+    ///
+    /// A human-readable description for the job. This string must not contain
+    /// more than 500 characters.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "pubsub_target" field.</summary>
+    public const int PubsubTargetFieldNumber = 4;
+    /// <summary>
+    /// Pub/Sub target.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget PubsubTarget {
+      get { return targetCase_ == TargetOneofCase.PubsubTarget ? (global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget) target_ : null; }
+      set {
+        target_ = value;
+        targetCase_ = value == null ? TargetOneofCase.None : TargetOneofCase.PubsubTarget;
+      }
+    }
+
+    /// <summary>Field number for the "app_engine_http_target" field.</summary>
+    public const int AppEngineHttpTargetFieldNumber = 5;
+    /// <summary>
+    /// App Engine HTTP target.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget AppEngineHttpTarget {
+      get { return targetCase_ == TargetOneofCase.AppEngineHttpTarget ? (global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget) target_ : null; }
+      set {
+        target_ = value;
+        targetCase_ = value == null ? TargetOneofCase.None : TargetOneofCase.AppEngineHttpTarget;
+      }
+    }
+
+    /// <summary>Field number for the "http_target" field.</summary>
+    public const int HttpTargetFieldNumber = 6;
+    /// <summary>
+    /// HTTP target.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget HttpTarget {
+      get { return targetCase_ == TargetOneofCase.HttpTarget ? (global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget) target_ : null; }
+      set {
+        target_ = value;
+        targetCase_ = value == null ? TargetOneofCase.None : TargetOneofCase.HttpTarget;
+      }
+    }
+
+    /// <summary>Field number for the "schedule" field.</summary>
+    public const int ScheduleFieldNumber = 20;
+    private string schedule_ = "";
+    /// <summary>
+    /// Required, except when used with
+    /// [UpdateJob][google.cloud.scheduler.v1.CloudScheduler.UpdateJob].
+    ///
+    /// Describes the schedule on which the job will be executed.
+    ///
+    /// The schedule can be either of the following types:
+    ///
+    /// * [Crontab](https://en.wikipedia.org/wiki/Cron#Overview)
+    /// * English-like
+    /// [schedule](https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules)
+    ///
+    /// As a general rule, execution `n + 1` of a job will not begin
+    /// until execution `n` has finished. Cloud Scheduler will never
+    /// allow two simultaneously outstanding executions. For example,
+    /// this implies that if the `n+1`th execution is scheduled to run at
+    /// 16:00 but the `n`th execution takes until 16:15, the `n+1`th
+    /// execution will not start until `16:15`.
+    /// A scheduled start time will be delayed if the previous
+    /// execution has not ended when its scheduled time occurs.
+    ///
+    /// If [retry_count][google.cloud.scheduler.v1.RetryConfig.retry_count] > 0 and
+    /// a job attempt fails, the job will be tried a total of
+    /// [retry_count][google.cloud.scheduler.v1.RetryConfig.retry_count] times,
+    /// with exponential backoff, until the next scheduled start time. If
+    /// retry_count is 0, a job attempt will not be retried if it fails. Instead
+    /// the Cloud Scheduler system will wait for the next scheduled execution time.
+    /// Setting retry_count to 0 does not prevent failed jobs from running
+    /// according to schedule after the failure.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Schedule {
+      get { return schedule_; }
+      set {
+        schedule_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "time_zone" field.</summary>
+    public const int TimeZoneFieldNumber = 21;
+    private string timeZone_ = "";
+    /// <summary>
+    /// Specifies the time zone to be used in interpreting
+    /// [schedule][google.cloud.scheduler.v1.Job.schedule]. The value of this field
+    /// must be a time zone name from the [tz
+    /// database](http://en.wikipedia.org/wiki/Tz_database).
+    ///
+    /// Note that some time zones include a provision for
+    /// daylight savings time. The rules for daylight saving time are
+    /// determined by the chosen tz. For UTC use the string "utc". If a
+    /// time zone is not specified, the default will be in UTC (also known
+    /// as GMT).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TimeZone {
+      get { return timeZone_; }
+      set {
+        timeZone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "user_update_time" field.</summary>
+    public const int UserUpdateTimeFieldNumber = 9;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp userUpdateTime_;
+    /// <summary>
+    /// Output only. The creation time of the job.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp UserUpdateTime {
+      get { return userUpdateTime_; }
+      set {
+        userUpdateTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 10;
+    private global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State state_ = global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State.Unspecified;
+    /// <summary>
+    /// Output only. State of the job.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State State {
+      get { return state_; }
+      set {
+        state_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 11;
+    private global::Google.Rpc.Status status_;
+    /// <summary>
+    /// Output only. The response from the target for the last attempted execution.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Rpc.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "schedule_time" field.</summary>
+    public const int ScheduleTimeFieldNumber = 17;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp scheduleTime_;
+    /// <summary>
+    /// Output only. The next time the job is scheduled. Note that this may be a
+    /// retry of a previously failed attempt or the next execution time
+    /// according to the schedule.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ScheduleTime {
+      get { return scheduleTime_; }
+      set {
+        scheduleTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "last_attempt_time" field.</summary>
+    public const int LastAttemptTimeFieldNumber = 18;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp lastAttemptTime_;
+    /// <summary>
+    /// Output only. The time the last job attempt started.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp LastAttemptTime {
+      get { return lastAttemptTime_; }
+      set {
+        lastAttemptTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "retry_config" field.</summary>
+    public const int RetryConfigFieldNumber = 19;
+    private global::Google.Events.Protobuf.Cloud.Scheduler.V1.RetryConfig retryConfig_;
+    /// <summary>
+    /// Settings that determine the retry behavior.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.RetryConfig RetryConfig {
+      get { return retryConfig_; }
+      set {
+        retryConfig_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "attempt_deadline" field.</summary>
+    public const int AttemptDeadlineFieldNumber = 22;
+    private global::Google.Protobuf.WellKnownTypes.Duration attemptDeadline_;
+    /// <summary>
+    /// The deadline for job attempts. If the request handler does not respond by
+    /// this deadline then the request is cancelled and the attempt is marked as a
+    /// `DEADLINE_EXCEEDED` failure. The failed attempt can be viewed in
+    /// execution logs. Cloud Scheduler will retry the job according
+    /// to the [RetryConfig][google.cloud.scheduler.v1.RetryConfig].
+    ///
+    /// The default and the allowed values depend on the type of target:
+    ///
+    /// * For [HTTP targets][google.cloud.scheduler.v1.Job.http_target], the
+    /// default is 3 minutes. The deadline must be in the interval [15 seconds, 30
+    /// minutes].
+    ///
+    /// * For [App Engine HTTP
+    /// targets][google.cloud.scheduler.v1.Job.app_engine_http_target], 0 indicates
+    /// that the request has the default deadline. The default deadline depends on
+    /// the scaling type of the service: 10 minutes for standard apps with
+    /// automatic scaling, 24 hours for standard apps with manual and basic
+    /// scaling, and 60 minutes for flex apps. If the request deadline is set, it
+    /// must be in the interval [15 seconds, 24 hours 15 seconds].
+    ///
+    /// * For [Pub/Sub targets][google.cloud.scheduler.v1.Job.pubsub_target], this
+    /// field is ignored.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Duration AttemptDeadline {
+      get { return attemptDeadline_; }
+      set {
+        attemptDeadline_ = value;
+      }
+    }
+
+    private object target_;
+    /// <summary>Enum of possible cases for the "target" oneof.</summary>
+    public enum TargetOneofCase {
+      None = 0,
+      PubsubTarget = 4,
+      AppEngineHttpTarget = 5,
+      HttpTarget = 6,
+    }
+    private TargetOneofCase targetCase_ = TargetOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TargetOneofCase TargetCase {
+      get { return targetCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTarget() {
+      targetCase_ = TargetOneofCase.None;
+      target_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Job);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Job other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
+      if (!object.Equals(PubsubTarget, other.PubsubTarget)) return false;
+      if (!object.Equals(AppEngineHttpTarget, other.AppEngineHttpTarget)) return false;
+      if (!object.Equals(HttpTarget, other.HttpTarget)) return false;
+      if (Schedule != other.Schedule) return false;
+      if (TimeZone != other.TimeZone) return false;
+      if (!object.Equals(UserUpdateTime, other.UserUpdateTime)) return false;
+      if (State != other.State) return false;
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(ScheduleTime, other.ScheduleTime)) return false;
+      if (!object.Equals(LastAttemptTime, other.LastAttemptTime)) return false;
+      if (!object.Equals(RetryConfig, other.RetryConfig)) return false;
+      if (!object.Equals(AttemptDeadline, other.AttemptDeadline)) return false;
+      if (TargetCase != other.TargetCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (targetCase_ == TargetOneofCase.PubsubTarget) hash ^= PubsubTarget.GetHashCode();
+      if (targetCase_ == TargetOneofCase.AppEngineHttpTarget) hash ^= AppEngineHttpTarget.GetHashCode();
+      if (targetCase_ == TargetOneofCase.HttpTarget) hash ^= HttpTarget.GetHashCode();
+      if (Schedule.Length != 0) hash ^= Schedule.GetHashCode();
+      if (TimeZone.Length != 0) hash ^= TimeZone.GetHashCode();
+      if (userUpdateTime_ != null) hash ^= UserUpdateTime.GetHashCode();
+      if (State != global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State.Unspecified) hash ^= State.GetHashCode();
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (scheduleTime_ != null) hash ^= ScheduleTime.GetHashCode();
+      if (lastAttemptTime_ != null) hash ^= LastAttemptTime.GetHashCode();
+      if (retryConfig_ != null) hash ^= RetryConfig.GetHashCode();
+      if (attemptDeadline_ != null) hash ^= AttemptDeadline.GetHashCode();
+      hash ^= (int) targetCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      if (targetCase_ == TargetOneofCase.PubsubTarget) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PubsubTarget);
+      }
+      if (targetCase_ == TargetOneofCase.AppEngineHttpTarget) {
+        output.WriteRawTag(42);
+        output.WriteMessage(AppEngineHttpTarget);
+      }
+      if (targetCase_ == TargetOneofCase.HttpTarget) {
+        output.WriteRawTag(50);
+        output.WriteMessage(HttpTarget);
+      }
+      if (userUpdateTime_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(UserUpdateTime);
+      }
+      if (State != global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State.Unspecified) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) State);
+      }
+      if (status_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Status);
+      }
+      if (scheduleTime_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(ScheduleTime);
+      }
+      if (lastAttemptTime_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(LastAttemptTime);
+      }
+      if (retryConfig_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(RetryConfig);
+      }
+      if (Schedule.Length != 0) {
+        output.WriteRawTag(162, 1);
+        output.WriteString(Schedule);
+      }
+      if (TimeZone.Length != 0) {
+        output.WriteRawTag(170, 1);
+        output.WriteString(TimeZone);
+      }
+      if (attemptDeadline_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(AttemptDeadline);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
+      if (targetCase_ == TargetOneofCase.PubsubTarget) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PubsubTarget);
+      }
+      if (targetCase_ == TargetOneofCase.AppEngineHttpTarget) {
+        output.WriteRawTag(42);
+        output.WriteMessage(AppEngineHttpTarget);
+      }
+      if (targetCase_ == TargetOneofCase.HttpTarget) {
+        output.WriteRawTag(50);
+        output.WriteMessage(HttpTarget);
+      }
+      if (userUpdateTime_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(UserUpdateTime);
+      }
+      if (State != global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State.Unspecified) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) State);
+      }
+      if (status_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Status);
+      }
+      if (scheduleTime_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(ScheduleTime);
+      }
+      if (lastAttemptTime_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(LastAttemptTime);
+      }
+      if (retryConfig_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(RetryConfig);
+      }
+      if (Schedule.Length != 0) {
+        output.WriteRawTag(162, 1);
+        output.WriteString(Schedule);
+      }
+      if (TimeZone.Length != 0) {
+        output.WriteRawTag(170, 1);
+        output.WriteString(TimeZone);
+      }
+      if (attemptDeadline_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(AttemptDeadline);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (targetCase_ == TargetOneofCase.PubsubTarget) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PubsubTarget);
+      }
+      if (targetCase_ == TargetOneofCase.AppEngineHttpTarget) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AppEngineHttpTarget);
+      }
+      if (targetCase_ == TargetOneofCase.HttpTarget) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HttpTarget);
+      }
+      if (Schedule.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Schedule);
+      }
+      if (TimeZone.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(TimeZone);
+      }
+      if (userUpdateTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserUpdateTime);
+      }
+      if (State != global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
+      }
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (scheduleTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ScheduleTime);
+      }
+      if (lastAttemptTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LastAttemptTime);
+      }
+      if (retryConfig_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RetryConfig);
+      }
+      if (attemptDeadline_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AttemptDeadline);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Job other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      if (other.Schedule.Length != 0) {
+        Schedule = other.Schedule;
+      }
+      if (other.TimeZone.Length != 0) {
+        TimeZone = other.TimeZone;
+      }
+      if (other.userUpdateTime_ != null) {
+        if (userUpdateTime_ == null) {
+          UserUpdateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        UserUpdateTime.MergeFrom(other.UserUpdateTime);
+      }
+      if (other.State != global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State.Unspecified) {
+        State = other.State;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          Status = new global::Google.Rpc.Status();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.scheduleTime_ != null) {
+        if (scheduleTime_ == null) {
+          ScheduleTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ScheduleTime.MergeFrom(other.ScheduleTime);
+      }
+      if (other.lastAttemptTime_ != null) {
+        if (lastAttemptTime_ == null) {
+          LastAttemptTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        LastAttemptTime.MergeFrom(other.LastAttemptTime);
+      }
+      if (other.retryConfig_ != null) {
+        if (retryConfig_ == null) {
+          RetryConfig = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.RetryConfig();
+        }
+        RetryConfig.MergeFrom(other.RetryConfig);
+      }
+      if (other.attemptDeadline_ != null) {
+        if (attemptDeadline_ == null) {
+          AttemptDeadline = new global::Google.Protobuf.WellKnownTypes.Duration();
+        }
+        AttemptDeadline.MergeFrom(other.AttemptDeadline);
+      }
+      switch (other.TargetCase) {
+        case TargetOneofCase.PubsubTarget:
+          if (PubsubTarget == null) {
+            PubsubTarget = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget();
+          }
+          PubsubTarget.MergeFrom(other.PubsubTarget);
+          break;
+        case TargetOneofCase.AppEngineHttpTarget:
+          if (AppEngineHttpTarget == null) {
+            AppEngineHttpTarget = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget();
+          }
+          AppEngineHttpTarget.MergeFrom(other.AppEngineHttpTarget);
+          break;
+        case TargetOneofCase.HttpTarget:
+          if (HttpTarget == null) {
+            HttpTarget = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget();
+          }
+          HttpTarget.MergeFrom(other.HttpTarget);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 34: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget();
+            if (targetCase_ == TargetOneofCase.PubsubTarget) {
+              subBuilder.MergeFrom(PubsubTarget);
+            }
+            input.ReadMessage(subBuilder);
+            PubsubTarget = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget();
+            if (targetCase_ == TargetOneofCase.AppEngineHttpTarget) {
+              subBuilder.MergeFrom(AppEngineHttpTarget);
+            }
+            input.ReadMessage(subBuilder);
+            AppEngineHttpTarget = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget();
+            if (targetCase_ == TargetOneofCase.HttpTarget) {
+              subBuilder.MergeFrom(HttpTarget);
+            }
+            input.ReadMessage(subBuilder);
+            HttpTarget = subBuilder;
+            break;
+          }
+          case 74: {
+            if (userUpdateTime_ == null) {
+              UserUpdateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UserUpdateTime);
+            break;
+          }
+          case 80: {
+            State = (global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            if (status_ == null) {
+              Status = new global::Google.Rpc.Status();
+            }
+            input.ReadMessage(Status);
+            break;
+          }
+          case 138: {
+            if (scheduleTime_ == null) {
+              ScheduleTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ScheduleTime);
+            break;
+          }
+          case 146: {
+            if (lastAttemptTime_ == null) {
+              LastAttemptTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(LastAttemptTime);
+            break;
+          }
+          case 154: {
+            if (retryConfig_ == null) {
+              RetryConfig = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.RetryConfig();
+            }
+            input.ReadMessage(RetryConfig);
+            break;
+          }
+          case 162: {
+            Schedule = input.ReadString();
+            break;
+          }
+          case 170: {
+            TimeZone = input.ReadString();
+            break;
+          }
+          case 178: {
+            if (attemptDeadline_ == null) {
+              AttemptDeadline = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(AttemptDeadline);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
+          case 34: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.PubsubTarget();
+            if (targetCase_ == TargetOneofCase.PubsubTarget) {
+              subBuilder.MergeFrom(PubsubTarget);
+            }
+            input.ReadMessage(subBuilder);
+            PubsubTarget = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.AppEngineHttpTarget();
+            if (targetCase_ == TargetOneofCase.AppEngineHttpTarget) {
+              subBuilder.MergeFrom(AppEngineHttpTarget);
+            }
+            input.ReadMessage(subBuilder);
+            AppEngineHttpTarget = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget subBuilder = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.HttpTarget();
+            if (targetCase_ == TargetOneofCase.HttpTarget) {
+              subBuilder.MergeFrom(HttpTarget);
+            }
+            input.ReadMessage(subBuilder);
+            HttpTarget = subBuilder;
+            break;
+          }
+          case 74: {
+            if (userUpdateTime_ == null) {
+              UserUpdateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UserUpdateTime);
+            break;
+          }
+          case 80: {
+            State = (global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job.Types.State) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            if (status_ == null) {
+              Status = new global::Google.Rpc.Status();
+            }
+            input.ReadMessage(Status);
+            break;
+          }
+          case 138: {
+            if (scheduleTime_ == null) {
+              ScheduleTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ScheduleTime);
+            break;
+          }
+          case 146: {
+            if (lastAttemptTime_ == null) {
+              LastAttemptTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(LastAttemptTime);
+            break;
+          }
+          case 154: {
+            if (retryConfig_ == null) {
+              RetryConfig = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.RetryConfig();
+            }
+            input.ReadMessage(RetryConfig);
+            break;
+          }
+          case 162: {
+            Schedule = input.ReadString();
+            break;
+          }
+          case 170: {
+            TimeZone = input.ReadString();
+            break;
+          }
+          case 178: {
+            if (attemptDeadline_ == null) {
+              AttemptDeadline = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(AttemptDeadline);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the Job message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      /// <summary>
+      /// State of the job.
+      /// </summary>
+      public enum State {
+        /// <summary>
+        /// Unspecified state.
+        /// </summary>
+        [pbr::OriginalName("STATE_UNSPECIFIED")] Unspecified = 0,
+        /// <summary>
+        /// The job is executing normally.
+        /// </summary>
+        [pbr::OriginalName("ENABLED")] Enabled = 1,
+        /// <summary>
+        /// The job is paused by the user. It will not execute. A user can
+        /// intentionally pause the job using
+        /// [PauseJobRequest][google.cloud.scheduler.v1.PauseJobRequest].
+        /// </summary>
+        [pbr::OriginalName("PAUSED")] Paused = 2,
+        /// <summary>
+        /// The job is disabled by the system due to error. The user
+        /// cannot directly set a job to be disabled.
+        /// </summary>
+        [pbr::OriginalName("DISABLED")] Disabled = 3,
+        /// <summary>
+        /// The job state resulting from a failed
+        /// [CloudScheduler.UpdateJob][google.cloud.scheduler.v1.CloudScheduler.UpdateJob]
+        /// operation. To recover a job from this state, retry
+        /// [CloudScheduler.UpdateJob][google.cloud.scheduler.v1.CloudScheduler.UpdateJob]
+        /// until a successful response is received.
+        /// </summary>
+        [pbr::OriginalName("UPDATE_FAILED")] UpdateFailed = 4,
+      }
+
+    }
+    #endregion
+
+  }
+
+  /// <summary>
+  /// Settings that determine the retry behavior.
+  ///
+  /// By default, if a job does not complete successfully (meaning that
+  /// an acknowledgement is not received from the handler, then it will be retried
+  /// with exponential backoff according to the settings in
+  /// [RetryConfig][google.cloud.scheduler.v1.RetryConfig].
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RetryConfig : pb::IMessage<RetryConfig>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RetryConfig> _parser = new pb::MessageParser<RetryConfig>(() => new RetryConfig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RetryConfig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RetryConfig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RetryConfig(RetryConfig other) : this() {
+      retryCount_ = other.retryCount_;
+      maxRetryDuration_ = other.maxRetryDuration_ != null ? other.maxRetryDuration_.Clone() : null;
+      minBackoffDuration_ = other.minBackoffDuration_ != null ? other.minBackoffDuration_.Clone() : null;
+      maxBackoffDuration_ = other.maxBackoffDuration_ != null ? other.maxBackoffDuration_.Clone() : null;
+      maxDoublings_ = other.maxDoublings_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RetryConfig Clone() {
+      return new RetryConfig(this);
+    }
+
+    /// <summary>Field number for the "retry_count" field.</summary>
+    public const int RetryCountFieldNumber = 1;
+    private int retryCount_;
+    /// <summary>
+    /// The number of attempts that the system will make to run a job using the
+    /// exponential backoff procedure described by
+    /// [max_doublings][google.cloud.scheduler.v1.RetryConfig.max_doublings].
+    ///
+    /// The default value of retry_count is zero.
+    ///
+    /// If retry_count is 0, a job attempt will not be retried if
+    /// it fails. Instead the Cloud Scheduler system will wait for the
+    /// next scheduled execution time. Setting retry_count to 0 does not prevent
+    /// failed jobs from running according to schedule after the failure.
+    ///
+    /// If retry_count is set to a non-zero number then Cloud Scheduler
+    /// will retry failed attempts, using exponential backoff,
+    /// retry_count times, or until the next scheduled execution time,
+    /// whichever comes first.
+    ///
+    /// Values greater than 5 and negative values are not allowed.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int RetryCount {
+      get { return retryCount_; }
+      set {
+        retryCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "max_retry_duration" field.</summary>
+    public const int MaxRetryDurationFieldNumber = 2;
+    private global::Google.Protobuf.WellKnownTypes.Duration maxRetryDuration_;
+    /// <summary>
+    /// The time limit for retrying a failed job, measured from time when an
+    /// execution was first attempted. If specified with
+    /// [retry_count][google.cloud.scheduler.v1.RetryConfig.retry_count], the job
+    /// will be retried until both limits are reached.
+    ///
+    /// The default value for max_retry_duration is zero, which means retry
+    /// duration is unlimited.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Duration MaxRetryDuration {
+      get { return maxRetryDuration_; }
+      set {
+        maxRetryDuration_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "min_backoff_duration" field.</summary>
+    public const int MinBackoffDurationFieldNumber = 3;
+    private global::Google.Protobuf.WellKnownTypes.Duration minBackoffDuration_;
+    /// <summary>
+    /// The minimum amount of time to wait before retrying a job after
+    /// it fails.
+    ///
+    /// The default value of this field is 5 seconds.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Duration MinBackoffDuration {
+      get { return minBackoffDuration_; }
+      set {
+        minBackoffDuration_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "max_backoff_duration" field.</summary>
+    public const int MaxBackoffDurationFieldNumber = 4;
+    private global::Google.Protobuf.WellKnownTypes.Duration maxBackoffDuration_;
+    /// <summary>
+    /// The maximum amount of time to wait before retrying a job after
+    /// it fails.
+    ///
+    /// The default value of this field is 1 hour.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Duration MaxBackoffDuration {
+      get { return maxBackoffDuration_; }
+      set {
+        maxBackoffDuration_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "max_doublings" field.</summary>
+    public const int MaxDoublingsFieldNumber = 5;
+    private int maxDoublings_;
+    /// <summary>
+    /// The time between retries will double `max_doublings` times.
+    ///
+    /// A job's retry interval starts at
+    /// [min_backoff_duration][google.cloud.scheduler.v1.RetryConfig.min_backoff_duration],
+    /// then doubles `max_doublings` times, then increases linearly, and finally
+    /// retries at intervals of
+    /// [max_backoff_duration][google.cloud.scheduler.v1.RetryConfig.max_backoff_duration]
+    /// up to [retry_count][google.cloud.scheduler.v1.RetryConfig.retry_count]
+    /// times.
+    ///
+    /// For example, if
+    /// [min_backoff_duration][google.cloud.scheduler.v1.RetryConfig.min_backoff_duration]
+    /// is 10s,
+    /// [max_backoff_duration][google.cloud.scheduler.v1.RetryConfig.max_backoff_duration]
+    /// is 300s, and `max_doublings` is 3, then the job will first be retried in
+    /// 10s. The retry interval will double three times, and then increase linearly
+    /// by 2^3 * 10s.  Finally, the job will retry at intervals of
+    /// [max_backoff_duration][google.cloud.scheduler.v1.RetryConfig.max_backoff_duration]
+    /// until the job has been attempted
+    /// [retry_count][google.cloud.scheduler.v1.RetryConfig.retry_count] times.
+    /// Thus, the requests will retry at 10s, 20s, 40s, 80s, 160s, 240s, 300s,
+    /// 300s, ....
+    ///
+    /// The default value of this field is 5.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MaxDoublings {
+      get { return maxDoublings_; }
+      set {
+        maxDoublings_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RetryConfig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RetryConfig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RetryCount != other.RetryCount) return false;
+      if (!object.Equals(MaxRetryDuration, other.MaxRetryDuration)) return false;
+      if (!object.Equals(MinBackoffDuration, other.MinBackoffDuration)) return false;
+      if (!object.Equals(MaxBackoffDuration, other.MaxBackoffDuration)) return false;
+      if (MaxDoublings != other.MaxDoublings) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RetryCount != 0) hash ^= RetryCount.GetHashCode();
+      if (maxRetryDuration_ != null) hash ^= MaxRetryDuration.GetHashCode();
+      if (minBackoffDuration_ != null) hash ^= MinBackoffDuration.GetHashCode();
+      if (maxBackoffDuration_ != null) hash ^= MaxBackoffDuration.GetHashCode();
+      if (MaxDoublings != 0) hash ^= MaxDoublings.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (RetryCount != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(RetryCount);
+      }
+      if (maxRetryDuration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MaxRetryDuration);
+      }
+      if (minBackoffDuration_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(MinBackoffDuration);
+      }
+      if (maxBackoffDuration_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(MaxBackoffDuration);
+      }
+      if (MaxDoublings != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(MaxDoublings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (RetryCount != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(RetryCount);
+      }
+      if (maxRetryDuration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MaxRetryDuration);
+      }
+      if (minBackoffDuration_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(MinBackoffDuration);
+      }
+      if (maxBackoffDuration_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(MaxBackoffDuration);
+      }
+      if (MaxDoublings != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(MaxDoublings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (RetryCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetryCount);
+      }
+      if (maxRetryDuration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxRetryDuration);
+      }
+      if (minBackoffDuration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MinBackoffDuration);
+      }
+      if (maxBackoffDuration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxBackoffDuration);
+      }
+      if (MaxDoublings != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxDoublings);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RetryConfig other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RetryCount != 0) {
+        RetryCount = other.RetryCount;
+      }
+      if (other.maxRetryDuration_ != null) {
+        if (maxRetryDuration_ == null) {
+          MaxRetryDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+        }
+        MaxRetryDuration.MergeFrom(other.MaxRetryDuration);
+      }
+      if (other.minBackoffDuration_ != null) {
+        if (minBackoffDuration_ == null) {
+          MinBackoffDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+        }
+        MinBackoffDuration.MergeFrom(other.MinBackoffDuration);
+      }
+      if (other.maxBackoffDuration_ != null) {
+        if (maxBackoffDuration_ == null) {
+          MaxBackoffDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+        }
+        MaxBackoffDuration.MergeFrom(other.MaxBackoffDuration);
+      }
+      if (other.MaxDoublings != 0) {
+        MaxDoublings = other.MaxDoublings;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            RetryCount = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (maxRetryDuration_ == null) {
+              MaxRetryDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(MaxRetryDuration);
+            break;
+          }
+          case 26: {
+            if (minBackoffDuration_ == null) {
+              MinBackoffDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(MinBackoffDuration);
+            break;
+          }
+          case 34: {
+            if (maxBackoffDuration_ == null) {
+              MaxBackoffDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(MaxBackoffDuration);
+            break;
+          }
+          case 40: {
+            MaxDoublings = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            RetryCount = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (maxRetryDuration_ == null) {
+              MaxRetryDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(MaxRetryDuration);
+            break;
+          }
+          case 26: {
+            if (minBackoffDuration_ == null) {
+              MinBackoffDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(MinBackoffDuration);
+            break;
+          }
+          case 34: {
+            if (maxBackoffDuration_ == null) {
+              MaxBackoffDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(MaxBackoffDuration);
+            break;
+          }
+          case 40: {
+            MaxDoublings = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// The data within all Job events.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class JobEventData : pb::IMessage<JobEventData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<JobEventData> _parser = new pb::MessageParser<JobEventData>(() => new JobEventData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<JobEventData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Events.Protobuf.Cloud.Scheduler.V1.DataReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public JobEventData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public JobEventData(JobEventData other) : this() {
+      payload_ = other.payload_ != null ? other.payload_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public JobEventData Clone() {
+      return new JobEventData(this);
+    }
+
+    /// <summary>Field number for the "payload" field.</summary>
+    public const int PayloadFieldNumber = 1;
+    private global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job payload_;
+    /// <summary>
+    /// Optional. The Job event payload. Unset for deletion events.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job Payload {
+      get { return payload_; }
+      set {
+        payload_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as JobEventData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(JobEventData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Payload, other.Payload)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (payload_ != null) hash ^= Payload.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (payload_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Payload);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (payload_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Payload);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (payload_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Payload);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(JobEventData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.payload_ != null) {
+        if (payload_ == null) {
+          Payload = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job();
+        }
+        Payload.MergeFrom(other.Payload);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (payload_ == null) {
+              Payload = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job();
+            }
+            input.ReadMessage(Payload);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (payload_ == null) {
+              Payload = new global::Google.Events.Protobuf.Cloud.Scheduler.V1.Job();
+            }
+            input.ReadMessage(Payload);
             break;
           }
         }
