@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.5.0...Google.CloudEvents.Protobuf-1.6.0) (2024-12-05)
+
+
+### Features
+
+* Regenerate PubSub schema, to include DeliveryAttempt ([e7b36f4](https://github.com/googleapis/google-cloudevents-dotnet/commit/e7b36f4bdf531d426ee13541f0ce235f55fd6101))
+* Regenerate Scheduler event, with job event types and extension attribute ([f97df46](https://github.com/googleapis/google-cloudevents-dotnet/commit/f97df466eed1de57b8eb68de8a6638f0cc01841c))
+
 ## [1.5.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.4.0...Google.CloudEvents.Protobuf-1.5.0) (2024-04-04)
 
 
