@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0-alpha01](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.6.0...Google.CloudEvents.Protobuf-1.7.0-alpha01) (2025-01-31)
+
+
+### CI Infrastructure
+
+* This release is to validate changes in CI Infrastructure.
+
 ## [1.6.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.5.0...Google.CloudEvents.Protobuf-1.6.0) (2024-12-05)
 
 
