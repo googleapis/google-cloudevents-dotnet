@@ -56,7 +56,7 @@ namespace Google.Events.Protobuf
                 if (indexStart != -1 || indexEnd != -1)
                 {
                     // There must be exactly one [, exactly one ], and
-                    // the [ must come before ].
+                    // [ must come before ].
                     if (indexStart == -1 || indexEnd == -1 ||
                         segment.IndexOf('[', indexStart + 1) != -1 ||
                         segment.IndexOf(']', indexEnd + 1) != -1 ||
