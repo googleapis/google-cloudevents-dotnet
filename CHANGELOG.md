@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0-alpha03](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0-alpha02...Google.CloudEvents.Protobuf-1.7.0-alpha03) (2025-03-27)
+
+
+### Documentation
+
+* Minor tweak in code documentation. ([cfb2283](https://github.com/googleapis/google-cloudevents-dotnet/commit/cfb2283fc9df23011888f859bb8c5324d3c2b97c))
+
 ## [1.7.0-alpha02](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0-alpha01...Google.CloudEvents.Protobuf-1.7.1-alpha01) (2025-02-11)
 
 
