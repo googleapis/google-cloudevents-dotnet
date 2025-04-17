@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0-alpha03...Google.CloudEvents.Protobuf-1.7.0) (2025-04-17)
+
+
+### deps
+
+* Build and test with .NET 8 ([aef748d](https://github.com/googleapis/google-cloudevents-dotnet/commit/aef748d679ef35acba400ff018ba53a3f081ce5f))
+
 ## [1.7.0-alpha03](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0-alpha02...Google.CloudEvents.Protobuf-1.7.0-alpha03) (2025-03-27)
 
 
