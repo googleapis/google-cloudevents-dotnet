@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0...Google.CloudEvents.Protobuf-1.7.1) (2025-05-04)
+
+
+### Bug Fixes
+
+* SourceLink works even if we are not publishing from GtiHub ([b9cbefc](https://github.com/googleapis/google-cloudevents-dotnet/commit/b9cbefcd1de22eb41e7ebf7d90e6e570caa48c14))
+
 ## [1.7.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0-alpha03...Google.CloudEvents.Protobuf-1.7.0) (2025-04-17)
 
 
