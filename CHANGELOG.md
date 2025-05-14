@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0...Google.CloudEvents.Protobuf-1.8.0) (2025-05-14)
+
+
+### Features
+
+* Add ApiHub events ([6a497e0](https://github.com/googleapis/google-cloudevents-dotnet/commit/6a497e0a2d5360594f1bd4090ff1a43ba03415a0))
+
+
+### Bug Fixes
+
+* SourceLink works even if we are not publishing from GtiHub ([b9cbefc](https://github.com/googleapis/google-cloudevents-dotnet/commit/b9cbefcd1de22eb41e7ebf7d90e6e570caa48c14))
+
 ## [1.7.0](https://github.com/googleapis/google-cloudevents-dotnet/compare/Google.CloudEvents.Protobuf-1.7.0-alpha03...Google.CloudEvents.Protobuf-1.7.0) (2025-04-17)
 
 
