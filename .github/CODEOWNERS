@@ -4,4 +4,4 @@
 # For syntax help see:
 # https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
 
-*     @googleapis/yoshi-dotnet @googleapis/serverless-team
+*     @googleapis/cloud-sdk-dotnet-team @googleapis/serverless-team
