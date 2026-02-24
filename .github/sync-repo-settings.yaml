@@ -10,7 +10,5 @@ branchProtectionRules:
   requiresCodeOwnerReviews: true
   requiresStrictStatusChecks: true
 permissionRules:
-  - team: yoshi-dotnet
+  - team: cloud-sdk-dotnet-team
     permission: push
-  - team: cloudevents-admins
-    permission: admin
