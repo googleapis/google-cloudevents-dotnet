@@ -1,7 +1,10 @@
 {
   "extends": [
-    "config:base",
+    "config:best-practices",
     ":disableDependencyDashboard"
+  ],
+  "ignorePresets": [
+    ":maintainLockFilesWeekly"
   ],
   "ignorePaths": [
     ".kokoro/**"
